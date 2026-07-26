@@ -1,0 +1,6 @@
+{
+  "name": "Dark Bunny English",
+  "description": "Готичное приложение для изучения английского языка с милым кроликом",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
