@@ -394,7 +394,344 @@ advanced_lessons = [{'title': 'Inversion: Инверсия после отриц
 
 raw_lessons.extend(advanced_lessons)
 
+extra_lessons = [
+    {
+        "title": "Past Continuous (Прошедшее длительное)",
+        "module": 22,
+        "theory": [
+            "Past Continuous используется для описания действия, которое длилось в определенный момент в прошлом.",
+            "Формула: was/were + V-ing. 'I was watching TV at 5 PM yesterday'.",
+            "Часто используется, когда одно действие (Past Continuous) прерывается другим (Past Simple): 'I was reading when he called'.",
+            "Слова-маркеры: at that moment, while (в то время как), when (когда).",
+            "Для параллельных действий в прошлом: 'While I was cooking, she was reading'."
+        ],
+        "questions": [
+            ("FB", "I ___ (watch) TV when the phone rang.", "was watching"),
+            ("MC", "Какое предложение описывает прерванное действие?", ["I was sleeping when the alarm went off.", "I slept yesterday.", "I was sleeping all day."], 0),
+            ("DD", "Составьте фразу: 'Они играли в теннис, когда пошел дождь'.", ["They", "were", "playing", "tennis", "when", "it", "started", "to", "rain"], ["was", "played", "playing"]),
+            ("MC", "Какое время используется после слова 'while'?", ["Past Continuous", "Past Simple", "Present Perfect"], 0),
+            ("FB", "While she was reading, he ___ (cook) dinner.", "was cooking")
+        ]
+    },
+    {
+        "title": "Past Perfect (Предпрошедшее время)",
+        "module": 22,
+        "theory": [
+            "Past Perfect используется для действия, которое произошло ДО другого действия в прошлом.",
+            "Формула: had + V3 (или окончание -ed). 'When I arrived, the train had left' (Когда я прибыл, поезд УЖЕ ушел).",
+            "Без второго действия в прошлом использовать Past Perfect нельзя. Оно нужно именно для того, чтобы показать 'что было раньше'.",
+            "Часто используется со словами: by the time (к тому времени как), already (уже), before (до того как), after (после того как).",
+            "Пример: 'I had finished my homework before my mom came home'."
+        ],
+        "questions": [
+            ("FB", "By the time we arrived, the movie ___ (start).", "had started"),
+            ("MC", "Зачем нужен Past Perfect?", ["Показать, что одно действие в прошлом произошло раньше другого", "Описать привычку в прошлом", "Рассказать о далеком прошлом"], 0),
+            ("DD", "Составьте фразу: 'Я уже поужинал, когда она позвонила'.", ["I", "had", "already", "eaten", "dinner", "when", "she", "called"], ["have", "eat", "was"]),
+            ("MC", "Что случилось раньше: 'When I woke up, it had stopped raining'?", ["Дождь прекратился", "Я проснулся", "Произошло одновременно"], 0),
+            ("FB", "He ___ (never/be) to Paris before last year.", "had never been")
+        ]
+    },
+    {
+        "title": "Past Perfect Continuous",
+        "module": 22,
+        "theory": [
+            "Past Perfect Continuous показывает действие, которое длилось в прошлом до определенного момента в прошлом.",
+            "Формула: had been + V-ing. 'I had been waiting for an hour when the bus finally arrived'.",
+            "Фокус на длительности: нам важно подчеркнуть, как долго что-то происходило.",
+            "Обычно есть маркеры длительности: for 2 hours (в течение 2 часов), since morning (с утра) ПЛЮС второе действие в Past Simple.",
+            "Глаголы состояния (know, like, believe) не используются в Continuous, вместо них берем обычный Past Perfect."
+        ],
+        "questions": [
+            ("FB", "They had ___ (wait) for 2 hours when he came.", "been waiting"),
+            ("MC", "В чем фокус Past Perfect Continuous?", ["На длительности действия до момента в прошлом", "На результате", "На факте совершения действия"], 0),
+            ("DD", "Составьте фразу: 'Он был уставшим, потому что работал весь день'.", ["He", "was", "tired", "because", "he", "had", "been", "working", "all", "day"], ["has", "worked", "is"]),
+            ("MC", "Можно ли сказать 'I had been knowing him for a year when we married'?", ["Нет, глагол know не используется в Continuous", "Да, это правильно", "Только в разговорной речи"], 0),
+            ("FB", "She had been ___ (cry) before I entered.", "crying")
+        ]
+    },
+    {
+        "title": "Future Continuous (Будущее длительное)",
+        "module": 23,
+        "theory": [
+            "Future Continuous описывает действие, которое будет длиться в определенный момент в будущем.",
+            "Формула: will be + V-ing. 'This time tomorrow, I will be flying to Paris'.",
+            "Используется для планов или событий, которые точно будут происходить в известное время.",
+            "Также используется для вежливых вопросов о планах: 'Will you be using your car tomorrow?' (Вы не будете завтра использовать машину? Мне бы она пригодилась).",
+            "Маркеры: at 5 PM tomorrow, this time next week, from 3 to 5."
+        ],
+        "questions": [
+            ("FB", "At 8 PM tomorrow, I ___ (watch) a movie.", "will be watching"),
+            ("MC", "Какое время выбрать для фразы: 'Завтра в это время я буду лежать на пляже'?", ["Future Continuous", "Future Simple", "Present Continuous"], 0),
+            ("DD", "Составьте фразу: 'Они будут играть в футбол с 3 до 5'.", ["They", "will", "be", "playing", "football", "from", "3", "to", "5"], ["play", "played", "are"]),
+            ("MC", "Зачем спрашивать 'Will you be going to the shop?'", ["Чтобы вежливо узнать планы (может, попросить что-то купить)", "Чтобы отругать", "Это грамматическая ошибка"], 0),
+            ("FB", "Don't call me at 6, I will be ___ (work).", "working")
+        ]
+    },
+    {
+        "title": "Future Perfect (Будущее совершенное)",
+        "module": 23,
+        "theory": [
+            "Future Perfect описывает действие, которое ЗАВЕРШИТСЯ к определенному моменту в будущем.",
+            "Формула: will have + V3 (-ed). 'I will have finished the report by Friday' (Я закончу отчет к пятнице).",
+            "Ключевой предлог — 'BY' (к какому-то моменту). By 5 PM, by tomorrow, by next year.",
+            "Фокус на результате в будущем: к тому времени, как что-то случится, действие уже будет выполнено.",
+            "Например: 'By the time you wake up, I will have left' (К тому времени как ты проснешься, я уже уйду)."
+        ],
+        "questions": [
+            ("FB", "By tomorrow, I ___ (finish) the book.", "will have finished"),
+            ("MC", "Какое слово является главным маркером Future Perfect?", ["By (к определенному моменту)", "At (в точное время)", "In (через)"], 0),
+            ("DD", "Составьте фразу: 'Они построят дом к следующему году'.", ["They", "will", "have", "built", "the", "house", "by", "next", "year"], ["build", "building", "has"]),
+            ("MC", "Что значит 'I will have read this book by Monday'?", ["Я прочитаю эту книгу до наступления понедельника", "Я буду читать ее в понедельник", "Я начал читать ее в понедельник"], 0),
+            ("FB", "By 2030, we will ___ (discover) new planets.", "have discovered")
+        ]
+    },
+    {
+        "title": "Question Tags (Разделительные вопросы)",
+        "module": 24,
+        "theory": [
+            "Question tags используются для подтверждения информации, как русское 'не так ли?' или 'правда?'.",
+            "Правило: если основное предложение утвердительное, tag будет отрицательным. И наоборот.",
+            "Пример: 'You are a student, aren't you?' (утверждение -> отрицание).",
+            "Пример: 'She doesn't like apples, does she?' (отрицание -> утверждение).",
+            "В tag используется тот же вспомогательный глагол, что и в предложении (do, does, did, will, have, is/are).",
+            "Исключение: 'I am late, aren't I?' (а не am not I). И 'Let's go, shall we?'"
+        ],
+        "questions": [
+            ("FB", "You speak English, ___ you?", "don't"),
+            ("MC", "Какой tag правильный для 'She is beautiful'?", ["isn't she?", "is she?", "doesn't she?"], 0),
+            ("DD", "Составьте фразу: 'Он не пришел, не так ли?'", ["He", "didn't", "come", "did", "he"], ["didn't", "was", "does"]),
+            ("MC", "Какое исключение для 'I am' в question tags?", ["aren't I?", "am not I?", "don't I?"], 0),
+            ("FB", "They have finished, ___ they?", "haven't")
+        ]
+    },
+    {
+        "title": "Модальные глаголы дедукции (Must have / Can't have)",
+        "module": 24,
+        "theory": [
+            "Когда мы делаем логические выводы о прошлом, мы используем модальный глагол + have + V3.",
+            "'Must have + V3' (Должно быть, точно да): 'She got a 100%. She must have studied hard' (Она, должно быть, усердно училась).",
+            "'Can't have + V3' (Не может быть, точно нет): 'He can't have stolen it, he was with me' (Не может быть, чтобы он украл, он был со мной).",
+            "'Might/May/Could have + V3' (Возможно, вероятно): 'He might have missed the bus' (Возможно, он опоздал на автобус).",
+            "Обратите внимание: для уверенного отрицания в прошлом используется 'can't have', а не 'mustn't have'."
+        ],
+        "questions": [
+            ("FB", "She looks happy. She ___ have passed the exam.", "must"),
+            ("MC", "Как сказать 'Не может быть, чтобы он забыл'?", ["He can't have forgotten", "He mustn't have forgotten", "He shouldn't have forgotten"], 0),
+            ("DD", "Составьте фразу: 'Возможно, он оставил ключи дома'.", ["He", "might", "have", "left", "the", "keys", "at", "home"], ["must", "can't", "leave"]),
+            ("MC", "Что значит 'They must have arrived by now'?", ["Они точно уже прибыли (я уверен)", "Они обязаны прибыть", "Они, возможно, прибыли"], 0),
+            ("FB", "You've been travelling all day. You ___ be tired. (Настоящее время)", "must")
+        ]
+    },
+    {
+        "title": "I wish / If only (Сожаления)",
+        "module": 25,
+        "theory": [
+            "Конструкция 'I wish' или 'If only' (Жаль, что / Если бы только) используется для выражения сожаления.",
+            "Если сожалеем о НАСТОЯЩЕМ: используем Past Simple. 'I wish I had a car' (Жаль, что у меня нет машины / Хотел бы я иметь машину).",
+            "Если сожалеем о ПРОШЛОМ: используем Past Perfect (had + V3). 'I wish I had studied harder' (Жаль, что я не учился усерднее).",
+            "Если нас раздражает чье-то поведение и мы хотим, чтобы оно изменилось: используем would. 'I wish he would stop talking' (Хоть бы он перестал говорить).",
+            "Глагол 'to be' часто принимает форму 'were' для всех лиц: 'I wish I were rich'."
+        ],
+        "questions": [
+            ("FB", "I wish I ___ (have) more free time now.", "had"),
+            ("MC", "Как сказать 'Жаль, что я не купил тот телефон' (о прошлом)?", ["I wish I had bought that phone", "I wish I bought that phone", "I wish I would buy that phone"], 0),
+            ("DD", "Составьте фразу: 'Хоть бы пошел дождь' (я хочу, чтобы ситуация изменилась).", ["I", "wish", "it", "would", "rain"], ["rained", "had", "will"]),
+            ("MC", "Что значит 'I wish I were taller'?", ["Жаль, что я не выше", "Я был высоким", "Я буду высоким"], 0),
+            ("FB", "If only she ___ (know) the truth yesterday.", "had known")
+        ]
+    },
+    {
+        "title": "So do I / Neither do I",
+        "module": 25,
+        "theory": [
+            "Для краткого согласия (Я тоже) используются конструкции с So и Neither.",
+            "Если соглашаемся с УТВЕРЖДЕНИЕМ: So + вспомогательный глагол + подлежащее.",
+            "'I like tea' -> 'So do I' (Я тоже). 'I am tired' -> 'So am I'. 'I will go' -> 'So will I'.",
+            "Если соглашаемся с ОТРИЦАНИЕМ: Neither + вспомогательный глагол + подлежащее.",
+            "'I don't like coffee' -> 'Neither do I' (Я тоже нет). 'I can't swim' -> 'Neither can I'.",
+            "Вспомогательный глагол зависит от времени первого предложения."
+        ],
+        "questions": [
+            ("FB", "A: I love pizza. B: ___ do I.", "So"),
+            ("MC", "Как согласиться с фразой 'I am not hungry'?", ["Neither am I", "So am I", "Neither do I"], 0),
+            ("DD", "Составьте фразу: 'Она не была там, и я тоже (нет)'.", ["She", "wasn't", "there", "and", "neither", "was", "I"], ["so", "did", "am"]),
+            ("MC", "Ответ на 'I went to Paris':", ["So did I", "So do I", "So was I"], 0),
+            ("FB", "A: I have never been to Mars. B: ___ have I.", "Neither")
+        ]
+    }
+]
+
+raw_lessons.extend(extra_lessons)
+
+
+
+extra_lessons_2 = [
+    {
+        "title": "Quantifiers: Much, Many, A lot of, (A) few, (A) little",
+        "module": 26,
+        "theory": [
+            "Quantifiers (квантификаторы) показывают количество. Их выбор зависит от того, исчисляемое существительное или нет.",
+            "Для ИСЧИСЛЯЕМЫХ (можно посчитать: apples, cars): MANY (много), FEW (мало), A FEW (немного, но достаточно).",
+            "Для НЕИСЧИСЛЯЕМЫХ (вода, время, деньги): MUCH (много), LITTLE (мало), A LITTLE (немного, но достаточно).",
+            "A LOT OF (много) — универсально, подходит для всех, особенно в утверждениях.",
+            "Разница между 'few' и 'a few': 'few' — мало (негативный оттенок, не хватает), 'a few' — несколько (позитивный, хватает). То же самое с 'little' и 'a little'."
+        ],
+        "questions": [
+            ("FB", "I have ___ (немного) time, we can talk.", "a little"),
+            ("MC", "Какое слово нужно для 'apples' (яблоки)?", ["many / few", "much / little", "much / few"], 0),
+            ("DD", "Составьте фразу: 'У него мало друзей'.", ["He", "has", "few", "friends"], ["a", "little", "much"]),
+            ("MC", "Что означает 'I have little money'?", ["У меня мало денег (мне не хватает)", "У меня немного денег (но мне хватит)", "У меня много денег"], 0),
+            ("FB", "There isn't ___ (много) water in the bottle.", "much")
+        ]
+    },
+    {
+        "title": "Some, Any, No и их производные",
+        "module": 26,
+        "theory": [
+            "SOME (несколько, немного) используется в утвердительных предложениях: 'I have some apples'. И в вежливых просьбах/предложениях: 'Would you like some tea?'",
+            "ANY (любой, какие-либо) используется в вопросах и отрицаниях: 'Do you have any brothers?', 'I don't have any ideas'.",
+            "NO (никакой) используется для отрицания вместо 'not any': 'I have no time' = 'I don't have any time'.",
+            "Производные: something / anything / nothing (что-то / что угодно / ничего), somebody / anybody / nobody (для людей), somewhere / anywhere / nowhere (для мест).",
+            "В английском языке может быть только ОДНО отрицание! 'I know nothing' (ПРАВИЛЬНО), 'I don't know nothing' (ОШИБКА)."
+        ],
+        "questions": [
+            ("FB", "Do you have ___ questions?", "any"),
+            ("MC", "Когда мы используем SOME в вопросах?", ["Когда это вежливая просьба или предложение", "Никогда", "Только с неисчисляемыми существительными"], 0),
+            ("DD", "Составьте фразу: 'Я никого не знаю здесь'.", ["I", "know", "nobody", "here"], ["don't", "anybody", "somebody"]),
+            ("MC", "Какое предложение грамматически верное?", ["I didn't see anything.", "I didn't see nothing.", "I saw anything."], 0),
+            ("FB", "Would you like ___ (немного) coffee?", "some")
+        ]
+    },
+    {
+        "title": "Возвратные местоимения (Reflexive Pronouns)",
+        "module": 26,
+        "theory": [
+            "Возвратные местоимения показывают, что действие направлено на самого себя: myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+            "Пример: 'I cut myself' (Я порезался). 'She looked at herself in the mirror' (Она посмотрела на себя в зеркало).",
+            "Они также используются для подчеркивания (что кто-то сделал что-то САМ): 'I baked this cake myself' (Я сам испек этот торт).",
+            "Внимание: мы НЕ используем возвратные местоимения после глаголов feel, relax, concentrate, wash, dress, shave. 'I feel good' (не 'I feel myself good').",
+            "Фраза 'by myself' означает 'в одиночестве' или 'без чьей-либо помощи'."
+        ],
+        "questions": [
+            ("FB", "He hurt ___ while playing football.", "himself"),
+            ("MC", "Как правильно сказать 'Я чувствую себя хорошо'?", ["I feel good", "I feel myself good", "I feel me good"], 0),
+            ("DD", "Составьте фразу: 'Она сделала это сама'.", ["She", "did", "it", "herself"], ["himself", "by"]),
+            ("MC", "Что значит 'I live by myself'?", ["Я живу один", "Я живу для себя", "Я живу у себя"], 0),
+            ("FB", "We enjoyed ___ at the party.", "ourselves")
+        ]
+    },
+    {
+        "title": "Предлоги времени и места (In, On, At)",
+        "module": 27,
+        "theory": [
+            "ВРЕМЯ: IN - для больших периодов (годы, месяцы, сезоны - in 2023, in May, in summer), а также части дня (in the morning).",
+            "ON - для конкретных дней и дат (on Monday, on my birthday, on the 5th of June).",
+            "AT - для точного времени по часам (at 5 PM, at noon) и в выражениях (at night, at the weekend).",
+            "МЕСТО: IN - внутри чего-то, в городах/странах (in the box, in London, in a car).",
+            "ON - на поверхности (on the table, on the wall) и транспорт, где можно стоять (on a bus, on a train).",
+            "AT - в конкретной точке, на мероприятии, у цели (at the bus stop, at the door, at a concert, at work/school/home)."
+        ],
+        "questions": [
+            ("FB", "I will meet you ___ Monday.", "on"),
+            ("MC", "Какой предлог нужен для '5 o'clock' (5 часов)?", ["at", "in", "on"], 0),
+            ("DD", "Составьте фразу: 'Он сейчас на работе'.", ["He", "is", "at", "work", "now"], ["in", "on"]),
+            ("MC", "Как сказать 'в автобусе'?", ["on a bus", "in a bus", "at a bus"], 0),
+            ("FB", "My birthday is ___ October.", "in")
+        ]
+    },
+    {
+        "title": "Порядок прилагательных (Order of Adjectives)",
+        "module": 27,
+        "theory": [
+            "Если перед существительным стоит несколько прилагательных, они должны идти в определенном порядке. Правило OSASCOMP:",
+            "1. Opinion (мнение): beautiful, ugly, smart.",
+            "2. Size (размер): big, small, tall.",
+            "3. Age (возраст): old, new, young.",
+            "4. Shape (форма): round, square.",
+            "5. Color (цвет): red, black.",
+            "6. Origin (происхождение): Italian, American.",
+            "7. Material (материал): wooden, metal.",
+            "8. Purpose (назначение): sleeping (bag), racing (car).",
+            "Пример: 'A beautiful (мнение) small (размер) old (возраст) brown (цвет) Italian (происхождение) wooden (материал) box'."
+        ],
+        "questions": [
+            ("FB", "A beautiful big red car. (Мнение - размер - цвет). Напишите 'red'.", "red"),
+            ("MC", "Какой вариант правильный?", ["A nice new wooden table", "A wooden nice new table", "A new nice wooden table"], 0),
+            ("DD", "Составьте фразу: 'Маленький черный кот'.", ["A", "small", "black", "cat"], ["black", "small"]),
+            ("MC", "Где должно стоять прилагательное происхождения (Italian, French)?", ["Ближе к концу, перед материалом", "В самом начале", "После существительного"], 0),
+            ("FB", "An ugly old brown coat. Напишите 'old' (возраст).", "old")
+        ]
+    },
+    {
+        "title": "Too и Enough",
+        "module": 27,
+        "theory": [
+            "TOO (слишком) ставится ПЕРЕД прилагательными или наречиями. 'It is too hot' (Слишком жарко).",
+            "ENOUGH (достаточно) ставится ПОСЛЕ прилагательных или наречий: 'He is strong enough' (Он достаточно сильный).",
+            "НО! Если enough используется с существительным, оно ставится ПЕРЕД ним: 'We have enough money' (У нас достаточно денег).",
+            "Часто используются с инфинитивом (to do): 'He is too young to drive' (Он слишком молод, чтобы водить).",
+            "'The water is warm enough to swim' (Вода достаточно теплая, чтобы плавать)."
+        ],
+        "questions": [
+            ("FB", "This box is ___ (слишком) heavy.", "too"),
+            ("MC", "Где ставится 'enough' по отношению к прилагательному?", ["После него", "Перед ним", "Не имеет значения"], 0),
+            ("DD", "Составьте фразу: 'У нас нет достаточного количества времени'.", ["We", "don't", "have", "enough", "time"], ["time", "enough", "too"]),
+            ("MC", "Какая фраза правильная?", ["He is not tall enough.", "He is not enough tall.", "He is too not tall."], 0),
+            ("FB", "She is smart ___ to solve this problem.", "enough")
+        ]
+    },
+    {
+        "title": "Сложное дополнение (Complex Object)",
+        "module": 28,
+        "theory": [
+            "Complex Object (Сложное дополнение) используется, когда мы хотим, чтобы кто-то другой что-то сделал.",
+            "Формула: Подлежащее + глагол (want/expect/would like) + объект (him/her/me) + to V1.",
+            "Пример: 'I want YOU TO HELP me' (Я хочу, чтобы ТЫ ПОМОГ мне. Буквально: 'Я хочу тебя помочь мне').",
+            "'She expected HIM TO CALL' (Она ожидала, что он позвонит).",
+            "ИСКЛЮЧЕНИЯ: после глаголов MAKE (заставлять) и LET (разрешать) частица 'to' НЕ ставится!",
+            "Пример: 'He made me cry' (Он заставил меня плакать). 'Let him go' (Позволь ему уйти)."
+        ],
+        "questions": [
+            ("FB", "I want him ___ (help) me.", "to help"),
+            ("MC", "Как правильно сказать: 'Я хочу, чтобы она ушла'?", ["I want her to leave", "I want that she leaves", "I want she to leave"], 0),
+            ("DD", "Составьте фразу: 'Мой босс заставил меня работать допоздна'.", ["My", "boss", "made", "me", "work", "late"], ["to", "working", "makes"]),
+            ("MC", "Нужна ли частица 'to' после глагола 'let'?", ["Нет", "Да", "Иногда"], 0),
+            ("FB", "Let me ___ (pay) for the dinner.", "pay")
+        ]
+    },
+    {
+        "title": "Причастные обороты (Participle Clauses)",
+        "module": 28,
+        "theory": [
+            "Причастные обороты позволяют объединить два предложения, делая речь более беглой и красивой.",
+            "Причастие I (с окончанием -ing, 'делающий') показывает активное действие. 'Walking down the street, I saw a friend' (Гуляя по улице, я увидел друга).",
+            "Оно часто заменяет фразы с when, while или because. 'Knowing the truth, she said nothing' = 'Because she knew the truth...'",
+            "Причастие II (3-я форма глагола, 'сделанный') показывает пассивное действие. 'Written in 1920, the book is still popular' (Написанная в 1920 году...).",
+            "Оба действия в главном предложении и в причастном обороте должны относиться к одному и тому же подлежащему!"
+        ],
+        "questions": [
+            ("FB", "___ (read) the book, I went to sleep. (Прочитав)", "Reading"),
+            ("MC", "Какое причастие выбрать для пассивного значения ('Основанный в...)?", ["Founded", "Founding", "Found"], 0),
+            ("DD", "Составьте фразу: 'Почувствовав усталость, он пошел домой'.", ["Feeling", "tired", "he", "went", "home"], ["Felt", "was"]),
+            ("MC", "Что заменяет фраза 'Not having a car, I take the bus'?", ["Because I don't have a car", "When I don't have a car", "If I don't have a car"], 0),
+            ("FB", "___ (build) of wood, the house was very warm. (Построенный)", "Built")
+        ]
+    }
+]
+raw_lessons.extend(extra_lessons_2)
+
+module_assignment = {"Местоимения и глагол To Be (Утверждение)": 1, "Глагол To Be: Отрицание и Вопросы": 1, "Указательные и Притяжательные местоимения": 2, "Множественное число и Артикли (a/an/the)": 2, "Some, Any, No и их производные": 3, "Возвратные местоимения (Reflexive Pronouns)": 3, "Present Simple: Утверждение и Рутина": 4, "Present Simple: Отрицание и Вопросы": 4, "Present Continuous: Прямо сейчас": 5, "Предлоги времени и места (In, On, At)": 5, "Порядок прилагательных (Order of Adjectives)": 6, "Степени сравнения прилагательных": 6, "Past Simple: Глагол to be в прошлом (was/were)": 7, "Past Simple: Правильные и неправильные глаголы": 7, "Past Simple: Вопросы и Отрицания": 8, "Used to vs Be used to": 8, "Past Continuous: Процесс в прошлом": 9, "Past Continuous (Прошедшее длительное)": 9, "Future Simple (Будущее с Will)": 10, "Конструкция Be Going To (Планы)": 10, "Модальные глаголы: Can, Must, Should": 11, "Модальные глаголы: May, Might, Could": 11, "Quantifiers: Much, Many, A lot of, (A) few, (A) little": 12, "Too и Enough": 12, "Question Tags (Разделительные вопросы)": 13, "So do I / Neither do I": 13, "Present Perfect: Результат": 14, "Present Perfect: Маркеры": 14, "Past Perfect: Предпрошедшее время": 15, "Past Perfect (Предпрошедшее время)": 15, "Модальные глаголы: Have to vs Must": 15, "Conditionals: Условные предложения 0 и 1": 16, "Conditionals: Условные предложения 2": 16, "Conditionals: Условные предложения 3": 17, "Future Continuous и Future Perfect": 17, "Future Continuous (Будущее длительное)": 17, "Future Perfect (Будущее совершенное)": 17, "Past Perfect Continuous": 18, "Gerund и Infinitive": 18, "Пассивный залог (Passive Voice)": 19, "Относительные придаточные (Relative Clauses)": 19, "Сложное дополнение (Complex Object)": 20, "Participle Clauses: Причастные обороты": 20, "Reported Speech: Косвенная речь": 21, "Passive Reporting Verbs: Продвинутый Пассив": 21, "Модальные глаголы дедукции (Must have / Can't have)": 22, "Modals of Deduction in the Past": 22, "I wish / If only (Сожаления)": 23, "Mixed Conditionals: Смешанные условные предложения": 23, "Causative Verbs: Have / Get something done": 24, "Subjunctive Mood: Сослагательное наклонение": 24, "Inversion: Инверсия после отрицательных наречий": 25, "Cleft Sentences: Эмфатические конструкции": 25, "Advanced Emphatic Structures": 25, "Dependent Prepositions": 26, "Advanced Phrasal Verbs": 27, "Discourse Markers (C1-C2)": 28}
+for l in raw_lessons:
+    l['module'] = module_assignment.get(l['title'], 28)
+
+# Now sort raw_lessons by module, and then by their original order somewhat.
+# We can just sort by module.
+raw_lessons.sort(key=lambda x: x['module'])
+
+# We should also ensure lesson_counter increases sequentially.
+
 final_lessons = []
+
 all_past_questions = []
 lesson_counter = 1
 

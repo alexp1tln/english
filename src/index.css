@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gothic-bg: #0a0a0c;
-  --color-gothic-card: #121216;
-  --color-gothic-card-hover: #1a1a20;
-  --color-gothic-border: #2a2a35;
-  --color-gothic-border-hover: #3a3a45;
+  --color-gothic-bg: #050505;
+  --color-gothic-card: rgba(10, 10, 15, 0.5);
+  --color-gothic-card-hover: rgba(15, 15, 20, 0.7);
+  --color-gothic-border: rgba(255, 255, 255, 0.05);
+  --color-gothic-border-hover: rgba(255, 255, 255, 0.1);
   --color-burgundy: #900024;
   --color-silver: #c0c0c0;
 }

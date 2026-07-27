@@ -10,6 +10,7 @@ import ModuleTest from "./components/ModuleTest";
 import LessonQuiz from './components/LessonQuiz';
 import ModuleTestResult from "./components/ModuleTestResult";
 import IrregularVerbs from "./components/IrregularVerbs";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 export default function App() {
   const [view, setView] = useState<ViewState>('menu');
@@ -41,8 +42,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen w-full flex justify-center items-start overflow-hidden bg-black font-sans">
-      <div className="w-full max-w-md h-viewport pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent">
+    <div className="min-h-screen w-full flex justify-center items-start overflow-hidden bg-transparent font-sans relative z-0">
+      <AnimatedBackground />
+      <div className="w-full max-w-md h-viewport pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent z-10">
         
         {/* Notification Toast */}
         <AnimatePresence>
@@ -225,8 +227,8 @@ function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson
       </div>
 
       <div className="absolute bottom-6 left-6 right-6">
-        <button onClick={onNext} className="w-full py-5 rounded-[2.5rem] bg-gradient-to-r from-burgundy to-burgundy-light text-white font-medium tracking-[0.1em] flex justify-center items-center gap-2 active:scale-95 transition-transform shadow-[0_0_20px_rgba(144,0,36,0.3)]">
-          Перейти к словам <ChevronRight size={20} />
+        <button onClick={onNext} className="w-full py-5 rounded-[2.5rem] bg-black text-white font-medium tracking-[0.1em] flex justify-center items-center gap-2 active:scale-95 transition-transform shadow-[0_0_20px_rgba(0,0,0,0.5)] border border-white/5">
+          Перейти к практике <ChevronRight size={20} />
         </button>
       </div>
     </motion.div>
