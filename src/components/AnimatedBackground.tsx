@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-[#0a0a0c] pointer-events-none">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#050506] pointer-events-none">
       {/* Subtle grid pattern */}
       <div 
         className="absolute inset-0 z-0 opacity-[0.08]" 
@@ -27,7 +27,7 @@ export default function AnimatedBackground() {
         transition={{
           duration: 20,
           repeat: Infinity,
-          ease: "linear"
+          ease: "easeInOut"
         }}
         className="absolute top-[-10%] left-[-10%] w-[80vh] h-[80vh] rounded-full z-0 pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(144,0,36,0.15) 0%, rgba(144,0,36,0) 60%)' }}
@@ -40,7 +40,7 @@ export default function AnimatedBackground() {
         transition={{
           duration: 25,
           repeat: Infinity,
-          ease: "linear"
+          ease: "easeInOut"
         }}
         className="absolute bottom-[-10%] right-[-10%] w-[90vh] h-[90vh] rounded-full z-0 pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(49,46,129,0.15) 0%, rgba(49,46,129,0) 60%)' }}
@@ -53,14 +53,14 @@ export default function AnimatedBackground() {
         transition={{
           duration: 30,
           repeat: Infinity,
-          ease: "linear"
+          ease: "easeInOut"
         }}
         className="absolute top-[20%] right-[10%] w-[70vh] h-[70vh] rounded-full z-0 pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(88,28,135,0.1) 0%, rgba(88,28,135,0) 60%)' }}
       />
       
       {/* Vignette overlay */}
-      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_#0a0a0c_100%)] opacity-80" />
+      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_#050506_100%)] opacity-80" />
     </div>
   );
 }

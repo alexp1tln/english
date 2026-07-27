@@ -5,7 +5,6 @@ import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, 
 import { lessons, vocabulary } from './courseData';
 import { Lesson, ViewState, Word, QuizQuestion } from './types';
 import CityMapProgress from './components/CityMapProgress';
-import LifeSurvival from './components/LifeSurvival';
 import ModuleTest from "./components/ModuleTest";
 import LessonQuiz from './components/LessonQuiz';
 import ModuleTestResult from "./components/ModuleTestResult";
@@ -96,9 +95,6 @@ export default function App() {
             {view === 'dictionary' && (
               <Dictionary key="dictionary" setView={setView} />
             )}
-            {view === 'survival' && (
-              <LifeSurvival key="survival" setView={setView} completedLessons={completedLessons} lessons={lessons} />
-            )}
             {view === 'module_test' && currentTestModule && (
               <ModuleTest key="module_test" moduleId={currentTestModule} lessons={lessons} onFinish={(score, total, mistakes) => {
                 const id = `test_${currentTestModule}`;
@@ -139,7 +135,7 @@ function MainMenu({ setView, completedCount, totalCount }: { key?: string, setVi
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }} 
       animate={{ opacity: 1, scale: 1 }} 
-      exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+      exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="flex flex-col items-center gap-6 pb-12 pt-8"
     >
       <div className="text-center space-y-4 mb-4 flex flex-col items-center">
@@ -182,11 +178,6 @@ function MainMenu({ setView, completedCount, totalCount }: { key?: string, setVi
 
       <div className="w-full flex flex-col gap-3 mt-2">
         <h3 className="text-[10px] uppercase tracking-wide text-white/20 mb-1 ml-2 ">Интерактив</h3>
-
-        <button onClick={() => setView('survival')} className="w-full p-5 rounded-[2.5rem] bg-gothic-card hover:bg-gothic-card-hover border border-gothic-border hover:border-gothic-border-hover flex items-center justify-between active:scale-95 transition-all duration-300 shadow-lg">
-          <div className="flex items-center gap-4"><Compass size={20} className="text-burgundy-light"/> <span className="text-white text-sm font-medium tracking-wide">Бытовые квесты</span></div>
-          <ChevronRight size={16} className="text-white/70/30 group-hover:text-white/70 transition-colors" />
-        </button>
         <button onClick={() => setView('irregular_verbs')} className="w-full p-5 rounded-[2.5rem] bg-gothic-card hover:bg-gothic-card-hover border border-gothic-border hover:border-gothic-border-hover flex items-center justify-between active:scale-95 transition-all duration-300 shadow-lg">
           <div className="flex items-center gap-4"><Zap size={20} className="text-burgundy-light"/> <span className="text-white text-sm font-medium tracking-wide">Неправильные глаголы</span></div>
           <ChevronRight size={16} className="text-white/70/30 group-hover:text-white/70 transition-colors" />
@@ -200,7 +191,7 @@ function MainMenu({ setView, completedCount, totalCount }: { key?: string, setVi
 
 function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson, onNext: () => void, onBack: () => void }) {
   return (
-    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full">
+    <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full">
       <div className="flex items-center gap-4 mb-8 shrink-0">
         <button onClick={onBack} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 hover:bg-white/5 hover:text-white transition-colors">
           <ArrowLeft size={20} />
@@ -333,7 +324,7 @@ function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) =
   const quizType = mode === 'quiz' ? quizItems[currentIndex].type : 'eng-rus';
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full pb-10">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full pb-10">
       <div className="flex items-center gap-4 mb-8 shrink-0">
         <button onClick={() => setView('menu')} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 hover:text-white hover:bg-white/5 transition-colors">
           <ArrowLeft size={20} />
@@ -373,7 +364,7 @@ function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) =
           ) : (
             <motion.div 
               key={`quiz-${currentIndex}`}
-              initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="w-full"
+              initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.9 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="w-full"
             >
               <div className="mb-10 text-center">
                 <h3 className="text-white/70/50 uppercase tracking-wide font-light text-xs mb-4">Как переводится?</h3>
@@ -442,7 +433,7 @@ function Dictionary({ setView }: { key?: string, setView: (v: ViewState) => void
   });
 
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full pb-10">
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full pb-10">
       <div className="flex items-center gap-4 mb-6 shrink-0">
         <button onClick={() => setView('menu')} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 hover:text-white hover:bg-white/5 transition-colors">
           <ArrowLeft size={20} />
