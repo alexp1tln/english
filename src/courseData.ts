@@ -26,28 +26,28 @@ export const vocabulary: Word[] = [
   {
     "id": "v4",
     "word": "Often",
-    "transcription": "[о́фтан]",
+    "transcription": "[о́фн]",
     "translation": "Часто",
     "category": "Наречия"
   },
   {
     "id": "v5",
     "word": "Usually",
-    "transcription": "[ю́жавали]",
+    "transcription": "[ю́жуали]",
     "translation": "Обычно",
     "category": "Наречия"
   },
   {
     "id": "v6",
     "word": "Seldom",
-    "transcription": "[сэ́лдам]",
+    "transcription": "[сэ́лдом]",
     "translation": "Редко",
     "category": "Наречия"
   },
   {
     "id": "v7",
     "word": "Every day",
-    "transcription": "[эвэрй дaй]",
+    "transcription": "[э́ври дэй]",
     "translation": "Каждый день",
     "category": "Наречия"
   },
@@ -68,7 +68,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v10",
     "word": "Tomorrow",
-    "transcription": "[тама́роу]",
+    "transcription": "[тумо́роу]",
     "translation": "Завтра",
     "category": "Наречия"
   },
@@ -117,21 +117,21 @@ export const vocabulary: Word[] = [
   {
     "id": "v17",
     "word": "Year",
-    "transcription": "[йир]",
+    "transcription": "[йе́а]",
     "translation": "Год",
     "category": "Существительные"
   },
   {
     "id": "v18",
     "word": "People",
-    "transcription": "[пи́пал]",
+    "transcription": "[пипл]",
     "translation": "Люди",
     "category": "Существительные"
   },
   {
     "id": "v19",
     "word": "Way",
-    "transcription": "[вэй]",
+    "transcription": "[уэ́й]",
     "translation": "Путь / Способ",
     "category": "Существительные"
   },
@@ -159,7 +159,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v23",
     "word": "Woman",
-    "transcription": "[ву́ман]",
+    "transcription": "[уу́мэн]",
     "translation": "Женщина",
     "category": "Существительные"
   },
@@ -180,7 +180,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v26",
     "word": "World",
-    "transcription": "[вэлд]",
+    "transcription": "[уо́рлд]",
     "translation": "Мир",
     "category": "Существительные"
   },
@@ -201,14 +201,14 @@ export const vocabulary: Word[] = [
   {
     "id": "v29",
     "word": "Family",
-    "transcription": "[фэ́мали]",
+    "transcription": "[фэ́мили]",
     "translation": "Семья",
     "category": "Существительные"
   },
   {
     "id": "v30",
     "word": "Student",
-    "transcription": "[сту́дант]",
+    "transcription": "[стью́дэнт]",
     "translation": "Студент",
     "category": "Существительные"
   },
@@ -229,7 +229,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v33",
     "word": "Problem",
-    "transcription": "[пра́блам]",
+    "transcription": "[про́блем]",
     "translation": "Проблема",
     "category": "Основы"
   },
@@ -264,7 +264,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v38",
     "word": "Week",
-    "transcription": "[вик]",
+    "transcription": "[уи́к]",
     "translation": "Неделя",
     "category": "Основы"
   },
@@ -278,42 +278,42 @@ export const vocabulary: Word[] = [
   {
     "id": "v40",
     "word": "System",
-    "transcription": "[си́стам]",
+    "transcription": "[си́стэм]",
     "translation": "Система",
     "category": "Основы"
   },
   {
     "id": "v41",
     "word": "Program",
-    "transcription": "[про́угрэм]",
+    "transcription": "[про́грэм]",
     "translation": "Программа",
     "category": "Основы"
   },
   {
     "id": "v42",
     "word": "Question",
-    "transcription": "[квэ́счан]",
+    "transcription": "[квэ́счэн]",
     "translation": "Вопрос",
     "category": "Основы"
   },
   {
     "id": "v43",
     "word": "Work",
-    "transcription": "[вэк]",
+    "transcription": "[уо́рк]",
     "translation": "Работа",
     "category": "Основы"
   },
   {
     "id": "v44",
     "word": "Government",
-    "transcription": "[га́вэнмант]",
+    "transcription": "[га́вернмэнт]",
     "translation": "Правительство",
     "category": "Основы"
   },
   {
     "id": "v45",
     "word": "Number",
-    "transcription": "[на́мбэ]",
+    "transcription": "[на́мбэр]",
     "translation": "Число",
     "category": "Основы"
   },
@@ -341,7 +341,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v49",
     "word": "Water",
-    "transcription": "[во́тэ]",
+    "transcription": "[уо́тэр]",
     "translation": "Вода",
     "category": "Основы"
   },
@@ -355,7 +355,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v51",
     "word": "Mother",
-    "transcription": "[ма́зэ]",
+    "transcription": "[ма́зэр]",
     "translation": "Мать",
     "category": "Основы"
   },
@@ -439,7 +439,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v63",
     "word": "Word",
-    "transcription": "[вэд]",
+    "transcription": "[уо́рд]",
     "translation": "Слово",
     "category": "Основы"
   },
@@ -474,7 +474,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v68",
     "word": "Head",
-    "transcription": "[хэд]",
+    "transcription": "[хёд]",
     "translation": "Голова",
     "category": "Основы"
   },
@@ -502,7 +502,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v72",
     "word": "Father",
-    "transcription": "[фа́зэ]",
+    "transcription": "[фа́зэр]",
     "translation": "Отец",
     "category": "Основы"
   },
@@ -544,7 +544,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v78",
     "word": "Member",
-    "transcription": "[мэ́мбэ]",
+    "transcription": "[мэ́мбэр]",
     "translation": "Член (группы)",
     "category": "Основы"
   },
@@ -572,7 +572,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v82",
     "word": "Community",
-    "transcription": "[камю́нати]",
+    "transcription": "[комью́нити]",
     "translation": "Сообщество",
     "category": "Основы"
   },
@@ -628,7 +628,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v90",
     "word": "Information",
-    "transcription": "[информэ́йшан]",
+    "transcription": "[информэ́йшн]",
     "translation": "Информация",
     "category": "Основы"
   },
@@ -642,7 +642,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v92",
     "word": "Parent",
-    "transcription": "[пэ́рант]",
+    "transcription": "[пэ́рэнт]",
     "translation": "Родитель",
     "category": "Основы"
   },
@@ -656,21 +656,21 @@ export const vocabulary: Word[] = [
   {
     "id": "v94",
     "word": "Others",
-    "transcription": "[а́зэз]",
+    "transcription": "[а́зэрз]",
     "translation": "Другие",
     "category": "Основы"
   },
   {
     "id": "v95",
     "word": "Level",
-    "transcription": "[ле́вал]",
+    "transcription": "[лэ́вэл]",
     "translation": "Уровень",
     "category": "Основы"
   },
   {
     "id": "v96",
     "word": "Office",
-    "transcription": "[о́фас]",
+    "transcription": "[о́фис]",
     "translation": "Офис",
     "category": "Основы"
   },
@@ -691,7 +691,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v99",
     "word": "Person",
-    "transcription": "[пэ́сан]",
+    "transcription": "[пё́рсн]",
     "translation": "Человек (личность)",
     "category": "Основы"
   },
@@ -705,14 +705,14 @@ export const vocabulary: Word[] = [
   {
     "id": "v101",
     "word": "War",
-    "transcription": "[вор]",
+    "transcription": "[уо́р]",
     "translation": "Война",
     "category": "Основы"
   },
   {
     "id": "v102",
     "word": "History",
-    "transcription": "[хи́стэи]",
+    "transcription": "[хи́стори]",
     "translation": "История (наука)",
     "category": "Основы"
   },
@@ -747,21 +747,21 @@ export const vocabulary: Word[] = [
   {
     "id": "v107",
     "word": "Reason",
-    "transcription": "[ри́зан]",
+    "transcription": "[ри́зн]",
     "translation": "Причина",
     "category": "Основы"
   },
   {
     "id": "v108",
     "word": "Research",
-    "transcription": "[рисэ́ч]",
+    "transcription": "[рисё́ч]",
     "translation": "Исследование",
     "category": "Основы"
   },
   {
     "id": "v109",
     "word": "Girl",
-    "transcription": "[гэл]",
+    "transcription": "[гёл]",
     "translation": "Девочка",
     "category": "Основы"
   },
@@ -796,7 +796,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v114",
     "word": "Teacher",
-    "transcription": "[ти́чэ]",
+    "transcription": "[ти́чэр]",
     "translation": "Учитель",
     "category": "Основы"
   },
@@ -810,7 +810,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v116",
     "word": "Education",
-    "transcription": "[эджакэ́йшан]",
+    "transcription": "[эдюкэ́йшн]",
     "translation": "Образование",
     "category": "Основы"
   },
@@ -824,14 +824,14 @@ export const vocabulary: Word[] = [
   {
     "id": "v118",
     "word": "New",
-    "transcription": "[ну]",
+    "transcription": "[нью]",
     "translation": "Новый",
     "category": "Основы"
   },
   {
     "id": "v119",
     "word": "First",
-    "transcription": "[фэст]",
+    "transcription": "[фаст]",
     "translation": "Первый",
     "category": "Основы"
   },
@@ -859,7 +859,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v123",
     "word": "Little",
-    "transcription": "[ли́тал]",
+    "transcription": "[литл]",
     "translation": "Маленький",
     "category": "Основы"
   },
@@ -873,7 +873,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v125",
     "word": "Other",
-    "transcription": "[а́зэ]",
+    "transcription": "[а́зэр]",
     "translation": "Другой",
     "category": "Основы"
   },
@@ -908,7 +908,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v130",
     "word": "Different",
-    "transcription": "[ди́фэант]",
+    "transcription": "[ди́ферэнт]",
     "translation": "Различный",
     "category": "Основы"
   },
@@ -950,7 +950,7 @@ export const vocabulary: Word[] = [
   {
     "id": "v136",
     "word": "Important",
-    "transcription": "[импо́ртант]",
+    "transcription": "[импо́ртэнт]",
     "translation": "Важный",
     "category": "Основы"
   },
@@ -985,70 +985,70 @@ export const vocabulary: Word[] = [
   {
     "id": "v141",
     "word": "Able",
-    "transcription": "[э́йбал]",
+    "transcription": "[эйбл]",
     "translation": "Способный",
     "category": "Основы"
   },
   {
     "id": "v142",
     "word": "To be",
-    "transcription": "[тo бэ]",
+    "transcription": "[ту би]",
     "translation": "Быть",
     "category": "Глаголы"
   },
   {
     "id": "v143",
     "word": "To have",
-    "transcription": "[тo хaвэ]",
+    "transcription": "[ту хэв]",
     "translation": "Иметь",
     "category": "Глаголы"
   },
   {
     "id": "v144",
     "word": "To do",
-    "transcription": "[тo дo]",
+    "transcription": "[ту ду]",
     "translation": "Делать",
     "category": "Глаголы"
   },
   {
     "id": "v145",
     "word": "To say",
-    "transcription": "[тo сaй]",
+    "transcription": "[ту сэй]",
     "translation": "Сказать",
     "category": "Глаголы"
   },
   {
     "id": "v146",
     "word": "To go",
-    "transcription": "[тo гo]",
+    "transcription": "[ту гоу]",
     "translation": "Идти",
     "category": "Глаголы"
   },
   {
     "id": "v147",
     "word": "To get",
-    "transcription": "[тo гэт]",
+    "transcription": "[ту гет]",
     "translation": "Получить",
     "category": "Глаголы"
   },
   {
     "id": "v148",
     "word": "To make",
-    "transcription": "[тo мaкэ]",
+    "transcription": "[ту мэйк]",
     "translation": "Сделать (создать)",
     "category": "Глаголы"
   },
   {
     "id": "v149",
     "word": "To know",
-    "transcription": "[тo кнoв]",
+    "transcription": "[ту ноу]",
     "translation": "Знать",
     "category": "Глаголы"
   },
   {
     "id": "v150",
     "word": "To think",
-    "transcription": "[тo тхинк]",
+    "transcription": "[ту синк]",
     "translation": "Думать",
     "category": "Глаголы"
   },
@@ -1244,61 +1244,61 @@ export const lessons: Lesson[] = [
       {
         "id": "v142",
         "word": "To be",
-        "transcription": "[тo бэ]",
+        "transcription": "[ту би]",
         "translation": "Быть"
       },
       {
         "id": "v143",
         "word": "To have",
-        "transcription": "[тo хaвэ]",
+        "transcription": "[ту хэв]",
         "translation": "Иметь"
       },
       {
         "id": "v144",
         "word": "To do",
-        "transcription": "[тo дo]",
+        "transcription": "[ту ду]",
         "translation": "Делать"
       },
       {
         "id": "v145",
         "word": "To say",
-        "transcription": "[тo сaй]",
+        "transcription": "[ту сэй]",
         "translation": "Сказать"
       },
       {
         "id": "v146",
         "word": "To go",
-        "transcription": "[тo гo]",
+        "transcription": "[ту гоу]",
         "translation": "Идти"
       },
       {
         "id": "v147",
         "word": "To get",
-        "transcription": "[тo гэт]",
+        "transcription": "[ту гет]",
         "translation": "Получить"
       },
       {
         "id": "v148",
         "word": "To make",
-        "transcription": "[тo мaкэ]",
+        "transcription": "[ту мэйк]",
         "translation": "Сделать (создать)"
       },
       {
         "id": "v149",
         "word": "To know",
-        "transcription": "[тo кнoв]",
+        "transcription": "[ту ноу]",
         "translation": "Знать"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ"
       }
     ],
@@ -1387,25 +1387,25 @@ export const lessons: Lesson[] = [
       {
         "id": "v4",
         "word": "Often",
-        "transcription": "[о́фтан]",
+        "transcription": "[о́фн]",
         "translation": "Часто"
       },
       {
         "id": "v5",
         "word": "Usually",
-        "transcription": "[ю́жавали]",
+        "transcription": "[ю́жуали]",
         "translation": "Обычно"
       },
       {
         "id": "v6",
         "word": "Seldom",
-        "transcription": "[сэ́лдам]",
+        "transcription": "[сэ́лдом]",
         "translation": "Редко"
       },
       {
         "id": "v7",
         "word": "Every day",
-        "transcription": "[эвэрй дaй]",
+        "transcription": "[э́ври дэй]",
         "translation": "Каждый день"
       },
       {
@@ -1423,7 +1423,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v10",
         "word": "Tomorrow",
-        "transcription": "[тама́роу]",
+        "transcription": "[тумо́роу]",
         "translation": "Завтра"
       }
     ],
@@ -1530,19 +1530,19 @@ export const lessons: Lesson[] = [
       {
         "id": "v17",
         "word": "Year",
-        "transcription": "[йир]",
+        "transcription": "[йе́а]",
         "translation": "Год"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ"
       },
       {
@@ -1631,7 +1631,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v23",
         "word": "Woman",
-        "transcription": "[ву́ман]",
+        "transcription": "[уу́мэн]",
         "translation": "Женщина"
       },
       {
@@ -1649,7 +1649,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v26",
         "word": "World",
-        "transcription": "[вэлд]",
+        "transcription": "[уо́рлд]",
         "translation": "Мир"
       },
       {
@@ -1667,13 +1667,13 @@ export const lessons: Lesson[] = [
       {
         "id": "v29",
         "word": "Family",
-        "transcription": "[фэ́мали]",
+        "transcription": "[фэ́мили]",
         "translation": "Семья"
       },
       {
         "id": "v30",
         "word": "Student",
-        "transcription": "[сту́дант]",
+        "transcription": "[стью́дэнт]",
         "translation": "Студент"
       }
     ],
@@ -1756,7 +1756,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v33",
         "word": "Problem",
-        "transcription": "[пра́блам]",
+        "transcription": "[про́блем]",
         "translation": "Проблема"
       },
       {
@@ -1786,7 +1786,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v38",
         "word": "Week",
-        "transcription": "[вик]",
+        "transcription": "[уи́к]",
         "translation": "Неделя"
       },
       {
@@ -1798,7 +1798,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v40",
         "word": "System",
-        "transcription": "[си́стам]",
+        "transcription": "[си́стэм]",
         "translation": "Система"
       }
     ],
@@ -1869,31 +1869,31 @@ export const lessons: Lesson[] = [
       {
         "id": "v41",
         "word": "Program",
-        "transcription": "[про́угрэм]",
+        "transcription": "[про́грэм]",
         "translation": "Программа"
       },
       {
         "id": "v42",
         "word": "Question",
-        "transcription": "[квэ́счан]",
+        "transcription": "[квэ́счэн]",
         "translation": "Вопрос"
       },
       {
         "id": "v43",
         "word": "Work",
-        "transcription": "[вэк]",
+        "transcription": "[уо́рк]",
         "translation": "Работа"
       },
       {
         "id": "v44",
         "word": "Government",
-        "transcription": "[га́вэнмант]",
+        "transcription": "[га́вернмэнт]",
         "translation": "Правительство"
       },
       {
         "id": "v45",
         "word": "Number",
-        "transcription": "[на́мбэ]",
+        "transcription": "[на́мбэр]",
         "translation": "Число"
       },
       {
@@ -1917,7 +1917,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v49",
         "word": "Water",
-        "transcription": "[во́тэ]",
+        "transcription": "[уо́тэр]",
         "translation": "Вода"
       },
       {
@@ -1994,7 +1994,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v51",
         "word": "Mother",
-        "transcription": "[ма́зэ]",
+        "transcription": "[ма́зэр]",
         "translation": "Мать"
       },
       {
@@ -2131,7 +2131,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v63",
         "word": "Word",
-        "transcription": "[вэд]",
+        "transcription": "[уо́рд]",
         "translation": "Слово"
       },
       {
@@ -2161,7 +2161,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v68",
         "word": "Head",
-        "transcription": "[хэд]",
+        "transcription": "[хёд]",
         "translation": "Голова"
       },
       {
@@ -2250,7 +2250,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v72",
         "word": "Father",
-        "transcription": "[фа́зэ]",
+        "transcription": "[фа́зэр]",
         "translation": "Отец"
       },
       {
@@ -2286,7 +2286,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v78",
         "word": "Member",
-        "transcription": "[мэ́мбэ]",
+        "transcription": "[мэ́мбэр]",
         "translation": "Член (группы)"
       },
       {
@@ -2376,7 +2376,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v82",
         "word": "Community",
-        "transcription": "[камю́нати]",
+        "transcription": "[комью́нити]",
         "translation": "Сообщество"
       },
       {
@@ -2424,7 +2424,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v90",
         "word": "Information",
-        "transcription": "[информэ́йшан]",
+        "transcription": "[информэ́йшн]",
         "translation": "Информация"
       }
     ],
@@ -2501,7 +2501,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v92",
         "word": "Parent",
-        "transcription": "[пэ́рант]",
+        "transcription": "[пэ́рэнт]",
         "translation": "Родитель"
       },
       {
@@ -2513,19 +2513,19 @@ export const lessons: Lesson[] = [
       {
         "id": "v94",
         "word": "Others",
-        "transcription": "[а́зэз]",
+        "transcription": "[а́зэрз]",
         "translation": "Другие"
       },
       {
         "id": "v95",
         "word": "Level",
-        "transcription": "[ле́вал]",
+        "transcription": "[лэ́вэл]",
         "translation": "Уровень"
       },
       {
         "id": "v96",
         "word": "Office",
-        "transcription": "[о́фас]",
+        "transcription": "[о́фис]",
         "translation": "Офис"
       },
       {
@@ -2543,7 +2543,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v99",
         "word": "Person",
-        "transcription": "[пэ́сан]",
+        "transcription": "[пё́рсн]",
         "translation": "Человек (личность)"
       },
       {
@@ -2620,13 +2620,13 @@ export const lessons: Lesson[] = [
       {
         "id": "v101",
         "word": "War",
-        "transcription": "[вор]",
+        "transcription": "[уо́р]",
         "translation": "Война"
       },
       {
         "id": "v102",
         "word": "History",
-        "transcription": "[хи́стэи]",
+        "transcription": "[хи́стори]",
         "translation": "История (наука)"
       },
       {
@@ -2656,19 +2656,19 @@ export const lessons: Lesson[] = [
       {
         "id": "v107",
         "word": "Reason",
-        "transcription": "[ри́зан]",
+        "transcription": "[ри́зн]",
         "translation": "Причина"
       },
       {
         "id": "v108",
         "word": "Research",
-        "transcription": "[рисэ́ч]",
+        "transcription": "[рисё́ч]",
         "translation": "Исследование"
       },
       {
         "id": "v109",
         "word": "Girl",
-        "transcription": "[гэл]",
+        "transcription": "[гёл]",
         "translation": "Девочка"
       },
       {
@@ -2763,7 +2763,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v114",
         "word": "Teacher",
-        "transcription": "[ти́чэ]",
+        "transcription": "[ти́чэр]",
         "translation": "Учитель"
       },
       {
@@ -2775,7 +2775,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v116",
         "word": "Education",
-        "transcription": "[эджакэ́йшан]",
+        "transcription": "[эдюкэ́йшн]",
         "translation": "Образование"
       },
       {
@@ -2787,13 +2787,13 @@ export const lessons: Lesson[] = [
       {
         "id": "v118",
         "word": "New",
-        "transcription": "[ну]",
+        "transcription": "[нью]",
         "translation": "Новый"
       },
       {
         "id": "v119",
         "word": "First",
-        "transcription": "[фэст]",
+        "transcription": "[фаст]",
         "translation": "Первый"
       },
       {
@@ -2882,7 +2882,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v123",
         "word": "Little",
-        "transcription": "[ли́тал]",
+        "transcription": "[литл]",
         "translation": "Маленький"
       },
       {
@@ -2894,7 +2894,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v125",
         "word": "Other",
-        "transcription": "[а́зэ]",
+        "transcription": "[а́зэр]",
         "translation": "Другой"
       },
       {
@@ -2924,7 +2924,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v130",
         "word": "Different",
-        "transcription": "[ди́фэант]",
+        "transcription": "[ди́ферэнт]",
         "translation": "Различный"
       }
     ],
@@ -3025,7 +3025,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v136",
         "word": "Important",
-        "transcription": "[импо́ртант]",
+        "transcription": "[импо́ртэнт]",
         "translation": "Важный"
       },
       {
@@ -3138,25 +3138,25 @@ export const lessons: Lesson[] = [
       {
         "id": "v4",
         "word": "Often",
-        "transcription": "[о́фтан]",
+        "transcription": "[о́фн]",
         "translation": "Часто"
       },
       {
         "id": "v5",
         "word": "Usually",
-        "transcription": "[ю́жавали]",
+        "transcription": "[ю́жуали]",
         "translation": "Обычно"
       },
       {
         "id": "v6",
         "word": "Seldom",
-        "transcription": "[сэ́лдам]",
+        "transcription": "[сэ́лдом]",
         "translation": "Редко"
       },
       {
         "id": "v7",
         "word": "Every day",
-        "transcription": "[эвэрй дaй]",
+        "transcription": "[э́ври дэй]",
         "translation": "Каждый день"
       },
       {
@@ -3174,7 +3174,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v10",
         "word": "Tomorrow",
-        "transcription": "[тама́роу]",
+        "transcription": "[тумо́роу]",
         "translation": "Завтра"
       }
     ],
@@ -3281,19 +3281,19 @@ export const lessons: Lesson[] = [
       {
         "id": "v17",
         "word": "Year",
-        "transcription": "[йир]",
+        "transcription": "[йе́а]",
         "translation": "Год"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ"
       },
       {
@@ -3382,7 +3382,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v23",
         "word": "Woman",
-        "transcription": "[ву́ман]",
+        "transcription": "[уу́мэн]",
         "translation": "Женщина"
       },
       {
@@ -3400,7 +3400,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v26",
         "word": "World",
-        "transcription": "[вэлд]",
+        "transcription": "[уо́рлд]",
         "translation": "Мир"
       },
       {
@@ -3418,13 +3418,13 @@ export const lessons: Lesson[] = [
       {
         "id": "v29",
         "word": "Family",
-        "transcription": "[фэ́мали]",
+        "transcription": "[фэ́мили]",
         "translation": "Семья"
       },
       {
         "id": "v30",
         "word": "Student",
-        "transcription": "[сту́дант]",
+        "transcription": "[стью́дэнт]",
         "translation": "Студент"
       }
     ],
@@ -3507,7 +3507,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v33",
         "word": "Problem",
-        "transcription": "[пра́блам]",
+        "transcription": "[про́блем]",
         "translation": "Проблема"
       },
       {
@@ -3537,7 +3537,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v38",
         "word": "Week",
-        "transcription": "[вик]",
+        "transcription": "[уи́к]",
         "translation": "Неделя"
       },
       {
@@ -3549,7 +3549,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v40",
         "word": "System",
-        "transcription": "[си́стам]",
+        "transcription": "[си́стэм]",
         "translation": "Система"
       }
     ],
@@ -3621,31 +3621,31 @@ export const lessons: Lesson[] = [
       {
         "id": "v41",
         "word": "Program",
-        "transcription": "[про́угрэм]",
+        "transcription": "[про́грэм]",
         "translation": "Программа"
       },
       {
         "id": "v42",
         "word": "Question",
-        "transcription": "[квэ́счан]",
+        "transcription": "[квэ́счэн]",
         "translation": "Вопрос"
       },
       {
         "id": "v43",
         "word": "Work",
-        "transcription": "[вэк]",
+        "transcription": "[уо́рк]",
         "translation": "Работа"
       },
       {
         "id": "v44",
         "word": "Government",
-        "transcription": "[га́вэнмант]",
+        "transcription": "[га́вернмэнт]",
         "translation": "Правительство"
       },
       {
         "id": "v45",
         "word": "Number",
-        "transcription": "[на́мбэ]",
+        "transcription": "[на́мбэр]",
         "translation": "Число"
       },
       {
@@ -3669,7 +3669,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v49",
         "word": "Water",
-        "transcription": "[во́тэ]",
+        "transcription": "[уо́тэр]",
         "translation": "Вода"
       },
       {
@@ -3767,14 +3767,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v4",
         "word": "Often",
-        "transcription": "[о́фтан]",
+        "transcription": "[о́фн]",
         "translation": "Часто",
         "category": "Наречия"
       },
       {
         "id": "v5",
         "word": "Usually",
-        "transcription": "[ю́жавали]",
+        "transcription": "[ю́жуали]",
         "translation": "Обычно",
         "category": "Наречия"
       }
@@ -3845,14 +3845,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v6",
         "word": "Seldom",
-        "transcription": "[сэ́лдам]",
+        "transcription": "[сэ́лдом]",
         "translation": "Редко",
         "category": "Наречия"
       },
       {
         "id": "v7",
         "word": "Every day",
-        "transcription": "[эвэрй дaй]",
+        "transcription": "[э́ври дэй]",
         "translation": "Каждый день",
         "category": "Наречия"
       },
@@ -3873,7 +3873,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v10",
         "word": "Tomorrow",
-        "transcription": "[тама́роу]",
+        "transcription": "[тумо́роу]",
         "translation": "Завтра",
         "category": "Наречия"
       }
@@ -4050,21 +4050,21 @@ export const lessons: Lesson[] = [
       {
         "id": "v17",
         "word": "Year",
-        "transcription": "[йир]",
+        "transcription": "[йе́а]",
         "translation": "Год",
         "category": "Существительные"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди",
         "category": "Существительные"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ",
         "category": "Существительные"
       },
@@ -4255,7 +4255,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v23",
         "word": "Woman",
-        "transcription": "[ву́ман]",
+        "transcription": "[уу́мэн]",
         "translation": "Женщина",
         "category": "Существительные"
       },
@@ -4340,7 +4340,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v26",
         "word": "World",
-        "transcription": "[вэлд]",
+        "transcription": "[уо́рлд]",
         "translation": "Мир",
         "category": "Существительные"
       },
@@ -4361,14 +4361,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v29",
         "word": "Family",
-        "transcription": "[фэ́мали]",
+        "transcription": "[фэ́мили]",
         "translation": "Семья",
         "category": "Существительные"
       },
       {
         "id": "v30",
         "word": "Student",
-        "transcription": "[сту́дант]",
+        "transcription": "[стью́дэнт]",
         "translation": "Студент",
         "category": "Существительные"
       }
@@ -4453,7 +4453,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v33",
         "word": "Problem",
-        "transcription": "[пра́блам]",
+        "transcription": "[про́блем]",
         "translation": "Проблема",
         "category": "Основы"
       },
@@ -4552,7 +4552,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v38",
         "word": "Week",
-        "transcription": "[вик]",
+        "transcription": "[уи́к]",
         "translation": "Неделя",
         "category": "Основы"
       },
@@ -4566,7 +4566,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v40",
         "word": "System",
-        "transcription": "[си́стам]",
+        "transcription": "[си́стэм]",
         "translation": "Система",
         "category": "Основы"
       }
@@ -4736,35 +4736,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v41",
         "word": "Program",
-        "transcription": "[про́угрэм]",
+        "transcription": "[про́грэм]",
         "translation": "Программа",
         "category": "Основы"
       },
       {
         "id": "v42",
         "word": "Question",
-        "transcription": "[квэ́счан]",
+        "transcription": "[квэ́счэн]",
         "translation": "Вопрос",
         "category": "Основы"
       },
       {
         "id": "v43",
         "word": "Work",
-        "transcription": "[вэк]",
+        "transcription": "[уо́рк]",
         "translation": "Работа",
         "category": "Основы"
       },
       {
         "id": "v44",
         "word": "Government",
-        "transcription": "[га́вэнмант]",
+        "transcription": "[га́вернмэнт]",
         "translation": "Правительство",
         "category": "Основы"
       },
       {
         "id": "v45",
         "word": "Number",
-        "transcription": "[на́мбэ]",
+        "transcription": "[на́мбэр]",
         "translation": "Число",
         "category": "Основы"
       }
@@ -4856,7 +4856,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v49",
         "word": "Water",
-        "transcription": "[во́тэ]",
+        "transcription": "[уо́тэр]",
         "translation": "Вода",
         "category": "Основы"
       },
@@ -4934,7 +4934,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v51",
         "word": "Mother",
-        "transcription": "[ма́зэ]",
+        "transcription": "[ма́зэр]",
         "translation": "Мать",
         "category": "Основы"
       },
@@ -5245,7 +5245,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v63",
         "word": "Word",
-        "transcription": "[вэд]",
+        "transcription": "[уо́рд]",
         "translation": "Слово",
         "category": "Основы"
       },
@@ -5344,7 +5344,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v68",
         "word": "Head",
-        "transcription": "[хэд]",
+        "transcription": "[хёд]",
         "translation": "Голова",
         "category": "Основы"
       },
@@ -5436,7 +5436,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v72",
         "word": "Father",
-        "transcription": "[фа́зэ]",
+        "transcription": "[фа́зэр]",
         "translation": "Отец",
         "category": "Основы"
       },
@@ -5542,7 +5542,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v78",
         "word": "Member",
-        "transcription": "[мэ́мбэ]",
+        "transcription": "[мэ́мбэр]",
         "translation": "Член (группы)",
         "category": "Основы"
       },
@@ -5634,7 +5634,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v82",
         "word": "Community",
-        "transcription": "[камю́нати]",
+        "transcription": "[комью́нити]",
         "translation": "Сообщество",
         "category": "Основы"
       },
@@ -5754,7 +5754,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v90",
         "word": "Information",
-        "transcription": "[информэ́йшан]",
+        "transcription": "[информэ́йшн]",
         "translation": "Информация",
         "category": "Основы"
       }
@@ -5832,7 +5832,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v92",
         "word": "Parent",
-        "transcription": "[пэ́рант]",
+        "transcription": "[пэ́рэнт]",
         "translation": "Родитель",
         "category": "Основы"
       },
@@ -5846,14 +5846,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v94",
         "word": "Others",
-        "transcription": "[а́зэз]",
+        "transcription": "[а́зэрз]",
         "translation": "Другие",
         "category": "Основы"
       },
       {
         "id": "v95",
         "word": "Level",
-        "transcription": "[ле́вал]",
+        "transcription": "[лэ́вэл]",
         "translation": "Уровень",
         "category": "Основы"
       }
@@ -5924,7 +5924,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v96",
         "word": "Office",
-        "transcription": "[о́фас]",
+        "transcription": "[о́фис]",
         "translation": "Офис",
         "category": "Основы"
       },
@@ -5945,7 +5945,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v99",
         "word": "Person",
-        "transcription": "[пэ́сан]",
+        "transcription": "[пё́рсн]",
         "translation": "Человек (личность)",
         "category": "Основы"
       },
@@ -6023,14 +6023,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v101",
         "word": "War",
-        "transcription": "[вор]",
+        "transcription": "[уо́р]",
         "translation": "Война",
         "category": "Основы"
       },
       {
         "id": "v102",
         "word": "History",
-        "transcription": "[хи́стэи]",
+        "transcription": "[хи́стори]",
         "translation": "История (наука)",
         "category": "Основы"
       },
@@ -6129,21 +6129,21 @@ export const lessons: Lesson[] = [
       {
         "id": "v107",
         "word": "Reason",
-        "transcription": "[ри́зан]",
+        "transcription": "[ри́зн]",
         "translation": "Причина",
         "category": "Основы"
       },
       {
         "id": "v108",
         "word": "Research",
-        "transcription": "[рисэ́ч]",
+        "transcription": "[рисё́ч]",
         "translation": "Исследование",
         "category": "Основы"
       },
       {
         "id": "v109",
         "word": "Girl",
-        "transcription": "[гэл]",
+        "transcription": "[гёл]",
         "translation": "Девочка",
         "category": "Основы"
       },
@@ -6242,7 +6242,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v114",
         "word": "Teacher",
-        "transcription": "[ти́чэ]",
+        "transcription": "[ти́чэр]",
         "translation": "Учитель",
         "category": "Основы"
       },
@@ -6320,7 +6320,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v116",
         "word": "Education",
-        "transcription": "[эджакэ́йшан]",
+        "transcription": "[эдюкэ́йшн]",
         "translation": "Образование",
         "category": "Основы"
       },
@@ -6334,14 +6334,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v118",
         "word": "New",
-        "transcription": "[ну]",
+        "transcription": "[нью]",
         "translation": "Новый",
         "category": "Основы"
       },
       {
         "id": "v119",
         "word": "First",
-        "transcription": "[фэст]",
+        "transcription": "[фаст]",
         "translation": "Первый",
         "category": "Основы"
       },
@@ -6433,7 +6433,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v123",
         "word": "Little",
-        "transcription": "[ли́тал]",
+        "transcription": "[литл]",
         "translation": "Маленький",
         "category": "Основы"
       },
@@ -6447,7 +6447,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v125",
         "word": "Other",
-        "transcription": "[а́зэ]",
+        "transcription": "[а́зэр]",
         "translation": "Другой",
         "category": "Основы"
       }
@@ -6546,7 +6546,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v130",
         "word": "Different",
-        "transcription": "[ди́фэант]",
+        "transcription": "[ди́ферэнт]",
         "translation": "Различный",
         "category": "Основы"
       }
@@ -6716,7 +6716,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v136",
         "word": "Important",
-        "transcription": "[импо́ртант]",
+        "transcription": "[импо́ртэнт]",
         "translation": "Важный",
         "category": "Основы"
       },
@@ -6815,35 +6815,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v141",
         "word": "Able",
-        "transcription": "[э́йбал]",
+        "transcription": "[эйбл]",
         "translation": "Способный",
         "category": "Основы"
       },
       {
         "id": "v142",
         "word": "To be",
-        "transcription": "[тo бэ]",
+        "transcription": "[ту би]",
         "translation": "Быть",
         "category": "Глаголы"
       },
       {
         "id": "v143",
         "word": "To have",
-        "transcription": "[тo хaвэ]",
+        "transcription": "[ту хэв]",
         "translation": "Иметь",
         "category": "Глаголы"
       },
       {
         "id": "v144",
         "word": "To do",
-        "transcription": "[тo дo]",
+        "transcription": "[ту ду]",
         "translation": "Делать",
         "category": "Глаголы"
       },
       {
         "id": "v145",
         "word": "To say",
-        "transcription": "[тo сaй]",
+        "transcription": "[ту сэй]",
         "translation": "Сказать",
         "category": "Глаголы"
       }
@@ -6914,35 +6914,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v146",
         "word": "To go",
-        "transcription": "[тo гo]",
+        "transcription": "[ту гоу]",
         "translation": "Идти",
         "category": "Глаголы"
       },
       {
         "id": "v147",
         "word": "To get",
-        "transcription": "[тo гэт]",
+        "transcription": "[ту гет]",
         "translation": "Получить",
         "category": "Глаголы"
       },
       {
         "id": "v148",
         "word": "To make",
-        "transcription": "[тo мaкэ]",
+        "transcription": "[ту мэйк]",
         "translation": "Сделать (создать)",
         "category": "Глаголы"
       },
       {
         "id": "v149",
         "word": "To know",
-        "transcription": "[тo кнoв]",
+        "transcription": "[ту ноу]",
         "translation": "Знать",
         "category": "Глаголы"
       },
       {
         "id": "v150",
         "word": "To think",
-        "transcription": "[тo тхинк]",
+        "transcription": "[ту синк]",
         "translation": "Думать",
         "category": "Глаголы"
       }
@@ -7034,14 +7034,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v4",
         "word": "Often",
-        "transcription": "[о́фтан]",
+        "transcription": "[о́фн]",
         "translation": "Часто",
         "category": "Наречия"
       },
       {
         "id": "v5",
         "word": "Usually",
-        "transcription": "[ю́жавали]",
+        "transcription": "[ю́жуали]",
         "translation": "Обычно",
         "category": "Наречия"
       }
@@ -7112,14 +7112,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v6",
         "word": "Seldom",
-        "transcription": "[сэ́лдам]",
+        "transcription": "[сэ́лдом]",
         "translation": "Редко",
         "category": "Наречия"
       },
       {
         "id": "v7",
         "word": "Every day",
-        "transcription": "[эвэрй дaй]",
+        "transcription": "[э́ври дэй]",
         "translation": "Каждый день",
         "category": "Наречия"
       },
@@ -7140,7 +7140,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v10",
         "word": "Tomorrow",
-        "transcription": "[тама́роу]",
+        "transcription": "[тумо́роу]",
         "translation": "Завтра",
         "category": "Наречия"
       }
@@ -7317,21 +7317,21 @@ export const lessons: Lesson[] = [
       {
         "id": "v17",
         "word": "Year",
-        "transcription": "[йир]",
+        "transcription": "[йе́а]",
         "translation": "Год",
         "category": "Существительные"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди",
         "category": "Существительные"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ",
         "category": "Существительные"
       },
@@ -7423,7 +7423,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v23",
         "word": "Woman",
-        "transcription": "[ву́ман]",
+        "transcription": "[уу́мэн]",
         "translation": "Женщина",
         "category": "Существительные"
       },
@@ -7508,7 +7508,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v26",
         "word": "World",
-        "transcription": "[вэлд]",
+        "transcription": "[уо́рлд]",
         "translation": "Мир",
         "category": "Существительные"
       },
@@ -7529,14 +7529,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v29",
         "word": "Family",
-        "transcription": "[фэ́мали]",
+        "transcription": "[фэ́мили]",
         "translation": "Семья",
         "category": "Существительные"
       },
       {
         "id": "v30",
         "word": "Student",
-        "transcription": "[сту́дант]",
+        "transcription": "[стью́дэнт]",
         "translation": "Студент",
         "category": "Существительные"
       }
@@ -7621,7 +7621,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v33",
         "word": "Problem",
-        "transcription": "[пра́блам]",
+        "transcription": "[про́блем]",
         "translation": "Проблема",
         "category": "Основы"
       },
@@ -7720,7 +7720,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v38",
         "word": "Week",
-        "transcription": "[вик]",
+        "transcription": "[уи́к]",
         "translation": "Неделя",
         "category": "Основы"
       },
@@ -7734,7 +7734,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v40",
         "word": "System",
-        "transcription": "[си́стам]",
+        "transcription": "[си́стэм]",
         "translation": "Система",
         "category": "Основы"
       }
@@ -7805,35 +7805,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v41",
         "word": "Program",
-        "transcription": "[про́угрэм]",
+        "transcription": "[про́грэм]",
         "translation": "Программа",
         "category": "Основы"
       },
       {
         "id": "v42",
         "word": "Question",
-        "transcription": "[квэ́счан]",
+        "transcription": "[квэ́счэн]",
         "translation": "Вопрос",
         "category": "Основы"
       },
       {
         "id": "v43",
         "word": "Work",
-        "transcription": "[вэк]",
+        "transcription": "[уо́рк]",
         "translation": "Работа",
         "category": "Основы"
       },
       {
         "id": "v44",
         "word": "Government",
-        "transcription": "[га́вэнмант]",
+        "transcription": "[га́вернмэнт]",
         "translation": "Правительство",
         "category": "Основы"
       },
       {
         "id": "v45",
         "word": "Number",
-        "transcription": "[на́мбэ]",
+        "transcription": "[на́мбэр]",
         "translation": "Число",
         "category": "Основы"
       }
@@ -7925,7 +7925,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v49",
         "word": "Water",
-        "transcription": "[во́тэ]",
+        "transcription": "[уо́тэр]",
         "translation": "Вода",
         "category": "Основы"
       },
@@ -8003,7 +8003,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v51",
         "word": "Mother",
-        "transcription": "[ма́зэ]",
+        "transcription": "[ма́зэр]",
         "translation": "Мать",
         "category": "Основы"
       },
@@ -8215,7 +8215,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v63",
         "word": "Word",
-        "transcription": "[вэд]",
+        "transcription": "[уо́рд]",
         "translation": "Слово",
         "category": "Основы"
       },
@@ -8314,7 +8314,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v68",
         "word": "Head",
-        "transcription": "[хэд]",
+        "transcription": "[хёд]",
         "translation": "Голова",
         "category": "Основы"
       },
@@ -8406,7 +8406,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v72",
         "word": "Father",
-        "transcription": "[фа́зэ]",
+        "transcription": "[фа́зэр]",
         "translation": "Отец",
         "category": "Основы"
       },
@@ -8512,7 +8512,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v78",
         "word": "Member",
-        "transcription": "[мэ́мбэ]",
+        "transcription": "[мэ́мбэр]",
         "translation": "Член (группы)",
         "category": "Основы"
       },
@@ -8604,7 +8604,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v82",
         "word": "Community",
-        "transcription": "[камю́нати]",
+        "transcription": "[комью́нити]",
         "translation": "Сообщество",
         "category": "Основы"
       },
@@ -8724,7 +8724,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v90",
         "word": "Information",
-        "transcription": "[информэ́йшан]",
+        "transcription": "[информэ́йшн]",
         "translation": "Информация",
         "category": "Основы"
       }
@@ -8802,7 +8802,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v92",
         "word": "Parent",
-        "transcription": "[пэ́рант]",
+        "transcription": "[пэ́рэнт]",
         "translation": "Родитель",
         "category": "Основы"
       },
@@ -8816,14 +8816,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v94",
         "word": "Others",
-        "transcription": "[а́зэз]",
+        "transcription": "[а́зэрз]",
         "translation": "Другие",
         "category": "Основы"
       },
       {
         "id": "v95",
         "word": "Level",
-        "transcription": "[ле́вал]",
+        "transcription": "[лэ́вэл]",
         "translation": "Уровень",
         "category": "Основы"
       }
@@ -8894,7 +8894,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v96",
         "word": "Office",
-        "transcription": "[о́фас]",
+        "transcription": "[о́фис]",
         "translation": "Офис",
         "category": "Основы"
       },
@@ -8915,7 +8915,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v99",
         "word": "Person",
-        "transcription": "[пэ́сан]",
+        "transcription": "[пё́рсн]",
         "translation": "Человек (личность)",
         "category": "Основы"
       },
@@ -8993,14 +8993,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v101",
         "word": "War",
-        "transcription": "[вор]",
+        "transcription": "[уо́р]",
         "translation": "Война",
         "category": "Основы"
       },
       {
         "id": "v102",
         "word": "History",
-        "transcription": "[хи́стэи]",
+        "transcription": "[хи́стори]",
         "translation": "История (наука)",
         "category": "Основы"
       },
@@ -9099,21 +9099,21 @@ export const lessons: Lesson[] = [
       {
         "id": "v107",
         "word": "Reason",
-        "transcription": "[ри́зан]",
+        "transcription": "[ри́зн]",
         "translation": "Причина",
         "category": "Основы"
       },
       {
         "id": "v108",
         "word": "Research",
-        "transcription": "[рисэ́ч]",
+        "transcription": "[рисё́ч]",
         "translation": "Исследование",
         "category": "Основы"
       },
       {
         "id": "v109",
         "word": "Girl",
-        "transcription": "[гэл]",
+        "transcription": "[гёл]",
         "translation": "Девочка",
         "category": "Основы"
       },
@@ -9212,7 +9212,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v114",
         "word": "Teacher",
-        "transcription": "[ти́чэ]",
+        "transcription": "[ти́чэр]",
         "translation": "Учитель",
         "category": "Основы"
       },
@@ -9290,7 +9290,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v116",
         "word": "Education",
-        "transcription": "[эджакэ́йшан]",
+        "transcription": "[эдюкэ́йшн]",
         "translation": "Образование",
         "category": "Основы"
       },
@@ -9304,14 +9304,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v118",
         "word": "New",
-        "transcription": "[ну]",
+        "transcription": "[нью]",
         "translation": "Новый",
         "category": "Основы"
       },
       {
         "id": "v119",
         "word": "First",
-        "transcription": "[фэст]",
+        "transcription": "[фаст]",
         "translation": "Первый",
         "category": "Основы"
       },
@@ -9403,7 +9403,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v123",
         "word": "Little",
-        "transcription": "[ли́тал]",
+        "transcription": "[литл]",
         "translation": "Маленький",
         "category": "Основы"
       },
@@ -9417,7 +9417,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v125",
         "word": "Other",
-        "transcription": "[а́зэ]",
+        "transcription": "[а́зэр]",
         "translation": "Другой",
         "category": "Основы"
       }
@@ -9516,7 +9516,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v130",
         "word": "Different",
-        "transcription": "[ди́фэант]",
+        "transcription": "[ди́ферэнт]",
         "translation": "Различный",
         "category": "Основы"
       }
@@ -9686,7 +9686,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v136",
         "word": "Important",
-        "transcription": "[импо́ртант]",
+        "transcription": "[импо́ртэнт]",
         "translation": "Важный",
         "category": "Основы"
       },
@@ -9785,35 +9785,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v141",
         "word": "Able",
-        "transcription": "[э́йбал]",
+        "transcription": "[эйбл]",
         "translation": "Способный",
         "category": "Основы"
       },
       {
         "id": "v142",
         "word": "To be",
-        "transcription": "[тo бэ]",
+        "transcription": "[ту би]",
         "translation": "Быть",
         "category": "Глаголы"
       },
       {
         "id": "v143",
         "word": "To have",
-        "transcription": "[тo хaвэ]",
+        "transcription": "[ту хэв]",
         "translation": "Иметь",
         "category": "Глаголы"
       },
       {
         "id": "v144",
         "word": "To do",
-        "transcription": "[тo дo]",
+        "transcription": "[ту ду]",
         "translation": "Делать",
         "category": "Глаголы"
       },
       {
         "id": "v145",
         "word": "To say",
-        "transcription": "[тo сaй]",
+        "transcription": "[ту сэй]",
         "translation": "Сказать",
         "category": "Глаголы"
       }
@@ -9884,35 +9884,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v146",
         "word": "To go",
-        "transcription": "[тo гo]",
+        "transcription": "[ту гоу]",
         "translation": "Идти",
         "category": "Глаголы"
       },
       {
         "id": "v147",
         "word": "To get",
-        "transcription": "[тo гэт]",
+        "transcription": "[ту гет]",
         "translation": "Получить",
         "category": "Глаголы"
       },
       {
         "id": "v148",
         "word": "To make",
-        "transcription": "[тo мaкэ]",
+        "transcription": "[ту мэйк]",
         "translation": "Сделать (создать)",
         "category": "Глаголы"
       },
       {
         "id": "v149",
         "word": "To know",
-        "transcription": "[тo кнoв]",
+        "transcription": "[ту ноу]",
         "translation": "Знать",
         "category": "Глаголы"
       },
       {
         "id": "v150",
         "word": "To think",
-        "transcription": "[тo тхинк]",
+        "transcription": "[ту синк]",
         "translation": "Думать",
         "category": "Глаголы"
       }
@@ -10004,14 +10004,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v4",
         "word": "Often",
-        "transcription": "[о́фтан]",
+        "transcription": "[о́фн]",
         "translation": "Часто",
         "category": "Наречия"
       },
       {
         "id": "v5",
         "word": "Usually",
-        "transcription": "[ю́жавали]",
+        "transcription": "[ю́жуали]",
         "translation": "Обычно",
         "category": "Наречия"
       }
@@ -10082,14 +10082,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v6",
         "word": "Seldom",
-        "transcription": "[сэ́лдам]",
+        "transcription": "[сэ́лдом]",
         "translation": "Редко",
         "category": "Наречия"
       },
       {
         "id": "v7",
         "word": "Every day",
-        "transcription": "[эвэрй дaй]",
+        "transcription": "[э́ври дэй]",
         "translation": "Каждый день",
         "category": "Наречия"
       },
@@ -10110,7 +10110,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v10",
         "word": "Tomorrow",
-        "transcription": "[тама́роу]",
+        "transcription": "[тумо́роу]",
         "translation": "Завтра",
         "category": "Наречия"
       }
@@ -10287,21 +10287,21 @@ export const lessons: Lesson[] = [
       {
         "id": "v17",
         "word": "Year",
-        "transcription": "[йир]",
+        "transcription": "[йе́а]",
         "translation": "Год",
         "category": "Существительные"
       },
       {
         "id": "v18",
         "word": "People",
-        "transcription": "[пи́пал]",
+        "transcription": "[пипл]",
         "translation": "Люди",
         "category": "Существительные"
       },
       {
         "id": "v19",
         "word": "Way",
-        "transcription": "[вэй]",
+        "transcription": "[уэ́й]",
         "translation": "Путь / Способ",
         "category": "Существительные"
       },
@@ -10393,7 +10393,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v23",
         "word": "Woman",
-        "transcription": "[ву́ман]",
+        "transcription": "[уу́мэн]",
         "translation": "Женщина",
         "category": "Существительные"
       },
@@ -10478,7 +10478,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v26",
         "word": "World",
-        "transcription": "[вэлд]",
+        "transcription": "[уо́рлд]",
         "translation": "Мир",
         "category": "Существительные"
       },
@@ -10499,14 +10499,14 @@ export const lessons: Lesson[] = [
       {
         "id": "v29",
         "word": "Family",
-        "transcription": "[фэ́мали]",
+        "transcription": "[фэ́мили]",
         "translation": "Семья",
         "category": "Существительные"
       },
       {
         "id": "v30",
         "word": "Student",
-        "transcription": "[сту́дант]",
+        "transcription": "[стью́дэнт]",
         "translation": "Студент",
         "category": "Существительные"
       }
@@ -10591,7 +10591,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v33",
         "word": "Problem",
-        "transcription": "[пра́блам]",
+        "transcription": "[про́блем]",
         "translation": "Проблема",
         "category": "Основы"
       },
@@ -10690,7 +10690,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v38",
         "word": "Week",
-        "transcription": "[вик]",
+        "transcription": "[уи́к]",
         "translation": "Неделя",
         "category": "Основы"
       },
@@ -10704,7 +10704,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v40",
         "word": "System",
-        "transcription": "[си́стам]",
+        "transcription": "[си́стэм]",
         "translation": "Система",
         "category": "Основы"
       }
@@ -10775,35 +10775,35 @@ export const lessons: Lesson[] = [
       {
         "id": "v41",
         "word": "Program",
-        "transcription": "[про́угрэм]",
+        "transcription": "[про́грэм]",
         "translation": "Программа",
         "category": "Основы"
       },
       {
         "id": "v42",
         "word": "Question",
-        "transcription": "[квэ́счан]",
+        "transcription": "[квэ́счэн]",
         "translation": "Вопрос",
         "category": "Основы"
       },
       {
         "id": "v43",
         "word": "Work",
-        "transcription": "[вэк]",
+        "transcription": "[уо́рк]",
         "translation": "Работа",
         "category": "Основы"
       },
       {
         "id": "v44",
         "word": "Government",
-        "transcription": "[га́вэнмант]",
+        "transcription": "[га́вернмэнт]",
         "translation": "Правительство",
         "category": "Основы"
       },
       {
         "id": "v45",
         "word": "Number",
-        "transcription": "[на́мбэ]",
+        "transcription": "[на́мбэр]",
         "translation": "Число",
         "category": "Основы"
       }
@@ -10895,7 +10895,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v49",
         "word": "Water",
-        "transcription": "[во́тэ]",
+        "transcription": "[уо́тэр]",
         "translation": "Вода",
         "category": "Основы"
       },
@@ -10973,7 +10973,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v51",
         "word": "Mother",
-        "transcription": "[ма́зэ]",
+        "transcription": "[ма́зэр]",
         "translation": "Мать",
         "category": "Основы"
       },
@@ -11185,7 +11185,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v63",
         "word": "Word",
-        "transcription": "[вэд]",
+        "transcription": "[уо́рд]",
         "translation": "Слово",
         "category": "Основы"
       },
@@ -11284,7 +11284,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v68",
         "word": "Head",
-        "transcription": "[хэд]",
+        "transcription": "[хёд]",
         "translation": "Голова",
         "category": "Основы"
       },
@@ -11376,7 +11376,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v72",
         "word": "Father",
-        "transcription": "[фа́зэ]",
+        "transcription": "[фа́зэр]",
         "translation": "Отец",
         "category": "Основы"
       },
@@ -11482,7 +11482,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v78",
         "word": "Member",
-        "transcription": "[мэ́мбэ]",
+        "transcription": "[мэ́мбэр]",
         "translation": "Член (группы)",
         "category": "Основы"
       },
@@ -11574,7 +11574,7 @@ export const lessons: Lesson[] = [
       {
         "id": "v82",
         "word": "Community",
-        "transcription": "[камю́нати]",
+        "transcription": "[комью́нити]",
         "translation": "Сообщество",
         "category": "Основы"
       },
