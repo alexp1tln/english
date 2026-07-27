@@ -125,7 +125,7 @@ function MainMenu({ setView, completedCount, totalCount }: { key?: string, setVi
       initial={{ opacity: 0, scale: 0.95 }} 
       animate={{ opacity: 1, scale: 1 }} 
       exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-      className="flex flex-col items-center h-full justify-center gap-6"
+      className="flex flex-col items-center gap-6 pb-12 pt-8"
     >
       <div className="text-center space-y-4 mb-4 flex flex-col items-center">
         <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Dark Bunny" className="w-32 h-32 object-contain mb-2 drop-shadow-[0_0_15px_rgba(96,0,24,0.5)]" referrerPolicy="no-referrer" />
