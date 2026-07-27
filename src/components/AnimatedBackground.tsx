@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-black pointer-events-none">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#030303] pointer-events-none">
       {/* Subtle grid pattern */}
       <div 
         className="absolute inset-0 z-0 opacity-[0.04]" 
@@ -18,7 +18,7 @@ export default function AnimatedBackground() {
         }}
       />
       
-      {/* Moving blurred orbs */}
+      {/* Moving orbs without CSS blur for Safari compatibility */}
       <motion.div
         animate={{
           x: [0, 50, -30, 0],
@@ -29,8 +29,8 @@ export default function AnimatedBackground() {
           repeat: Infinity,
           ease: "linear"
         }}
-        className="absolute top-[-10%] left-[-10%] w-[60vh] h-[60vh] rounded-full bg-burgundy/10 blur-[120px] z-0 pointer-events-none"
-        style={{ transform: 'translateZ(0)' }}
+        className="absolute top-[-10%] left-[-10%] w-[80vh] h-[80vh] rounded-full z-0 pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(144,0,36,0.15) 0%, rgba(144,0,36,0) 60%)' }}
       />
       <motion.div
         animate={{
@@ -42,8 +42,8 @@ export default function AnimatedBackground() {
           repeat: Infinity,
           ease: "linear"
         }}
-        className="absolute bottom-[-10%] right-[-10%] w-[70vh] h-[70vh] rounded-full bg-indigo-900/10 blur-[140px] z-0 pointer-events-none"
-        style={{ transform: 'translateZ(0)' }}
+        className="absolute bottom-[-10%] right-[-10%] w-[90vh] h-[90vh] rounded-full z-0 pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(49,46,129,0.15) 0%, rgba(49,46,129,0) 60%)' }}
       />
       <motion.div
         animate={{
@@ -55,12 +55,12 @@ export default function AnimatedBackground() {
           repeat: Infinity,
           ease: "linear"
         }}
-        className="absolute top-[20%] right-[10%] w-[50vh] h-[50vh] rounded-full bg-purple-900/5 blur-[100px] z-0 pointer-events-none"
-        style={{ transform: 'translateZ(0)' }}
+        className="absolute top-[20%] right-[10%] w-[70vh] h-[70vh] rounded-full z-0 pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(88,28,135,0.1) 0%, rgba(88,28,135,0) 60%)' }}
       />
       
       {/* Vignette overlay */}
-      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_black_100%)] opacity-100" />
+      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_#030303_100%)] opacity-80" />
     </div>
   );
 }
