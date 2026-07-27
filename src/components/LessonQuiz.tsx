@@ -11,7 +11,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   
   // For drag_and_drop
-  const [droppedWords, setDroppedWords] = useState<string[]>([]);
+  const [droppedIndices, setDroppedIndices] = useState<number[]>([]);
   
   // For fill_in_blank
   const [textInput, setTextInput] = useState('');
@@ -26,7 +26,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   // Clean up state on question change
   useEffect(() => {
     setSelectedAnswer(null);
-    setDroppedWords([]);
+    setDroppedIndices([]);
     setTextInput('');
     setIsAnswered(false);
     setWrongAnswerIdx(null);
@@ -72,18 +72,21 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   };
   
   // Drag and Drop (Sentence building)
-  const handleWordClick = (word: string) => {
+  const handleWordClick = (wordOrIndex: number | any) => {
+    const index = typeof wordOrIndex === 'number' ? wordOrIndex : -1;
+    if (index === -1) return;
     if (isAnswered) return;
-    if (droppedWords.includes(word)) {
-      setDroppedWords(droppedWords.filter(w => w !== word));
+    if (droppedIndices.includes(index)) {
+      setDroppedIndices(droppedIndices.filter(i => i !== index));
     } else {
-      setDroppedWords([...droppedWords, word]);
+      setDroppedIndices([...droppedIndices, index]);
     }
   };
   
   const checkDragAndDrop = () => {
     if (isAnswered) return;
-    if (q.correctSentence && droppedWords.join(' ') === q.correctSentence.join(' ')) {
+    const constructedSentence = droppedIndices.map(i => q.options?.[i]).join(' ');
+    if (q.correctSentence && constructedSentence === q.correctSentence.join(' ')) {
       handleNext();
     } else {
       setHint('Неправильный порядок слов. Попробуйте еще раз.');
@@ -159,32 +162,35 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
             {q.type === 'drag_and_drop' && (
               <div className="flex flex-col gap-8 w-full items-center">
                 <div className="min-h-[80px] w-full p-4 rounded-2xl border border-dashed border-white/20 bg-white/5 flex flex-wrap gap-2 items-center justify-center">
-                  {droppedWords.map((word, idx) => (
+                  {droppedIndices.map((optIndex, position) => (
                     <motion.button
                       layout
-                      key={`dropped-${idx}-${word}`}
-                      onClick={() => handleWordClick(word)}
+                      key={`dropped-${position}-${optIndex}`}
+                      onClick={() => handleWordClick(optIndex)}
                       className="px-4 py-2 bg-white/20 border border-white/30 rounded-xl text-white shadow-lg active:scale-95"
                     >
-                      {word}
+                      {q.options?.[optIndex]}
                     </motion.button>
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-3 justify-center">
-                  {q.options?.filter(w => !droppedWords.includes(w)).map((word, idx) => (
-                    <motion.button
-                      layout
-                      key={`opt-${idx}-${word}`}
-                      onClick={() => handleWordClick(word)}
-                      className="px-4 py-2 bg-gothic-card border border-gothic-border rounded-xl text-white/80 active:scale-95 shadow-md"
-                    >
-                      {word}
-                    </motion.button>
-                  ))}
+                  {q.options?.map((word, idx) => {
+                    if (droppedIndices.includes(idx)) return null;
+                    return (
+                      <motion.button
+                        layout
+                        key={`opt-${idx}-${word}`}
+                        onClick={() => handleWordClick(idx)}
+                        className="px-4 py-2 bg-gothic-card border border-gothic-border rounded-xl text-white/80 active:scale-95 shadow-md"
+                      >
+                        {word}
+                      </motion.button>
+                    );
+                  })}
                 </div>
                 <button
                   onClick={checkDragAndDrop}
-                  disabled={droppedWords.length !== q.correctSentence?.length || isAnswered}
+                  disabled={droppedIndices.length !== q.correctSentence?.length || isAnswered}
                   className="mt-4 px-8 py-4 bg-white/10 text-white font-semibold rounded-full border border-white/20 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 transition-all shadow-[0_0_15px_rgba(255,255,255,0.05)]"
                 >
                   Проверить
