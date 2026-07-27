@@ -1,3 +1,4 @@
+import { safeStorage } from "../utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Check, X } from 'lucide-react';
@@ -29,7 +30,7 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
     // Read mistakes
     let mistakes: string[] = [];
     try {
-      mistakes = JSON.parse(localStorage.getItem('mistakes') || '[]');
+      mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
     } catch(e) {}
 
     // Find mistakes belonging to this module

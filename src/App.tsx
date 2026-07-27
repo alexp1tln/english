@@ -1,3 +1,4 @@
+import { safeStorage } from "./utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, Check, X, Search, BookText, ChevronDown, Compass, Zap } from 'lucide-react';
@@ -19,7 +20,7 @@ export default function App() {
   const [notification, setNotification] = useState<{title: string, message: string} | null>(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem('darkBunnyCompleted');
+    const saved = safeStorage.getItem('darkBunnyCompleted');
     if (saved) {
       setCompletedLessons(JSON.parse(saved));
     }
@@ -29,7 +30,7 @@ export default function App() {
     if (!completedLessons.includes(id)) {
       const newCompleted = [...completedLessons, id];
       setCompletedLessons(newCompleted);
-      localStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
+      safeStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
       showNotification('Ты получил темную корону 👑', 'Урок успешно пройден!');
     }
   };
@@ -252,10 +253,10 @@ function LessonQuiz({ questions, theory, onFinish, onBack }: { key?: string, que
       
       // Save mistake
       try {
-         const mistakes = JSON.parse(localStorage.getItem('mistakes') || '[]');
+         const mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
          if (!mistakes.includes(q.id)) {
             mistakes.push(q.id);
-            localStorage.setItem('mistakes', JSON.stringify(mistakes));
+            safeStorage.setItem('mistakes', JSON.stringify(mistakes));
          }
       } catch(e) {}
 

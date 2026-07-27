@@ -36,7 +36,10 @@ export default defineConfig(() => {
         },
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,ts,tsx}'],
-          maximumFileSizeToCacheInBytes: 10000000 // 10 MB, since chunks can be big
+          maximumFileSizeToCacheInBytes: 10000000,
+          clientsClaim: true,
+          skipWaiting: true,
+          cleanupOutdatedCaches: true
         }
       })
     ],
@@ -49,7 +52,6 @@ export default defineConfig(() => {
       target: 'es2015',
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },

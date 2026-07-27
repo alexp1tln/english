@@ -17,6 +17,31 @@
         color: #ffffff;
       }
     </style>
+    <script>
+      window.addEventListener('error', function(e) {
+        var div = document.createElement('div');
+        div.style.cssText = 'color:red; background:white; padding:20px; position:fixed; top:0; left:0; z-index:9999; font-size:12px; width:100%;';
+        div.innerHTML = 'Inline Error: ' + e.message + '<br>Line: ' + e.lineno + '<br>File: ' + e.filename;
+        
+        var btn = document.createElement('button');
+        btn.innerText = 'Clear Cache & Reload';
+        btn.style.cssText = 'margin-top:10px; padding:10px; background:black; color:white;';
+        btn.onclick = function() {
+          localStorage.clear();
+          sessionStorage.clear();
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(regs) {
+              for(var i=0; i<regs.length; i++) regs[i].unregister();
+            });
+          }
+          window.location.reload();
+        };
+        div.appendChild(btn);
+        
+        if(document.body) document.body.appendChild(div);
+        else window.onload = function() { document.body.appendChild(div); };
+      });
+    </script>
   </head>
   <body class="bg-black text-white">
     <div id="root"></div>
