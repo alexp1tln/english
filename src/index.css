@@ -1,61 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gothic-bg: #000000;
-  --color-gothic-card: rgba(5, 5, 5, 0.6);
-  --color-gothic-card-hover: rgba(12, 12, 12, 0.8);
-  --color-gothic-border: rgba(255, 255, 255, 0.03);
-  --color-gothic-border-hover: rgba(255, 255, 255, 0.07);
-  --color-burgundy: #380008;
-  --color-burgundy-light: #5e000e;
-  --color-silver: #999999;
-  --color-gold: #b3b3b3;
-  
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-@utility perspective-1000 {
-  perspective: 1000px;
-}
-
-@utility backface-hidden {
-  backface-visibility: hidden;
-}
-
-body {
-  background-color: #000000;
-  color: var(--color-silver);
-  font-family: var(--font-sans);
-  
-  /* Very Dark Mesh Gradient Background */
-  background-image: 
-    radial-gradient(circle at 15% 50%, rgba(255, 42, 95, 0.04), transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(255, 255, 255, 0.02), transparent 50%),
-    radial-gradient(circle at 50% 90%, rgba(56, 0, 8, 0.08), transparent 60%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
-  background-attachment: fixed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* iOS 26 / visionOS Glassmorphism */
-.bg-gothic-card, .bg-white\/5 {
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.02);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans);
-  letter-spacing: -0.02em;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+  --color-gothic-bg: #0a0a0c;
+  --color-gothic-card: #121216;
+  --color-gothic-card-hover: #1a1a20;
+  --color-gothic-border: #2a2a35;
+  --color-gothic-border-hover: #3a3a45;
+  --color-burgundy: #900024;
+  --color-silver: #c0c0c0;
 }
 
 @utility h-viewport {
   height: 100vh;
   height: 100dvh;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    background-color: #0a0a0c;
+  }
 }
