@@ -7,6 +7,7 @@ import { Lesson, ViewState, Word, QuizQuestion } from './types';
 import CityMapProgress from './components/CityMapProgress';
 import LifeSurvival from './components/LifeSurvival';
 import ModuleTest from "./components/ModuleTest";
+import LessonQuiz from './components/LessonQuiz';
 import ModuleTestResult from "./components/ModuleTestResult";
 import IrregularVerbs from "./components/IrregularVerbs";
 
@@ -20,7 +21,7 @@ export default function App() {
   const [notification, setNotification] = useState<{title: string, message: string} | null>(null);
 
   useEffect(() => {
-    const saved = safeStorage.getItem('darkBunnyCompleted');
+    const saved = safeStorage.getItem('rabbitsEnglishCompleted') || safeStorage.getItem('darkBunnyCompleted');
     if (saved) {
       setCompletedLessons(JSON.parse(saved));
     }
@@ -30,7 +31,7 @@ export default function App() {
     if (!completedLessons.includes(id)) {
       const newCompleted = [...completedLessons, id];
       setCompletedLessons(newCompleted);
-      safeStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
+      safeStorage.setItem('rabbitsEnglishCompleted', JSON.stringify(newCompleted));
     }
   };
 
@@ -102,7 +103,7 @@ export default function App() {
                 if (!completedLessons.includes(id)) {
                   const newCompleted = [...completedLessons, id];
                   setCompletedLessons(newCompleted);
-                  safeStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
+                  safeStorage.setItem('rabbitsEnglishCompleted', JSON.stringify(newCompleted));
                   
                   const praiseMessages = [
                     { title: "Потрясающая работа!", message: "Ты покорил этот модуль." },
@@ -140,7 +141,7 @@ function MainMenu({ setView, completedCount, totalCount }: { key?: string, setVi
       className="flex flex-col items-center gap-6 pb-12 pt-8"
     >
       <div className="text-center space-y-4 mb-4 flex flex-col items-center">
-        <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Dark Bunny" className="w-32 h-32 object-contain mb-2 drop-shadow-[0_0_15px_rgba(96,0,24,0.5)]" referrerPolicy="no-referrer" />
+        <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Rabbit's English" className="w-32 h-32 object-contain mb-2 drop-shadow-[0_0_15px_rgba(96,0,24,0.5)]" referrerPolicy="no-referrer" />
         <h1 className="text-4xl font-bold tracking-tight text-white">RABBIT'S ENGLISH</h1>
         <p className="text-white/70/70 text-xs tracking-[0.3em] uppercase">English Academy</p>
       </div>
@@ -208,7 +209,7 @@ function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson
       <div className="flex-1 overflow-y-auto no-scrollbar pb-24 space-y-6">
         <div className="flex justify-center mb-6">
           <div className="w-24 h-24 rounded-full bg-gothic-card border border-gothic-border flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.03)] overflow-hidden">
-            <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Dark Bunny" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Rabbit's English" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
           </div>
         </div>
         
@@ -232,142 +233,7 @@ function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson
   );
 }
 
-function LessonQuiz({ questions, theory, onFinish, onBack }: { key?: string, questions: QuizQuestion[], theory?: string[], onFinish: () => void, onBack: () => void }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
-  const [isAnswered, setIsAnswered] = useState(false);
-  const [wrongAnswerIdx, setWrongAnswerIdx] = useState<number | null>(null);
-  const [hint, setHint] = useState<string | null>(null);
-  const [showTheory, setShowTheory] = useState(false);
 
-  const q = questions[currentIndex];
-
-  const handleSelect = (idx: number) => {
-    if (isAnswered || wrongAnswerIdx !== null) return;
-    
-    if (idx === q.correctAnswerIndex) {
-      setSelectedAnswer(idx);
-      setIsAnswered(true);
-      setTimeout(() => {
-        if (currentIndex < questions.length - 1) {
-          setCurrentIndex(prev => prev + 1);
-          setSelectedAnswer(null);
-          setIsAnswered(false);
-          setHint(null);
-        } else {
-          onFinish();
-        }
-      }, 1500);
-    } else {
-      setWrongAnswerIdx(idx);
-      setHint(`Вариант "${q.options[idx]}" не подходит. Подумайте над правилом и попробуйте еще раз.`);
-      
-      // Save mistake
-      try {
-         const mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
-         if (!mistakes.includes(q.id)) {
-            mistakes.push(q.id);
-            safeStorage.setItem('mistakes', JSON.stringify(mistakes));
-         }
-      } catch(e) {}
-
-      setTimeout(() => {
-        setWrongAnswerIdx(null);
-        setHint(null);
-      }, 3000);
-    }
-  };
-
-  return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full">
-      <div className="flex items-center gap-4 mb-8 shrink-0">
-        <button onClick={onBack} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 hover:bg-white/5 hover:text-white transition-colors">
-          <ArrowLeft size={20} />
-        </button>
-        <div className="flex-1 bg-gothic-border h-[3px] rounded-full overflow-hidden">
-          <div className="h-full bg-gradient-to-r from-burgundy to-burgundy-light transition-all duration-300 rounded-full" style={{ width: `${((currentIndex) / questions.length) * 100}%` }} />
-        </div>
-      </div>
-
-      <div className="flex-1 flex flex-col justify-center pb-24">
-        <AnimatePresence mode="wait">
-          <motion.div 
-            key={currentIndex}
-            initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full"
-          >
-            <div className="mb-10 text-center px-4">
-              <h2 className="text-3xl text-white font-sans font-semibold tracking-tight leading-snug ">{q.question}</h2>
-            </div>
-
-            {hint && (
-              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-6 p-4 rounded-2xl bg-burgundy/20 border border-burgundy/40 text-white/90 text-sm text-center shadow-[0_0_20px_rgba(144,0,36,0.2)]">
-                {hint}
-              </motion.div>
-            )}
-            <div className="flex flex-col gap-4">
-              {q.options.map((opt, idx) => {
-                const isSelected = selectedAnswer === idx;
-                const isCorrect = idx === q.correctAnswerIndex;
-                let btnClass = "w-full p-5 rounded-[2.5rem] border text-left text-lg transition-all duration-300 relative overflow-hidden ";
-                if (isSelected) {
-                  btnClass += "bg-white/10 border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)]";
-                } else if (wrongAnswerIdx === idx) {
-                  btnClass += "bg-burgundy/30 border-burgundy/50 text-white shadow-[0_0_20px_rgba(144,0,36,0.3)]";
-                } else {
-                  btnClass += "bg-gothic-card hover:bg-gothic-card-hover border-gothic-border text-white/70";
-                  if (isAnswered || wrongAnswerIdx !== null) btnClass += " opacity-50";
-                  else btnClass += " hover:text-white hover:border-gothic-border-hover active:scale-95";
-                }
-
-                return (
-                  <button key={idx} onClick={() => handleSelect(idx)} className={btnClass} disabled={isAnswered}>
-                    <span className="font-light">{opt}</span>
-                    
-                    
-                  </button>
-                );
-              })}
-            </div>
-          </motion.div>
-        </AnimatePresence>
-      </div>
-
-      {theory && theory.length > 0 && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30">
-          <button onClick={() => setShowTheory(true)} className="p-4 rounded-full bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-white/10 active:scale-95 transition-all shadow-lg backdrop-blur-md">
-             <BookText size={24} />
-          </button>
-        </div>
-      )}
-
-      <AnimatePresence>
-        {showTheory && theory && (
-          <motion.div
-            initial={{ opacity: 0, y: '100%' }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: '100%' }}
-            className="absolute inset-0 z-50 bg-gothic-bg flex flex-col"
-          >
-            <div className="flex items-center gap-4 p-6 shrink-0 bg-gothic-card/80 backdrop-blur-xl border-b border-gothic-border">
-              <button onClick={() => setShowTheory(false)} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 transition-colors hover:bg-white/5 hover:text-white">
-                <ChevronDown size={20} />
-              </button>
-              <h2 className="text-2xl font-sans font-semibold tracking-tight text-white">Теория</h2>
-            </div>
-            <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-6">
-              {theory.map((paragraph, idx) => (
-                <p key={idx} className="text-white/80 leading-relaxed font-light text-lg">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
-  );
-}
 
 function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) => void }) {
   const [mode, setMode] = useState<'cards' | 'quiz'>('cards');

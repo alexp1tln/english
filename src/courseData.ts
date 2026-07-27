@@ -1,11653 +1,2399 @@
 import { Lesson, Word } from './types';
 
-// Экспорт словаря
 export const vocabulary: Word[] = [
   {
-    "id": "v1",
-    "word": "Always",
-    "transcription": "[о́лвэйз]",
-    "translation": "Всегда",
-    "category": "Наречия"
+    "id": "v_1_Tree",
+    "word": "Tree",
+    "transcription": "[triː]",
+    "translation": "Дерево",
+    "category": "Basic"
   },
   {
-    "id": "v2",
-    "word": "Never",
-    "transcription": "[нэ́вэ]",
-    "translation": "Никогда",
-    "category": "Наречия"
+    "id": "v_1_Love",
+    "word": "Love",
+    "transcription": "[lʌv]",
+    "translation": "Любовь",
+    "category": "Basic"
   },
   {
-    "id": "v3",
-    "word": "Sometimes",
-    "transcription": "[самта́ймз]",
-    "translation": "Иногда",
-    "category": "Наречия"
-  },
-  {
-    "id": "v4",
-    "word": "Often",
-    "transcription": "[о́фн]",
-    "translation": "Часто",
-    "category": "Наречия"
-  },
-  {
-    "id": "v5",
-    "word": "Usually",
-    "transcription": "[ю́жуали]",
-    "translation": "Обычно",
-    "category": "Наречия"
-  },
-  {
-    "id": "v6",
-    "word": "Seldom",
-    "transcription": "[сэ́лдом]",
-    "translation": "Редко",
-    "category": "Наречия"
-  },
-  {
-    "id": "v7",
-    "word": "Every day",
-    "transcription": "[э́ври дэй]",
-    "translation": "Каждый день",
-    "category": "Наречия"
-  },
-  {
-    "id": "v8",
-    "word": "Now",
-    "transcription": "[нау]",
-    "translation": "Сейчас",
-    "category": "Наречия"
-  },
-  {
-    "id": "v9",
-    "word": "Today",
-    "transcription": "[тадэ́й]",
-    "translation": "Сегодня",
-    "category": "Наречия"
-  },
-  {
-    "id": "v10",
-    "word": "Tomorrow",
-    "transcription": "[тумо́роу]",
-    "translation": "Завтра",
-    "category": "Наречия"
-  },
-  {
-    "id": "v11",
-    "word": "Yesterday",
-    "transcription": "[е́стэдэй]",
-    "translation": "Вчера",
-    "category": "Наречия"
-  },
-  {
-    "id": "v12",
-    "word": "Soon",
-    "transcription": "[сун]",
-    "translation": "Скоро",
-    "category": "Наречия"
-  },
-  {
-    "id": "v13",
-    "word": "Already",
-    "transcription": "[олрэ́ди]",
-    "translation": "Уже",
-    "category": "Наречия"
-  },
-  {
-    "id": "v14",
-    "word": "Yet",
-    "transcription": "[ет]",
-    "translation": "Еще (не)",
-    "category": "Наречия"
-  },
-  {
-    "id": "v15",
-    "word": "Just",
-    "transcription": "[джаст]",
-    "translation": "Только что",
-    "category": "Наречия"
-  },
-  {
-    "id": "v16",
-    "word": "Time",
-    "transcription": "[тайм]",
-    "translation": "Время",
-    "category": "Существительные"
-  },
-  {
-    "id": "v17",
-    "word": "Year",
-    "transcription": "[йе́а]",
-    "translation": "Год",
-    "category": "Существительные"
-  },
-  {
-    "id": "v18",
-    "word": "People",
-    "transcription": "[пипл]",
-    "translation": "Люди",
-    "category": "Существительные"
-  },
-  {
-    "id": "v19",
-    "word": "Way",
-    "transcription": "[уэ́й]",
-    "translation": "Путь / Способ",
-    "category": "Существительные"
-  },
-  {
-    "id": "v20",
-    "word": "Day",
-    "transcription": "[дэй]",
-    "translation": "День",
-    "category": "Существительные"
-  },
-  {
-    "id": "v21",
-    "word": "Man",
-    "transcription": "[мэн]",
-    "translation": "Мужчина / Человек",
-    "category": "Существительные"
-  },
-  {
-    "id": "v22",
-    "word": "Thing",
-    "transcription": "[синг]",
-    "translation": "Вещь",
-    "category": "Существительные"
-  },
-  {
-    "id": "v23",
-    "word": "Woman",
-    "transcription": "[уу́мэн]",
-    "translation": "Женщина",
-    "category": "Существительные"
-  },
-  {
-    "id": "v24",
-    "word": "Life",
-    "transcription": "[лайф]",
-    "translation": "Жизнь",
-    "category": "Существительные"
-  },
-  {
-    "id": "v25",
-    "word": "Child",
-    "transcription": "[чайлд]",
-    "translation": "Ребенок",
-    "category": "Существительные"
-  },
-  {
-    "id": "v26",
-    "word": "World",
-    "transcription": "[уо́рлд]",
-    "translation": "Мир",
-    "category": "Существительные"
-  },
-  {
-    "id": "v27",
-    "word": "School",
-    "transcription": "[скул]",
-    "translation": "Школа",
-    "category": "Существительные"
-  },
-  {
-    "id": "v28",
-    "word": "State",
-    "transcription": "[стэйт]",
-    "translation": "Состояние / Штат",
-    "category": "Существительные"
-  },
-  {
-    "id": "v29",
-    "word": "Family",
-    "transcription": "[фэ́мили]",
-    "translation": "Семья",
-    "category": "Существительные"
-  },
-  {
-    "id": "v30",
-    "word": "Student",
-    "transcription": "[стью́дэнт]",
-    "translation": "Студент",
-    "category": "Существительные"
-  },
-  {
-    "id": "v31",
-    "word": "Group",
-    "transcription": "[груп]",
-    "translation": "Группа",
-    "category": "Основы"
-  },
-  {
-    "id": "v32",
-    "word": "Country",
-    "transcription": "[ка́нтри]",
-    "translation": "Страна",
-    "category": "Основы"
-  },
-  {
-    "id": "v33",
-    "word": "Problem",
-    "transcription": "[про́блем]",
-    "translation": "Проблема",
-    "category": "Основы"
-  },
-  {
-    "id": "v34",
-    "word": "Hand",
-    "transcription": "[хэнд]",
-    "translation": "Рука",
-    "category": "Основы"
-  },
-  {
-    "id": "v35",
-    "word": "Part",
-    "transcription": "[парт]",
-    "translation": "Часть",
-    "category": "Основы"
-  },
-  {
-    "id": "v36",
-    "word": "Place",
-    "transcription": "[плэйс]",
-    "translation": "Место",
-    "category": "Основы"
-  },
-  {
-    "id": "v37",
-    "word": "Case",
-    "transcription": "[кэйс]",
-    "translation": "Случай",
-    "category": "Основы"
-  },
-  {
-    "id": "v38",
-    "word": "Week",
-    "transcription": "[уи́к]",
-    "translation": "Неделя",
-    "category": "Основы"
-  },
-  {
-    "id": "v39",
-    "word": "Company",
-    "transcription": "[ка́мпани]",
-    "translation": "Компания",
-    "category": "Основы"
-  },
-  {
-    "id": "v40",
-    "word": "System",
-    "transcription": "[си́стэм]",
-    "translation": "Система",
-    "category": "Основы"
-  },
-  {
-    "id": "v41",
-    "word": "Program",
-    "transcription": "[про́грэм]",
-    "translation": "Программа",
-    "category": "Основы"
-  },
-  {
-    "id": "v42",
-    "word": "Question",
-    "transcription": "[квэ́счэн]",
-    "translation": "Вопрос",
-    "category": "Основы"
-  },
-  {
-    "id": "v43",
-    "word": "Work",
-    "transcription": "[уо́рк]",
-    "translation": "Работа",
-    "category": "Основы"
-  },
-  {
-    "id": "v44",
-    "word": "Government",
-    "transcription": "[га́вернмэнт]",
-    "translation": "Правительство",
-    "category": "Основы"
-  },
-  {
-    "id": "v45",
-    "word": "Number",
-    "transcription": "[на́мбэр]",
-    "translation": "Число",
-    "category": "Основы"
-  },
-  {
-    "id": "v46",
-    "word": "Night",
-    "transcription": "[найт]",
-    "translation": "Ночь",
-    "category": "Основы"
-  },
-  {
-    "id": "v47",
-    "word": "Point",
-    "transcription": "[пойнт]",
-    "translation": "Точка / Суть",
-    "category": "Основы"
-  },
-  {
-    "id": "v48",
-    "word": "Home",
-    "transcription": "[хоум]",
-    "translation": "Дом",
-    "category": "Основы"
-  },
-  {
-    "id": "v49",
-    "word": "Water",
-    "transcription": "[уо́тэр]",
-    "translation": "Вода",
-    "category": "Основы"
-  },
-  {
-    "id": "v50",
-    "word": "Room",
-    "transcription": "[рум]",
-    "translation": "Комната",
-    "category": "Основы"
-  },
-  {
-    "id": "v51",
-    "word": "Mother",
-    "transcription": "[ма́зэр]",
-    "translation": "Мать",
-    "category": "Основы"
-  },
-  {
-    "id": "v52",
-    "word": "Area",
-    "transcription": "[э́риа]",
-    "translation": "Область",
-    "category": "Основы"
-  },
-  {
-    "id": "v53",
-    "word": "Money",
-    "transcription": "[ма́ни]",
-    "translation": "Деньги",
-    "category": "Основы"
-  },
-  {
-    "id": "v54",
-    "word": "Story",
-    "transcription": "[сто́ри]",
-    "translation": "История",
-    "category": "Основы"
-  },
-  {
-    "id": "v55",
-    "word": "Fact",
-    "transcription": "[фэкт]",
-    "translation": "Факт",
-    "category": "Основы"
-  },
-  {
-    "id": "v56",
-    "word": "Month",
-    "transcription": "[манс]",
-    "translation": "Месяц",
-    "category": "Основы"
-  },
-  {
-    "id": "v57",
-    "word": "Lot",
-    "transcription": "[лат]",
-    "translation": "Много",
-    "category": "Основы"
-  },
-  {
-    "id": "v58",
-    "word": "Right",
-    "transcription": "[райт]",
-    "translation": "Право / Правильный",
-    "category": "Основы"
-  },
-  {
-    "id": "v59",
-    "word": "Study",
-    "transcription": "[ста́ди]",
-    "translation": "Изучать",
-    "category": "Основы"
-  },
-  {
-    "id": "v60",
-    "word": "Book",
-    "transcription": "[бук]",
-    "translation": "Книга",
-    "category": "Основы"
-  },
-  {
-    "id": "v61",
+    "id": "v_2_Eye",
     "word": "Eye",
-    "transcription": "[ай]",
+    "transcription": "[aɪ]",
     "translation": "Глаз",
-    "category": "Основы"
+    "category": "Basic"
   },
   {
-    "id": "v62",
-    "word": "Job",
-    "transcription": "[джаб]",
-    "translation": "Работа (профессия)",
-    "category": "Основы"
+    "id": "v_2_Knowledge",
+    "word": "Knowledge",
+    "transcription": "[ˈnɒlɪʤ]",
+    "translation": "Знание",
+    "category": "Basic"
   },
   {
-    "id": "v63",
-    "word": "Word",
-    "transcription": "[уо́рд]",
-    "translation": "Слово",
-    "category": "Основы"
+    "id": "v_3_Case",
+    "word": "Case",
+    "transcription": "[keɪs]",
+    "translation": "Случай",
+    "category": "Basic"
   },
   {
-    "id": "v64",
-    "word": "Business",
-    "transcription": "[би́знас]",
-    "translation": "Бизнес",
-    "category": "Основы"
+    "id": "v_3_Hand",
+    "word": "Hand",
+    "transcription": "[hænd]",
+    "translation": "Рука",
+    "category": "Basic"
   },
   {
-    "id": "v65",
-    "word": "Issue",
-    "transcription": "[и́шу]",
-    "translation": "Вопрос (проблема)",
-    "category": "Основы"
+    "id": "v_4_Week",
+    "word": "Week",
+    "transcription": "[wiːk]",
+    "translation": "Неделя",
+    "category": "Basic"
   },
   {
-    "id": "v66",
-    "word": "Side",
-    "transcription": "[сайд]",
-    "translation": "Сторона",
-    "category": "Основы"
+    "id": "v_4_Year",
+    "word": "Year",
+    "transcription": "[jɪə]",
+    "translation": "Год",
+    "category": "Basic"
   },
   {
-    "id": "v67",
-    "word": "Kind",
-    "transcription": "[кайнд]",
-    "translation": "Вид / Добрый",
-    "category": "Основы"
+    "id": "v_5_Day",
+    "word": "Day",
+    "transcription": "[deɪ]",
+    "translation": "День",
+    "category": "Basic"
   },
   {
-    "id": "v68",
-    "word": "Head",
-    "transcription": "[хёд]",
-    "translation": "Голова",
-    "category": "Основы"
+    "id": "v_6_Animal",
+    "word": "Animal",
+    "transcription": "[ˈænɪməl]",
+    "translation": "Животное",
+    "category": "Basic"
   },
   {
-    "id": "v69",
-    "word": "House",
-    "transcription": "[хаус]",
-    "translation": "Дом (здание)",
-    "category": "Основы"
+    "id": "v_7_Place",
+    "word": "Place",
+    "transcription": "[pleɪs]",
+    "translation": "Место",
+    "category": "Basic"
   },
   {
-    "id": "v70",
-    "word": "Service",
-    "transcription": "[сэ́вас]",
-    "translation": "Служба",
-    "category": "Основы"
-  },
-  {
-    "id": "v71",
-    "word": "Friend",
-    "transcription": "[фрэнд]",
-    "translation": "Друг",
-    "category": "Основы"
-  },
-  {
-    "id": "v72",
-    "word": "Father",
-    "transcription": "[фа́зэр]",
-    "translation": "Отец",
-    "category": "Основы"
-  },
-  {
-    "id": "v73",
-    "word": "Power",
-    "transcription": "[па́уэ]",
-    "translation": "Сила / Власть",
-    "category": "Основы"
-  },
-  {
-    "id": "v74",
-    "word": "Hour",
-    "transcription": "[а́уэ]",
-    "translation": "Час",
-    "category": "Основы"
-  },
-  {
-    "id": "v75",
-    "word": "Game",
-    "transcription": "[гэйм]",
-    "translation": "Игра",
-    "category": "Основы"
-  },
-  {
-    "id": "v76",
-    "word": "Line",
-    "transcription": "[лайн]",
-    "translation": "Линия",
-    "category": "Основы"
-  },
-  {
-    "id": "v77",
-    "word": "End",
-    "transcription": "[энд]",
-    "translation": "Конец",
-    "category": "Основы"
-  },
-  {
-    "id": "v78",
-    "word": "Member",
-    "transcription": "[мэ́мбэр]",
-    "translation": "Член (группы)",
-    "category": "Основы"
-  },
-  {
-    "id": "v79",
-    "word": "Law",
-    "transcription": "[ло]",
-    "translation": "Закон",
-    "category": "Основы"
-  },
-  {
-    "id": "v80",
-    "word": "Car",
-    "transcription": "[кар]",
-    "translation": "Машина",
-    "category": "Основы"
-  },
-  {
-    "id": "v81",
-    "word": "City",
-    "transcription": "[си́ти]",
-    "translation": "Город",
-    "category": "Основы"
-  },
-  {
-    "id": "v82",
-    "word": "Community",
-    "transcription": "[комью́нити]",
-    "translation": "Сообщество",
-    "category": "Основы"
-  },
-  {
-    "id": "v83",
+    "id": "v_8_Name",
     "word": "Name",
-    "transcription": "[нэйм]",
+    "transcription": "[neɪm]",
     "translation": "Имя",
-    "category": "Основы"
+    "category": "Basic"
   },
   {
-    "id": "v84",
-    "word": "President",
-    "transcription": "[прэ́зидант]",
-    "translation": "Президент",
-    "category": "Основы"
+    "id": "v_8_Family",
+    "word": "Family",
+    "transcription": "[ˈfæmɪli]",
+    "translation": "Семья",
+    "category": "Basic"
   },
   {
-    "id": "v85",
-    "word": "Team",
-    "transcription": "[тим]",
-    "translation": "Команда",
-    "category": "Основы"
+    "id": "v_9_House",
+    "word": "House",
+    "transcription": "[haʊs]",
+    "translation": "Дом",
+    "category": "Basic"
   },
   {
-    "id": "v86",
-    "word": "Minute",
-    "transcription": "[ми́нат]",
-    "translation": "Минута",
-    "category": "Основы"
+    "id": "v_9_Problem",
+    "word": "Problem",
+    "transcription": "[ˈprɒbləm]",
+    "translation": "Проблема",
+    "category": "Basic"
   },
   {
-    "id": "v87",
-    "word": "Idea",
-    "transcription": "[айди́а]",
-    "translation": "Идея",
-    "category": "Основы"
+    "id": "v_10_Fact",
+    "word": "Fact",
+    "transcription": "[fækt]",
+    "translation": "Факт",
+    "category": "Basic"
   },
   {
-    "id": "v88",
-    "word": "Kid",
-    "transcription": "[кид]",
-    "translation": "Ребенок (разг.)",
-    "category": "Основы"
-  },
-  {
-    "id": "v89",
-    "word": "Body",
-    "transcription": "[ба́ди]",
-    "translation": "Тело",
-    "category": "Основы"
-  },
-  {
-    "id": "v90",
-    "word": "Information",
-    "transcription": "[информэ́йшн]",
-    "translation": "Информация",
-    "category": "Основы"
-  },
-  {
-    "id": "v91",
-    "word": "Back",
-    "transcription": "[бэк]",
-    "translation": "Спина / Назад",
-    "category": "Основы"
-  },
-  {
-    "id": "v92",
-    "word": "Parent",
-    "transcription": "[пэ́рэнт]",
-    "translation": "Родитель",
-    "category": "Основы"
-  },
-  {
-    "id": "v93",
-    "word": "Face",
-    "transcription": "[фэйс]",
-    "translation": "Лицо",
-    "category": "Основы"
-  },
-  {
-    "id": "v94",
-    "word": "Others",
-    "transcription": "[а́зэрз]",
-    "translation": "Другие",
-    "category": "Основы"
-  },
-  {
-    "id": "v95",
-    "word": "Level",
-    "transcription": "[лэ́вэл]",
-    "translation": "Уровень",
-    "category": "Основы"
-  },
-  {
-    "id": "v96",
-    "word": "Office",
-    "transcription": "[о́фис]",
-    "translation": "Офис",
-    "category": "Основы"
-  },
-  {
-    "id": "v97",
-    "word": "Door",
-    "transcription": "[дор]",
-    "translation": "Дверь",
-    "category": "Основы"
-  },
-  {
-    "id": "v98",
-    "word": "Health",
-    "transcription": "[хэлс]",
-    "translation": "Здоровье",
-    "category": "Основы"
-  },
-  {
-    "id": "v99",
-    "word": "Person",
-    "transcription": "[пё́рсн]",
-    "translation": "Человек (личность)",
-    "category": "Основы"
-  },
-  {
-    "id": "v100",
-    "word": "Art",
-    "transcription": "[арт]",
-    "translation": "Искусство",
-    "category": "Основы"
-  },
-  {
-    "id": "v101",
-    "word": "War",
-    "transcription": "[уо́р]",
-    "translation": "Война",
-    "category": "Основы"
-  },
-  {
-    "id": "v102",
-    "word": "History",
-    "transcription": "[хи́стори]",
-    "translation": "История (наука)",
-    "category": "Основы"
-  },
-  {
-    "id": "v103",
-    "word": "Party",
-    "transcription": "[па́рти]",
-    "translation": "Вечеринка / Партия",
-    "category": "Основы"
-  },
-  {
-    "id": "v104",
-    "word": "Result",
-    "transcription": "[риза́лт]",
-    "translation": "Результат",
-    "category": "Основы"
-  },
-  {
-    "id": "v105",
-    "word": "Change",
-    "transcription": "[чэйндж]",
-    "translation": "Изменение",
-    "category": "Основы"
-  },
-  {
-    "id": "v106",
+    "id": "v_10_Morning",
     "word": "Morning",
-    "transcription": "[мо́рнинг]",
+    "transcription": "[ˈmɔːnɪŋ]",
     "translation": "Утро",
-    "category": "Основы"
+    "category": "Basic"
   },
   {
-    "id": "v107",
-    "word": "Reason",
-    "transcription": "[ри́зн]",
-    "translation": "Причина",
-    "category": "Основы"
+    "id": "v_11_Point",
+    "word": "Point",
+    "transcription": "[pɔɪnt]",
+    "translation": "Точка",
+    "category": "Basic"
   },
   {
-    "id": "v108",
-    "word": "Research",
-    "transcription": "[рисё́ч]",
-    "translation": "Исследование",
-    "category": "Основы"
+    "id": "v_11_City",
+    "word": "City",
+    "transcription": "[ˈsɪti]",
+    "translation": "Город",
+    "category": "Basic"
   },
   {
-    "id": "v109",
-    "word": "Girl",
-    "transcription": "[гёл]",
-    "translation": "Девочка",
-    "category": "Основы"
+    "id": "v_12_Father",
+    "word": "Father",
+    "transcription": "[ˈfɑːðə]",
+    "translation": "Отец",
+    "category": "Basic"
   },
   {
-    "id": "v110",
-    "word": "Guy",
-    "transcription": "[гай]",
-    "translation": "Парень",
-    "category": "Основы"
+    "id": "v_12_Mother",
+    "word": "Mother",
+    "transcription": "[ˈmʌðə]",
+    "translation": "Мать",
+    "category": "Basic"
   },
   {
-    "id": "v111",
-    "word": "Food",
-    "transcription": "[фуд]",
-    "translation": "Еда",
-    "category": "Основы"
+    "id": "v_13_Power",
+    "word": "Power",
+    "transcription": "[ˈpaʊə]",
+    "translation": "Сила",
+    "category": "Basic"
   },
   {
-    "id": "v112",
-    "word": "Moment",
-    "transcription": "[мо́умант]",
-    "translation": "Момент",
-    "category": "Основы"
+    "id": "v_13_Money",
+    "word": "Money",
+    "transcription": "[ˈmʌni]",
+    "translation": "Деньги",
+    "category": "Basic"
   },
   {
-    "id": "v113",
-    "word": "Air",
-    "transcription": "[эр]",
-    "translation": "Воздух",
-    "category": "Основы"
+    "id": "v_14_Music",
+    "word": "Music",
+    "transcription": "[ˈmjuːzɪk]",
+    "translation": "Музыка",
+    "category": "Basic"
   },
   {
-    "id": "v114",
-    "word": "Teacher",
-    "transcription": "[ти́чэр]",
-    "translation": "Учитель",
-    "category": "Основы"
+    "id": "v_15_Friend",
+    "word": "Friend",
+    "transcription": "[frɛnd]",
+    "translation": "Друг",
+    "category": "Basic"
   },
   {
-    "id": "v115",
-    "word": "Force",
-    "transcription": "[форс]",
-    "translation": "Сила (физическая)",
-    "category": "Основы"
+    "id": "v_15_Night",
+    "word": "Night",
+    "transcription": "[naɪt]",
+    "translation": "Ночь",
+    "category": "Basic"
   },
   {
-    "id": "v116",
-    "word": "Education",
-    "transcription": "[эдюкэ́йшн]",
-    "translation": "Образование",
-    "category": "Основы"
+    "id": "v_16_Life",
+    "word": "Life",
+    "transcription": "[laɪf]",
+    "translation": "Жизнь",
+    "category": "Basic"
   },
   {
-    "id": "v117",
-    "word": "Good",
-    "transcription": "[гуд]",
-    "translation": "Хороший",
-    "category": "Основы"
-  },
-  {
-    "id": "v118",
-    "word": "New",
-    "transcription": "[нью]",
-    "translation": "Новый",
-    "category": "Основы"
-  },
-  {
-    "id": "v119",
-    "word": "First",
-    "transcription": "[фаст]",
-    "translation": "Первый",
-    "category": "Основы"
-  },
-  {
-    "id": "v120",
-    "word": "Last",
-    "transcription": "[лэст]",
-    "translation": "Последний",
-    "category": "Основы"
-  },
-  {
-    "id": "v121",
-    "word": "Long",
-    "transcription": "[лонг]",
-    "translation": "Длинный",
-    "category": "Основы"
-  },
-  {
-    "id": "v122",
-    "word": "Great",
-    "transcription": "[грэйт]",
-    "translation": "Великий / Отличный",
-    "category": "Основы"
-  },
-  {
-    "id": "v123",
-    "word": "Little",
-    "transcription": "[литл]",
-    "translation": "Маленький",
-    "category": "Основы"
-  },
-  {
-    "id": "v124",
-    "word": "Own",
-    "transcription": "[оун]",
-    "translation": "Собственный",
-    "category": "Основы"
-  },
-  {
-    "id": "v125",
-    "word": "Other",
-    "transcription": "[а́зэр]",
-    "translation": "Другой",
-    "category": "Основы"
-  },
-  {
-    "id": "v126",
-    "word": "Old",
-    "transcription": "[оулд]",
-    "translation": "Старый",
-    "category": "Основы"
-  },
-  {
-    "id": "v127",
-    "word": "Right",
-    "transcription": "[райт]",
-    "translation": "Правый",
-    "category": "Основы"
-  },
-  {
-    "id": "v128",
-    "word": "Big",
-    "transcription": "[биг]",
-    "translation": "Большой",
-    "category": "Основы"
-  },
-  {
-    "id": "v129",
-    "word": "High",
-    "transcription": "[хай]",
-    "translation": "Высокий",
-    "category": "Основы"
-  },
-  {
-    "id": "v130",
-    "word": "Different",
-    "transcription": "[ди́ферэнт]",
-    "translation": "Различный",
-    "category": "Основы"
-  },
-  {
-    "id": "v131",
-    "word": "Small",
-    "transcription": "[смол]",
-    "translation": "Маленький",
-    "category": "Основы"
-  },
-  {
-    "id": "v132",
-    "word": "Large",
-    "transcription": "[лардж]",
-    "translation": "Крупный",
-    "category": "Основы"
-  },
-  {
-    "id": "v133",
-    "word": "Next",
-    "transcription": "[нэкст]",
-    "translation": "Следующий",
-    "category": "Основы"
-  },
-  {
-    "id": "v134",
-    "word": "Early",
-    "transcription": "[э́ли]",
-    "translation": "Ранний",
-    "category": "Основы"
-  },
-  {
-    "id": "v135",
-    "word": "Young",
-    "transcription": "[янг]",
-    "translation": "Молодой",
-    "category": "Основы"
-  },
-  {
-    "id": "v136",
-    "word": "Important",
-    "transcription": "[импо́ртэнт]",
-    "translation": "Важный",
-    "category": "Основы"
-  },
-  {
-    "id": "v137",
-    "word": "Few",
-    "transcription": "[фю]",
-    "translation": "Несколько",
-    "category": "Основы"
-  },
-  {
-    "id": "v138",
-    "word": "Public",
-    "transcription": "[па́блик]",
-    "translation": "Общественный",
-    "category": "Основы"
-  },
-  {
-    "id": "v139",
-    "word": "Bad",
-    "transcription": "[бэд]",
-    "translation": "Плохой",
-    "category": "Основы"
-  },
-  {
-    "id": "v140",
-    "word": "Same",
-    "transcription": "[сэйм]",
-    "translation": "Тот же самый",
-    "category": "Основы"
-  },
-  {
-    "id": "v141",
-    "word": "Able",
-    "transcription": "[эйбл]",
-    "translation": "Способный",
-    "category": "Основы"
-  },
-  {
-    "id": "v142",
-    "word": "To be",
-    "transcription": "[ту би]",
-    "translation": "Быть",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v143",
-    "word": "To have",
-    "transcription": "[ту хэв]",
-    "translation": "Иметь",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v144",
-    "word": "To do",
-    "transcription": "[ту ду]",
-    "translation": "Делать",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v145",
-    "word": "To say",
-    "transcription": "[ту сэй]",
-    "translation": "Сказать",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v146",
-    "word": "To go",
-    "transcription": "[ту гоу]",
-    "translation": "Идти",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v147",
-    "word": "To get",
-    "transcription": "[ту гет]",
-    "translation": "Получить",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v148",
-    "word": "To make",
-    "transcription": "[ту мэйк]",
-    "translation": "Сделать (создать)",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v149",
-    "word": "To know",
-    "transcription": "[ту ноу]",
-    "translation": "Знать",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v150",
-    "word": "To think",
-    "transcription": "[ту синк]",
-    "translation": "Думать",
-    "category": "Глаголы"
-  },
-  {
-    "id": "v151",
-    "word": "Deploy",
-    "transcription": "[дипло́й]",
-    "translation": "Развертывать",
-    "category": "IT и технологии"
-  },
-  {
-    "id": "v152",
-    "word": "Debug",
-    "transcription": "[диба́г]",
-    "translation": "Отлаживать",
-    "category": "IT и технологии"
-  },
-  {
-    "id": "v153",
-    "word": "Framework",
-    "transcription": "[фрэ́ймвэк]",
-    "translation": "Фреймворк",
-    "category": "IT и технологии"
-  },
-  {
-    "id": "v154",
-    "word": "Frontend",
-    "transcription": "[фрoнтэнд]",
-    "translation": "Фронтенд",
-    "category": "IT и технологии"
-  },
-  {
-    "id": "v155",
-    "word": "Backend",
-    "transcription": "[бэкэ́нд]",
-    "translation": "Бэкенд",
-    "category": "IT и технологии"
-  },
-  {
-    "id": "v156",
-    "word": "Leak",
-    "transcription": "[лик]",
-    "translation": "Утечка / Течь",
-    "category": "Бытовые проблемы"
-  },
-  {
-    "id": "v157",
-    "word": "Plumber",
-    "transcription": "[пла́мэ]",
-    "translation": "Сантехник",
-    "category": "Бытовые проблемы"
-  },
-  {
-    "id": "v158",
-    "word": "Outage",
-    "transcription": "[а́утадж]",
-    "translation": "Сбой (электричества)",
-    "category": "Бытовые проблемы"
-  },
-  {
-    "id": "v159",
-    "word": "Clogged",
-    "transcription": "[клогд]",
-    "translation": "Засоренный",
-    "category": "Бытовые проблемы"
-  },
-  {
-    "id": "v160",
-    "word": "Repair",
-    "transcription": "[рипэ́р]",
-    "translation": "Ремонт",
-    "category": "Бытовые проблемы"
-  },
-  {
-    "id": "v161",
-    "word": "Ghost",
-    "transcription": "[гоуст]",
-    "translation": "Игнорировать (в сети)",
-    "category": "Сленг"
-  },
-  {
-    "id": "v162",
-    "word": "Spill the tea",
-    "transcription": "[спилл тхэ тэa]",
-    "translation": "Сплетничать",
-    "category": "Сленг"
-  },
-  {
-    "id": "v163",
-    "word": "Flex",
-    "transcription": "[флекс]",
-    "translation": "Хвастаться",
-    "category": "Сленг"
-  },
-  {
-    "id": "v164",
-    "word": "Lowkey",
-    "transcription": "[лoвкэй]",
-    "translation": "Тайно / Скромно",
-    "category": "Сленг"
-  },
-  {
-    "id": "v165",
-    "word": "Savage",
-    "transcription": "[сэ́вадж]",
-    "translation": "Дерзкий",
-    "category": "Сленг"
-  },
-  {
-    "id": "v166",
-    "word": "Departure",
-    "transcription": "[дипа́рчэ]",
-    "translation": "Отправление",
-    "category": "Путешествия"
-  },
-  {
-    "id": "v167",
-    "word": "Arrival",
-    "transcription": "[эа́йвал]",
-    "translation": "Прибытие",
-    "category": "Путешествия"
-  },
-  {
-    "id": "v168",
-    "word": "Luggage",
-    "transcription": "[ла́гадж]",
-    "translation": "Багаж",
-    "category": "Путешествия"
-  },
-  {
-    "id": "v169",
-    "word": "Boarding pass",
-    "transcription": "[бoaрдинг пaсс]",
-    "translation": "Посадочный талон",
-    "category": "Путешествия"
-  },
-  {
-    "id": "v170",
-    "word": "Customs",
-    "transcription": "[ка́стамз]",
-    "translation": "Таможня",
-    "category": "Путешествия"
-  },
-  {
-    "id": "v171",
-    "word": "Overcooked",
-    "transcription": "[оувэку́кт]",
-    "translation": "Переваренный",
-    "category": "Ресторан"
-  },
-  {
-    "id": "v172",
-    "word": "Undercooked",
-    "transcription": "[андэку́кт]",
-    "translation": "Недоготовленный",
-    "category": "Ресторан"
-  },
-  {
-    "id": "v173",
-    "word": "Bill",
-    "transcription": "[бил]",
-    "translation": "Счет",
-    "category": "Ресторан"
-  },
-  {
-    "id": "v174",
-    "word": "Tip",
-    "transcription": "[тип]",
-    "translation": "Чаевые",
-    "category": "Ресторан"
-  },
-  {
-    "id": "v175",
-    "word": "Spicy",
-    "transcription": "[спа́йси]",
-    "translation": "Острый",
-    "category": "Ресторан"
+    "id": "v_18_Child",
+    "word": "Child",
+    "transcription": "[ʧaɪld]",
+    "translation": "Ребенок",
+    "category": "Basic"
   }
 ];
 
-// Экспорт курсов
 export const lessons: Lesson[] = [
   {
     "id": "l1",
-    "title": "Урок 1: Глагол \"to be\" (быть)",
+    "title": "Урок 1: Местоимения и глагол To Be (Утверждение)",
+    "moduleId": 1,
     "theory": [
-      "Привет! Я твой гид-кролик 🐰. Начнем с самого важного глагола в английском — \"to be\" (быть).",
-      "В русском мы часто пропускаем его: \"Я студент\". В английском так нельзя! Нужно сказать \"I AM a student\" (Я ЕСТЬ студент).",
-      "У него три формы в настоящем времени: AM (для I), IS (для he, she, it) и ARE (для we, you, they).",
-      "Запомни: I am. He is. They are. Всё просто! 🦇"
+      "В основе английской грамматики лежит строгий порядок слов. В отличие от русского языка, где мы можем менять слова местами, в английском подлежащее (субъект действия) всегда предшествует сказуемому (глаголу).",
+      "Ключевые личные местоимения: I (я), you (ты/вы), he (он), she (она), it (он/она/оно для неодушевленных предметов и животных), we (мы), they (они). Обратите внимание, что местоимение 'I' всегда пишется с заглавной буквы.",
+      "Глагол 'to be' (быть, являться, находиться) — важнейший элемент в английском языке. В ситуациях, где в русском языке глагол опускается (например, 'Я студент'), в английском его использование обязательно: 'I am a student' (буквально 'Я являюсь студентом').",
+      "В настоящем времени глагол 'to be' имеет три формы: 'am' используется только с местоимением 'I', 'is' — с 'he', 'she', 'it' (единственное число), а 'are' — с 'we', 'you', 'they' (множественное число).",
+      "В разговорной и неформальной письменной речи принято использовать сокращения: I'm, he's, she's, it's, we're, you're, they're. Они делают речь более естественной и беглой."
     ],
     "words": [
       {
-        "id": "v142",
-        "word": "To be",
-        "transcription": "[ту би]",
-        "translation": "Быть"
+        "id": "v_1_Tree",
+        "word": "Tree",
+        "transcription": "[triː]",
+        "translation": "Дерево",
+        "category": "Basic"
       },
       {
-        "id": "v143",
-        "word": "To have",
-        "transcription": "[ту хэв]",
-        "translation": "Иметь"
-      },
-      {
-        "id": "v144",
-        "word": "To do",
-        "transcription": "[ту ду]",
-        "translation": "Делать"
-      },
-      {
-        "id": "v145",
-        "word": "To say",
-        "transcription": "[ту сэй]",
-        "translation": "Сказать"
-      },
-      {
-        "id": "v146",
-        "word": "To go",
-        "transcription": "[ту гоу]",
-        "translation": "Идти"
-      },
-      {
-        "id": "v147",
-        "word": "To get",
-        "transcription": "[ту гет]",
-        "translation": "Получить"
-      },
-      {
-        "id": "v148",
-        "word": "To make",
-        "transcription": "[ту мэйк]",
-        "translation": "Сделать (создать)"
-      },
-      {
-        "id": "v149",
-        "word": "To know",
-        "transcription": "[ту ноу]",
-        "translation": "Знать"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ"
+        "id": "v_1_Love",
+        "word": "Love",
+        "transcription": "[lʌv]",
+        "translation": "Любовь",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q1_1",
-        "question": "I ___ a student.",
+        "type": "fill_in_blank",
+        "question": "___ am ready to learn English.",
+        "correctAnswer": "I"
+      },
+      {
+        "id": "q1_2",
+        "type": "multiple_choice",
+        "question": "Какую форму 'to be' нужно использовать с местоимением 'We'?",
         "options": [
-          "am",
+          "are",
           "is",
-          "are"
+          "am"
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q1_2",
-        "question": "She ___ beautiful.",
-        "options": [
-          "am",
-          "is",
-          "are"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
         "id": "q1_3",
-        "question": "They ___ my friends.",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Он мой друг'.",
         "options": [
-          "am",
+          "friend",
           "is",
-          "are"
+          "my",
+          "are",
+          "He",
+          "am"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "He",
+          "is",
+          "my",
+          "friend"
+        ]
       },
       {
         "id": "q1_4",
-        "question": "Как переводится \"to be\"?",
-        "options": [
-          "иметь",
-          "быть",
-          "делать"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "My cat ___ very lazy.",
+        "correctAnswer": "is"
       },
       {
         "id": "q1_5",
-        "question": "We ___ ready.",
+        "type": "multiple_choice",
+        "question": "Как правильно перевести 'it'?",
         "options": [
-          "am",
+          "оно/он/она (для неодушевленных и животных)",
+          "они",
+          "ты"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q1_6",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Они счастливы'.",
+        "options": [
           "is",
+          "happy",
+          "They",
+          "was",
           "are"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "They",
+          "are",
+          "happy"
+        ]
+      },
+      {
+        "id": "q1_7",
+        "type": "fill_in_blank",
+        "question": "You ___ a great student.",
+        "correctAnswer": "are"
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l2",
-    "title": "Урок 2: Личные местоимения",
+    "title": "Урок 2: Глагол To Be: Отрицание и Вопросы",
+    "moduleId": 1,
     "theory": [
-      "Снова я! 🐰 Сегодня выучим слова, которые заменяют имена. Это местоимения!",
-      "I - я. You - ты / вы. (В английском это одно и то же слово, удобно!)",
-      "He - он, She - она, It - оно (для неживых предметов и животных).",
-      "We - мы, They - они. Выучи их как таблицу умножения!"
+      "Глагол 'to be' является сильным глаголом, поэтому он самостоятельно образует отрицательные и вопросительные формы без использования дополнительных вспомогательных глаголов, таких как 'do' или 'does'.",
+      "Для построения отрицательного предложения частица 'not' ставится непосредственно после глагола 'to be'. Примеры: 'I am not' (я не), 'He is not' (он не), 'We are not' (мы не).",
+      "В речи чаще используются сокращенные отрицательные формы: 'is not' превращается в 'isn't', а 'are not' — в 'aren't'. Форма 'am not' имеет только вариант 'I'm not' (формы 'amn't' в стандартном английском не существует).",
+      "Вопросительная форма образуется путем инверсии: глагол 'to be' выносится на первое место перед подлежащим. Утверждение 'He is a doctor' преобразуется в вопрос 'Is he a doctor?'.",
+      "Краткие ответы на такие вопросы также содержат глагол 'to be'. Утвердительный: 'Yes, I am' / 'Yes, she is'. Отрицательный: 'No, I'm not' / 'No, she isn't'."
     ],
     "words": [
       {
-        "id": "v1",
-        "word": "Always",
-        "transcription": "[о́лвэйз]",
-        "translation": "Всегда"
+        "id": "v_2_Eye",
+        "word": "Eye",
+        "transcription": "[aɪ]",
+        "translation": "Глаз",
+        "category": "Basic"
       },
       {
-        "id": "v2",
-        "word": "Never",
-        "transcription": "[нэ́вэ]",
-        "translation": "Никогда"
-      },
-      {
-        "id": "v3",
-        "word": "Sometimes",
-        "transcription": "[самта́ймз]",
-        "translation": "Иногда"
-      },
-      {
-        "id": "v4",
-        "word": "Often",
-        "transcription": "[о́фн]",
-        "translation": "Часто"
-      },
-      {
-        "id": "v5",
-        "word": "Usually",
-        "transcription": "[ю́жуали]",
-        "translation": "Обычно"
-      },
-      {
-        "id": "v6",
-        "word": "Seldom",
-        "transcription": "[сэ́лдом]",
-        "translation": "Редко"
-      },
-      {
-        "id": "v7",
-        "word": "Every day",
-        "transcription": "[э́ври дэй]",
-        "translation": "Каждый день"
-      },
-      {
-        "id": "v8",
-        "word": "Now",
-        "transcription": "[нау]",
-        "translation": "Сейчас"
-      },
-      {
-        "id": "v9",
-        "word": "Today",
-        "transcription": "[тадэ́й]",
-        "translation": "Сегодня"
-      },
-      {
-        "id": "v10",
-        "word": "Tomorrow",
-        "transcription": "[тумо́роу]",
-        "translation": "Завтра"
+        "id": "v_2_Knowledge",
+        "word": "Knowledge",
+        "transcription": "[ˈnɒlɪʤ]",
+        "translation": "Знание",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q2_1",
-        "question": "Как сказать \"он\"?",
-        "options": [
-          "She",
-          "He",
-          "It"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I am ___ a doctor.",
+        "correctAnswer": "not"
       },
       {
         "id": "q2_2",
-        "question": "\"Они\" по-английски это...",
+        "type": "multiple_choice",
+        "question": "Как правильно сократить 'are not'?",
         "options": [
-          "We",
-          "You",
-          "They"
+          "aren't",
+          "are'nt",
+          "arn't"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
       },
       {
         "id": "q2_3",
-        "question": "Какое местоимение используется для животных?",
+        "type": "drag_and_drop",
+        "question": "Задайте вопрос: 'Она дома?'.",
         "options": [
-          "He",
-          "It",
-          "She"
+          "she",
+          "at",
+          "Does",
+          "home",
+          "are",
+          "Is",
+          "?"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "Is",
+          "she",
+          "at",
+          "home",
+          "?"
+        ]
       },
       {
         "id": "q2_4",
-        "question": "\"Мы\" на английском:",
-        "options": [
-          "They",
-          "We",
-          "I"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "___ you ready?",
+        "correctAnswer": "Are"
       },
       {
         "id": "q2_5",
-        "question": "\"I\" означает...",
+        "type": "multiple_choice",
+        "question": "Какое предложение построено верно?",
         "options": [
-          "Ты",
-          "Оно",
-          "Я"
+          "Is he your brother?",
+          "He is your brother?",
+          "Does he is your brother?"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q2_6",
+        "type": "drag_and_drop",
+        "question": "Постройте отрицание: 'Мы не опоздали'.",
+        "options": [
+          "late",
+          "don't",
+          "not",
+          "is",
+          "are",
+          "We"
+        ],
+        "correctSentence": [
+          "We",
+          "are",
+          "not",
+          "late"
+        ]
+      },
+      {
+        "id": "q2_7",
+        "type": "fill_in_blank",
+        "question": "She ___ not my sister.",
+        "correctAnswer": "is"
+      },
+      {
+        "id": "q2_rep",
+        "type": "multiple_choice",
+        "question": "Как правильно перевести 'it'?",
+        "options": [
+          "оно/он/она (для неодушевленных и животных)",
+          "они",
+          "ты"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l3",
-    "title": "Урок 3: Present Simple (Настоящее простое)",
+    "title": "Урок 3: Указательные и Притяжательные местоимения",
+    "moduleId": 1,
     "theory": [
-      "Время Present Simple! 🐰 Используем его, когда говорим о рутине, привычках или фактах.",
-      "Например: \"I play tennis every day\". Действие происходит вообще, регулярно.",
-      "Для I, You, We, They берем просто глагол. Для He, She, It — добавляем окончание \"-s\" или \"-es\"!",
-      "Например: \"He playS tennis\". Не забывай эту \"s\", иначе будет звучать странно!"
+      "Указательные местоимения используются для указания на объекты и зависят от двух факторов: количества объектов и их удаленности от говорящего.",
+      "Для единственного числа используются 'this' (этот, эта, это) — если объект находится рядом, и 'that' (тот, та, то) — если объект находится на расстоянии.",
+      "Для множественного числа применяются 'these' (эти) для близких объектов и 'those' (те) для удаленных. Примеры: 'This is an apple', 'Those are apples'.",
+      "Притяжательные местоимения определяют принадлежность объекта лицу: my (мой), your (твой/ваш), his (его), her (её), its (его/её для животных и неодушевленных объектов), our (наш), their (их).",
+      "Притяжательные местоимения всегда выполняют функцию определения и ставятся непосредственно перед существительным (например, 'my car', 'their house'). Они не употребляются самостоятельно без последующего существительного."
     ],
     "words": [
       {
-        "id": "v11",
-        "word": "Yesterday",
-        "transcription": "[е́стэдэй]",
-        "translation": "Вчера"
+        "id": "v_3_Case",
+        "word": "Case",
+        "transcription": "[keɪs]",
+        "translation": "Случай",
+        "category": "Basic"
       },
       {
-        "id": "v12",
-        "word": "Soon",
-        "transcription": "[сун]",
-        "translation": "Скоро"
-      },
-      {
-        "id": "v13",
-        "word": "Already",
-        "transcription": "[олрэ́ди]",
-        "translation": "Уже"
-      },
-      {
-        "id": "v14",
-        "word": "Yet",
-        "transcription": "[ет]",
-        "translation": "Еще (не)"
-      },
-      {
-        "id": "v15",
-        "word": "Just",
-        "transcription": "[джаст]",
-        "translation": "Только что"
-      },
-      {
-        "id": "v16",
-        "word": "Time",
-        "transcription": "[тайм]",
-        "translation": "Время"
-      },
-      {
-        "id": "v17",
-        "word": "Year",
-        "transcription": "[йе́а]",
-        "translation": "Год"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ"
-      },
-      {
-        "id": "v20",
-        "word": "Day",
-        "transcription": "[дэй]",
-        "translation": "День"
+        "id": "v_3_Hand",
+        "word": "Hand",
+        "transcription": "[hænd]",
+        "translation": "Рука",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q3_1",
-        "question": "I ___ apples.",
+        "type": "multiple_choice",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
         "options": [
-          "likes",
-          "like",
-          "liking"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q3_2",
-        "question": "He ___ to school.",
-        "options": [
-          "go",
-          "goes",
-          "going"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q3_3",
-        "question": "They ___ tennis every Sunday.",
-        "options": [
-          "play",
-          "plays",
-          "playing"
+          "these",
+          "this",
+          "those"
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q3_4",
-        "question": "She ___ TV in the evening.",
+        "id": "q3_2",
+        "type": "fill_in_blank",
+        "question": "This is ___ (мой) new phone.",
+        "correctAnswer": "my"
+      },
+      {
+        "id": "q3_3",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Те книги — мои'.",
         "options": [
-          "watch",
-          "watches",
-          "watched"
+          "are",
+          "books",
+          "Those",
+          "mine",
+          "These",
+          "is"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "Those",
+          "books",
+          "are",
+          "mine"
+        ]
+      },
+      {
+        "id": "q3_4",
+        "type": "multiple_choice",
+        "question": "Как сказать 'её собака'?",
+        "options": [
+          "her dog",
+          "she dog",
+          "his dog"
+        ],
+        "correctAnswerIndex": 0
       },
       {
         "id": "q3_5",
-        "question": "We ___ in London.",
+        "type": "fill_in_blank",
+        "question": "Look at ___ (тот) bird in the sky!",
+        "correctAnswer": "that"
+      },
+      {
+        "id": "q3_6",
+        "type": "drag_and_drop",
+        "question": "Переведите 'Это наша машина'.",
         "options": [
-          "lives",
-          "living",
-          "live"
+          "their",
+          "is",
+          "car",
+          "This",
+          "our",
+          "are"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "This",
+          "is",
+          "our",
+          "car"
+        ]
+      },
+      {
+        "id": "q3_7",
+        "type": "multiple_choice",
+        "question": "Что выбрать для слова 'дерево' (неодушевленное)?",
+        "options": [
+          "its leaves",
+          "his leaves",
+          "her leaves"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q3_rep",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Они счастливы'.",
+        "options": [
+          "is",
+          "happy",
+          "They",
+          "was",
+          "are"
+        ],
+        "correctSentence": [
+          "They",
+          "are",
+          "happy"
+        ]
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l4",
-    "title": "Урок 4: Present Simple (Отрицание)",
+    "title": "Урок 4: Множественное число и Артикли (a/an/the)",
+    "moduleId": 1,
     "theory": [
-      "А как сказать \"не\"? 🐰 В английском нам нужны помощники (вспомогательные глаголы) DO и DOES.",
-      "Для I, You, We, They мы говорим \"do not\" (или don't). \"I don't like broccoli\".",
-      "Для He, She, It мы говорим \"does not\" (или doesn't). \"He doesn't like broccoli\".",
-      "Заметь! Буковка \"-s\" убежала от глагола и спряталась в DOES! Поэтому глагол остается чистым: \"He doesn't PLAY\" (а не plays)."
+      "Артикли — это служебные слова, которые определяют существительное. В английском языке существует два типа артиклей: неопределенный (a/an) и определенный (the).",
+      "Неопределенный артикль 'a/an' происходит от слова 'one' (один) и используется только с исчисляемыми существительными в единственном числе при первичном упоминании. Форма 'a' ставится перед согласным звуком (a car), а 'an' — перед гласным звуком (an apple).",
+      "Определенный артикль 'the' указывает на конкретный предмет, который уже известен собеседнику или является единственным в своем роде. Он может использоваться с существительными в любом числе.",
+      "Множественное число существительных образуется путем прибавления окончания '-s' (cat — cats). Если слово оканчивается на шипящие звуки или 'o' (s, sh, ch, x, o), прибавляется окончание '-es' (bus — buses, hero — heroes).",
+      "Ряд существительных образует множественное число нестандартным способом (путем изменения корневой гласной или всей формы слова): man — men, woman — women, child — children, tooth — teeth, mouse — mice. Такие слова требуют запоминания."
     ],
     "words": [
       {
-        "id": "v21",
-        "word": "Man",
-        "transcription": "[мэн]",
-        "translation": "Мужчина / Человек"
+        "id": "v_4_Week",
+        "word": "Week",
+        "transcription": "[wiːk]",
+        "translation": "Неделя",
+        "category": "Basic"
       },
       {
-        "id": "v22",
-        "word": "Thing",
-        "transcription": "[синг]",
-        "translation": "Вещь"
-      },
-      {
-        "id": "v23",
-        "word": "Woman",
-        "transcription": "[уу́мэн]",
-        "translation": "Женщина"
-      },
-      {
-        "id": "v24",
-        "word": "Life",
-        "transcription": "[лайф]",
-        "translation": "Жизнь"
-      },
-      {
-        "id": "v25",
-        "word": "Child",
-        "transcription": "[чайлд]",
-        "translation": "Ребенок"
-      },
-      {
-        "id": "v26",
-        "word": "World",
-        "transcription": "[уо́рлд]",
-        "translation": "Мир"
-      },
-      {
-        "id": "v27",
-        "word": "School",
-        "transcription": "[скул]",
-        "translation": "Школа"
-      },
-      {
-        "id": "v28",
-        "word": "State",
-        "transcription": "[стэйт]",
-        "translation": "Состояние / Штат"
-      },
-      {
-        "id": "v29",
-        "word": "Family",
-        "transcription": "[фэ́мили]",
-        "translation": "Семья"
-      },
-      {
-        "id": "v30",
-        "word": "Student",
-        "transcription": "[стью́дэнт]",
-        "translation": "Студент"
+        "id": "v_4_Year",
+        "word": "Year",
+        "transcription": "[jɪə]",
+        "translation": "Год",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q4_1",
-        "question": "I ___ like fish.",
+        "type": "multiple_choice",
+        "question": "Какой артикль поставить перед словом 'elephant' (слон) впервые?",
         "options": [
-          "don't",
-          "doesn't",
-          "not"
+          "an",
+          "a",
+          "the"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q4_2",
-        "question": "She ___ speak French.",
-        "options": [
-          "don't",
-          "doesn't",
-          "not"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I have ___ cat. The cat is black.",
+        "correctAnswer": "a"
       },
       {
         "id": "q4_3",
-        "question": "They ___ know the answer.",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'У меня двое детей'.",
         "options": [
-          "don't",
-          "doesn't",
-          "aren't"
+          "childs",
+          "am",
+          "children",
+          "I",
+          "two",
+          "have"
+        ],
+        "correctSentence": [
+          "I",
+          "have",
+          "two",
+          "children"
+        ]
+      },
+      {
+        "id": "q4_4",
+        "type": "multiple_choice",
+        "question": "Множественное число от слова 'woman'?",
+        "options": [
+          "women",
+          "womans",
+          "womens"
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q4_4",
-        "question": "He doesn't ___ tea.",
-        "options": [
-          "likes",
-          "like",
-          "liking"
-        ],
-        "correctAnswerIndex": 1
+        "id": "q4_5",
+        "type": "fill_in_blank",
+        "question": "Please close ___ door (конкретную).",
+        "correctAnswer": "the"
       },
       {
-        "id": "q4_5",
-        "question": "We ___ go to school on Sunday.",
+        "id": "q4_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Три мыши'.",
         "options": [
-          "doesn't",
-          "not",
-          "don't"
+          "mouse",
+          "mouses",
+          "mice",
+          "Three"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "Three",
+          "mice"
+        ]
+      },
+      {
+        "id": "q4_7",
+        "type": "multiple_choice",
+        "question": "Как пишется множественное число от 'box'?",
+        "options": [
+          "boxes",
+          "boxs",
+          "box"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q4_rep",
+        "type": "drag_and_drop",
+        "question": "Переведите 'Это наша машина'.",
+        "options": [
+          "their",
+          "is",
+          "car",
+          "This",
+          "our",
+          "are"
+        ],
+        "correctSentence": [
+          "This",
+          "is",
+          "our",
+          "car"
+        ]
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l5",
-    "title": "Урок 5: Множественное число существительных",
+    "title": "Урок 5: Present Simple: Утверждение и Рутина",
+    "moduleId": 2,
     "theory": [
-      "Один кот — cat. Много котов — cats! 🐰 Просто добавляем \"-s\".",
-      "Если слово заканчивается на шипящую (-s, -ss, -sh, -ch, -x, -o), добавляем \"-es\": bus -> buses, tomato -> tomatoes.",
-      "Есть исключения! Man (мужчина) - Men (мужчины). Woman - Women. Child (ребенок) - Children. Foot - Feet.",
-      "Запомни эти исключения, они встречаются очень часто!"
+      "Present Simple (Простое настоящее время) используется для описания регулярных действий, привычек, расписаний и общеизвестных фактов.",
+      "При использовании местоимений I, you, we, they форма глагола совпадает с инфинитивом без частицы 'to'. Например: 'I work', 'They play'.",
+      "Критическое правило: в третьем лице единственного числа (he, she, it) к основному глаголу обязательно добавляется окончание '-s' или '-es'. Например: 'He works', 'She plays'.",
+      "Окончание '-es' добавляется к глаголам, оканчивающимся на шипящие звуки (s, ss, sh, ch, x) и гласную 'o', чтобы облегчить произношение: 'go — goes', 'watch — watches'.",
+      "Present Simple часто сопровождается маркерами частотности (наречиями времени): always (всегда), usually (обычно), often (часто), sometimes (иногда), never (никогда). Эти слова ставятся перед основным глаголом: 'I always wake up early'."
     ],
     "words": [
       {
-        "id": "v31",
-        "word": "Group",
-        "transcription": "[груп]",
-        "translation": "Группа"
+        "id": "v_5_Day",
+        "word": "Day",
+        "transcription": "[deɪ]",
+        "translation": "День",
+        "category": "Basic"
       },
       {
-        "id": "v32",
-        "word": "Country",
-        "transcription": "[ка́нтри]",
-        "translation": "Страна"
-      },
-      {
-        "id": "v33",
-        "word": "Problem",
-        "transcription": "[про́блем]",
-        "translation": "Проблема"
-      },
-      {
-        "id": "v34",
-        "word": "Hand",
-        "transcription": "[хэнд]",
-        "translation": "Рука"
-      },
-      {
-        "id": "v35",
-        "word": "Part",
-        "transcription": "[парт]",
-        "translation": "Часть"
-      },
-      {
-        "id": "v36",
-        "word": "Place",
-        "transcription": "[плэйс]",
-        "translation": "Место"
-      },
-      {
-        "id": "v37",
-        "word": "Case",
-        "transcription": "[кэйс]",
-        "translation": "Случай"
-      },
-      {
-        "id": "v38",
-        "word": "Week",
-        "transcription": "[уи́к]",
-        "translation": "Неделя"
-      },
-      {
-        "id": "v39",
-        "word": "Company",
-        "transcription": "[ка́мпани]",
-        "translation": "Компания"
-      },
-      {
-        "id": "v40",
-        "word": "System",
-        "transcription": "[си́стэм]",
-        "translation": "Система"
+        "id": "v_5_Year",
+        "word": "Year",
+        "transcription": "[jɪə]",
+        "translation": "Год",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q5_1",
-        "question": "Множественное от \"apple\"",
+        "type": "fill_in_blank",
+        "question": "He ___ (work) in a bank.",
+        "correctAnswer": "works"
+      },
+      {
+        "id": "q5_2",
+        "type": "multiple_choice",
+        "question": "Какое предложение грамматически верное?",
         "options": [
-          "apples",
-          "appless",
-          "applies"
+          "She likes coffee.",
+          "She like coffee.",
+          "She is like coffee."
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q5_2",
-        "question": "Множественное от \"child\"",
-        "options": [
-          "childs",
-          "childrens",
-          "children"
-        ],
-        "correctAnswerIndex": 2
-      },
-      {
         "id": "q5_3",
-        "question": "Множественное от \"man\"",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Я всегда читаю книги'.",
         "options": [
-          "mans",
-          "men",
-          "mens"
+          "read",
+          "am",
+          "always",
+          "I",
+          "books",
+          "reads"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "I",
+          "always",
+          "read",
+          "books"
+        ]
       },
       {
         "id": "q5_4",
-        "question": "Множественное от \"box\"",
-        "options": [
-          "boxs",
-          "boxes",
-          "boxies"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "We ___ (play) tennis every Sunday.",
+        "correctAnswer": "play"
       },
       {
         "id": "q5_5",
-        "question": "Множественное от \"woman\"",
+        "type": "multiple_choice",
+        "question": "Как правильно написать форму от 'watch' для 'he'?",
         "options": [
-          "womens",
-          "womans",
-          "women"
+          "watches",
+          "watchs",
+          "watch"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q5_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мой брат ходит в школу'.",
+        "options": [
+          "brother",
+          "My",
+          "to",
+          "go",
+          "is",
+          "goes",
+          "school"
+        ],
+        "correctSentence": [
+          "My",
+          "brother",
+          "goes",
+          "to",
+          "school"
+        ]
+      },
+      {
+        "id": "q5_7",
+        "type": "fill_in_blank",
+        "question": "They usually ___ (eat) pizza on Fridays.",
+        "correctAnswer": "eat"
+      },
+      {
+        "id": "q5_rep",
+        "type": "fill_in_blank",
+        "question": "I have ___ cat. The cat is black.",
+        "correctAnswer": "a"
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l6",
-    "title": "Урок 6: Артикли A, An, The",
+    "title": "Урок 6: Present Simple: Отрицание и Вопросы",
+    "moduleId": 2,
     "theory": [
-      "Артикли — это боль, но мы справимся! 🐰 \"A\" и \"An\" означают \"один какой-то\".",
-      "Мы ставим \"A\" перед согласным звуком (a car), и \"An\" перед гласным звуком (an apple) для красоты звучания.",
-      "Используем их только с исчисляемыми предметами в единственном числе. \"Дай мне (какое-нибудь) яблоко\".",
-      "Артикль \"The\" — это конкретика. \"Дай мне ТО САМОЕ яблоко\" (the apple). Можно использовать с чем угодно."
+      "В отличие от глагола 'to be', большинство английских глаголов не могут самостоятельно образовывать вопросы и отрицания. Им требуются вспомогательные глаголы 'do' и 'does'.",
+      "Отрицательная форма образуется с помощью 'do not' (don't) для I, you, we, they и 'does not' (doesn't) для he, she, it. Например: 'I don't like milk', 'She doesn't like tea'.",
+      "Важнейшее правило: появление вспомогательного глагола 'does' забирает окончание '-s'/'-es' у основного глагола. Форма 'He doesn't works' является грамматической ошибкой. Правильно: 'He doesn't work'.",
+      "В вопросительных предложениях вспомогательный глагол выносится на первое место перед подлежащим. Конструкция выглядит так: Do/Does + подлежащее + основной глагол в инфинитиве (без '-s'). Пример: 'Does she play the piano?'.",
+      "Для кратких ответов используется тот же вспомогательный глагол, что и в вопросе: 'Yes, I do' / 'No, I don't' или 'Yes, he does' / 'No, he doesn't'."
     ],
     "words": [
       {
-        "id": "v41",
-        "word": "Program",
-        "transcription": "[про́грэм]",
-        "translation": "Программа"
+        "id": "v_6_Animal",
+        "word": "Animal",
+        "transcription": "[ˈænɪməl]",
+        "translation": "Животное",
+        "category": "Basic"
       },
       {
-        "id": "v42",
-        "word": "Question",
-        "transcription": "[квэ́счэн]",
-        "translation": "Вопрос"
-      },
-      {
-        "id": "v43",
-        "word": "Work",
-        "transcription": "[уо́рк]",
-        "translation": "Работа"
-      },
-      {
-        "id": "v44",
-        "word": "Government",
-        "transcription": "[га́вернмэнт]",
-        "translation": "Правительство"
-      },
-      {
-        "id": "v45",
-        "word": "Number",
-        "transcription": "[на́мбэр]",
-        "translation": "Число"
-      },
-      {
-        "id": "v46",
-        "word": "Night",
-        "transcription": "[найт]",
-        "translation": "Ночь"
-      },
-      {
-        "id": "v47",
-        "word": "Point",
-        "transcription": "[пойнт]",
-        "translation": "Точка / Суть"
-      },
-      {
-        "id": "v48",
-        "word": "Home",
-        "transcription": "[хоум]",
-        "translation": "Дом"
-      },
-      {
-        "id": "v49",
-        "word": "Water",
-        "transcription": "[уо́тэр]",
-        "translation": "Вода"
-      },
-      {
-        "id": "v50",
-        "word": "Room",
-        "transcription": "[рум]",
-        "translation": "Комната"
+        "id": "v_6_Case",
+        "word": "Case",
+        "transcription": "[keɪs]",
+        "translation": "Случай",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q6_1",
-        "question": "I see ___ cat. The cat is black.",
-        "options": [
-          "a",
-          "an",
-          "the"
-        ],
-        "correctAnswerIndex": 0
+        "type": "fill_in_blank",
+        "question": "I ___ not want to go.",
+        "correctAnswer": "do"
       },
       {
         "id": "q6_2",
-        "question": "I want ___ orange.",
+        "type": "multiple_choice",
+        "question": "Как правильно составить отрицание?",
         "options": [
-          "a",
-          "an",
-          "the"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q6_3",
-        "question": "Look at ___ sun!",
-        "options": [
-          "a",
-          "an",
-          "the"
-        ],
-        "correctAnswerIndex": 2
-      },
-      {
-        "id": "q6_4",
-        "question": "She is ___ doctor.",
-        "options": [
-          "a",
-          "an",
-          "the"
+          "He doesn't like fish.",
+          "He don't like fish.",
+          "He doesn't likes fish."
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q6_5",
-        "question": "I live in ___ house. ___ house is old.",
+        "id": "q6_3",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Тебе нравится музыка?'",
         "options": [
-          "The / A",
-          "A / The",
-          "An / The"
+          "likes",
+          "?",
+          "music",
+          "Do",
+          "like",
+          "you",
+          "Are"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "Do",
+          "you",
+          "like",
+          "music",
+          "?"
+        ]
+      },
+      {
+        "id": "q6_4",
+        "type": "fill_in_blank",
+        "question": "___ she live in London?",
+        "correctAnswer": "Does"
+      },
+      {
+        "id": "q6_5",
+        "type": "multiple_choice",
+        "question": "Как кратко ответить 'Да' на вопрос 'Do they play soccer?'",
+        "options": [
+          "Yes, they do.",
+          "Yes, they play.",
+          "Yes, they are."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q6_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Она не знает ответ'.",
+        "options": [
+          "She",
+          "the",
+          "answer",
+          "does",
+          "knows",
+          "know",
+          "not",
+          "don't"
+        ],
+        "correctSentence": [
+          "She",
+          "does",
+          "not",
+          "know",
+          "the",
+          "answer"
+        ]
+      },
+      {
+        "id": "q6_7",
+        "type": "fill_in_blank",
+        "question": "We ___ (don't/doesn't) watch TV.",
+        "correctAnswer": "don't"
+      },
+      {
+        "id": "q6_rep",
+        "type": "fill_in_blank",
+        "question": "She ___ not my sister.",
+        "correctAnswer": "is"
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l7",
-    "title": "Урок 7: Глагол \"to have\" (иметь)",
+    "title": "Урок 7: Present Continuous: Прямо сейчас",
+    "moduleId": 2,
     "theory": [
-      "У меня что-то есть! 🐰 По-английски это глагол \"to have\".",
-      "Для I, You, We, They мы говорим \"have\". \"I have a car\".",
-      "А вот для He, She, It форма меняется на \"has\". \"She has a dog\".",
-      "В британском английском часто добавляют слово \"got\": \"I have got a car\", смысл тот же самый."
+      "Present Continuous (Настоящее длительное время) используется для описания процессов, происходящих непосредственно в момент речи, или временных состояний.",
+      "Структура этого времени является составной: оно образуется с помощью вспомогательного глагола 'to be' (am/is/are) и причастия настоящего времени (основной глагол с окончанием '-ing').",
+      "Пропуск глагола 'to be' — частая ошибка. Предложение 'I working' неверно, правильно: 'I am working' (Я работаю прямо сейчас).",
+      "Для образования отрицательной формы частица 'not' добавляется к глаголу 'to be': 'I am not listening', 'She isn't crying'.",
+      "В вопросительных предложениях вспомогательный глагол 'to be' ставится перед подлежащим: 'Are you working now?'. Типичные маркеры времени: now (сейчас), at the moment (в данный момент), look! (посмотри!)."
     ],
     "words": [
       {
-        "id": "v51",
-        "word": "Mother",
-        "transcription": "[ма́зэр]",
-        "translation": "Мать"
+        "id": "v_7_Place",
+        "word": "Place",
+        "transcription": "[pleɪs]",
+        "translation": "Место",
+        "category": "Basic"
       },
       {
-        "id": "v52",
-        "word": "Area",
-        "transcription": "[э́риа]",
-        "translation": "Область"
-      },
-      {
-        "id": "v53",
-        "word": "Money",
-        "transcription": "[ма́ни]",
-        "translation": "Деньги"
-      },
-      {
-        "id": "v54",
-        "word": "Story",
-        "transcription": "[сто́ри]",
-        "translation": "История"
-      },
-      {
-        "id": "v55",
-        "word": "Fact",
-        "transcription": "[фэкт]",
-        "translation": "Факт"
-      },
-      {
-        "id": "v56",
-        "word": "Month",
-        "transcription": "[манс]",
-        "translation": "Месяц"
-      },
-      {
-        "id": "v57",
-        "word": "Lot",
-        "transcription": "[лат]",
-        "translation": "Много"
-      },
-      {
-        "id": "v58",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Право / Правильный"
-      },
-      {
-        "id": "v59",
-        "word": "Study",
-        "transcription": "[ста́ди]",
-        "translation": "Изучать"
-      },
-      {
-        "id": "v60",
-        "word": "Book",
-        "transcription": "[бук]",
-        "translation": "Книга"
+        "id": "v_7_Year",
+        "word": "Year",
+        "transcription": "[jɪə]",
+        "translation": "Год",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q7_1",
-        "question": "I ___ two sisters.",
+        "type": "multiple_choice",
+        "question": "Что означает 'I am watching TV'?",
         "options": [
-          "has",
-          "have",
-          "having"
+          "Я смотрю телевизор прямо сейчас.",
+          "Я смотрю телевизор каждый день.",
+          "Я посмотрел телевизор."
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
       },
       {
         "id": "q7_2",
-        "question": "He ___ a big house.",
-        "options": [
-          "has",
-          "have",
-          "is"
-        ],
-        "correctAnswerIndex": 0
+        "type": "fill_in_blank",
+        "question": "She is ___ (sleep) right now.",
+        "correctAnswer": "sleeping"
       },
       {
         "id": "q7_3",
-        "question": "They ___ a problem.",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Ты сейчас работаешь?'",
         "options": [
-          "have",
-          "has",
-          "having"
+          "now",
+          "?",
+          "working",
+          "you",
+          "Are",
+          "work",
+          "Do"
         ],
-        "correctAnswerIndex": 0
+        "correctSentence": [
+          "Are",
+          "you",
+          "working",
+          "now",
+          "?"
+        ]
       },
       {
         "id": "q7_4",
-        "question": "She ___ beautiful eyes.",
+        "type": "multiple_choice",
+        "question": "Какая формула у Present Continuous?",
         "options": [
-          "have",
-          "having",
-          "has"
+          "am/is/are + Ving",
+          "do/does + V",
+          "V + ed"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
       },
       {
         "id": "q7_5",
-        "question": "We ___ a lot of time.",
+        "type": "fill_in_blank",
+        "question": "They ___ playing football (вставьте 'are').",
+        "correctAnswer": "are"
+      },
+      {
+        "id": "q7_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я не слушаю музыку'.",
         "options": [
-          "have",
-          "has",
-          "are"
+          "I",
+          "music",
+          "to",
+          "am",
+          "listen",
+          "don't",
+          "listening",
+          "not"
         ],
-        "correctAnswerIndex": 0
+        "correctSentence": [
+          "I",
+          "am",
+          "not",
+          "listening",
+          "to",
+          "music"
+        ]
+      },
+      {
+        "id": "q7_7",
+        "type": "fill_in_blank",
+        "question": "Look! It ___ (rain).",
+        "correctAnswer": "is raining"
+      },
+      {
+        "id": "q7_rep",
+        "type": "fill_in_blank",
+        "question": "My cat ___ very lazy.",
+        "correctAnswer": "is"
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l8",
-    "title": "Урок 8: Указательные местоимения",
+    "title": "Урок 8: Past Simple: Глагол to be в прошлом (was/were)",
+    "moduleId": 3,
     "theory": [
-      "Как сказать \"этот\" или \"тот\"? 🐰 Это легко!",
-      "This — этот (один, рядом). That — тот (один, далеко).",
-      "These — эти (много, рядом). Those — те (много, далеко).",
-      "Например: This is my book (Она у меня в руке). That is a bird (Она летит далеко в небе)."
+      "Past Simple (Простое прошедшее время) используется для описания завершенных действий и состояний в прошлом. Начнем с форм глагола 'to be' в прошедшем времени.",
+      "Глагол 'to be' имеет только две формы в Past Simple: 'was' (был/была/было) и 'were' (были).",
+      "Форма 'was' используется с подлежащими в единственном числе: I, he, she, it. Примеры: 'I was happy', 'She was at home'.",
+      "Форма 'were' используется с множественным числом (we, they) и местоимением 'you' (независимо от того, переводится оно как 'ты' или 'вы'). Пример: 'We were friends', 'You were right'.",
+      "Отрицательная и вопросительная формы строятся по правилам глагола 'to be' — без дополнительных вспомогательных глаголов. Отрицание: wasn't, weren't. Вопрос: 'Was he there?'. Маркеры времени: yesterday (вчера), last week (на прошлой неделе), ago (назад)."
     ],
     "words": [
       {
-        "id": "v61",
-        "word": "Eye",
-        "transcription": "[ай]",
-        "translation": "Глаз"
+        "id": "v_8_Name",
+        "word": "Name",
+        "transcription": "[neɪm]",
+        "translation": "Имя",
+        "category": "Basic"
       },
       {
-        "id": "v62",
-        "word": "Job",
-        "transcription": "[джаб]",
-        "translation": "Работа (профессия)"
-      },
-      {
-        "id": "v63",
-        "word": "Word",
-        "transcription": "[уо́рд]",
-        "translation": "Слово"
-      },
-      {
-        "id": "v64",
-        "word": "Business",
-        "transcription": "[би́знас]",
-        "translation": "Бизнес"
-      },
-      {
-        "id": "v65",
-        "word": "Issue",
-        "transcription": "[и́шу]",
-        "translation": "Вопрос (проблема)"
-      },
-      {
-        "id": "v66",
-        "word": "Side",
-        "transcription": "[сайд]",
-        "translation": "Сторона"
-      },
-      {
-        "id": "v67",
-        "word": "Kind",
-        "transcription": "[кайнд]",
-        "translation": "Вид / Добрый"
-      },
-      {
-        "id": "v68",
-        "word": "Head",
-        "transcription": "[хёд]",
-        "translation": "Голова"
-      },
-      {
-        "id": "v69",
-        "word": "House",
-        "transcription": "[хаус]",
-        "translation": "Дом (здание)"
-      },
-      {
-        "id": "v70",
-        "word": "Service",
-        "transcription": "[сэ́вас]",
-        "translation": "Служба"
+        "id": "v_8_Family",
+        "word": "Family",
+        "transcription": "[ˈfæmɪli]",
+        "translation": "Семья",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q8_1",
-        "question": "___ is my pen (в руке).",
-        "options": [
-          "That",
-          "This",
-          "These"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I ___ very tired yesterday.",
+        "correctAnswer": "was"
       },
       {
         "id": "q8_2",
-        "question": "Look at ___ stars (далеко).",
+        "type": "multiple_choice",
+        "question": "Какую форму использовать для 'They' в прошлом?",
         "options": [
-          "these",
-          "those",
-          "this"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q8_3",
-        "question": "___ shoes are nice (на моих ногах).",
-        "options": [
-          "These",
-          "Those",
-          "That"
+          "were",
+          "was",
+          "are"
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q8_4",
-        "question": "___ house over there is old (вдалеке).",
+        "id": "q8_3",
+        "type": "drag_and_drop",
+        "question": "Составьте отрицание: 'Мы не были дома'.",
         "options": [
-          "This",
-          "That",
-          "These"
+          "were",
+          "home",
+          "We",
+          "did",
+          "at",
+          "not",
+          "was"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "We",
+          "were",
+          "not",
+          "at",
+          "home"
+        ]
+      },
+      {
+        "id": "q8_4",
+        "type": "fill_in_blank",
+        "question": "___ she at work yesterday?",
+        "correctAnswer": "Was"
       },
       {
         "id": "q8_5",
-        "question": "I like ___ apples (тут на столе).",
+        "type": "multiple_choice",
+        "question": "Как сократить 'was not'?",
         "options": [
-          "those",
-          "that",
-          "these"
+          "wasn't",
+          "weren't",
+          "was'nt"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q8_6",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Где ты был?'",
+        "options": [
+          "Where",
+          "?",
+          "did",
+          "were",
+          "you",
+          "was"
+        ],
+        "correctSentence": [
+          "Where",
+          "were",
+          "you",
+          "?"
+        ]
+      },
+      {
+        "id": "q8_7",
+        "type": "fill_in_blank",
+        "question": "The movie ___ (was/were) boring.",
+        "correctAnswer": "was"
+      },
+      {
+        "id": "q8_rep",
+        "type": "fill_in_blank",
+        "question": "Please close ___ door (конкретную).",
+        "correctAnswer": "the"
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l9",
-    "title": "Урок 9: Present Continuous (Настоящее продолженное)",
+    "title": "Урок 9: Past Simple: Правильные и неправильные глаголы",
+    "moduleId": 3,
     "theory": [
-      "Действие происходит ПРЯМО СЕЙЧАС! 🐰 Это время Present Continuous.",
-      "Оно строится так: глагол \"to be\" (am/is/are) + глагол с окончанием -ing.",
-      "Например: \"I am reading a book\" (Я читаю книгу прямо сейчас).",
-      "Сравни: \"I read every day\" (Present Simple, регулярно) и \"I am reading now\" (Present Continuous, сейчас)."
+      "При описании завершенных действий в прошлом английские глаголы делятся на две категории: правильные (regular) и неправильные (irregular).",
+      "Правильные глаголы образуют форму прошедшего времени путем прибавления окончания '-ed' к инфинитиву: work — worked, start — started.",
+      "Орфографические нюансы: если правильный глагол оканчивается на '-e', прибавляется только '-d' (like — liked). Если он оканчивается на согласную + '-y', 'y' меняется на 'i' (study — studied). Если на краткую гласную + согласную, конечная согласная удваивается (stop — stopped).",
+      "Неправильные глаголы не подчиняются этому правилу и образуют форму прошедшего времени особыми способами. Их вторые формы (V2) требуют механического запоминания. Примеры: go — went, see — saw, buy — bought.",
+      "В утвердительных предложениях форма прошедшего времени используется независимо от лица и числа: 'I worked', 'He worked', 'We went', 'They went'."
     ],
     "words": [
       {
-        "id": "v71",
-        "word": "Friend",
-        "transcription": "[фрэнд]",
-        "translation": "Друг"
+        "id": "v_9_House",
+        "word": "House",
+        "transcription": "[haʊs]",
+        "translation": "Дом",
+        "category": "Basic"
       },
       {
-        "id": "v72",
-        "word": "Father",
-        "transcription": "[фа́зэр]",
-        "translation": "Отец"
-      },
-      {
-        "id": "v73",
-        "word": "Power",
-        "transcription": "[па́уэ]",
-        "translation": "Сила / Власть"
-      },
-      {
-        "id": "v74",
-        "word": "Hour",
-        "transcription": "[а́уэ]",
-        "translation": "Час"
-      },
-      {
-        "id": "v75",
-        "word": "Game",
-        "transcription": "[гэйм]",
-        "translation": "Игра"
-      },
-      {
-        "id": "v76",
-        "word": "Line",
-        "transcription": "[лайн]",
-        "translation": "Линия"
-      },
-      {
-        "id": "v77",
-        "word": "End",
-        "transcription": "[энд]",
-        "translation": "Конец"
-      },
-      {
-        "id": "v78",
-        "word": "Member",
-        "transcription": "[мэ́мбэр]",
-        "translation": "Член (группы)"
-      },
-      {
-        "id": "v79",
-        "word": "Law",
-        "transcription": "[ло]",
-        "translation": "Закон"
-      },
-      {
-        "id": "v80",
-        "word": "Car",
-        "transcription": "[кар]",
-        "translation": "Машина"
+        "id": "v_9_Problem",
+        "word": "Problem",
+        "transcription": "[ˈprɒbləm]",
+        "translation": "Проблема",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q9_1",
-        "question": "I ___ TV now.",
-        "options": [
-          "watch",
-          "am watching",
-          "is watching"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I ___ (play) tennis yesterday.",
+        "correctAnswer": "played"
       },
       {
         "id": "q9_2",
-        "question": "He ___ currently working.",
+        "type": "multiple_choice",
+        "question": "Какая вторая форма у глагола 'go'?",
         "options": [
-          "is",
-          "are",
-          "am"
+          "went",
+          "goed",
+          "gone"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q9_3",
-        "question": "They are ___ football.",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Она смотрела телевизор'.",
         "options": [
-          "play",
-          "playing",
-          "plays"
+          "is",
+          "watch",
+          "She",
+          "TV",
+          "watched"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "She",
+          "watched",
+          "TV"
+        ]
       },
       {
         "id": "q9_4",
-        "question": "She ___ sleeping right now.",
-        "options": [
-          "are",
-          "am",
-          "is"
-        ],
-        "correctAnswerIndex": 2
+        "type": "fill_in_blank",
+        "question": "We ___ (see) a good movie last night.",
+        "correctAnswer": "saw"
       },
       {
         "id": "q9_5",
-        "question": "We ___ learning English.",
+        "type": "multiple_choice",
+        "question": "Какое окончание добавляется к правильным глаголам в Past Simple?",
         "options": [
-          "are",
-          "is",
-          "am"
+          "-ed",
+          "-s",
+          "-ing"
         ],
         "correctAnswerIndex": 0
+      },
+      {
+        "id": "q9_6",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Я купил новую машину'.",
+        "options": [
+          "I",
+          "bought",
+          "new",
+          "a",
+          "was",
+          "car",
+          "buyed"
+        ],
+        "correctSentence": [
+          "I",
+          "bought",
+          "a",
+          "new",
+          "car"
+        ]
+      },
+      {
+        "id": "q9_7",
+        "type": "fill_in_blank",
+        "question": "He ___ (stop) the car.",
+        "correctAnswer": "stopped"
+      },
+      {
+        "id": "q9_rep",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Тебе нравится музыка?'",
+        "options": [
+          "likes",
+          "?",
+          "music",
+          "Do",
+          "like",
+          "you",
+          "Are"
+        ],
+        "correctSentence": [
+          "Do",
+          "you",
+          "like",
+          "music",
+          "?"
+        ]
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l10",
-    "title": "Урок 10: Предлоги места (in, on, at)",
+    "title": "Урок 10: Past Simple: Вопросы и Отрицания",
+    "moduleId": 3,
     "theory": [
-      "Где мы? 🐰 Давайте разберемся с предлогами.",
-      "IN — внутри чего-то (in a box, in London, in a room).",
-      "ON — на поверхности (on the table, on the floor).",
-      "AT — в конкретной точке, учреждении или на мероприятии (at school, at home, at the bus stop).",
-      "Запомни: I am IN the building, but I am AT work."
+      "Для образования отрицательных и вопросительных предложений с глаголами действия в Past Simple используется вспомогательный глагол 'did' (форма прошедшего времени от 'do').",
+      "Отрицательная форма образуется конструкцией 'did not' (сокращенно 'didn't'), которая ставится перед смысловым глаголом. Это правило универсально для всех лиц и чисел: 'I didn't go', 'She didn't call'.",
+      "Ключевое грамматическое правило: появление вспомогательного глагола 'did' переносит маркер прошедшего времени на себя. Смысловой глагол при этом возвращается в начальную форму (инфинитив).",
+      "Использование прошедшего времени у двух глаголов подряд является грубой ошибкой. Например, 'I didn't went' — неверно. Корректная форма: 'I didn't go'.",
+      "В вопросительных предложениях 'did' ставится перед подлежащим, а смысловой глагол остается в начальной форме: 'Did you see him?'. Краткие ответы: 'Yes, I did' / 'No, I didn't'."
     ],
     "words": [
       {
-        "id": "v81",
-        "word": "City",
-        "transcription": "[си́ти]",
-        "translation": "Город"
+        "id": "v_10_Fact",
+        "word": "Fact",
+        "transcription": "[fækt]",
+        "translation": "Факт",
+        "category": "Basic"
       },
       {
-        "id": "v82",
-        "word": "Community",
-        "transcription": "[комью́нити]",
-        "translation": "Сообщество"
-      },
-      {
-        "id": "v83",
-        "word": "Name",
-        "transcription": "[нэйм]",
-        "translation": "Имя"
-      },
-      {
-        "id": "v84",
-        "word": "President",
-        "transcription": "[прэ́зидант]",
-        "translation": "Президент"
-      },
-      {
-        "id": "v85",
-        "word": "Team",
-        "transcription": "[тим]",
-        "translation": "Команда"
-      },
-      {
-        "id": "v86",
-        "word": "Minute",
-        "transcription": "[ми́нат]",
-        "translation": "Минута"
-      },
-      {
-        "id": "v87",
-        "word": "Idea",
-        "transcription": "[айди́а]",
-        "translation": "Идея"
-      },
-      {
-        "id": "v88",
-        "word": "Kid",
-        "transcription": "[кид]",
-        "translation": "Ребенок (разг.)"
-      },
-      {
-        "id": "v89",
-        "word": "Body",
-        "transcription": "[ба́ди]",
-        "translation": "Тело"
-      },
-      {
-        "id": "v90",
-        "word": "Information",
-        "transcription": "[информэ́йшн]",
-        "translation": "Информация"
+        "id": "v_10_Morning",
+        "word": "Morning",
+        "transcription": "[ˈmɔːnɪŋ]",
+        "translation": "Утро",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q10_1",
-        "question": "The book is ___ the table.",
-        "options": [
-          "in",
-          "on",
-          "at"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I ___ not know about it.",
+        "correctAnswer": "did"
       },
       {
         "id": "q10_2",
-        "question": "I live ___ New York.",
+        "type": "multiple_choice",
+        "question": "Выберите грамматически верный вопрос:",
         "options": [
-          "in",
-          "on",
-          "at"
+          "Did she call you?",
+          "Did she called you?",
+          "Does she called you?"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q10_3",
-        "question": "She is waiting ___ the bus stop.",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Они выиграли игру?'",
         "options": [
-          "in",
-          "on",
-          "at"
+          "won",
+          "win",
+          "?",
+          "Did",
+          "Do",
+          "game",
+          "they",
+          "the"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "Did",
+          "they",
+          "win",
+          "the",
+          "game",
+          "?"
+        ]
       },
       {
         "id": "q10_4",
-        "question": "There is a spider ___ the wall!",
-        "options": [
-          "in",
-          "on",
-          "at"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "He didn't ___ (went/go) to school.",
+        "correctAnswer": "go"
       },
       {
         "id": "q10_5",
-        "question": "He is currently ___ home.",
+        "type": "multiple_choice",
+        "question": "Как правильно сказать 'Я не сделал это'?",
         "options": [
-          "in",
-          "on",
-          "at"
+          "I didn't do it.",
+          "I didn't did it.",
+          "I don't did it."
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q10_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мы не спали'.",
+        "options": [
+          "slept",
+          "We",
+          "not",
+          "sleep",
+          "was",
+          "did"
+        ],
+        "correctSentence": [
+          "We",
+          "did",
+          "not",
+          "sleep"
+        ]
+      },
+      {
+        "id": "q10_7",
+        "type": "fill_in_blank",
+        "question": "___ you understand the rule?",
+        "correctAnswer": "Did"
+      },
+      {
+        "id": "q10_rep",
+        "type": "multiple_choice",
+        "question": "Множественное число от слова 'woman'?",
+        "options": [
+          "women",
+          "womans",
+          "womens"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 1
+    ]
   },
   {
     "id": "l11",
-    "title": "Урок 11: Past Simple (Прошедшее простое)",
+    "title": "Урок 11: Future Simple (Будущее с Will)",
+    "moduleId": 4,
     "theory": [
-      "Погружаемся в прошлое! 🐰 Действие произошло и закончилось.",
-      "Для правильных глаголов добавляем окончание \"-ed\": work -> worked, play -> played.",
-      "Но в английском много неправильных глаголов. Их нужно учить наизусть! Go -> went, see -> saw, buy -> bought.",
-      "Например: \"I played tennis yesterday\" или \"I went to school\"."
+      "Future Simple (Простое будущее время) служит для выражения разовых действий, предположений и спонтанных решений в будущем.",
+      "Время образуется при помощи модального вспомогательного глагола 'will' и начальной формы смыслового глагола (без частицы 'to'). 'Will' универсален для всех лиц и чисел: 'I will help', 'He will come'.",
+      "Отрицательная форма 'will not' имеет исторически сложившееся сокращение 'won't'. Пример: 'I won't do this' (Я не буду этого делать).",
+      "Вопросительная форма строится путем инверсии: 'will' ставится перед подлежащим. 'Will you marry me?'.",
+      "Контексты использования 'will': 1) Спонтанные решения в момент речи ('Звонит телефон, я отвечу' — 'I will answer'). 2) Обещания ('Я никогда тебя не покину' — 'I will never leave you'). 3) Предсказания, основанные на личном мнении ('Я думаю, мы победим' — 'I think we will win')."
     ],
     "words": [
       {
-        "id": "v91",
-        "word": "Back",
-        "transcription": "[бэк]",
-        "translation": "Спина / Назад"
+        "id": "v_11_Point",
+        "word": "Point",
+        "transcription": "[pɔɪnt]",
+        "translation": "Точка",
+        "category": "Basic"
       },
       {
-        "id": "v92",
-        "word": "Parent",
-        "transcription": "[пэ́рэнт]",
-        "translation": "Родитель"
-      },
-      {
-        "id": "v93",
-        "word": "Face",
-        "transcription": "[фэйс]",
-        "translation": "Лицо"
-      },
-      {
-        "id": "v94",
-        "word": "Others",
-        "transcription": "[а́зэрз]",
-        "translation": "Другие"
-      },
-      {
-        "id": "v95",
-        "word": "Level",
-        "transcription": "[лэ́вэл]",
-        "translation": "Уровень"
-      },
-      {
-        "id": "v96",
-        "word": "Office",
-        "transcription": "[о́фис]",
-        "translation": "Офис"
-      },
-      {
-        "id": "v97",
-        "word": "Door",
-        "transcription": "[дор]",
-        "translation": "Дверь"
-      },
-      {
-        "id": "v98",
-        "word": "Health",
-        "transcription": "[хэлс]",
-        "translation": "Здоровье"
-      },
-      {
-        "id": "v99",
-        "word": "Person",
-        "transcription": "[пё́рсн]",
-        "translation": "Человек (личность)"
-      },
-      {
-        "id": "v100",
-        "word": "Art",
-        "transcription": "[арт]",
-        "translation": "Искусство"
+        "id": "v_11_City",
+        "word": "City",
+        "transcription": "[ˈsɪti]",
+        "translation": "Город",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q11_1",
-        "question": "He ___ TV yesterday.",
-        "options": [
-          "watch",
-          "watched",
-          "watching"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I ___ always love you.",
+        "correctAnswer": "will"
       },
       {
         "id": "q11_2",
-        "question": "I ___ to London last year.",
+        "type": "multiple_choice",
+        "question": "Какое сокращение у 'will not'?",
         "options": [
-          "go",
-          "went",
-          "goed"
+          "won't",
+          "willn't",
+          "want"
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
       },
       {
         "id": "q11_3",
-        "question": "She ___ a new car.",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она не придет'.",
         "options": [
-          "buy",
-          "buyed",
-          "bought"
+          "will",
+          "She",
+          "comes",
+          "not",
+          "won't",
+          "come"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "She",
+          "will",
+          "not",
+          "come"
+        ]
       },
       {
         "id": "q11_4",
-        "question": "They ___ football on Sunday.",
-        "options": [
-          "play",
-          "played",
-          "playing"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "___ you help me with my homework?",
+        "correctAnswer": "Will"
       },
       {
         "id": "q11_5",
-        "question": "We ___ him yesterday.",
+        "type": "multiple_choice",
+        "question": "Для чего мы используем 'will'?",
         "options": [
-          "see",
-          "saw",
-          "seed"
+          "Для спонтанных решений и обещаний",
+          "Для запланированных действий",
+          "Для действий в прошлом"
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q11_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мы победим'.",
+        "options": [
+          "won't",
+          "will",
+          "are",
+          "win",
+          "We"
+        ],
+        "correctSentence": [
+          "We",
+          "will",
+          "win"
+        ]
+      },
+      {
+        "id": "q11_7",
+        "type": "fill_in_blank",
+        "question": "I promise I ___ (will) be there.",
+        "correctAnswer": "will"
+      },
+      {
+        "id": "q11_rep",
+        "type": "multiple_choice",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
+        "options": [
+          "these",
+          "this",
+          "those"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l12",
-    "title": "Урок 12: Вопросы в Past Simple",
+    "title": "Урок 12: Конструкция Be Going To (Планы)",
+    "moduleId": 4,
     "theory": [
-      "Как задать вопрос о прошлом? 🐰 На помощь приходит супергерой DID (прошлая форма от do).",
-      "DID ставится в начало предложения, и он забирает всю \"прошлость\" на себя!",
-      "Поэтому основной глагол возвращается в начальную форму.",
-      "Пример: \"You went to school\" -> \"DID you GO to school?\". Не \"did you went\"!"
+      "Если 'will' используется для спонтанных решений, то конструкция 'be going to' применяется для выражения заранее обдуманных намерений и четких планов.",
+      "Структура конструкции: соответствующая форма глагола 'to be' (am/is/are) + going to + инфинитив смыслового глагола. Переводится как 'собираться что-то сделать'.",
+      "Пример плана: 'I am going to buy a car' (Я собираюсь купить машину — решение было принято до момента речи, возможно, уже накоплены средства).",
+      "Для образования отрицания частица 'not' добавляется к глаголу 'to be': 'She isn't going to work'. В вопросах 'to be' выносится вперед: 'Are you going to stay?'.",
+      "Вторая функция 'be going to' — предсказания, основанные на объективных, видимых фактах (в отличие от 'will', основанного на мнении). Пример: глядя на черные тучи, мы говорим 'It is going to rain' (Сейчас пойдет дождь)."
     ],
     "words": [
       {
-        "id": "v101",
-        "word": "War",
-        "transcription": "[уо́р]",
-        "translation": "Война"
+        "id": "v_12_Father",
+        "word": "Father",
+        "transcription": "[ˈfɑːðə]",
+        "translation": "Отец",
+        "category": "Basic"
       },
       {
-        "id": "v102",
-        "word": "History",
-        "transcription": "[хи́стори]",
-        "translation": "История (наука)"
-      },
-      {
-        "id": "v103",
-        "word": "Party",
-        "transcription": "[па́рти]",
-        "translation": "Вечеринка / Партия"
-      },
-      {
-        "id": "v104",
-        "word": "Result",
-        "transcription": "[риза́лт]",
-        "translation": "Результат"
-      },
-      {
-        "id": "v105",
-        "word": "Change",
-        "transcription": "[чэйндж]",
-        "translation": "Изменение"
-      },
-      {
-        "id": "v106",
-        "word": "Morning",
-        "transcription": "[мо́рнинг]",
-        "translation": "Утро"
-      },
-      {
-        "id": "v107",
-        "word": "Reason",
-        "transcription": "[ри́зн]",
-        "translation": "Причина"
-      },
-      {
-        "id": "v108",
-        "word": "Research",
-        "transcription": "[рисё́ч]",
-        "translation": "Исследование"
-      },
-      {
-        "id": "v109",
-        "word": "Girl",
-        "transcription": "[гёл]",
-        "translation": "Девочка"
-      },
-      {
-        "id": "v110",
-        "word": "Guy",
-        "transcription": "[гай]",
-        "translation": "Парень"
+        "id": "v_12_Mother",
+        "word": "Mother",
+        "transcription": "[ˈmʌðə]",
+        "translation": "Мать",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q12_1",
-        "question": "___ you watch the movie?",
-        "options": [
-          "Do",
-          "Did",
-          "Does"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I am ___ to read this book.",
+        "correctAnswer": "going"
       },
       {
         "id": "q12_2",
-        "question": "Did he ___ to the party?",
+        "type": "multiple_choice",
+        "question": "В каком случае мы используем 'be going to'?",
         "options": [
-          "went",
-          "goes",
-          "go"
+          "Для запланированных действий и намерений",
+          "Для спонтанных решений в момент речи",
+          "Для привычек в настоящем"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
       },
       {
         "id": "q12_3",
-        "question": "Where did you ___?",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Он собирается позвонить ей'.",
         "options": [
-          "live",
-          "lived",
-          "living"
+          "will",
+          "her",
+          "call",
+          "is",
+          "calls",
+          "He",
+          "to",
+          "going"
         ],
-        "correctAnswerIndex": 0
+        "correctSentence": [
+          "He",
+          "is",
+          "going",
+          "to",
+          "call",
+          "her"
+        ]
       },
       {
         "id": "q12_4",
-        "question": "___ they buy a car?",
+        "type": "fill_in_blank",
+        "question": "They ___ (are/is) going to win.",
+        "correctAnswer": "are"
+      },
+      {
+        "id": "q12_5",
+        "type": "multiple_choice",
+        "question": "Как сказать 'Я не собираюсь сдаваться'?",
         "options": [
-          "Did",
-          "Do",
-          "Are"
+          "I am not going to give up.",
+          "I won't going to give up.",
+          "I not going to give up."
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q12_5",
-        "question": "Did she ___ the homework?",
+        "id": "q12_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Пойдет дождь (очевидно)'.",
         "options": [
-          "did",
-          "do",
-          "does"
+          "rain",
+          "to",
+          "It",
+          "is",
+          "going",
+          "will",
+          "raining"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "It",
+          "is",
+          "going",
+          "to",
+          "rain"
+        ]
+      },
+      {
+        "id": "q12_7",
+        "type": "fill_in_blank",
+        "question": "What are you going ___ (do)?",
+        "correctAnswer": "to do"
+      },
+      {
+        "id": "q12_rep",
+        "type": "multiple_choice",
+        "question": "Что выбрать для слова 'дерево' (неодушевленное)?",
+        "options": [
+          "its leaves",
+          "his leaves",
+          "her leaves"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l13",
-    "title": "Урок 13: Future Simple (Будущее время)",
+    "title": "Урок 13: Модальные глаголы: Can, Must, Should",
+    "moduleId": 4,
     "theory": [
-      "Заглянем в будущее! 🐰 Это самое легкое время.",
-      "Просто ставим слово \"WILL\" перед глаголом. \"I will go\" (Я пойду).",
-      "В отрицании: \"will not\", а сокращенно — \"won't\". \"I won't go\" (Я не пойду).",
-      "Используй Future Simple для спонтанных решений, обещаний и прогнозов."
+      "Модальные глаголы (Modal Verbs) выражают не само действие, а отношение говорящего к этому действию: возможность, способность, долженствование или совет.",
+      "Они обладают рядом грамматических особенностей: не требуют окончаний '-s' в третьем лице, образуют вопросы и отрицания без вспомогательных 'do/does', и смысловой глагол после них ставится БЕЗ частицы 'to' (исключения: ought to, have to).",
+      "CAN (физическая или умственная способность): 'I can swim' (Я умею плавать). Отрицание пишется слитно 'cannot' или сокращается до 'can't'.",
+      "MUST (строгая необходимость, приказ или внутреннее обязательство): 'You must stop' (Ты обязан остановиться). Форма 'mustn't' выражает строгий запрет (нельзя).",
+      "SHOULD (рекомендация, мягкий совет): 'You should see a doctor' (Тебе следует обратиться к врачу). Выражает мнение о том, что было бы правильным сделать."
     ],
     "words": [
       {
-        "id": "v111",
-        "word": "Food",
-        "transcription": "[фуд]",
-        "translation": "Еда"
+        "id": "v_13_Power",
+        "word": "Power",
+        "transcription": "[ˈpaʊə]",
+        "translation": "Сила",
+        "category": "Basic"
       },
       {
-        "id": "v112",
-        "word": "Moment",
-        "transcription": "[мо́умант]",
-        "translation": "Момент"
-      },
-      {
-        "id": "v113",
-        "word": "Air",
-        "transcription": "[эр]",
-        "translation": "Воздух"
-      },
-      {
-        "id": "v114",
-        "word": "Teacher",
-        "transcription": "[ти́чэр]",
-        "translation": "Учитель"
-      },
-      {
-        "id": "v115",
-        "word": "Force",
-        "transcription": "[форс]",
-        "translation": "Сила (физическая)"
-      },
-      {
-        "id": "v116",
-        "word": "Education",
-        "transcription": "[эдюкэ́йшн]",
-        "translation": "Образование"
-      },
-      {
-        "id": "v117",
-        "word": "Good",
-        "transcription": "[гуд]",
-        "translation": "Хороший"
-      },
-      {
-        "id": "v118",
-        "word": "New",
-        "transcription": "[нью]",
-        "translation": "Новый"
-      },
-      {
-        "id": "v119",
-        "word": "First",
-        "transcription": "[фаст]",
-        "translation": "Первый"
-      },
-      {
-        "id": "v120",
-        "word": "Last",
-        "transcription": "[лэст]",
-        "translation": "Последний"
+        "id": "v_13_Money",
+        "word": "Money",
+        "transcription": "[ˈmʌni]",
+        "translation": "Деньги",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q13_1",
-        "question": "I ___ help you!",
+        "type": "multiple_choice",
+        "question": "Нужна ли частица 'to' после модального глагола 'must'?",
         "options": [
-          "will",
-          "am",
-          "do"
+          "Нет, никогда",
+          "Да, всегда",
+          "Только с местоимением he"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q13_2",
-        "question": "She ___ be here tomorrow.",
-        "options": [
-          "wills",
-          "will",
-          "is"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I ___ speak three languages (умею).",
+        "correctAnswer": "can"
       },
       {
         "id": "q13_3",
-        "question": "They ___ come to the party.",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Можешь мне помочь?'",
         "options": [
-          "don't",
-          "won't",
-          "willn't"
+          "you",
+          "Do",
+          "to",
+          "me",
+          "help",
+          "?",
+          "Can"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "Can",
+          "you",
+          "help",
+          "me",
+          "?"
+        ]
       },
       {
         "id": "q13_4",
-        "question": "___ you open the door?",
+        "type": "multiple_choice",
+        "question": "Какое слово выражает мягкий совет (следует)?",
         "options": [
-          "Will",
-          "Are",
-          "Do"
+          "should",
+          "must",
+          "can"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q13_5",
-        "question": "I think it ___ rain.",
+        "type": "fill_in_blank",
+        "question": "You ___ stop at the red light (обязан).",
+        "correctAnswer": "must"
+      },
+      {
+        "id": "q13_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Тебе не следует есть это'.",
         "options": [
-          "will",
-          "is",
-          "does"
+          "this",
+          "mustn't",
+          "eat",
+          "You",
+          "should",
+          "don't",
+          "not"
         ],
-        "correctAnswerIndex": 0
+        "correctSentence": [
+          "You",
+          "should",
+          "not",
+          "eat",
+          "this"
+        ]
+      },
+      {
+        "id": "q13_7",
+        "type": "fill_in_blank",
+        "question": "She ___ (не может) swim.",
+        "correctAnswer": "cannot"
+      },
+      {
+        "id": "q13_rep",
+        "type": "fill_in_blank",
+        "question": "___ you ready?",
+        "correctAnswer": "Are"
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l14",
-    "title": "Урок 14: Конструкция \"going to\"",
+    "title": "Урок 14: Present Perfect: Результат",
+    "moduleId": 5,
     "theory": [
-      "А если у тебя есть четкий план на будущее? 🐰 Используй конструкцию \"be going to\" (собираться что-то сделать).",
-      "Формула: am/is/are + going to + глагол.",
-      "Например: \"I am going to visit my granny\" (Я собираюсь навестить бабулю - у меня куплены билеты).",
-      "Сравни: \"I will call him\" (спонтанно решил) и \"I am going to call him\" (спланировал заранее)."
+      "Present Perfect (Настоящее совершенное время) связывает прошлое с настоящим. Оно используется для описания действия, которое произошло в неопределенный момент в прошлом, но его результат актуален и важен прямо сейчас.",
+      "Структура образования: вспомогательный глагол have (для I, you, we, they) или has (для he, she, it) + третья форма смыслового глагола (V3 / Past Participle).",
+      "Для правильных глаголов третья форма совпадает со второй и имеет окончание '-ed' (worked). Для неправильных — это третья колонка в таблице неправильных глаголов (go - went - gone).",
+      "Основное отличие от Past Simple: Past Simple фокусируется на времени совершения действия (когда?), а Present Perfect — на самом факте совершения и его текущем результате. Пример: 'I have lost my keys' (результат: я не могу войти в дом).",
+      "Вопросительная форма образуется инверсией: 'Have you seen it?'. Отрицательная — добавлением 'not': 'I haven't finished'."
     ],
     "words": [
       {
-        "id": "v121",
-        "word": "Long",
-        "transcription": "[лонг]",
-        "translation": "Длинный"
+        "id": "v_14_Father",
+        "word": "Father",
+        "transcription": "[ˈfɑːðə]",
+        "translation": "Отец",
+        "category": "Basic"
       },
       {
-        "id": "v122",
-        "word": "Great",
-        "transcription": "[грэйт]",
-        "translation": "Великий / Отличный"
-      },
-      {
-        "id": "v123",
-        "word": "Little",
-        "transcription": "[литл]",
-        "translation": "Маленький"
-      },
-      {
-        "id": "v124",
-        "word": "Own",
-        "transcription": "[оун]",
-        "translation": "Собственный"
-      },
-      {
-        "id": "v125",
-        "word": "Other",
-        "transcription": "[а́зэр]",
-        "translation": "Другой"
-      },
-      {
-        "id": "v126",
-        "word": "Old",
-        "transcription": "[оулд]",
-        "translation": "Старый"
-      },
-      {
-        "id": "v127",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Правый"
-      },
-      {
-        "id": "v128",
-        "word": "Big",
-        "transcription": "[биг]",
-        "translation": "Большой"
-      },
-      {
-        "id": "v129",
-        "word": "High",
-        "transcription": "[хай]",
-        "translation": "Высокий"
-      },
-      {
-        "id": "v130",
-        "word": "Different",
-        "transcription": "[ди́ферэнт]",
-        "translation": "Различный"
+        "id": "v_14_Music",
+        "word": "Music",
+        "transcription": "[ˈmjuːzɪk]",
+        "translation": "Музыка",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q14_1",
-        "question": "I am ___ to buy a car.",
+        "type": "multiple_choice",
+        "question": "Какова формула Present Perfect?",
         "options": [
-          "go",
-          "going",
-          "will"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q14_2",
-        "question": "He ___ going to sleep.",
-        "options": [
-          "is",
-          "are",
-          "am"
+          "have/has + V3",
+          "am/is/are + Ving",
+          "was/were + Ving"
         ],
         "correctAnswerIndex": 0
       },
       {
+        "id": "q14_2",
+        "type": "fill_in_blank",
+        "question": "I ___ finished my work.",
+        "correctAnswer": "have"
+      },
+      {
         "id": "q14_3",
-        "question": "They ___ going to win.",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она потеряла свои ключи'.",
         "options": [
+          "lost",
+          "her",
           "is",
-          "am",
-          "are"
+          "has",
+          "keys",
+          "She",
+          "have"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "She",
+          "has",
+          "lost",
+          "her",
+          "keys"
+        ]
       },
       {
         "id": "q14_4",
-        "question": "Are you going to ___ ?",
+        "type": "multiple_choice",
+        "question": "Какой глагол нужен для 'He' в Present Perfect?",
         "options": [
-          "swimming",
-          "swam",
-          "swim"
+          "has",
+          "have",
+          "had"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
       },
       {
         "id": "q14_5",
-        "question": "She is going ___ read a book.",
+        "type": "fill_in_blank",
+        "question": "We have ___ (see) this movie.",
+        "correctAnswer": "seen"
+      },
+      {
+        "id": "q14_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я сделал это'.",
         "options": [
-          "for",
-          "to",
-          "at"
+          "I",
+          "am",
+          "it",
+          "done",
+          "have",
+          "did"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "I",
+          "have",
+          "done",
+          "it"
+        ]
+      },
+      {
+        "id": "q14_7",
+        "type": "fill_in_blank",
+        "question": "___ you finished?",
+        "correctAnswer": "Have"
+      },
+      {
+        "id": "q14_rep",
+        "type": "multiple_choice",
+        "question": "Как пишется множественное число от 'box'?",
+        "options": [
+          "boxes",
+          "boxs",
+          "box"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l15",
-    "title": "Урок 15: Модальный глагол CAN",
+    "title": "Урок 15: Present Perfect: Маркеры",
+    "moduleId": 5,
     "theory": [
-      "Модальные глаголы — особые! 🐰 Глагол CAN означает \"могу, умею\".",
-      "Особенности: 1. После него не ставится \"to\" (I can swim).",
-      "2. К нему никогда не добавляется \"-s\" (He can swim).",
-      "3. Для вопроса он сам выходит вперед (Can you swim?), а для отрицания берет частицу not (cannot или can't)."
+      "Для корректного использования Present Perfect важно знать его лексические маркеры — наречия, которые указывают на связь действия с настоящим моментом.",
+      "JUST (только что) указывает на действие, завершившееся непосредственно перед моментом речи. Ставится между вспомогательным и смысловым глаголом: 'I have just arrived'.",
+      "ALREADY (уже) подчеркивает, что действие свершилось, часто раньше, чем ожидалось. Позиция в предложении аналогична: 'She has already done it'.",
+      "YET (еще/уже) используется исключительно в отрицательных и вопросительных предложениях и ставится в самом конце фразы: 'I haven't finished yet' (Я еще не закончил) / 'Have you eaten yet?' (Ты уже поел?).",
+      "EVER (когда-либо) и NEVER (никогда) служат для описания жизненного опыта. 'Have you ever been to Paris?'. Важное правило: 'never' делает всё предложение отрицательным, поэтому дополнительное 'not' не используется ('I have never seen it', а не 'I haven't never')."
     ],
     "words": [
       {
-        "id": "v131",
-        "word": "Small",
-        "transcription": "[смол]",
-        "translation": "Маленький"
+        "id": "v_15_Friend",
+        "word": "Friend",
+        "transcription": "[frɛnd]",
+        "translation": "Друг",
+        "category": "Basic"
       },
       {
-        "id": "v132",
-        "word": "Large",
-        "transcription": "[лардж]",
-        "translation": "Крупный"
-      },
-      {
-        "id": "v133",
-        "word": "Next",
-        "transcription": "[нэкст]",
-        "translation": "Следующий"
-      },
-      {
-        "id": "v134",
-        "word": "Early",
-        "transcription": "[э́ли]",
-        "translation": "Ранний"
-      },
-      {
-        "id": "v135",
-        "word": "Young",
-        "transcription": "[янг]",
-        "translation": "Молодой"
-      },
-      {
-        "id": "v136",
-        "word": "Important",
-        "transcription": "[импо́ртэнт]",
-        "translation": "Важный"
-      },
-      {
-        "id": "v137",
-        "word": "Few",
-        "transcription": "[фю]",
-        "translation": "Несколько"
-      },
-      {
-        "id": "v138",
-        "word": "Public",
-        "transcription": "[па́блик]",
-        "translation": "Общественный"
-      },
-      {
-        "id": "v139",
-        "word": "Bad",
-        "transcription": "[бэд]",
-        "translation": "Плохой"
-      },
-      {
-        "id": "v140",
-        "word": "Same",
-        "transcription": "[сэйм]",
-        "translation": "Тот же самый"
+        "id": "v_15_Night",
+        "word": "Night",
+        "transcription": "[naɪt]",
+        "translation": "Ночь",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q15_1",
-        "question": "I can ___ English.",
-        "options": [
-          "to speak",
-          "speak",
-          "speaking"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "I have ___ (уже) seen this movie.",
+        "correctAnswer": "already"
       },
       {
         "id": "q15_2",
-        "question": "___ you help me?",
+        "type": "multiple_choice",
+        "question": "Где в предложении ставится слово 'yet'?",
         "options": [
-          "Can",
-          "Do",
-          "Are"
+          "В самом конце",
+          "Перед have/has",
+          "Между have и основным глаголом"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q15_3",
-        "question": "He can ___ very fast.",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Ты когда-нибудь был в Лондоне?'",
         "options": [
-          "runs",
-          "running",
-          "run"
+          "Have",
+          "you",
+          "never",
+          "?",
+          "ever",
+          "London",
+          "did",
+          "to",
+          "been"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "Have",
+          "you",
+          "ever",
+          "been",
+          "to",
+          "London",
+          "?"
+        ]
       },
       {
         "id": "q15_4",
-        "question": "She ___ play the piano.",
+        "type": "fill_in_blank",
+        "question": "He hasn't arrived ___. (еще)",
+        "correctAnswer": "yet"
+      },
+      {
+        "id": "q15_5",
+        "type": "multiple_choice",
+        "question": "Можно ли сказать 'I haven't never been there'?",
         "options": [
-          "can't",
-          "don't can",
-          "doesn't can"
+          "Нет, 'never' уже содержит отрицание",
+          "Да, это правильно",
+          "Можно, но только в разговорной речи"
         ],
         "correctAnswerIndex": 0
       },
       {
-        "id": "q15_5",
-        "question": "They can ___ us.",
+        "id": "q15_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я только что закончил'.",
         "options": [
-          "to see",
-          "sees",
-          "see"
+          "just",
+          "finished",
+          "am",
+          "already",
+          "have",
+          "I"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "I",
+          "have",
+          "just",
+          "finished"
+        ]
+      },
+      {
+        "id": "q15_7",
+        "type": "fill_in_blank",
+        "question": "Have you ___ eaten sushi? (когда-либо)",
+        "correctAnswer": "ever"
+      },
+      {
+        "id": "q15_rep",
+        "type": "drag_and_drop",
+        "question": "Составьте предложение: 'Он мой друг'.",
+        "options": [
+          "friend",
+          "is",
+          "my",
+          "are",
+          "He",
+          "am"
+        ],
+        "correctSentence": [
+          "He",
+          "is",
+          "my",
+          "friend"
+        ]
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l16",
-    "title": "Урок 16: Модальные глаголы MUST и SHOULD",
+    "title": "Урок 16: Conditionals: Условные предложения 0 и 1",
+    "moduleId": 6,
     "theory": [
-      "Продолжаем с модальными! 🐰 MUST означает жесткое \"должен, обязан\".",
-      "SHOULD означает совет — \"следует\".",
-      "Как и у CAN, после них нет \"to\" и они не меняются по лицам.",
-      "Пример: \"You must stop!\" (Ты обязан остановиться). \"You should sleep\" (Тебе следует поспать, совет)."
+      "Условные предложения в английском языке содержат условие (часть с союзом 'if' - если) и следствие. Существует несколько типов таких предложений.",
+      "Zero Conditional (Условие нулевого типа) применяется для выражения научных фактов, законов природы и неоспоримых истин. Структура: If + Present Simple, Present Simple. Пример: 'If you heat ice, it melts' (Если нагреть лед, он тает).",
+      "First Conditional (Условие первого типа) описывает реальные, вероятные события в будущем. Структура: If + Present Simple, Future Simple (will).",
+      "Пример First Conditional: 'If it rains, we will stay at home' (Если пойдет дождь, мы останемся дома).",
+      "Грамматическое табу: в английском языке после союза 'if' в условных предложениях будущего времени никогда не ставится глагол 'will'. Даже если действие относится к будущему, в части с условием ('if-clause') используется Present Simple."
     ],
     "words": [
       {
-        "id": "v1",
-        "word": "Always",
-        "transcription": "[о́лвэйз]",
-        "translation": "Всегда"
+        "id": "v_16_Father",
+        "word": "Father",
+        "transcription": "[ˈfɑːðə]",
+        "translation": "Отец",
+        "category": "Basic"
       },
       {
-        "id": "v2",
-        "word": "Never",
-        "transcription": "[нэ́вэ]",
-        "translation": "Никогда"
-      },
-      {
-        "id": "v3",
-        "word": "Sometimes",
-        "transcription": "[самта́ймз]",
-        "translation": "Иногда"
-      },
-      {
-        "id": "v4",
-        "word": "Often",
-        "transcription": "[о́фн]",
-        "translation": "Часто"
-      },
-      {
-        "id": "v5",
-        "word": "Usually",
-        "transcription": "[ю́жуали]",
-        "translation": "Обычно"
-      },
-      {
-        "id": "v6",
-        "word": "Seldom",
-        "transcription": "[сэ́лдом]",
-        "translation": "Редко"
-      },
-      {
-        "id": "v7",
-        "word": "Every day",
-        "transcription": "[э́ври дэй]",
-        "translation": "Каждый день"
-      },
-      {
-        "id": "v8",
-        "word": "Now",
-        "transcription": "[нау]",
-        "translation": "Сейчас"
-      },
-      {
-        "id": "v9",
-        "word": "Today",
-        "transcription": "[тадэ́й]",
-        "translation": "Сегодня"
-      },
-      {
-        "id": "v10",
-        "word": "Tomorrow",
-        "transcription": "[тумо́роу]",
-        "translation": "Завтра"
+        "id": "v_16_Life",
+        "word": "Life",
+        "transcription": "[laɪf]",
+        "translation": "Жизнь",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q16_1",
-        "question": "You ___ brush your teeth (совет).",
+        "type": "multiple_choice",
+        "question": "Можно ли ставить 'will' сразу после 'if' в условных предложениях 1 типа?",
         "options": [
-          "must",
-          "should",
-          "can"
+          "Нет, никогда",
+          "Да, можно",
+          "Только с I и We"
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
       },
       {
         "id": "q16_2",
-        "question": "You ___ stop at a red light (закон).",
-        "options": [
-          "should",
-          "must",
-          "can"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "If I ___ (have) time, I will help you.",
+        "correctAnswer": "have"
       },
       {
         "id": "q16_3",
-        "question": "He should ___ a doctor.",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Если он позвонит, я отвечу'.",
         "options": [
-          "to see",
-          "sees",
-          "see"
+          "answer",
+          "call",
+          "calls",
+          "will",
+          "If",
+          "he",
+          "will",
+          "I"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "If",
+          "he",
+          "calls",
+          "I",
+          "will",
+          "answer"
+        ]
       },
       {
         "id": "q16_4",
-        "question": "I must ___ now.",
+        "type": "multiple_choice",
+        "question": "Какое это условие: 'If water reaches 100 degrees, it boils'?",
         "options": [
-          "going",
-          "to go",
-          "go"
+          "Zero Conditional (научный факт)",
+          "First Conditional (будущее)",
+          "Second Conditional"
         ],
-        "correctAnswerIndex": 2
+        "correctAnswerIndex": 0
       },
       {
         "id": "q16_5",
-        "question": "___ I open the window? (Следует ли мне?)",
+        "type": "fill_in_blank",
+        "question": "If she comes, we ___ (will) go to the cinema.",
+        "correctAnswer": "will"
+      },
+      {
+        "id": "q16_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Если пойдет дождь, я возьму зонт'.",
         "options": [
-          "Must",
-          "Should",
-          "Do"
+          "will",
+          "take",
+          "am",
+          "rain",
+          "umbrella",
+          "rains",
+          "an",
+          "If",
+          "it",
+          "I"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "If",
+          "it",
+          "rains",
+          "I",
+          "will",
+          "take",
+          "an",
+          "umbrella"
+        ]
+      },
+      {
+        "id": "q16_7",
+        "type": "fill_in_blank",
+        "question": "If you heat ice, it ___ (melt).",
+        "correctAnswer": "melts"
+      },
+      {
+        "id": "q16_rep",
+        "type": "multiple_choice",
+        "question": "Как пишется множественное число от 'box'?",
+        "options": [
+          "boxes",
+          "boxs",
+          "box"
+        ],
+        "correctAnswerIndex": 0
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l17",
-    "title": "Урок 17: Present Perfect (Настоящее совершенное)",
+    "title": "Урок 17: Пассивный залог (Passive Voice)",
+    "moduleId": 6,
     "theory": [
-      "Ох, это сложное время! 🐰 Present Perfect — это связь прошлого и настоящего.",
-      "Действие произошло в прошлом, но РЕЗУЛЬТАТ важен прямо сейчас.",
-      "Формула: have/has + глагол в 3-й форме (V3 или -ed).",
-      "Например: \"I have lost my keys\" (Я потерял ключи — факт из прошлого, но результат: я не могу попасть в дом сейчас)."
+      "Passive Voice (Пассивный залог) используется, когда акцент ставится на объекте, над которым совершается действие, а не на том, кто его совершает (исполнитель может быть неизвестен или неважен).",
+      "В активном залоге подлежащее само выполняет действие: 'Someone stole my car' (Кто-то украл мою машину). В пассивном залоге подлежащее принимает действие: 'My car was stolen' (Моя машина была украдена).",
+      "Универсальная формула пассивного залога: глагол 'to be' в требуемом времени + причастие прошедшего времени (V3 / Past Participle) смыслового глагола.",
+      "В настоящем времени (Present Simple Passive) используется форма 'am/is/are + V3': 'The room is cleaned every day' (Комната убирается каждый день). В прошедшем (Past Simple Passive) — 'was/were + V3': 'The house was built in 1990' (Дом был построен в 1990).",
+      "Если необходимо указать исполнителя действия (агента), используется предлог 'by': 'The book was written by Shakespeare' (Книга была написана Шекспиром)."
     ],
     "words": [
       {
-        "id": "v11",
-        "word": "Yesterday",
-        "transcription": "[е́стэдэй]",
-        "translation": "Вчера"
+        "id": "v_17_Family",
+        "word": "Family",
+        "transcription": "[ˈfæmɪli]",
+        "translation": "Семья",
+        "category": "Basic"
       },
       {
-        "id": "v12",
-        "word": "Soon",
-        "transcription": "[сун]",
-        "translation": "Скоро"
-      },
-      {
-        "id": "v13",
-        "word": "Already",
-        "transcription": "[олрэ́ди]",
-        "translation": "Уже"
-      },
-      {
-        "id": "v14",
-        "word": "Yet",
-        "transcription": "[ет]",
-        "translation": "Еще (не)"
-      },
-      {
-        "id": "v15",
-        "word": "Just",
-        "transcription": "[джаст]",
-        "translation": "Только что"
-      },
-      {
-        "id": "v16",
-        "word": "Time",
-        "transcription": "[тайм]",
-        "translation": "Время"
-      },
-      {
-        "id": "v17",
-        "word": "Year",
-        "transcription": "[йе́а]",
-        "translation": "Год"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ"
-      },
-      {
-        "id": "v20",
-        "word": "Day",
-        "transcription": "[дэй]",
-        "translation": "День"
+        "id": "v_17_Power",
+        "word": "Power",
+        "transcription": "[ˈpaʊə]",
+        "translation": "Сила",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q17_1",
-        "question": "I ___ finished my work.",
+        "type": "multiple_choice",
+        "question": "Какая формула у пассивного залога?",
         "options": [
-          "have",
-          "has",
-          "did"
+          "to be + V3",
+          "have/has + V3",
+          "to be + Ving"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q17_2",
-        "question": "She has ___ a new car.",
-        "options": [
-          "buy",
-          "bought",
-          "buyed"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "This book ___ written in 2020.",
+        "correctAnswer": "was"
       },
       {
         "id": "q17_3",
-        "question": "We have ___ to Paris.",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Письмо было отправлено вчера'.",
         "options": [
-          "go",
-          "went",
-          "been"
+          "was",
+          "letter",
+          "The",
+          "sent",
+          "send",
+          "yesterday",
+          "is"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "The",
+          "letter",
+          "was",
+          "sent",
+          "yesterday"
+        ]
       },
       {
         "id": "q17_4",
-        "question": "He ___ broken his leg.",
+        "type": "multiple_choice",
+        "question": "Какой предлог указывает на исполнителя действия в пассиве?",
         "options": [
-          "have",
-          "has",
-          "is"
+          "by",
+          "with",
+          "from"
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
       },
       {
         "id": "q17_5",
-        "question": "Have you ever ___ sushi?",
+        "type": "fill_in_blank",
+        "question": "English ___ (is) spoken all over the world.",
+        "correctAnswer": "is"
+      },
+      {
+        "id": "q17_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Машина ремонтируется каждый год'.",
         "options": [
-          "eat",
-          "ate",
-          "eaten"
+          "every",
+          "is",
+          "has",
+          "repaired",
+          "year",
+          "The",
+          "car",
+          "reparing"
         ],
-        "correctAnswerIndex": 2
+        "correctSentence": [
+          "The",
+          "car",
+          "is",
+          "repaired",
+          "every",
+          "year"
+        ]
+      },
+      {
+        "id": "q17_7",
+        "type": "fill_in_blank",
+        "question": "America was ___ (discover) by Columbus.",
+        "correctAnswer": "discovered"
+      },
+      {
+        "id": "q17_rep",
+        "type": "fill_in_blank",
+        "question": "___ she at work yesterday?",
+        "correctAnswer": "Was"
       }
-    ],
-    "moduleId": 2
+    ]
   },
   {
     "id": "l18",
-    "title": "Урок 18: Сравнительные прилагательные",
+    "title": "Урок 18: Степени сравнения прилагательных",
+    "moduleId": 7,
     "theory": [
-      "Давай сравнивать вещи! 🐰 Кто быстрее, выше, сильнее?",
-      "Для коротких слов добавляем \"-er\": fast -> faster (быстрее), tall -> taller (выше).",
-      "Для длинных слов используем \"more\": beautiful -> more beautiful (более красивый).",
-      "Слово \"чем\" по-английски будет \"than\". \"He is taller THAN me\"."
+      "Для сравнения признаков предметов используются степени сравнения прилагательных: сравнительная (Comparative) и превосходная (Superlative). Правила зависят от количества слогов в слове.",
+      "Односложные (и некоторые двусложные) прилагательные образуют сравнительную степень путем прибавления суффикса '-er' (tall — taller). Превосходная степень образуется прибавлением суффикса '-est' и обязательным артиклем 'the' (the tallest).",
+      "Многосложные прилагательные образуют степени сравнения с помощью слов 'more' (более) для сравнительной степени и 'the most' (самый) для превосходной. Пример: beautiful — more beautiful — the most beautiful.",
+      "При сопоставлении двух объектов в сравнительной степени используется союз 'than' (чем): 'He is taller than me' (Он выше, чем я).",
+      "Существуют прилагательные-исключения, формы которых меняются полностью. Главные из них: good — better — the best (хороший — лучше — лучший) и bad — worse — the worst (плохой — хуже — худший)."
     ],
     "words": [
       {
-        "id": "v21",
-        "word": "Man",
-        "transcription": "[мэн]",
-        "translation": "Мужчина / Человек"
+        "id": "v_18_City",
+        "word": "City",
+        "transcription": "[ˈsɪti]",
+        "translation": "Город",
+        "category": "Basic"
       },
       {
-        "id": "v22",
-        "word": "Thing",
-        "transcription": "[синг]",
-        "translation": "Вещь"
-      },
-      {
-        "id": "v23",
-        "word": "Woman",
-        "transcription": "[уу́мэн]",
-        "translation": "Женщина"
-      },
-      {
-        "id": "v24",
-        "word": "Life",
-        "transcription": "[лайф]",
-        "translation": "Жизнь"
-      },
-      {
-        "id": "v25",
+        "id": "v_18_Child",
         "word": "Child",
-        "transcription": "[чайлд]",
-        "translation": "Ребенок"
-      },
-      {
-        "id": "v26",
-        "word": "World",
-        "transcription": "[уо́рлд]",
-        "translation": "Мир"
-      },
-      {
-        "id": "v27",
-        "word": "School",
-        "transcription": "[скул]",
-        "translation": "Школа"
-      },
-      {
-        "id": "v28",
-        "word": "State",
-        "transcription": "[стэйт]",
-        "translation": "Состояние / Штат"
-      },
-      {
-        "id": "v29",
-        "word": "Family",
-        "transcription": "[фэ́мили]",
-        "translation": "Семья"
-      },
-      {
-        "id": "v30",
-        "word": "Student",
-        "transcription": "[стью́дэнт]",
-        "translation": "Студент"
+        "transcription": "[ʧaɪld]",
+        "translation": "Ребенок",
+        "category": "Basic"
       }
     ],
     "quiz": [
       {
         "id": "q18_1",
-        "question": "My car is ___ than yours.",
-        "options": [
-          "fast",
-          "faster",
-          "more fast"
-        ],
-        "correctAnswerIndex": 1
+        "type": "fill_in_blank",
+        "question": "He is ___ (tall) than his brother.",
+        "correctAnswer": "taller"
       },
       {
         "id": "q18_2",
-        "question": "This book is ___ interesting than that one.",
+        "type": "multiple_choice",
+        "question": "Какая превосходная степень у слова 'good'?",
         "options": [
-          "more",
-          "most",
-          "much"
+          "the best",
+          "goodest",
+          "the better"
         ],
         "correctAnswerIndex": 0
       },
       {
         "id": "q18_3",
-        "question": "He is older ___ me.",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Это самая красивая машина'.",
         "options": [
-          "then",
-          "than",
-          "that"
+          "most",
+          "the",
+          "is",
+          "beautiful",
+          "beautifullest",
+          "more",
+          "car",
+          "This"
         ],
-        "correctAnswerIndex": 1
+        "correctSentence": [
+          "This",
+          "is",
+          "the",
+          "most",
+          "beautiful",
+          "car"
+        ]
       },
       {
         "id": "q18_4",
-        "question": "A cat is ___ than an elephant.",
+        "type": "multiple_choice",
+        "question": "Какое слово используется для сравнения (чем)?",
         "options": [
-          "small",
-          "smaller",
-          "more small"
+          "than",
+          "then",
+          "that"
         ],
-        "correctAnswerIndex": 1
+        "correctAnswerIndex": 0
       },
       {
         "id": "q18_5",
-        "question": "English is ___ than Chinese.",
+        "type": "fill_in_blank",
+        "question": "My car is ___ (fast) than yours.",
+        "correctAnswer": "faster"
+      },
+      {
+        "id": "q18_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Он худший игрок'.",
         "options": [
-          "easier",
-          "easyer",
-          "more easy"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ],
-    "moduleId": 2
-  },
-  {
-    "id": "l19",
-    "title": "Урок 19: Превосходная степень прилагательных",
-    "theory": [
-      "Самый-самый! 🐰",
-      "Для коротких слов добавляем \"-est\" и артикль \"the\": fast -> the fastest (самый быстрый).",
-      "Для длинных слов: \"the most\": beautiful -> the most beautiful (самый красивый).",
-      "Исключения: good -> better -> THE BEST (лучший). bad -> worse -> THE WORST (худший)."
-    ],
-    "words": [
-      {
-        "id": "v31",
-        "word": "Group",
-        "transcription": "[груп]",
-        "translation": "Группа"
-      },
-      {
-        "id": "v32",
-        "word": "Country",
-        "transcription": "[ка́нтри]",
-        "translation": "Страна"
-      },
-      {
-        "id": "v33",
-        "word": "Problem",
-        "transcription": "[про́блем]",
-        "translation": "Проблема"
-      },
-      {
-        "id": "v34",
-        "word": "Hand",
-        "transcription": "[хэнд]",
-        "translation": "Рука"
-      },
-      {
-        "id": "v35",
-        "word": "Part",
-        "transcription": "[парт]",
-        "translation": "Часть"
-      },
-      {
-        "id": "v36",
-        "word": "Place",
-        "transcription": "[плэйс]",
-        "translation": "Место"
-      },
-      {
-        "id": "v37",
-        "word": "Case",
-        "transcription": "[кэйс]",
-        "translation": "Случай"
-      },
-      {
-        "id": "v38",
-        "word": "Week",
-        "transcription": "[уи́к]",
-        "translation": "Неделя"
-      },
-      {
-        "id": "v39",
-        "word": "Company",
-        "transcription": "[ка́мпани]",
-        "translation": "Компания"
-      },
-      {
-        "id": "v40",
-        "word": "System",
-        "transcription": "[си́стэм]",
-        "translation": "Система"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q19_1",
-        "question": "He is ___ student in the class.",
-        "options": [
-          "the best",
-          "the goodest",
-          "better"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q19_2",
-        "question": "This is the ___ movie ever.",
-        "options": [
-          "more bad",
+          "the",
+          "worst",
           "worse",
-          "worst"
-        ],
-        "correctAnswerIndex": 2
-      },
-      {
-        "id": "q19_3",
-        "question": "Cheetah is the ___ animal.",
-        "options": [
-          "fast",
-          "faster",
-          "fastest"
-        ],
-        "correctAnswerIndex": 2
-      },
-      {
-        "id": "q19_4",
-        "question": "She is the ___ beautiful girl.",
-        "options": [
-          "most",
-          "more",
-          "much"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q19_5",
-        "question": "Mount Everest is the ___ mountain.",
-        "options": [
-          "highest",
-          "high",
-          "higher"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ],
-    "moduleId": 2
-  },
-  {
-    "id": "l20",
-    "title": "Урок 20: Условные предложения (First Conditional)",
-    "theory": [
-      "А что если?.. 🐰 Если погода будет хорошая, мы пойдем гулять.",
-      "Это First Conditional (реальное условие в будущем).",
-      "В части с \"IF\" (если) мы ВСЕГДА используем Present Simple, даже если говорим о будущем!",
-      "В главной части используем Future (will).",
-      "Формула: If + Present Simple, [подлежащее] + will + глагол."
-    ],
-    "words": [
-      {
-        "id": "v41",
-        "word": "Program",
-        "transcription": "[про́грэм]",
-        "translation": "Программа"
-      },
-      {
-        "id": "v42",
-        "word": "Question",
-        "transcription": "[квэ́счэн]",
-        "translation": "Вопрос"
-      },
-      {
-        "id": "v43",
-        "word": "Work",
-        "transcription": "[уо́рк]",
-        "translation": "Работа"
-      },
-      {
-        "id": "v44",
-        "word": "Government",
-        "transcription": "[га́вернмэнт]",
-        "translation": "Правительство"
-      },
-      {
-        "id": "v45",
-        "word": "Number",
-        "transcription": "[на́мбэр]",
-        "translation": "Число"
-      },
-      {
-        "id": "v46",
-        "word": "Night",
-        "transcription": "[найт]",
-        "translation": "Ночь"
-      },
-      {
-        "id": "v47",
-        "word": "Point",
-        "transcription": "[пойнт]",
-        "translation": "Точка / Суть"
-      },
-      {
-        "id": "v48",
-        "word": "Home",
-        "transcription": "[хоум]",
-        "translation": "Дом"
-      },
-      {
-        "id": "v49",
-        "word": "Water",
-        "transcription": "[уо́тэр]",
-        "translation": "Вода"
-      },
-      {
-        "id": "v50",
-        "word": "Room",
-        "transcription": "[рум]",
-        "translation": "Комната"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q20_1",
-        "question": "If it ___, we will stay home.",
-        "options": [
-          "rains",
-          "will rain",
-          "rain"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q20_2",
-        "question": "If you study hard, you ___ pass the exam.",
-        "options": [
-          "will pass",
-          "pass",
-          "passed"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q20_3",
-        "question": "I will call you if I ___ time.",
-        "options": [
-          "will have",
-          "have",
-          "had"
-        ],
-        "correctAnswerIndex": 1
-      },
-      {
-        "id": "q20_4",
-        "question": "If she ___ late, we will leave without her.",
-        "options": [
+          "player",
           "is",
-          "will be",
-          "are"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q20_5",
-        "question": "What will you do if you ___ your phone?",
-        "options": [
-          "will lose",
-          "loses",
-          "lose"
-        ],
-        "correctAnswerIndex": 2
-      }
-    ],
-    "moduleId": 2
-  },
-  {
-    "id": "l21",
-    "title": "Урок 21: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 21.",
-      "Сегодня наша тема: Урок 21: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v1",
-        "word": "Always",
-        "transcription": "[о́лвэйз]",
-        "translation": "Всегда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v2",
-        "word": "Never",
-        "transcription": "[нэ́вэ]",
-        "translation": "Никогда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v3",
-        "word": "Sometimes",
-        "transcription": "[самта́ймз]",
-        "translation": "Иногда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v4",
-        "word": "Often",
-        "transcription": "[о́фн]",
-        "translation": "Часто",
-        "category": "Наречия"
-      },
-      {
-        "id": "v5",
-        "word": "Usually",
-        "transcription": "[ю́жуали]",
-        "translation": "Обычно",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q21_1",
-        "question": "Вопрос 1 для урока 21",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q21_2",
-        "question": "Вопрос 2 для урока 21",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q21_3",
-        "question": "Вопрос 3 для урока 21",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q21_4",
-        "question": "Вопрос 4 для урока 21",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q21_5",
-        "question": "Вопрос 5 для урока 21",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l22",
-    "title": "Урок 22: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 22.",
-      "Сегодня наша тема: Урок 22: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v6",
-        "word": "Seldom",
-        "transcription": "[сэ́лдом]",
-        "translation": "Редко",
-        "category": "Наречия"
-      },
-      {
-        "id": "v7",
-        "word": "Every day",
-        "transcription": "[э́ври дэй]",
-        "translation": "Каждый день",
-        "category": "Наречия"
-      },
-      {
-        "id": "v8",
-        "word": "Now",
-        "transcription": "[нау]",
-        "translation": "Сейчас",
-        "category": "Наречия"
-      },
-      {
-        "id": "v9",
-        "word": "Today",
-        "transcription": "[тадэ́й]",
-        "translation": "Сегодня",
-        "category": "Наречия"
-      },
-      {
-        "id": "v10",
-        "word": "Tomorrow",
-        "transcription": "[тумо́роу]",
-        "translation": "Завтра",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q22_1",
-        "question": "Вопрос 1 для урока 22",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q22_2",
-        "question": "Вопрос 2 для урока 22",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q22_3",
-        "question": "Вопрос 3 для урока 22",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q22_4",
-        "question": "Вопрос 4 для урока 22",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q22_5",
-        "question": "Вопрос 5 для урока 22",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l23",
-    "title": "Урок 23: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 23.",
-      "Сегодня наша тема: Урок 23: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v11",
-        "word": "Yesterday",
-        "transcription": "[е́стэдэй]",
-        "translation": "Вчера",
-        "category": "Наречия"
-      },
-      {
-        "id": "v12",
-        "word": "Soon",
-        "transcription": "[сун]",
-        "translation": "Скоро",
-        "category": "Наречия"
-      },
-      {
-        "id": "v13",
-        "word": "Already",
-        "transcription": "[олрэ́ди]",
-        "translation": "Уже",
-        "category": "Наречия"
-      },
-      {
-        "id": "v14",
-        "word": "Yet",
-        "transcription": "[ет]",
-        "translation": "Еще (не)",
-        "category": "Наречия"
-      },
-      {
-        "id": "v15",
-        "word": "Just",
-        "transcription": "[джаст]",
-        "translation": "Только что",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q23_1",
-        "question": "Вопрос 1 для урока 23",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q23_2",
-        "question": "Вопрос 2 для урока 23",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q23_3",
-        "question": "Вопрос 3 для урока 23",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q23_4",
-        "question": "Вопрос 4 для урока 23",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q23_5",
-        "question": "Вопрос 5 для урока 23",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l24",
-    "title": "Урок 24: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 24.",
-      "Сегодня наша тема: Урок 24: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v16",
-        "word": "Time",
-        "transcription": "[тайм]",
-        "translation": "Время",
-        "category": "Существительные"
-      },
-      {
-        "id": "v17",
-        "word": "Year",
-        "transcription": "[йе́а]",
-        "translation": "Год",
-        "category": "Существительные"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди",
-        "category": "Существительные"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ",
-        "category": "Существительные"
-      },
-      {
-        "id": "v20",
-        "word": "Day",
-        "transcription": "[дэй]",
-        "translation": "День",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q24_1",
-        "question": "Вопрос 1 для урока 24",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q24_2",
-        "question": "Вопрос 2 для урока 24",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q24_3",
-        "question": "Вопрос 3 для урока 24",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q24_4",
-        "question": "Вопрос 4 для урока 24",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q24_5",
-        "question": "Вопрос 5 для урока 24",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l25",
-    "title": "Урок 25: IT и технологии (Собеседование)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 25.",
-      "Сегодня наша тема: Урок 25: IT и технологии (Собеседование).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v151",
-        "word": "Deploy",
-        "transcription": "[дипло́й]",
-        "translation": "Развертывать",
-        "category": "IT и технологии"
-      },
-      {
-        "id": "v152",
-        "word": "Debug",
-        "transcription": "[диба́г]",
-        "translation": "Отлаживать",
-        "category": "IT и технологии"
-      },
-      {
-        "id": "v153",
-        "word": "Framework",
-        "transcription": "[фрэ́ймвэк]",
-        "translation": "Фреймворк",
-        "category": "IT и технологии"
-      },
-      {
-        "id": "v154",
-        "word": "Frontend",
-        "transcription": "[фрoнтэнд]",
-        "translation": "Фронтенд",
-        "category": "IT и технологии"
-      },
-      {
-        "id": "v155",
-        "word": "Backend",
-        "transcription": "[бэкэ́нд]",
-        "translation": "Бэкенд",
-        "category": "IT и технологии"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q25_1",
-        "question": "Вопрос 1 для урока 25",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q25_2",
-        "question": "Вопрос 2 для урока 25",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q25_3",
-        "question": "Вопрос 3 для урока 25",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q25_4",
-        "question": "Вопрос 4 для урока 25",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q25_5",
-        "question": "Вопрос 5 для урока 25",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l26",
-    "title": "Урок 26: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 26.",
-      "Сегодня наша тема: Урок 26: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v21",
-        "word": "Man",
-        "transcription": "[мэн]",
-        "translation": "Мужчина / Человек",
-        "category": "Существительные"
-      },
-      {
-        "id": "v22",
-        "word": "Thing",
-        "transcription": "[синг]",
-        "translation": "Вещь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v23",
-        "word": "Woman",
-        "transcription": "[уу́мэн]",
-        "translation": "Женщина",
-        "category": "Существительные"
-      },
-      {
-        "id": "v24",
-        "word": "Life",
-        "transcription": "[лайф]",
-        "translation": "Жизнь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v25",
-        "word": "Child",
-        "transcription": "[чайлд]",
-        "translation": "Ребенок",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q26_1",
-        "question": "Вопрос 1 для урока 26",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q26_2",
-        "question": "Вопрос 2 для урока 26",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q26_3",
-        "question": "Вопрос 3 для урока 26",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q26_4",
-        "question": "Вопрос 4 для урока 26",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q26_5",
-        "question": "Вопрос 5 для урока 26",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l27",
-    "title": "Урок 27: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 27.",
-      "Сегодня наша тема: Урок 27: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v26",
-        "word": "World",
-        "transcription": "[уо́рлд]",
-        "translation": "Мир",
-        "category": "Существительные"
-      },
-      {
-        "id": "v27",
-        "word": "School",
-        "transcription": "[скул]",
-        "translation": "Школа",
-        "category": "Существительные"
-      },
-      {
-        "id": "v28",
-        "word": "State",
-        "transcription": "[стэйт]",
-        "translation": "Состояние / Штат",
-        "category": "Существительные"
-      },
-      {
-        "id": "v29",
-        "word": "Family",
-        "transcription": "[фэ́мили]",
-        "translation": "Семья",
-        "category": "Существительные"
-      },
-      {
-        "id": "v30",
-        "word": "Student",
-        "transcription": "[стью́дэнт]",
-        "translation": "Студент",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q27_1",
-        "question": "Вопрос 1 для урока 27",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q27_2",
-        "question": "Вопрос 2 для урока 27",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q27_3",
-        "question": "Вопрос 3 для урока 27",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q27_4",
-        "question": "Вопрос 4 для урока 27",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q27_5",
-        "question": "Вопрос 5 для урока 27",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l28",
-    "title": "Урок 28: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 28.",
-      "Сегодня наша тема: Урок 28: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v31",
-        "word": "Group",
-        "transcription": "[груп]",
-        "translation": "Группа",
-        "category": "Основы"
-      },
-      {
-        "id": "v32",
-        "word": "Country",
-        "transcription": "[ка́нтри]",
-        "translation": "Страна",
-        "category": "Основы"
-      },
-      {
-        "id": "v33",
-        "word": "Problem",
-        "transcription": "[про́блем]",
-        "translation": "Проблема",
-        "category": "Основы"
-      },
-      {
-        "id": "v34",
-        "word": "Hand",
-        "transcription": "[хэнд]",
-        "translation": "Рука",
-        "category": "Основы"
-      },
-      {
-        "id": "v35",
-        "word": "Part",
-        "transcription": "[парт]",
-        "translation": "Часть",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q28_1",
-        "question": "Вопрос 1 для урока 28",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q28_2",
-        "question": "Вопрос 2 для урока 28",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q28_3",
-        "question": "Вопрос 3 для урока 28",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q28_4",
-        "question": "Вопрос 4 для урока 28",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q28_5",
-        "question": "Вопрос 5 для урока 28",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l29",
-    "title": "Урок 29: Грамматика (Intermediate)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 29.",
-      "Сегодня наша тема: Урок 29: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v36",
-        "word": "Place",
-        "transcription": "[плэйс]",
-        "translation": "Место",
-        "category": "Основы"
-      },
-      {
-        "id": "v37",
-        "word": "Case",
-        "transcription": "[кэйс]",
-        "translation": "Случай",
-        "category": "Основы"
-      },
-      {
-        "id": "v38",
-        "word": "Week",
-        "transcription": "[уи́к]",
-        "translation": "Неделя",
-        "category": "Основы"
-      },
-      {
-        "id": "v39",
-        "word": "Company",
-        "transcription": "[ка́мпани]",
-        "translation": "Компания",
-        "category": "Основы"
-      },
-      {
-        "id": "v40",
-        "word": "System",
-        "transcription": "[си́стэм]",
-        "translation": "Система",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q29_1",
-        "question": "Вопрос 1 для урока 29",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q29_2",
-        "question": "Вопрос 2 для урока 29",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q29_3",
-        "question": "Вопрос 3 для урока 29",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q29_4",
-        "question": "Вопрос 4 для урока 29",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q29_5",
-        "question": "Вопрос 5 для урока 29",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l30",
-    "title": "Урок 30: Протечка труб (Бытовые проблемы)",
-    "moduleId": 3,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 30.",
-      "Сегодня наша тема: Урок 30: Протечка труб (Бытовые проблемы).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v156",
-        "word": "Leak",
-        "transcription": "[лик]",
-        "translation": "Утечка / Течь",
-        "category": "Бытовые проблемы"
-      },
-      {
-        "id": "v157",
-        "word": "Plumber",
-        "transcription": "[пла́мэ]",
-        "translation": "Сантехник",
-        "category": "Бытовые проблемы"
-      },
-      {
-        "id": "v158",
-        "word": "Outage",
-        "transcription": "[а́утадж]",
-        "translation": "Сбой (электричества)",
-        "category": "Бытовые проблемы"
-      },
-      {
-        "id": "v159",
-        "word": "Clogged",
-        "transcription": "[клогд]",
-        "translation": "Засоренный",
-        "category": "Бытовые проблемы"
-      },
-      {
-        "id": "v160",
-        "word": "Repair",
-        "transcription": "[рипэ́р]",
-        "translation": "Ремонт",
-        "category": "Бытовые проблемы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q30_1",
-        "question": "Вопрос 1 для урока 30",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q30_2",
-        "question": "Вопрос 2 для урока 30",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q30_3",
-        "question": "Вопрос 3 для урока 30",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q30_4",
-        "question": "Вопрос 4 для урока 30",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q30_5",
-        "question": "Вопрос 5 для урока 30",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l31",
-    "title": "Урок 31: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 31.",
-      "Сегодня наша тема: Урок 31: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v41",
-        "word": "Program",
-        "transcription": "[про́грэм]",
-        "translation": "Программа",
-        "category": "Основы"
-      },
-      {
-        "id": "v42",
-        "word": "Question",
-        "transcription": "[квэ́счэн]",
-        "translation": "Вопрос",
-        "category": "Основы"
-      },
-      {
-        "id": "v43",
-        "word": "Work",
-        "transcription": "[уо́рк]",
-        "translation": "Работа",
-        "category": "Основы"
-      },
-      {
-        "id": "v44",
-        "word": "Government",
-        "transcription": "[га́вернмэнт]",
-        "translation": "Правительство",
-        "category": "Основы"
-      },
-      {
-        "id": "v45",
-        "word": "Number",
-        "transcription": "[на́мбэр]",
-        "translation": "Число",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q31_1",
-        "question": "Вопрос 1 для урока 31",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q31_2",
-        "question": "Вопрос 2 для урока 31",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q31_3",
-        "question": "Вопрос 3 для урока 31",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q31_4",
-        "question": "Вопрос 4 для урока 31",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q31_5",
-        "question": "Вопрос 5 для урока 31",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l32",
-    "title": "Урок 32: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 32.",
-      "Сегодня наша тема: Урок 32: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v46",
-        "word": "Night",
-        "transcription": "[найт]",
-        "translation": "Ночь",
-        "category": "Основы"
-      },
-      {
-        "id": "v47",
-        "word": "Point",
-        "transcription": "[пойнт]",
-        "translation": "Точка / Суть",
-        "category": "Основы"
-      },
-      {
-        "id": "v48",
-        "word": "Home",
-        "transcription": "[хоум]",
-        "translation": "Дом",
-        "category": "Основы"
-      },
-      {
-        "id": "v49",
-        "word": "Water",
-        "transcription": "[уо́тэр]",
-        "translation": "Вода",
-        "category": "Основы"
-      },
-      {
-        "id": "v50",
-        "word": "Room",
-        "transcription": "[рум]",
-        "translation": "Комната",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q32_1",
-        "question": "Вопрос 1 для урока 32",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q32_2",
-        "question": "Вопрос 2 для урока 32",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q32_3",
-        "question": "Вопрос 3 для урока 32",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q32_4",
-        "question": "Вопрос 4 для урока 32",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q32_5",
-        "question": "Вопрос 5 для урока 32",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l33",
-    "title": "Урок 33: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 33.",
-      "Сегодня наша тема: Урок 33: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v51",
-        "word": "Mother",
-        "transcription": "[ма́зэр]",
-        "translation": "Мать",
-        "category": "Основы"
-      },
-      {
-        "id": "v52",
-        "word": "Area",
-        "transcription": "[э́риа]",
-        "translation": "Область",
-        "category": "Основы"
-      },
-      {
-        "id": "v53",
-        "word": "Money",
-        "transcription": "[ма́ни]",
-        "translation": "Деньги",
-        "category": "Основы"
-      },
-      {
-        "id": "v54",
-        "word": "Story",
-        "transcription": "[сто́ри]",
-        "translation": "История",
-        "category": "Основы"
-      },
-      {
-        "id": "v55",
-        "word": "Fact",
-        "transcription": "[фэкт]",
-        "translation": "Факт",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q33_1",
-        "question": "Вопрос 1 для урока 33",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q33_2",
-        "question": "Вопрос 2 для урока 33",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q33_3",
-        "question": "Вопрос 3 для урока 33",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q33_4",
-        "question": "Вопрос 4 для урока 33",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q33_5",
-        "question": "Вопрос 5 для урока 33",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l34",
-    "title": "Урок 34: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 34.",
-      "Сегодня наша тема: Урок 34: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v56",
-        "word": "Month",
-        "transcription": "[манс]",
-        "translation": "Месяц",
-        "category": "Основы"
-      },
-      {
-        "id": "v57",
-        "word": "Lot",
-        "transcription": "[лат]",
-        "translation": "Много",
-        "category": "Основы"
-      },
-      {
-        "id": "v58",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Право / Правильный",
-        "category": "Основы"
-      },
-      {
-        "id": "v59",
-        "word": "Study",
-        "transcription": "[ста́ди]",
-        "translation": "Изучать",
-        "category": "Основы"
-      },
-      {
-        "id": "v60",
-        "word": "Book",
-        "transcription": "[бук]",
-        "translation": "Книга",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q34_1",
-        "question": "Вопрос 1 для урока 34",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q34_2",
-        "question": "Вопрос 2 для урока 34",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q34_3",
-        "question": "Вопрос 3 для урока 34",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q34_4",
-        "question": "Вопрос 4 для урока 34",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q34_5",
-        "question": "Вопрос 5 для урока 34",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l35",
-    "title": "Урок 35: Жалобы в ресторане (Заказ еды)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 35.",
-      "Сегодня наша тема: Урок 35: Жалобы в ресторане (Заказ еды).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v171",
-        "word": "Overcooked",
-        "transcription": "[оувэку́кт]",
-        "translation": "Переваренный",
-        "category": "Ресторан"
-      },
-      {
-        "id": "v172",
-        "word": "Undercooked",
-        "transcription": "[андэку́кт]",
-        "translation": "Недоготовленный",
-        "category": "Ресторан"
-      },
-      {
-        "id": "v173",
-        "word": "Bill",
-        "transcription": "[бил]",
-        "translation": "Счет",
-        "category": "Ресторан"
-      },
-      {
-        "id": "v174",
-        "word": "Tip",
-        "transcription": "[тип]",
-        "translation": "Чаевые",
-        "category": "Ресторан"
-      },
-      {
-        "id": "v175",
-        "word": "Spicy",
-        "transcription": "[спа́йси]",
-        "translation": "Острый",
-        "category": "Ресторан"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q35_1",
-        "question": "Вопрос 1 для урока 35",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q35_2",
-        "question": "Вопрос 2 для урока 35",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q35_3",
-        "question": "Вопрос 3 для урока 35",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q35_4",
-        "question": "Вопрос 4 для урока 35",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q35_5",
-        "question": "Вопрос 5 для урока 35",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l36",
-    "title": "Урок 36: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 36.",
-      "Сегодня наша тема: Урок 36: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v61",
-        "word": "Eye",
-        "transcription": "[ай]",
-        "translation": "Глаз",
-        "category": "Основы"
-      },
-      {
-        "id": "v62",
-        "word": "Job",
-        "transcription": "[джаб]",
-        "translation": "Работа (профессия)",
-        "category": "Основы"
-      },
-      {
-        "id": "v63",
-        "word": "Word",
-        "transcription": "[уо́рд]",
-        "translation": "Слово",
-        "category": "Основы"
-      },
-      {
-        "id": "v64",
-        "word": "Business",
-        "transcription": "[би́знас]",
-        "translation": "Бизнес",
-        "category": "Основы"
-      },
-      {
-        "id": "v65",
-        "word": "Issue",
-        "transcription": "[и́шу]",
-        "translation": "Вопрос (проблема)",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q36_1",
-        "question": "Вопрос 1 для урока 36",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q36_2",
-        "question": "Вопрос 2 для урока 36",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q36_3",
-        "question": "Вопрос 3 для урока 36",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q36_4",
-        "question": "Вопрос 4 для урока 36",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q36_5",
-        "question": "Вопрос 5 для урока 36",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l37",
-    "title": "Урок 37: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 37.",
-      "Сегодня наша тема: Урок 37: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v66",
-        "word": "Side",
-        "transcription": "[сайд]",
-        "translation": "Сторона",
-        "category": "Основы"
-      },
-      {
-        "id": "v67",
-        "word": "Kind",
-        "transcription": "[кайнд]",
-        "translation": "Вид / Добрый",
-        "category": "Основы"
-      },
-      {
-        "id": "v68",
-        "word": "Head",
-        "transcription": "[хёд]",
-        "translation": "Голова",
-        "category": "Основы"
-      },
-      {
-        "id": "v69",
-        "word": "House",
-        "transcription": "[хаус]",
-        "translation": "Дом (здание)",
-        "category": "Основы"
-      },
-      {
-        "id": "v70",
-        "word": "Service",
-        "transcription": "[сэ́вас]",
-        "translation": "Служба",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q37_1",
-        "question": "Вопрос 1 для урока 37",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q37_2",
-        "question": "Вопрос 2 для урока 37",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q37_3",
-        "question": "Вопрос 3 для урока 37",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q37_4",
-        "question": "Вопрос 4 для урока 37",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q37_5",
-        "question": "Вопрос 5 для урока 37",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l38",
-    "title": "Урок 38: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 38.",
-      "Сегодня наша тема: Урок 38: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v71",
-        "word": "Friend",
-        "transcription": "[фрэнд]",
-        "translation": "Друг",
-        "category": "Основы"
-      },
-      {
-        "id": "v72",
-        "word": "Father",
-        "transcription": "[фа́зэр]",
-        "translation": "Отец",
-        "category": "Основы"
-      },
-      {
-        "id": "v73",
-        "word": "Power",
-        "transcription": "[па́уэ]",
-        "translation": "Сила / Власть",
-        "category": "Основы"
-      },
-      {
-        "id": "v74",
-        "word": "Hour",
-        "transcription": "[а́уэ]",
-        "translation": "Час",
-        "category": "Основы"
-      },
-      {
-        "id": "v75",
-        "word": "Game",
-        "transcription": "[гэйм]",
-        "translation": "Игра",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q38_1",
-        "question": "Вопрос 1 для урока 38",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q38_2",
-        "question": "Вопрос 2 для урока 38",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q38_3",
-        "question": "Вопрос 3 для урока 38",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q38_4",
-        "question": "Вопрос 4 для урока 38",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q38_5",
-        "question": "Вопрос 5 для урока 38",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l39",
-    "title": "Урок 39: Грамматика (Intermediate)",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 39.",
-      "Сегодня наша тема: Урок 39: Грамматика (Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v76",
-        "word": "Line",
-        "transcription": "[лайн]",
-        "translation": "Линия",
-        "category": "Основы"
-      },
-      {
-        "id": "v77",
-        "word": "End",
-        "transcription": "[энд]",
-        "translation": "Конец",
-        "category": "Основы"
-      },
-      {
-        "id": "v78",
-        "word": "Member",
-        "transcription": "[мэ́мбэр]",
-        "translation": "Член (группы)",
-        "category": "Основы"
-      },
-      {
-        "id": "v79",
-        "word": "Law",
-        "transcription": "[ло]",
-        "translation": "Закон",
-        "category": "Основы"
-      },
-      {
-        "id": "v80",
-        "word": "Car",
-        "transcription": "[кар]",
-        "translation": "Машина",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q39_1",
-        "question": "Вопрос 1 для урока 39",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q39_2",
-        "question": "Вопрос 2 для урока 39",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q39_3",
-        "question": "Вопрос 3 для урока 39",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q39_4",
-        "question": "Вопрос 4 для урока 39",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q39_5",
-        "question": "Вопрос 5 для урока 39",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l40",
-    "title": "Урок 40: Сленг и соцсети",
-    "moduleId": 4,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 40.",
-      "Сегодня наша тема: Урок 40: Сленг и соцсети.",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v81",
-        "word": "City",
-        "transcription": "[си́ти]",
-        "translation": "Город",
-        "category": "Основы"
-      },
-      {
-        "id": "v82",
-        "word": "Community",
-        "transcription": "[комью́нити]",
-        "translation": "Сообщество",
-        "category": "Основы"
-      },
-      {
-        "id": "v83",
-        "word": "Name",
-        "transcription": "[нэйм]",
-        "translation": "Имя",
-        "category": "Основы"
-      },
-      {
-        "id": "v84",
-        "word": "President",
-        "transcription": "[прэ́зидант]",
-        "translation": "Президент",
-        "category": "Основы"
-      },
-      {
-        "id": "v85",
-        "word": "Team",
-        "transcription": "[тим]",
-        "translation": "Команда",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q40_1",
-        "question": "Вопрос 1 для урока 40",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q40_2",
-        "question": "Вопрос 2 для урока 40",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q40_3",
-        "question": "Вопрос 3 для урока 40",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q40_4",
-        "question": "Вопрос 4 для урока 40",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q40_5",
-        "question": "Вопрос 5 для урока 40",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l41",
-    "title": "Урок 41: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 41.",
-      "Сегодня наша тема: Урок 41: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v86",
-        "word": "Minute",
-        "transcription": "[ми́нат]",
-        "translation": "Минута",
-        "category": "Основы"
-      },
-      {
-        "id": "v87",
-        "word": "Idea",
-        "transcription": "[айди́а]",
-        "translation": "Идея",
-        "category": "Основы"
-      },
-      {
-        "id": "v88",
-        "word": "Kid",
-        "transcription": "[кид]",
-        "translation": "Ребенок (разг.)",
-        "category": "Основы"
-      },
-      {
-        "id": "v89",
-        "word": "Body",
-        "transcription": "[ба́ди]",
-        "translation": "Тело",
-        "category": "Основы"
-      },
-      {
-        "id": "v90",
-        "word": "Information",
-        "transcription": "[информэ́йшн]",
-        "translation": "Информация",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q41_1",
-        "question": "Вопрос 1 для урока 41",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q41_2",
-        "question": "Вопрос 2 для урока 41",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q41_3",
-        "question": "Вопрос 3 для урока 41",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q41_4",
-        "question": "Вопрос 4 для урока 41",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q41_5",
-        "question": "Вопрос 5 для урока 41",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l42",
-    "title": "Урок 42: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 42.",
-      "Сегодня наша тема: Урок 42: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v91",
-        "word": "Back",
-        "transcription": "[бэк]",
-        "translation": "Спина / Назад",
-        "category": "Основы"
-      },
-      {
-        "id": "v92",
-        "word": "Parent",
-        "transcription": "[пэ́рэнт]",
-        "translation": "Родитель",
-        "category": "Основы"
-      },
-      {
-        "id": "v93",
-        "word": "Face",
-        "transcription": "[фэйс]",
-        "translation": "Лицо",
-        "category": "Основы"
-      },
-      {
-        "id": "v94",
-        "word": "Others",
-        "transcription": "[а́зэрз]",
-        "translation": "Другие",
-        "category": "Основы"
-      },
-      {
-        "id": "v95",
-        "word": "Level",
-        "transcription": "[лэ́вэл]",
-        "translation": "Уровень",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q42_1",
-        "question": "Вопрос 1 для урока 42",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q42_2",
-        "question": "Вопрос 2 для урока 42",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q42_3",
-        "question": "Вопрос 3 для урока 42",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q42_4",
-        "question": "Вопрос 4 для урока 42",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q42_5",
-        "question": "Вопрос 5 для урока 42",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l43",
-    "title": "Урок 43: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 43.",
-      "Сегодня наша тема: Урок 43: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v96",
-        "word": "Office",
-        "transcription": "[о́фис]",
-        "translation": "Офис",
-        "category": "Основы"
-      },
-      {
-        "id": "v97",
-        "word": "Door",
-        "transcription": "[дор]",
-        "translation": "Дверь",
-        "category": "Основы"
-      },
-      {
-        "id": "v98",
-        "word": "Health",
-        "transcription": "[хэлс]",
-        "translation": "Здоровье",
-        "category": "Основы"
-      },
-      {
-        "id": "v99",
-        "word": "Person",
-        "transcription": "[пё́рсн]",
-        "translation": "Человек (личность)",
-        "category": "Основы"
-      },
-      {
-        "id": "v100",
-        "word": "Art",
-        "transcription": "[арт]",
-        "translation": "Искусство",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q43_1",
-        "question": "Вопрос 1 для урока 43",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q43_2",
-        "question": "Вопрос 2 для урока 43",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q43_3",
-        "question": "Вопрос 3 для урока 43",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q43_4",
-        "question": "Вопрос 4 для урока 43",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q43_5",
-        "question": "Вопрос 5 для урока 43",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l44",
-    "title": "Урок 44: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 44.",
-      "Сегодня наша тема: Урок 44: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v101",
-        "word": "War",
-        "transcription": "[уо́р]",
-        "translation": "Война",
-        "category": "Основы"
-      },
-      {
-        "id": "v102",
-        "word": "History",
-        "transcription": "[хи́стори]",
-        "translation": "История (наука)",
-        "category": "Основы"
-      },
-      {
-        "id": "v103",
-        "word": "Party",
-        "transcription": "[па́рти]",
-        "translation": "Вечеринка / Партия",
-        "category": "Основы"
-      },
-      {
-        "id": "v104",
-        "word": "Result",
-        "transcription": "[риза́лт]",
-        "translation": "Результат",
-        "category": "Основы"
-      },
-      {
-        "id": "v105",
-        "word": "Change",
-        "transcription": "[чэйндж]",
-        "translation": "Изменение",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q44_1",
-        "question": "Вопрос 1 для урока 44",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q44_2",
-        "question": "Вопрос 2 для урока 44",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q44_3",
-        "question": "Вопрос 3 для урока 44",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q44_4",
-        "question": "Вопрос 4 для урока 44",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q44_5",
-        "question": "Вопрос 5 для урока 44",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l45",
-    "title": "Урок 45: Аэропорт и таможня",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 45.",
-      "Сегодня наша тема: Урок 45: Аэропорт и таможня.",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v106",
-        "word": "Morning",
-        "transcription": "[мо́рнинг]",
-        "translation": "Утро",
-        "category": "Основы"
-      },
-      {
-        "id": "v107",
-        "word": "Reason",
-        "transcription": "[ри́зн]",
-        "translation": "Причина",
-        "category": "Основы"
-      },
-      {
-        "id": "v108",
-        "word": "Research",
-        "transcription": "[рисё́ч]",
-        "translation": "Исследование",
-        "category": "Основы"
-      },
-      {
-        "id": "v109",
-        "word": "Girl",
-        "transcription": "[гёл]",
-        "translation": "Девочка",
-        "category": "Основы"
-      },
-      {
-        "id": "v110",
-        "word": "Guy",
-        "transcription": "[гай]",
-        "translation": "Парень",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q45_1",
-        "question": "Вопрос 1 для урока 45",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q45_2",
-        "question": "Вопрос 2 для урока 45",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q45_3",
-        "question": "Вопрос 3 для урока 45",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q45_4",
-        "question": "Вопрос 4 для урока 45",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q45_5",
-        "question": "Вопрос 5 для урока 45",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l46",
-    "title": "Урок 46: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 46.",
-      "Сегодня наша тема: Урок 46: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v111",
-        "word": "Food",
-        "transcription": "[фуд]",
-        "translation": "Еда",
-        "category": "Основы"
-      },
-      {
-        "id": "v112",
-        "word": "Moment",
-        "transcription": "[мо́умант]",
-        "translation": "Момент",
-        "category": "Основы"
-      },
-      {
-        "id": "v113",
-        "word": "Air",
-        "transcription": "[эр]",
-        "translation": "Воздух",
-        "category": "Основы"
-      },
-      {
-        "id": "v114",
-        "word": "Teacher",
-        "transcription": "[ти́чэр]",
-        "translation": "Учитель",
-        "category": "Основы"
-      },
-      {
-        "id": "v115",
-        "word": "Force",
-        "transcription": "[форс]",
-        "translation": "Сила (физическая)",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q46_1",
-        "question": "Вопрос 1 для урока 46",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q46_2",
-        "question": "Вопрос 2 для урока 46",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q46_3",
-        "question": "Вопрос 3 для урока 46",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q46_4",
-        "question": "Вопрос 4 для урока 46",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q46_5",
-        "question": "Вопрос 5 для урока 46",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l47",
-    "title": "Урок 47: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 47.",
-      "Сегодня наша тема: Урок 47: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v116",
-        "word": "Education",
-        "transcription": "[эдюкэ́йшн]",
-        "translation": "Образование",
-        "category": "Основы"
-      },
-      {
-        "id": "v117",
-        "word": "Good",
-        "transcription": "[гуд]",
-        "translation": "Хороший",
-        "category": "Основы"
-      },
-      {
-        "id": "v118",
-        "word": "New",
-        "transcription": "[нью]",
-        "translation": "Новый",
-        "category": "Основы"
-      },
-      {
-        "id": "v119",
-        "word": "First",
-        "transcription": "[фаст]",
-        "translation": "Первый",
-        "category": "Основы"
-      },
-      {
-        "id": "v120",
-        "word": "Last",
-        "transcription": "[лэст]",
-        "translation": "Последний",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q47_1",
-        "question": "Вопрос 1 для урока 47",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q47_2",
-        "question": "Вопрос 2 для урока 47",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q47_3",
-        "question": "Вопрос 3 для урока 47",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q47_4",
-        "question": "Вопрос 4 для урока 47",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q47_5",
-        "question": "Вопрос 5 для урока 47",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l48",
-    "title": "Урок 48: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 48.",
-      "Сегодня наша тема: Урок 48: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v121",
-        "word": "Long",
-        "transcription": "[лонг]",
-        "translation": "Длинный",
-        "category": "Основы"
-      },
-      {
-        "id": "v122",
-        "word": "Great",
-        "transcription": "[грэйт]",
-        "translation": "Великий / Отличный",
-        "category": "Основы"
-      },
-      {
-        "id": "v123",
-        "word": "Little",
-        "transcription": "[литл]",
-        "translation": "Маленький",
-        "category": "Основы"
-      },
-      {
-        "id": "v124",
-        "word": "Own",
-        "transcription": "[оун]",
-        "translation": "Собственный",
-        "category": "Основы"
-      },
-      {
-        "id": "v125",
-        "word": "Other",
-        "transcription": "[а́зэр]",
-        "translation": "Другой",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q48_1",
-        "question": "Вопрос 1 для урока 48",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q48_2",
-        "question": "Вопрос 2 для урока 48",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q48_3",
-        "question": "Вопрос 3 для урока 48",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q48_4",
-        "question": "Вопрос 4 для урока 48",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q48_5",
-        "question": "Вопрос 5 для урока 48",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l49",
-    "title": "Урок 49: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 49.",
-      "Сегодня наша тема: Урок 49: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v126",
-        "word": "Old",
-        "transcription": "[оулд]",
-        "translation": "Старый",
-        "category": "Основы"
-      },
-      {
-        "id": "v127",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Правый",
-        "category": "Основы"
-      },
-      {
-        "id": "v128",
-        "word": "Big",
-        "transcription": "[биг]",
-        "translation": "Большой",
-        "category": "Основы"
-      },
-      {
-        "id": "v129",
-        "word": "High",
-        "transcription": "[хай]",
-        "translation": "Высокий",
-        "category": "Основы"
-      },
-      {
-        "id": "v130",
-        "word": "Different",
-        "transcription": "[ди́ферэнт]",
-        "translation": "Различный",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q49_1",
-        "question": "Вопрос 1 для урока 49",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q49_2",
-        "question": "Вопрос 2 для урока 49",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q49_3",
-        "question": "Вопрос 3 для урока 49",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q49_4",
-        "question": "Вопрос 4 для урока 49",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q49_5",
-        "question": "Вопрос 5 для урока 49",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l50",
-    "title": "Урок 50: Грамматика (Upper-Intermediate)",
-    "moduleId": 5,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 50.",
-      "Сегодня наша тема: Урок 50: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v131",
-        "word": "Small",
-        "transcription": "[смол]",
-        "translation": "Маленький",
-        "category": "Основы"
-      },
-      {
-        "id": "v132",
-        "word": "Large",
-        "transcription": "[лардж]",
-        "translation": "Крупный",
-        "category": "Основы"
-      },
-      {
-        "id": "v133",
-        "word": "Next",
-        "transcription": "[нэкст]",
-        "translation": "Следующий",
-        "category": "Основы"
-      },
-      {
-        "id": "v134",
-        "word": "Early",
-        "transcription": "[э́ли]",
-        "translation": "Ранний",
-        "category": "Основы"
-      },
-      {
-        "id": "v135",
-        "word": "Young",
-        "transcription": "[янг]",
-        "translation": "Молодой",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q50_1",
-        "question": "Вопрос 1 для урока 50",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q50_2",
-        "question": "Вопрос 2 для урока 50",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q50_3",
-        "question": "Вопрос 3 для урока 50",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q50_4",
-        "question": "Вопрос 4 для урока 50",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q50_5",
-        "question": "Вопрос 5 для урока 50",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l51",
-    "title": "Урок 51: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 51.",
-      "Сегодня наша тема: Урок 51: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v136",
-        "word": "Important",
-        "transcription": "[импо́ртэнт]",
-        "translation": "Важный",
-        "category": "Основы"
-      },
-      {
-        "id": "v137",
-        "word": "Few",
-        "transcription": "[фю]",
-        "translation": "Несколько",
-        "category": "Основы"
-      },
-      {
-        "id": "v138",
-        "word": "Public",
-        "transcription": "[па́блик]",
-        "translation": "Общественный",
-        "category": "Основы"
-      },
-      {
-        "id": "v139",
-        "word": "Bad",
-        "transcription": "[бэд]",
-        "translation": "Плохой",
-        "category": "Основы"
-      },
-      {
-        "id": "v140",
-        "word": "Same",
-        "transcription": "[сэйм]",
-        "translation": "Тот же самый",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q51_1",
-        "question": "Вопрос 1 для урока 51",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q51_2",
-        "question": "Вопрос 2 для урока 51",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q51_3",
-        "question": "Вопрос 3 для урока 51",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q51_4",
-        "question": "Вопрос 4 для урока 51",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q51_5",
-        "question": "Вопрос 5 для урока 51",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l52",
-    "title": "Урок 52: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 52.",
-      "Сегодня наша тема: Урок 52: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v141",
-        "word": "Able",
-        "transcription": "[эйбл]",
-        "translation": "Способный",
-        "category": "Основы"
-      },
-      {
-        "id": "v142",
-        "word": "To be",
-        "transcription": "[ту би]",
-        "translation": "Быть",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v143",
-        "word": "To have",
-        "transcription": "[ту хэв]",
-        "translation": "Иметь",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v144",
-        "word": "To do",
-        "transcription": "[ту ду]",
-        "translation": "Делать",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v145",
-        "word": "To say",
-        "transcription": "[ту сэй]",
-        "translation": "Сказать",
-        "category": "Глаголы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q52_1",
-        "question": "Вопрос 1 для урока 52",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q52_2",
-        "question": "Вопрос 2 для урока 52",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q52_3",
-        "question": "Вопрос 3 для урока 52",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q52_4",
-        "question": "Вопрос 4 для урока 52",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q52_5",
-        "question": "Вопрос 5 для урока 52",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l53",
-    "title": "Урок 53: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 53.",
-      "Сегодня наша тема: Урок 53: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v146",
-        "word": "To go",
-        "transcription": "[ту гоу]",
-        "translation": "Идти",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v147",
-        "word": "To get",
-        "transcription": "[ту гет]",
-        "translation": "Получить",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v148",
-        "word": "To make",
-        "transcription": "[ту мэйк]",
-        "translation": "Сделать (создать)",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v149",
-        "word": "To know",
-        "transcription": "[ту ноу]",
-        "translation": "Знать",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v150",
-        "word": "To think",
-        "transcription": "[ту синк]",
-        "translation": "Думать",
-        "category": "Глаголы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q53_1",
-        "question": "Вопрос 1 для урока 53",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q53_2",
-        "question": "Вопрос 2 для урока 53",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q53_3",
-        "question": "Вопрос 3 для урока 53",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q53_4",
-        "question": "Вопрос 4 для урока 53",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q53_5",
-        "question": "Вопрос 5 для урока 53",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l54",
-    "title": "Урок 54: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 54.",
-      "Сегодня наша тема: Урок 54: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v1",
-        "word": "Always",
-        "transcription": "[о́лвэйз]",
-        "translation": "Всегда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v2",
-        "word": "Never",
-        "transcription": "[нэ́вэ]",
-        "translation": "Никогда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v3",
-        "word": "Sometimes",
-        "transcription": "[самта́ймз]",
-        "translation": "Иногда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v4",
-        "word": "Often",
-        "transcription": "[о́фн]",
-        "translation": "Часто",
-        "category": "Наречия"
-      },
-      {
-        "id": "v5",
-        "word": "Usually",
-        "transcription": "[ю́жуали]",
-        "translation": "Обычно",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q54_1",
-        "question": "Вопрос 1 для урока 54",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q54_2",
-        "question": "Вопрос 2 для урока 54",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q54_3",
-        "question": "Вопрос 3 для урока 54",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q54_4",
-        "question": "Вопрос 4 для урока 54",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q54_5",
-        "question": "Вопрос 5 для урока 54",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l55",
-    "title": "Урок 55: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 55.",
-      "Сегодня наша тема: Урок 55: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v6",
-        "word": "Seldom",
-        "transcription": "[сэ́лдом]",
-        "translation": "Редко",
-        "category": "Наречия"
-      },
-      {
-        "id": "v7",
-        "word": "Every day",
-        "transcription": "[э́ври дэй]",
-        "translation": "Каждый день",
-        "category": "Наречия"
-      },
-      {
-        "id": "v8",
-        "word": "Now",
-        "transcription": "[нау]",
-        "translation": "Сейчас",
-        "category": "Наречия"
-      },
-      {
-        "id": "v9",
-        "word": "Today",
-        "transcription": "[тадэ́й]",
-        "translation": "Сегодня",
-        "category": "Наречия"
-      },
-      {
-        "id": "v10",
-        "word": "Tomorrow",
-        "transcription": "[тумо́роу]",
-        "translation": "Завтра",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q55_1",
-        "question": "Вопрос 1 для урока 55",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q55_2",
-        "question": "Вопрос 2 для урока 55",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q55_3",
-        "question": "Вопрос 3 для урока 55",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q55_4",
-        "question": "Вопрос 4 для урока 55",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q55_5",
-        "question": "Вопрос 5 для урока 55",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l56",
-    "title": "Урок 56: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 56.",
-      "Сегодня наша тема: Урок 56: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v11",
-        "word": "Yesterday",
-        "transcription": "[е́стэдэй]",
-        "translation": "Вчера",
-        "category": "Наречия"
-      },
-      {
-        "id": "v12",
-        "word": "Soon",
-        "transcription": "[сун]",
-        "translation": "Скоро",
-        "category": "Наречия"
-      },
-      {
-        "id": "v13",
-        "word": "Already",
-        "transcription": "[олрэ́ди]",
-        "translation": "Уже",
-        "category": "Наречия"
-      },
-      {
-        "id": "v14",
-        "word": "Yet",
-        "transcription": "[ет]",
-        "translation": "Еще (не)",
-        "category": "Наречия"
-      },
-      {
-        "id": "v15",
-        "word": "Just",
-        "transcription": "[джаст]",
-        "translation": "Только что",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q56_1",
-        "question": "Вопрос 1 для урока 56",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q56_2",
-        "question": "Вопрос 2 для урока 56",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q56_3",
-        "question": "Вопрос 3 для урока 56",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q56_4",
-        "question": "Вопрос 4 для урока 56",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q56_5",
-        "question": "Вопрос 5 для урока 56",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l57",
-    "title": "Урок 57: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 57.",
-      "Сегодня наша тема: Урок 57: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v16",
-        "word": "Time",
-        "transcription": "[тайм]",
-        "translation": "Время",
-        "category": "Существительные"
-      },
-      {
-        "id": "v17",
-        "word": "Year",
-        "transcription": "[йе́а]",
-        "translation": "Год",
-        "category": "Существительные"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди",
-        "category": "Существительные"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ",
-        "category": "Существительные"
-      },
-      {
-        "id": "v20",
-        "word": "Day",
-        "transcription": "[дэй]",
-        "translation": "День",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q57_1",
-        "question": "Вопрос 1 для урока 57",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q57_2",
-        "question": "Вопрос 2 для урока 57",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q57_3",
-        "question": "Вопрос 3 для урока 57",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q57_4",
-        "question": "Вопрос 4 для урока 57",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q57_5",
-        "question": "Вопрос 5 для урока 57",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l58",
-    "title": "Урок 58: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 58.",
-      "Сегодня наша тема: Урок 58: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v21",
-        "word": "Man",
-        "transcription": "[мэн]",
-        "translation": "Мужчина / Человек",
-        "category": "Существительные"
-      },
-      {
-        "id": "v22",
-        "word": "Thing",
-        "transcription": "[синг]",
-        "translation": "Вещь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v23",
-        "word": "Woman",
-        "transcription": "[уу́мэн]",
-        "translation": "Женщина",
-        "category": "Существительные"
-      },
-      {
-        "id": "v24",
-        "word": "Life",
-        "transcription": "[лайф]",
-        "translation": "Жизнь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v25",
-        "word": "Child",
-        "transcription": "[чайлд]",
-        "translation": "Ребенок",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q58_1",
-        "question": "Вопрос 1 для урока 58",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q58_2",
-        "question": "Вопрос 2 для урока 58",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q58_3",
-        "question": "Вопрос 3 для урока 58",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q58_4",
-        "question": "Вопрос 4 для урока 58",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q58_5",
-        "question": "Вопрос 5 для урока 58",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l59",
-    "title": "Урок 59: Грамматика (Upper-Intermediate)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 59.",
-      "Сегодня наша тема: Урок 59: Грамматика (Upper-Intermediate).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v26",
-        "word": "World",
-        "transcription": "[уо́рлд]",
-        "translation": "Мир",
-        "category": "Существительные"
-      },
-      {
-        "id": "v27",
-        "word": "School",
-        "transcription": "[скул]",
-        "translation": "Школа",
-        "category": "Существительные"
-      },
-      {
-        "id": "v28",
-        "word": "State",
-        "transcription": "[стэйт]",
-        "translation": "Состояние / Штат",
-        "category": "Существительные"
-      },
-      {
-        "id": "v29",
-        "word": "Family",
-        "transcription": "[фэ́мили]",
-        "translation": "Семья",
-        "category": "Существительные"
-      },
-      {
-        "id": "v30",
-        "word": "Student",
-        "transcription": "[стью́дэнт]",
-        "translation": "Студент",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q59_1",
-        "question": "Вопрос 1 для урока 59",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q59_2",
-        "question": "Вопрос 2 для урока 59",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q59_3",
-        "question": "Вопрос 3 для урока 59",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q59_4",
-        "question": "Вопрос 4 для урока 59",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q59_5",
-        "question": "Вопрос 5 для урока 59",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l60",
-    "title": "Урок 60: Грамматика (Advanced)",
-    "moduleId": 6,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 60.",
-      "Сегодня наша тема: Урок 60: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v31",
-        "word": "Group",
-        "transcription": "[груп]",
-        "translation": "Группа",
-        "category": "Основы"
-      },
-      {
-        "id": "v32",
-        "word": "Country",
-        "transcription": "[ка́нтри]",
-        "translation": "Страна",
-        "category": "Основы"
-      },
-      {
-        "id": "v33",
-        "word": "Problem",
-        "transcription": "[про́блем]",
-        "translation": "Проблема",
-        "category": "Основы"
-      },
-      {
-        "id": "v34",
-        "word": "Hand",
-        "transcription": "[хэнд]",
-        "translation": "Рука",
-        "category": "Основы"
-      },
-      {
-        "id": "v35",
-        "word": "Part",
-        "transcription": "[парт]",
-        "translation": "Часть",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q60_1",
-        "question": "Вопрос 1 для урока 60",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q60_2",
-        "question": "Вопрос 2 для урока 60",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q60_3",
-        "question": "Вопрос 3 для урока 60",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q60_4",
-        "question": "Вопрос 4 для урока 60",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q60_5",
-        "question": "Вопрос 5 для урока 60",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l61",
-    "title": "Урок 61: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 61.",
-      "Сегодня наша тема: Урок 61: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v36",
-        "word": "Place",
-        "transcription": "[плэйс]",
-        "translation": "Место",
-        "category": "Основы"
-      },
-      {
-        "id": "v37",
-        "word": "Case",
-        "transcription": "[кэйс]",
-        "translation": "Случай",
-        "category": "Основы"
-      },
-      {
-        "id": "v38",
-        "word": "Week",
-        "transcription": "[уи́к]",
-        "translation": "Неделя",
-        "category": "Основы"
-      },
-      {
-        "id": "v39",
-        "word": "Company",
-        "transcription": "[ка́мпани]",
-        "translation": "Компания",
-        "category": "Основы"
-      },
-      {
-        "id": "v40",
-        "word": "System",
-        "transcription": "[си́стэм]",
-        "translation": "Система",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q61_1",
-        "question": "Вопрос 1 для урока 61",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q61_2",
-        "question": "Вопрос 2 для урока 61",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q61_3",
-        "question": "Вопрос 3 для урока 61",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q61_4",
-        "question": "Вопрос 4 для урока 61",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q61_5",
-        "question": "Вопрос 5 для урока 61",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l62",
-    "title": "Урок 62: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 62.",
-      "Сегодня наша тема: Урок 62: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v41",
-        "word": "Program",
-        "transcription": "[про́грэм]",
-        "translation": "Программа",
-        "category": "Основы"
-      },
-      {
-        "id": "v42",
-        "word": "Question",
-        "transcription": "[квэ́счэн]",
-        "translation": "Вопрос",
-        "category": "Основы"
-      },
-      {
-        "id": "v43",
-        "word": "Work",
-        "transcription": "[уо́рк]",
-        "translation": "Работа",
-        "category": "Основы"
-      },
-      {
-        "id": "v44",
-        "word": "Government",
-        "transcription": "[га́вернмэнт]",
-        "translation": "Правительство",
-        "category": "Основы"
-      },
-      {
-        "id": "v45",
-        "word": "Number",
-        "transcription": "[на́мбэр]",
-        "translation": "Число",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q62_1",
-        "question": "Вопрос 1 для урока 62",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q62_2",
-        "question": "Вопрос 2 для урока 62",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q62_3",
-        "question": "Вопрос 3 для урока 62",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q62_4",
-        "question": "Вопрос 4 для урока 62",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q62_5",
-        "question": "Вопрос 5 для урока 62",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l63",
-    "title": "Урок 63: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 63.",
-      "Сегодня наша тема: Урок 63: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v46",
-        "word": "Night",
-        "transcription": "[найт]",
-        "translation": "Ночь",
-        "category": "Основы"
-      },
-      {
-        "id": "v47",
-        "word": "Point",
-        "transcription": "[пойнт]",
-        "translation": "Точка / Суть",
-        "category": "Основы"
-      },
-      {
-        "id": "v48",
-        "word": "Home",
-        "transcription": "[хоум]",
-        "translation": "Дом",
-        "category": "Основы"
-      },
-      {
-        "id": "v49",
-        "word": "Water",
-        "transcription": "[уо́тэр]",
-        "translation": "Вода",
-        "category": "Основы"
-      },
-      {
-        "id": "v50",
-        "word": "Room",
-        "transcription": "[рум]",
-        "translation": "Комната",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q63_1",
-        "question": "Вопрос 1 для урока 63",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q63_2",
-        "question": "Вопрос 2 для урока 63",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q63_3",
-        "question": "Вопрос 3 для урока 63",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q63_4",
-        "question": "Вопрос 4 для урока 63",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q63_5",
-        "question": "Вопрос 5 для урока 63",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l64",
-    "title": "Урок 64: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 64.",
-      "Сегодня наша тема: Урок 64: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v51",
-        "word": "Mother",
-        "transcription": "[ма́зэр]",
-        "translation": "Мать",
-        "category": "Основы"
-      },
-      {
-        "id": "v52",
-        "word": "Area",
-        "transcription": "[э́риа]",
-        "translation": "Область",
-        "category": "Основы"
-      },
-      {
-        "id": "v53",
-        "word": "Money",
-        "transcription": "[ма́ни]",
-        "translation": "Деньги",
-        "category": "Основы"
-      },
-      {
-        "id": "v54",
-        "word": "Story",
-        "transcription": "[сто́ри]",
-        "translation": "История",
-        "category": "Основы"
-      },
-      {
-        "id": "v55",
-        "word": "Fact",
-        "transcription": "[фэкт]",
-        "translation": "Факт",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q64_1",
-        "question": "Вопрос 1 для урока 64",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q64_2",
-        "question": "Вопрос 2 для урока 64",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q64_3",
-        "question": "Вопрос 3 для урока 64",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q64_4",
-        "question": "Вопрос 4 для урока 64",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q64_5",
-        "question": "Вопрос 5 для урока 64",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l65",
-    "title": "Урок 65: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 65.",
-      "Сегодня наша тема: Урок 65: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v56",
-        "word": "Month",
-        "transcription": "[манс]",
-        "translation": "Месяц",
-        "category": "Основы"
-      },
-      {
-        "id": "v57",
-        "word": "Lot",
-        "transcription": "[лат]",
-        "translation": "Много",
-        "category": "Основы"
-      },
-      {
-        "id": "v58",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Право / Правильный",
-        "category": "Основы"
-      },
-      {
-        "id": "v59",
-        "word": "Study",
-        "transcription": "[ста́ди]",
-        "translation": "Изучать",
-        "category": "Основы"
-      },
-      {
-        "id": "v60",
-        "word": "Book",
-        "transcription": "[бук]",
-        "translation": "Книга",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q65_1",
-        "question": "Вопрос 1 для урока 65",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q65_2",
-        "question": "Вопрос 2 для урока 65",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q65_3",
-        "question": "Вопрос 3 для урока 65",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q65_4",
-        "question": "Вопрос 4 для урока 65",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q65_5",
-        "question": "Вопрос 5 для урока 65",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l66",
-    "title": "Урок 66: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 66.",
-      "Сегодня наша тема: Урок 66: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v61",
-        "word": "Eye",
-        "transcription": "[ай]",
-        "translation": "Глаз",
-        "category": "Основы"
-      },
-      {
-        "id": "v62",
-        "word": "Job",
-        "transcription": "[джаб]",
-        "translation": "Работа (профессия)",
-        "category": "Основы"
-      },
-      {
-        "id": "v63",
-        "word": "Word",
-        "transcription": "[уо́рд]",
-        "translation": "Слово",
-        "category": "Основы"
-      },
-      {
-        "id": "v64",
-        "word": "Business",
-        "transcription": "[би́знас]",
-        "translation": "Бизнес",
-        "category": "Основы"
-      },
-      {
-        "id": "v65",
-        "word": "Issue",
-        "transcription": "[и́шу]",
-        "translation": "Вопрос (проблема)",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q66_1",
-        "question": "Вопрос 1 для урока 66",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q66_2",
-        "question": "Вопрос 2 для урока 66",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q66_3",
-        "question": "Вопрос 3 для урока 66",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q66_4",
-        "question": "Вопрос 4 для урока 66",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q66_5",
-        "question": "Вопрос 5 для урока 66",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l67",
-    "title": "Урок 67: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 67.",
-      "Сегодня наша тема: Урок 67: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v66",
-        "word": "Side",
-        "transcription": "[сайд]",
-        "translation": "Сторона",
-        "category": "Основы"
-      },
-      {
-        "id": "v67",
-        "word": "Kind",
-        "transcription": "[кайнд]",
-        "translation": "Вид / Добрый",
-        "category": "Основы"
-      },
-      {
-        "id": "v68",
-        "word": "Head",
-        "transcription": "[хёд]",
-        "translation": "Голова",
-        "category": "Основы"
-      },
-      {
-        "id": "v69",
-        "word": "House",
-        "transcription": "[хаус]",
-        "translation": "Дом (здание)",
-        "category": "Основы"
-      },
-      {
-        "id": "v70",
-        "word": "Service",
-        "transcription": "[сэ́вас]",
-        "translation": "Служба",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q67_1",
-        "question": "Вопрос 1 для урока 67",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q67_2",
-        "question": "Вопрос 2 для урока 67",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q67_3",
-        "question": "Вопрос 3 для урока 67",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q67_4",
-        "question": "Вопрос 4 для урока 67",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q67_5",
-        "question": "Вопрос 5 для урока 67",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l68",
-    "title": "Урок 68: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 68.",
-      "Сегодня наша тема: Урок 68: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v71",
-        "word": "Friend",
-        "transcription": "[фрэнд]",
-        "translation": "Друг",
-        "category": "Основы"
-      },
-      {
-        "id": "v72",
-        "word": "Father",
-        "transcription": "[фа́зэр]",
-        "translation": "Отец",
-        "category": "Основы"
-      },
-      {
-        "id": "v73",
-        "word": "Power",
-        "transcription": "[па́уэ]",
-        "translation": "Сила / Власть",
-        "category": "Основы"
-      },
-      {
-        "id": "v74",
-        "word": "Hour",
-        "transcription": "[а́уэ]",
-        "translation": "Час",
-        "category": "Основы"
-      },
-      {
-        "id": "v75",
-        "word": "Game",
-        "transcription": "[гэйм]",
-        "translation": "Игра",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q68_1",
-        "question": "Вопрос 1 для урока 68",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q68_2",
-        "question": "Вопрос 2 для урока 68",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q68_3",
-        "question": "Вопрос 3 для урока 68",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q68_4",
-        "question": "Вопрос 4 для урока 68",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q68_5",
-        "question": "Вопрос 5 для урока 68",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l69",
-    "title": "Урок 69: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 69.",
-      "Сегодня наша тема: Урок 69: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v76",
-        "word": "Line",
-        "transcription": "[лайн]",
-        "translation": "Линия",
-        "category": "Основы"
-      },
-      {
-        "id": "v77",
-        "word": "End",
-        "transcription": "[энд]",
-        "translation": "Конец",
-        "category": "Основы"
-      },
-      {
-        "id": "v78",
-        "word": "Member",
-        "transcription": "[мэ́мбэр]",
-        "translation": "Член (группы)",
-        "category": "Основы"
-      },
-      {
-        "id": "v79",
-        "word": "Law",
-        "transcription": "[ло]",
-        "translation": "Закон",
-        "category": "Основы"
-      },
-      {
-        "id": "v80",
-        "word": "Car",
-        "transcription": "[кар]",
-        "translation": "Машина",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q69_1",
-        "question": "Вопрос 1 для урока 69",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q69_2",
-        "question": "Вопрос 2 для урока 69",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q69_3",
-        "question": "Вопрос 3 для урока 69",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q69_4",
-        "question": "Вопрос 4 для урока 69",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q69_5",
-        "question": "Вопрос 5 для урока 69",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l70",
-    "title": "Урок 70: Грамматика (Advanced)",
-    "moduleId": 7,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 70.",
-      "Сегодня наша тема: Урок 70: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v81",
-        "word": "City",
-        "transcription": "[си́ти]",
-        "translation": "Город",
-        "category": "Основы"
-      },
-      {
-        "id": "v82",
-        "word": "Community",
-        "transcription": "[комью́нити]",
-        "translation": "Сообщество",
-        "category": "Основы"
-      },
-      {
-        "id": "v83",
-        "word": "Name",
-        "transcription": "[нэйм]",
-        "translation": "Имя",
-        "category": "Основы"
-      },
-      {
-        "id": "v84",
-        "word": "President",
-        "transcription": "[прэ́зидант]",
-        "translation": "Президент",
-        "category": "Основы"
-      },
-      {
-        "id": "v85",
-        "word": "Team",
-        "transcription": "[тим]",
-        "translation": "Команда",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q70_1",
-        "question": "Вопрос 1 для урока 70",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q70_2",
-        "question": "Вопрос 2 для урока 70",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q70_3",
-        "question": "Вопрос 3 для урока 70",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q70_4",
-        "question": "Вопрос 4 для урока 70",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q70_5",
-        "question": "Вопрос 5 для урока 70",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l71",
-    "title": "Урок 71: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 71.",
-      "Сегодня наша тема: Урок 71: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v86",
-        "word": "Minute",
-        "transcription": "[ми́нат]",
-        "translation": "Минута",
-        "category": "Основы"
-      },
-      {
-        "id": "v87",
-        "word": "Idea",
-        "transcription": "[айди́а]",
-        "translation": "Идея",
-        "category": "Основы"
-      },
-      {
-        "id": "v88",
-        "word": "Kid",
-        "transcription": "[кид]",
-        "translation": "Ребенок (разг.)",
-        "category": "Основы"
-      },
-      {
-        "id": "v89",
-        "word": "Body",
-        "transcription": "[ба́ди]",
-        "translation": "Тело",
-        "category": "Основы"
-      },
-      {
-        "id": "v90",
-        "word": "Information",
-        "transcription": "[информэ́йшн]",
-        "translation": "Информация",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q71_1",
-        "question": "Вопрос 1 для урока 71",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q71_2",
-        "question": "Вопрос 2 для урока 71",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q71_3",
-        "question": "Вопрос 3 для урока 71",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q71_4",
-        "question": "Вопрос 4 для урока 71",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q71_5",
-        "question": "Вопрос 5 для урока 71",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l72",
-    "title": "Урок 72: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 72.",
-      "Сегодня наша тема: Урок 72: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v91",
-        "word": "Back",
-        "transcription": "[бэк]",
-        "translation": "Спина / Назад",
-        "category": "Основы"
-      },
-      {
-        "id": "v92",
-        "word": "Parent",
-        "transcription": "[пэ́рэнт]",
-        "translation": "Родитель",
-        "category": "Основы"
-      },
-      {
-        "id": "v93",
-        "word": "Face",
-        "transcription": "[фэйс]",
-        "translation": "Лицо",
-        "category": "Основы"
-      },
-      {
-        "id": "v94",
-        "word": "Others",
-        "transcription": "[а́зэрз]",
-        "translation": "Другие",
-        "category": "Основы"
-      },
-      {
-        "id": "v95",
-        "word": "Level",
-        "transcription": "[лэ́вэл]",
-        "translation": "Уровень",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q72_1",
-        "question": "Вопрос 1 для урока 72",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q72_2",
-        "question": "Вопрос 2 для урока 72",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q72_3",
-        "question": "Вопрос 3 для урока 72",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q72_4",
-        "question": "Вопрос 4 для урока 72",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q72_5",
-        "question": "Вопрос 5 для урока 72",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l73",
-    "title": "Урок 73: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 73.",
-      "Сегодня наша тема: Урок 73: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v96",
-        "word": "Office",
-        "transcription": "[о́фис]",
-        "translation": "Офис",
-        "category": "Основы"
-      },
-      {
-        "id": "v97",
-        "word": "Door",
-        "transcription": "[дор]",
-        "translation": "Дверь",
-        "category": "Основы"
-      },
-      {
-        "id": "v98",
-        "word": "Health",
-        "transcription": "[хэлс]",
-        "translation": "Здоровье",
-        "category": "Основы"
-      },
-      {
-        "id": "v99",
-        "word": "Person",
-        "transcription": "[пё́рсн]",
-        "translation": "Человек (личность)",
-        "category": "Основы"
-      },
-      {
-        "id": "v100",
-        "word": "Art",
-        "transcription": "[арт]",
-        "translation": "Искусство",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q73_1",
-        "question": "Вопрос 1 для урока 73",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q73_2",
-        "question": "Вопрос 2 для урока 73",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q73_3",
-        "question": "Вопрос 3 для урока 73",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q73_4",
-        "question": "Вопрос 4 для урока 73",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q73_5",
-        "question": "Вопрос 5 для урока 73",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l74",
-    "title": "Урок 74: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 74.",
-      "Сегодня наша тема: Урок 74: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v101",
-        "word": "War",
-        "transcription": "[уо́р]",
-        "translation": "Война",
-        "category": "Основы"
-      },
-      {
-        "id": "v102",
-        "word": "History",
-        "transcription": "[хи́стори]",
-        "translation": "История (наука)",
-        "category": "Основы"
-      },
-      {
-        "id": "v103",
-        "word": "Party",
-        "transcription": "[па́рти]",
-        "translation": "Вечеринка / Партия",
-        "category": "Основы"
-      },
-      {
-        "id": "v104",
-        "word": "Result",
-        "transcription": "[риза́лт]",
-        "translation": "Результат",
-        "category": "Основы"
-      },
-      {
-        "id": "v105",
-        "word": "Change",
-        "transcription": "[чэйндж]",
-        "translation": "Изменение",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q74_1",
-        "question": "Вопрос 1 для урока 74",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q74_2",
-        "question": "Вопрос 2 для урока 74",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q74_3",
-        "question": "Вопрос 3 для урока 74",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q74_4",
-        "question": "Вопрос 4 для урока 74",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q74_5",
-        "question": "Вопрос 5 для урока 74",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l75",
-    "title": "Урок 75: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 75.",
-      "Сегодня наша тема: Урок 75: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v106",
-        "word": "Morning",
-        "transcription": "[мо́рнинг]",
-        "translation": "Утро",
-        "category": "Основы"
-      },
-      {
-        "id": "v107",
-        "word": "Reason",
-        "transcription": "[ри́зн]",
-        "translation": "Причина",
-        "category": "Основы"
-      },
-      {
-        "id": "v108",
-        "word": "Research",
-        "transcription": "[рисё́ч]",
-        "translation": "Исследование",
-        "category": "Основы"
-      },
-      {
-        "id": "v109",
-        "word": "Girl",
-        "transcription": "[гёл]",
-        "translation": "Девочка",
-        "category": "Основы"
-      },
-      {
-        "id": "v110",
-        "word": "Guy",
-        "transcription": "[гай]",
-        "translation": "Парень",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q75_1",
-        "question": "Вопрос 1 для урока 75",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q75_2",
-        "question": "Вопрос 2 для урока 75",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q75_3",
-        "question": "Вопрос 3 для урока 75",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q75_4",
-        "question": "Вопрос 4 для урока 75",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q75_5",
-        "question": "Вопрос 5 для урока 75",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l76",
-    "title": "Урок 76: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 76.",
-      "Сегодня наша тема: Урок 76: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v111",
-        "word": "Food",
-        "transcription": "[фуд]",
-        "translation": "Еда",
-        "category": "Основы"
-      },
-      {
-        "id": "v112",
-        "word": "Moment",
-        "transcription": "[мо́умант]",
-        "translation": "Момент",
-        "category": "Основы"
-      },
-      {
-        "id": "v113",
-        "word": "Air",
-        "transcription": "[эр]",
-        "translation": "Воздух",
-        "category": "Основы"
-      },
-      {
-        "id": "v114",
-        "word": "Teacher",
-        "transcription": "[ти́чэр]",
-        "translation": "Учитель",
-        "category": "Основы"
-      },
-      {
-        "id": "v115",
-        "word": "Force",
-        "transcription": "[форс]",
-        "translation": "Сила (физическая)",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q76_1",
-        "question": "Вопрос 1 для урока 76",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q76_2",
-        "question": "Вопрос 2 для урока 76",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q76_3",
-        "question": "Вопрос 3 для урока 76",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q76_4",
-        "question": "Вопрос 4 для урока 76",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q76_5",
-        "question": "Вопрос 5 для урока 76",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l77",
-    "title": "Урок 77: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 77.",
-      "Сегодня наша тема: Урок 77: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v116",
-        "word": "Education",
-        "transcription": "[эдюкэ́йшн]",
-        "translation": "Образование",
-        "category": "Основы"
-      },
-      {
-        "id": "v117",
-        "word": "Good",
-        "transcription": "[гуд]",
-        "translation": "Хороший",
-        "category": "Основы"
-      },
-      {
-        "id": "v118",
-        "word": "New",
-        "transcription": "[нью]",
-        "translation": "Новый",
-        "category": "Основы"
-      },
-      {
-        "id": "v119",
-        "word": "First",
-        "transcription": "[фаст]",
-        "translation": "Первый",
-        "category": "Основы"
-      },
-      {
-        "id": "v120",
-        "word": "Last",
-        "transcription": "[лэст]",
-        "translation": "Последний",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q77_1",
-        "question": "Вопрос 1 для урока 77",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q77_2",
-        "question": "Вопрос 2 для урока 77",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q77_3",
-        "question": "Вопрос 3 для урока 77",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q77_4",
-        "question": "Вопрос 4 для урока 77",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q77_5",
-        "question": "Вопрос 5 для урока 77",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l78",
-    "title": "Урок 78: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 78.",
-      "Сегодня наша тема: Урок 78: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v121",
-        "word": "Long",
-        "transcription": "[лонг]",
-        "translation": "Длинный",
-        "category": "Основы"
-      },
-      {
-        "id": "v122",
-        "word": "Great",
-        "transcription": "[грэйт]",
-        "translation": "Великий / Отличный",
-        "category": "Основы"
-      },
-      {
-        "id": "v123",
-        "word": "Little",
-        "transcription": "[литл]",
-        "translation": "Маленький",
-        "category": "Основы"
-      },
-      {
-        "id": "v124",
-        "word": "Own",
-        "transcription": "[оун]",
-        "translation": "Собственный",
-        "category": "Основы"
-      },
-      {
-        "id": "v125",
-        "word": "Other",
-        "transcription": "[а́зэр]",
-        "translation": "Другой",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q78_1",
-        "question": "Вопрос 1 для урока 78",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q78_2",
-        "question": "Вопрос 2 для урока 78",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q78_3",
-        "question": "Вопрос 3 для урока 78",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q78_4",
-        "question": "Вопрос 4 для урока 78",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q78_5",
-        "question": "Вопрос 5 для урока 78",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l79",
-    "title": "Урок 79: Грамматика (Advanced)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 79.",
-      "Сегодня наша тема: Урок 79: Грамматика (Advanced).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v126",
-        "word": "Old",
-        "transcription": "[оулд]",
-        "translation": "Старый",
-        "category": "Основы"
-      },
-      {
-        "id": "v127",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Правый",
-        "category": "Основы"
-      },
-      {
-        "id": "v128",
-        "word": "Big",
-        "transcription": "[биг]",
-        "translation": "Большой",
-        "category": "Основы"
-      },
-      {
-        "id": "v129",
-        "word": "High",
-        "transcription": "[хай]",
-        "translation": "Высокий",
-        "category": "Основы"
-      },
-      {
-        "id": "v130",
-        "word": "Different",
-        "transcription": "[ди́ферэнт]",
-        "translation": "Различный",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q79_1",
-        "question": "Вопрос 1 для урока 79",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q79_2",
-        "question": "Вопрос 2 для урока 79",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q79_3",
-        "question": "Вопрос 3 для урока 79",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q79_4",
-        "question": "Вопрос 4 для урока 79",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q79_5",
-        "question": "Вопрос 5 для урока 79",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l80",
-    "title": "Урок 80: Грамматика (Mastery)",
-    "moduleId": 8,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 80.",
-      "Сегодня наша тема: Урок 80: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v131",
-        "word": "Small",
-        "transcription": "[смол]",
-        "translation": "Маленький",
-        "category": "Основы"
-      },
-      {
-        "id": "v132",
-        "word": "Large",
-        "transcription": "[лардж]",
-        "translation": "Крупный",
-        "category": "Основы"
-      },
-      {
-        "id": "v133",
-        "word": "Next",
-        "transcription": "[нэкст]",
-        "translation": "Следующий",
-        "category": "Основы"
-      },
-      {
-        "id": "v134",
-        "word": "Early",
-        "transcription": "[э́ли]",
-        "translation": "Ранний",
-        "category": "Основы"
-      },
-      {
-        "id": "v135",
-        "word": "Young",
-        "transcription": "[янг]",
-        "translation": "Молодой",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q80_1",
-        "question": "Вопрос 1 для урока 80",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q80_2",
-        "question": "Вопрос 2 для урока 80",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q80_3",
-        "question": "Вопрос 3 для урока 80",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q80_4",
-        "question": "Вопрос 4 для урока 80",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q80_5",
-        "question": "Вопрос 5 для урока 80",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l81",
-    "title": "Урок 81: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 81.",
-      "Сегодня наша тема: Урок 81: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v136",
-        "word": "Important",
-        "transcription": "[импо́ртэнт]",
-        "translation": "Важный",
-        "category": "Основы"
-      },
-      {
-        "id": "v137",
-        "word": "Few",
-        "transcription": "[фю]",
-        "translation": "Несколько",
-        "category": "Основы"
-      },
-      {
-        "id": "v138",
-        "word": "Public",
-        "transcription": "[па́блик]",
-        "translation": "Общественный",
-        "category": "Основы"
-      },
-      {
-        "id": "v139",
-        "word": "Bad",
-        "transcription": "[бэд]",
-        "translation": "Плохой",
-        "category": "Основы"
-      },
-      {
-        "id": "v140",
-        "word": "Same",
-        "transcription": "[сэйм]",
-        "translation": "Тот же самый",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q81_1",
-        "question": "Вопрос 1 для урока 81",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q81_2",
-        "question": "Вопрос 2 для урока 81",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q81_3",
-        "question": "Вопрос 3 для урока 81",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q81_4",
-        "question": "Вопрос 4 для урока 81",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q81_5",
-        "question": "Вопрос 5 для урока 81",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l82",
-    "title": "Урок 82: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 82.",
-      "Сегодня наша тема: Урок 82: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v141",
-        "word": "Able",
-        "transcription": "[эйбл]",
-        "translation": "Способный",
-        "category": "Основы"
-      },
-      {
-        "id": "v142",
-        "word": "To be",
-        "transcription": "[ту би]",
-        "translation": "Быть",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v143",
-        "word": "To have",
-        "transcription": "[ту хэв]",
-        "translation": "Иметь",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v144",
-        "word": "To do",
-        "transcription": "[ту ду]",
-        "translation": "Делать",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v145",
-        "word": "To say",
-        "transcription": "[ту сэй]",
-        "translation": "Сказать",
-        "category": "Глаголы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q82_1",
-        "question": "Вопрос 1 для урока 82",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q82_2",
-        "question": "Вопрос 2 для урока 82",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q82_3",
-        "question": "Вопрос 3 для урока 82",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q82_4",
-        "question": "Вопрос 4 для урока 82",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q82_5",
-        "question": "Вопрос 5 для урока 82",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l83",
-    "title": "Урок 83: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 83.",
-      "Сегодня наша тема: Урок 83: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v146",
-        "word": "To go",
-        "transcription": "[ту гоу]",
-        "translation": "Идти",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v147",
-        "word": "To get",
-        "transcription": "[ту гет]",
-        "translation": "Получить",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v148",
-        "word": "To make",
-        "transcription": "[ту мэйк]",
-        "translation": "Сделать (создать)",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v149",
-        "word": "To know",
-        "transcription": "[ту ноу]",
-        "translation": "Знать",
-        "category": "Глаголы"
-      },
-      {
-        "id": "v150",
-        "word": "To think",
-        "transcription": "[ту синк]",
-        "translation": "Думать",
-        "category": "Глаголы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q83_1",
-        "question": "Вопрос 1 для урока 83",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q83_2",
-        "question": "Вопрос 2 для урока 83",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q83_3",
-        "question": "Вопрос 3 для урока 83",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q83_4",
-        "question": "Вопрос 4 для урока 83",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q83_5",
-        "question": "Вопрос 5 для урока 83",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l84",
-    "title": "Урок 84: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 84.",
-      "Сегодня наша тема: Урок 84: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v1",
-        "word": "Always",
-        "transcription": "[о́лвэйз]",
-        "translation": "Всегда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v2",
-        "word": "Never",
-        "transcription": "[нэ́вэ]",
-        "translation": "Никогда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v3",
-        "word": "Sometimes",
-        "transcription": "[самта́ймз]",
-        "translation": "Иногда",
-        "category": "Наречия"
-      },
-      {
-        "id": "v4",
-        "word": "Often",
-        "transcription": "[о́фн]",
-        "translation": "Часто",
-        "category": "Наречия"
-      },
-      {
-        "id": "v5",
-        "word": "Usually",
-        "transcription": "[ю́жуали]",
-        "translation": "Обычно",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q84_1",
-        "question": "Вопрос 1 для урока 84",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q84_2",
-        "question": "Вопрос 2 для урока 84",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q84_3",
-        "question": "Вопрос 3 для урока 84",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q84_4",
-        "question": "Вопрос 4 для урока 84",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q84_5",
-        "question": "Вопрос 5 для урока 84",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l85",
-    "title": "Урок 85: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 85.",
-      "Сегодня наша тема: Урок 85: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v6",
-        "word": "Seldom",
-        "transcription": "[сэ́лдом]",
-        "translation": "Редко",
-        "category": "Наречия"
-      },
-      {
-        "id": "v7",
-        "word": "Every day",
-        "transcription": "[э́ври дэй]",
-        "translation": "Каждый день",
-        "category": "Наречия"
-      },
-      {
-        "id": "v8",
-        "word": "Now",
-        "transcription": "[нау]",
-        "translation": "Сейчас",
-        "category": "Наречия"
-      },
-      {
-        "id": "v9",
-        "word": "Today",
-        "transcription": "[тадэ́й]",
-        "translation": "Сегодня",
-        "category": "Наречия"
-      },
-      {
-        "id": "v10",
-        "word": "Tomorrow",
-        "transcription": "[тумо́роу]",
-        "translation": "Завтра",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q85_1",
-        "question": "Вопрос 1 для урока 85",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q85_2",
-        "question": "Вопрос 2 для урока 85",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q85_3",
-        "question": "Вопрос 3 для урока 85",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q85_4",
-        "question": "Вопрос 4 для урока 85",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q85_5",
-        "question": "Вопрос 5 для урока 85",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l86",
-    "title": "Урок 86: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 86.",
-      "Сегодня наша тема: Урок 86: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v11",
-        "word": "Yesterday",
-        "transcription": "[е́стэдэй]",
-        "translation": "Вчера",
-        "category": "Наречия"
-      },
-      {
-        "id": "v12",
-        "word": "Soon",
-        "transcription": "[сун]",
-        "translation": "Скоро",
-        "category": "Наречия"
-      },
-      {
-        "id": "v13",
-        "word": "Already",
-        "transcription": "[олрэ́ди]",
-        "translation": "Уже",
-        "category": "Наречия"
-      },
-      {
-        "id": "v14",
-        "word": "Yet",
-        "transcription": "[ет]",
-        "translation": "Еще (не)",
-        "category": "Наречия"
-      },
-      {
-        "id": "v15",
-        "word": "Just",
-        "transcription": "[джаст]",
-        "translation": "Только что",
-        "category": "Наречия"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q86_1",
-        "question": "Вопрос 1 для урока 86",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q86_2",
-        "question": "Вопрос 2 для урока 86",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q86_3",
-        "question": "Вопрос 3 для урока 86",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q86_4",
-        "question": "Вопрос 4 для урока 86",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q86_5",
-        "question": "Вопрос 5 для урока 86",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l87",
-    "title": "Урок 87: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 87.",
-      "Сегодня наша тема: Урок 87: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v16",
-        "word": "Time",
-        "transcription": "[тайм]",
-        "translation": "Время",
-        "category": "Существительные"
-      },
-      {
-        "id": "v17",
-        "word": "Year",
-        "transcription": "[йе́а]",
-        "translation": "Год",
-        "category": "Существительные"
-      },
-      {
-        "id": "v18",
-        "word": "People",
-        "transcription": "[пипл]",
-        "translation": "Люди",
-        "category": "Существительные"
-      },
-      {
-        "id": "v19",
-        "word": "Way",
-        "transcription": "[уэ́й]",
-        "translation": "Путь / Способ",
-        "category": "Существительные"
-      },
-      {
-        "id": "v20",
-        "word": "Day",
-        "transcription": "[дэй]",
-        "translation": "День",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q87_1",
-        "question": "Вопрос 1 для урока 87",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q87_2",
-        "question": "Вопрос 2 для урока 87",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q87_3",
-        "question": "Вопрос 3 для урока 87",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q87_4",
-        "question": "Вопрос 4 для урока 87",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q87_5",
-        "question": "Вопрос 5 для урока 87",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l88",
-    "title": "Урок 88: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 88.",
-      "Сегодня наша тема: Урок 88: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v21",
-        "word": "Man",
-        "transcription": "[мэн]",
-        "translation": "Мужчина / Человек",
-        "category": "Существительные"
-      },
-      {
-        "id": "v22",
-        "word": "Thing",
-        "transcription": "[синг]",
-        "translation": "Вещь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v23",
-        "word": "Woman",
-        "transcription": "[уу́мэн]",
-        "translation": "Женщина",
-        "category": "Существительные"
-      },
-      {
-        "id": "v24",
-        "word": "Life",
-        "transcription": "[лайф]",
-        "translation": "Жизнь",
-        "category": "Существительные"
-      },
-      {
-        "id": "v25",
-        "word": "Child",
-        "transcription": "[чайлд]",
-        "translation": "Ребенок",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q88_1",
-        "question": "Вопрос 1 для урока 88",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q88_2",
-        "question": "Вопрос 2 для урока 88",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q88_3",
-        "question": "Вопрос 3 для урока 88",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q88_4",
-        "question": "Вопрос 4 для урока 88",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q88_5",
-        "question": "Вопрос 5 для урока 88",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l89",
-    "title": "Урок 89: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 89.",
-      "Сегодня наша тема: Урок 89: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v26",
-        "word": "World",
-        "transcription": "[уо́рлд]",
-        "translation": "Мир",
-        "category": "Существительные"
-      },
-      {
-        "id": "v27",
-        "word": "School",
-        "transcription": "[скул]",
-        "translation": "Школа",
-        "category": "Существительные"
-      },
-      {
-        "id": "v28",
-        "word": "State",
-        "transcription": "[стэйт]",
-        "translation": "Состояние / Штат",
-        "category": "Существительные"
-      },
-      {
-        "id": "v29",
-        "word": "Family",
-        "transcription": "[фэ́мили]",
-        "translation": "Семья",
-        "category": "Существительные"
-      },
-      {
-        "id": "v30",
-        "word": "Student",
-        "transcription": "[стью́дэнт]",
-        "translation": "Студент",
-        "category": "Существительные"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q89_1",
-        "question": "Вопрос 1 для урока 89",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q89_2",
-        "question": "Вопрос 2 для урока 89",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q89_3",
-        "question": "Вопрос 3 для урока 89",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q89_4",
-        "question": "Вопрос 4 для урока 89",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q89_5",
-        "question": "Вопрос 5 для урока 89",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l90",
-    "title": "Урок 90: Грамматика (Mastery)",
-    "moduleId": 9,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 90.",
-      "Сегодня наша тема: Урок 90: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v31",
-        "word": "Group",
-        "transcription": "[груп]",
-        "translation": "Группа",
-        "category": "Основы"
-      },
-      {
-        "id": "v32",
-        "word": "Country",
-        "transcription": "[ка́нтри]",
-        "translation": "Страна",
-        "category": "Основы"
-      },
-      {
-        "id": "v33",
-        "word": "Problem",
-        "transcription": "[про́блем]",
-        "translation": "Проблема",
-        "category": "Основы"
-      },
-      {
-        "id": "v34",
-        "word": "Hand",
-        "transcription": "[хэнд]",
-        "translation": "Рука",
-        "category": "Основы"
-      },
-      {
-        "id": "v35",
-        "word": "Part",
-        "transcription": "[парт]",
-        "translation": "Часть",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q90_1",
-        "question": "Вопрос 1 для урока 90",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q90_2",
-        "question": "Вопрос 2 для урока 90",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q90_3",
-        "question": "Вопрос 3 для урока 90",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q90_4",
-        "question": "Вопрос 4 для урока 90",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q90_5",
-        "question": "Вопрос 5 для урока 90",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l91",
-    "title": "Урок 91: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 91.",
-      "Сегодня наша тема: Урок 91: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v36",
-        "word": "Place",
-        "transcription": "[плэйс]",
-        "translation": "Место",
-        "category": "Основы"
-      },
-      {
-        "id": "v37",
-        "word": "Case",
-        "transcription": "[кэйс]",
-        "translation": "Случай",
-        "category": "Основы"
-      },
-      {
-        "id": "v38",
-        "word": "Week",
-        "transcription": "[уи́к]",
-        "translation": "Неделя",
-        "category": "Основы"
-      },
-      {
-        "id": "v39",
-        "word": "Company",
-        "transcription": "[ка́мпани]",
-        "translation": "Компания",
-        "category": "Основы"
-      },
-      {
-        "id": "v40",
-        "word": "System",
-        "transcription": "[си́стэм]",
-        "translation": "Система",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q91_1",
-        "question": "Вопрос 1 для урока 91",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q91_2",
-        "question": "Вопрос 2 для урока 91",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q91_3",
-        "question": "Вопрос 3 для урока 91",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q91_4",
-        "question": "Вопрос 4 для урока 91",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q91_5",
-        "question": "Вопрос 5 для урока 91",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l92",
-    "title": "Урок 92: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 92.",
-      "Сегодня наша тема: Урок 92: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v41",
-        "word": "Program",
-        "transcription": "[про́грэм]",
-        "translation": "Программа",
-        "category": "Основы"
-      },
-      {
-        "id": "v42",
-        "word": "Question",
-        "transcription": "[квэ́счэн]",
-        "translation": "Вопрос",
-        "category": "Основы"
-      },
-      {
-        "id": "v43",
-        "word": "Work",
-        "transcription": "[уо́рк]",
-        "translation": "Работа",
-        "category": "Основы"
-      },
-      {
-        "id": "v44",
-        "word": "Government",
-        "transcription": "[га́вернмэнт]",
-        "translation": "Правительство",
-        "category": "Основы"
-      },
-      {
-        "id": "v45",
-        "word": "Number",
-        "transcription": "[на́мбэр]",
-        "translation": "Число",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q92_1",
-        "question": "Вопрос 1 для урока 92",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q92_2",
-        "question": "Вопрос 2 для урока 92",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q92_3",
-        "question": "Вопрос 3 для урока 92",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q92_4",
-        "question": "Вопрос 4 для урока 92",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q92_5",
-        "question": "Вопрос 5 для урока 92",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l93",
-    "title": "Урок 93: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 93.",
-      "Сегодня наша тема: Урок 93: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v46",
-        "word": "Night",
-        "transcription": "[найт]",
-        "translation": "Ночь",
-        "category": "Основы"
-      },
-      {
-        "id": "v47",
-        "word": "Point",
-        "transcription": "[пойнт]",
-        "translation": "Точка / Суть",
-        "category": "Основы"
-      },
-      {
-        "id": "v48",
-        "word": "Home",
-        "transcription": "[хоум]",
-        "translation": "Дом",
-        "category": "Основы"
-      },
-      {
-        "id": "v49",
-        "word": "Water",
-        "transcription": "[уо́тэр]",
-        "translation": "Вода",
-        "category": "Основы"
-      },
-      {
-        "id": "v50",
-        "word": "Room",
-        "transcription": "[рум]",
-        "translation": "Комната",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q93_1",
-        "question": "Вопрос 1 для урока 93",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q93_2",
-        "question": "Вопрос 2 для урока 93",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q93_3",
-        "question": "Вопрос 3 для урока 93",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q93_4",
-        "question": "Вопрос 4 для урока 93",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q93_5",
-        "question": "Вопрос 5 для урока 93",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l94",
-    "title": "Урок 94: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 94.",
-      "Сегодня наша тема: Урок 94: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v51",
-        "word": "Mother",
-        "transcription": "[ма́зэр]",
-        "translation": "Мать",
-        "category": "Основы"
-      },
-      {
-        "id": "v52",
-        "word": "Area",
-        "transcription": "[э́риа]",
-        "translation": "Область",
-        "category": "Основы"
-      },
-      {
-        "id": "v53",
-        "word": "Money",
-        "transcription": "[ма́ни]",
-        "translation": "Деньги",
-        "category": "Основы"
-      },
-      {
-        "id": "v54",
-        "word": "Story",
-        "transcription": "[сто́ри]",
-        "translation": "История",
-        "category": "Основы"
-      },
-      {
-        "id": "v55",
-        "word": "Fact",
-        "transcription": "[фэкт]",
-        "translation": "Факт",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q94_1",
-        "question": "Вопрос 1 для урока 94",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q94_2",
-        "question": "Вопрос 2 для урока 94",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q94_3",
-        "question": "Вопрос 3 для урока 94",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q94_4",
-        "question": "Вопрос 4 для урока 94",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q94_5",
-        "question": "Вопрос 5 для урока 94",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l95",
-    "title": "Урок 95: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 95.",
-      "Сегодня наша тема: Урок 95: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v56",
-        "word": "Month",
-        "transcription": "[манс]",
-        "translation": "Месяц",
-        "category": "Основы"
-      },
-      {
-        "id": "v57",
-        "word": "Lot",
-        "transcription": "[лат]",
-        "translation": "Много",
-        "category": "Основы"
-      },
-      {
-        "id": "v58",
-        "word": "Right",
-        "transcription": "[райт]",
-        "translation": "Право / Правильный",
-        "category": "Основы"
-      },
-      {
-        "id": "v59",
-        "word": "Study",
-        "transcription": "[ста́ди]",
-        "translation": "Изучать",
-        "category": "Основы"
-      },
-      {
-        "id": "v60",
-        "word": "Book",
-        "transcription": "[бук]",
-        "translation": "Книга",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q95_1",
-        "question": "Вопрос 1 для урока 95",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q95_2",
-        "question": "Вопрос 2 для урока 95",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q95_3",
-        "question": "Вопрос 3 для урока 95",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q95_4",
-        "question": "Вопрос 4 для урока 95",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q95_5",
-        "question": "Вопрос 5 для урока 95",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l96",
-    "title": "Урок 96: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 96.",
-      "Сегодня наша тема: Урок 96: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v61",
-        "word": "Eye",
-        "transcription": "[ай]",
-        "translation": "Глаз",
-        "category": "Основы"
-      },
-      {
-        "id": "v62",
-        "word": "Job",
-        "transcription": "[джаб]",
-        "translation": "Работа (профессия)",
-        "category": "Основы"
-      },
-      {
-        "id": "v63",
-        "word": "Word",
-        "transcription": "[уо́рд]",
-        "translation": "Слово",
-        "category": "Основы"
-      },
-      {
-        "id": "v64",
-        "word": "Business",
-        "transcription": "[би́знас]",
-        "translation": "Бизнес",
-        "category": "Основы"
-      },
-      {
-        "id": "v65",
-        "word": "Issue",
-        "transcription": "[и́шу]",
-        "translation": "Вопрос (проблема)",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q96_1",
-        "question": "Вопрос 1 для урока 96",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q96_2",
-        "question": "Вопрос 2 для урока 96",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q96_3",
-        "question": "Вопрос 3 для урока 96",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q96_4",
-        "question": "Вопрос 4 для урока 96",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q96_5",
-        "question": "Вопрос 5 для урока 96",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l97",
-    "title": "Урок 97: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 97.",
-      "Сегодня наша тема: Урок 97: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v66",
-        "word": "Side",
-        "transcription": "[сайд]",
-        "translation": "Сторона",
-        "category": "Основы"
-      },
-      {
-        "id": "v67",
-        "word": "Kind",
-        "transcription": "[кайнд]",
-        "translation": "Вид / Добрый",
-        "category": "Основы"
-      },
-      {
-        "id": "v68",
-        "word": "Head",
-        "transcription": "[хёд]",
-        "translation": "Голова",
-        "category": "Основы"
-      },
-      {
-        "id": "v69",
-        "word": "House",
-        "transcription": "[хаус]",
-        "translation": "Дом (здание)",
-        "category": "Основы"
-      },
-      {
-        "id": "v70",
-        "word": "Service",
-        "transcription": "[сэ́вас]",
-        "translation": "Служба",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q97_1",
-        "question": "Вопрос 1 для урока 97",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q97_2",
-        "question": "Вопрос 2 для урока 97",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q97_3",
-        "question": "Вопрос 3 для урока 97",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q97_4",
-        "question": "Вопрос 4 для урока 97",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q97_5",
-        "question": "Вопрос 5 для урока 97",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l98",
-    "title": "Урок 98: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 98.",
-      "Сегодня наша тема: Урок 98: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v71",
-        "word": "Friend",
-        "transcription": "[фрэнд]",
-        "translation": "Друг",
-        "category": "Основы"
-      },
-      {
-        "id": "v72",
-        "word": "Father",
-        "transcription": "[фа́зэр]",
-        "translation": "Отец",
-        "category": "Основы"
-      },
-      {
-        "id": "v73",
-        "word": "Power",
-        "transcription": "[па́уэ]",
-        "translation": "Сила / Власть",
-        "category": "Основы"
-      },
-      {
-        "id": "v74",
-        "word": "Hour",
-        "transcription": "[а́уэ]",
-        "translation": "Час",
-        "category": "Основы"
-      },
-      {
-        "id": "v75",
-        "word": "Game",
-        "transcription": "[гэйм]",
-        "translation": "Игра",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q98_1",
-        "question": "Вопрос 1 для урока 98",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q98_2",
-        "question": "Вопрос 2 для урока 98",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q98_3",
-        "question": "Вопрос 3 для урока 98",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q98_4",
-        "question": "Вопрос 4 для урока 98",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q98_5",
-        "question": "Вопрос 5 для урока 98",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l99",
-    "title": "Урок 99: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 99.",
-      "Сегодня наша тема: Урок 99: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v76",
-        "word": "Line",
-        "transcription": "[лайн]",
-        "translation": "Линия",
-        "category": "Основы"
-      },
-      {
-        "id": "v77",
-        "word": "End",
-        "transcription": "[энд]",
-        "translation": "Конец",
-        "category": "Основы"
-      },
-      {
-        "id": "v78",
-        "word": "Member",
-        "transcription": "[мэ́мбэр]",
-        "translation": "Член (группы)",
-        "category": "Основы"
-      },
-      {
-        "id": "v79",
-        "word": "Law",
-        "transcription": "[ло]",
-        "translation": "Закон",
-        "category": "Основы"
-      },
-      {
-        "id": "v80",
-        "word": "Car",
-        "transcription": "[кар]",
-        "translation": "Машина",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q99_1",
-        "question": "Вопрос 1 для урока 99",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q99_2",
-        "question": "Вопрос 2 для урока 99",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q99_3",
-        "question": "Вопрос 3 для урока 99",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q99_4",
-        "question": "Вопрос 4 для урока 99",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q99_5",
-        "question": "Вопрос 5 для урока 99",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      }
-    ]
-  },
-  {
-    "id": "l100",
-    "title": "Урок 100: Грамматика (Mastery)",
-    "moduleId": 10,
-    "theory": [
-      "Привет от Кролика 🐰! Добро пожаловать на урок 100.",
-      "Сегодня наша тема: Урок 100: Грамматика (Mastery).",
-      "Мы продолжаем углубляться в английский. Скоро ты станешь настоящим мастером 🦇!"
-    ],
-    "words": [
-      {
-        "id": "v81",
-        "word": "City",
-        "transcription": "[си́ти]",
-        "translation": "Город",
-        "category": "Основы"
-      },
-      {
-        "id": "v82",
-        "word": "Community",
-        "transcription": "[комью́нити]",
-        "translation": "Сообщество",
-        "category": "Основы"
-      },
-      {
-        "id": "v83",
-        "word": "Name",
-        "transcription": "[нэйм]",
-        "translation": "Имя",
-        "category": "Основы"
-      },
-      {
-        "id": "v84",
-        "word": "President",
-        "transcription": "[прэ́зидант]",
-        "translation": "Президент",
-        "category": "Основы"
-      },
-      {
-        "id": "v85",
-        "word": "Team",
-        "transcription": "[тим]",
-        "translation": "Команда",
-        "category": "Основы"
-      }
-    ],
-    "quiz": [
-      {
-        "id": "q100_1",
-        "question": "Вопрос 1 для урока 100",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q100_2",
-        "question": "Вопрос 2 для урока 100",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q100_3",
-        "question": "Вопрос 3 для урока 100",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q100_4",
-        "question": "Вопрос 4 для урока 100",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q100_5",
-        "question": "Вопрос 5 для урока 100",
-        "options": [
-          "Ответ A",
-          "Ответ B",
-          "Ответ C"
+          "He",
+          "baddest"
+        ],
+        "correctSentence": [
+          "He",
+          "is",
+          "the",
+          "worst",
+          "player"
+        ]
+      },
+      {
+        "id": "q18_7",
+        "type": "fill_in_blank",
+        "question": "This test is ___ (difficult) than the last one (вставьте 'more').",
+        "correctAnswer": "more"
+      },
+      {
+        "id": "q18_rep",
+        "type": "multiple_choice",
+        "question": "Как сказать 'её собака'?",
+        "options": [
+          "her dog",
+          "she dog",
+          "his dog"
         ],
         "correctAnswerIndex": 0
       }

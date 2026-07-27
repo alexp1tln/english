@@ -15,11 +15,11 @@ export default function ModuleTestResult({ score, total, moduleId, mistakes, onB
   const [shared, setShared] = useState(false);
 
   const handleShare = async () => {
-    const text = `Я прошел контрольную по Модулю ${moduleId} в Dark Bunny на ${percentage}% (${score}/${total})! Присоединяйся!`;
+    const text = `Я прошел контрольную по Модулю ${moduleId} в Rabbit's English на ${percentage}% (${score}/${total})! Присоединяйся!`;
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Мой результат в Dark Bunny',
+          title: "Мой результат в Rabbit's English",
           text: text,
         });
       } catch (err) {

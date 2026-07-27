@@ -1,122 +1,77 @@
 import { safeStorage } from "../utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, Check, X } from 'lucide-react';
-import { Lesson, QuizQuestion } from '../types';
+import { ArrowLeft, BookText, ChevronDown } from 'lucide-react';
+import { QuizQuestion } from '../types';
 
-interface ModuleTestProps { key?: React.Key | string;
-  moduleId: number;
-  lessons: Lesson[];
-  onFinish: (score: number, total: number, mistakes: { question: string, correct: string, selected: string }[]) => void;
-  onBack: () => void;
-}
-
-export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: ModuleTestProps) {
-  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+export default function LessonQuiz({ questions, theory, onFinish, onBack }: { key?: string, questions: QuizQuestion[], theory?: string[], onFinish: () => void, onBack: () => void }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   
+  // For multiple_choice
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  
+  // For drag_and_drop
   const [droppedWords, setDroppedWords] = useState<string[]>([]);
+  
+  // For fill_in_blank
   const [textInput, setTextInput] = useState('');
   
   const [isAnswered, setIsAnswered] = useState(false);
-  const [score, setScore] = useState(0);
-  const [mistakesList, setMistakesList] = useState<{ question: string, correct: string, selected: string }[]>([]);
-
-  useEffect(() => {
-    const moduleLessons = lessons.filter(l => l.moduleId === moduleId);
-    let allQs: QuizQuestion[] = [];
-    moduleLessons.forEach(l => {
-      allQs = allQs.concat(l.quiz);
-    });
-    
-    let mistakes: string[] = [];
-    try {
-      mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
-    } catch(e) {}
-
-    const mistakeQs = allQs.filter(q => mistakes.includes(q.id));
-    const regularQs = allQs.filter(q => !mistakes.includes(q.id));
-
-    mistakeQs.sort(() => Math.random() - 0.5);
-    regularQs.sort(() => Math.random() - 0.5);
-
-    let finalQs = mistakeQs.concat(regularQs).slice(0, 10);
-    finalQs.sort(() => Math.random() - 0.5);
-
-    setQuestions(finalQs);
-  }, [moduleId, lessons]);
+  const [wrongAnswerIdx, setWrongAnswerIdx] = useState<number | null>(null);
+  const [hint, setHint] = useState<string | null>(null);
+  const [showTheory, setShowTheory] = useState(false);
   
+  const q = questions[currentIndex];
+  
+  // Clean up state on question change
   useEffect(() => {
     setSelectedAnswer(null);
     setDroppedWords([]);
     setTextInput('');
     setIsAnswered(false);
+    setWrongAnswerIdx(null);
+    setHint(null);
   }, [currentIndex]);
-
-  if (questions.length === 0) return null;
-
-  const q = questions[currentIndex];
   
-  const processNext = (isCorrect: boolean, correctText: string, selectedText: string) => {
-    if (isCorrect) {
-      setScore(s => s + 1);
-    } else {
-      setMistakesList(prev => [...prev, { 
-         question: q.question, 
-         correct: correctText, 
-         selected: selectedText
-      }]);
-    }
-    
+  const handleMistake = () => {
+    try { 
+       const mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
+       if (!mistakes.includes(q.id)) {
+          mistakes.push(q.id);
+          safeStorage.setItem('mistakes', JSON.stringify(mistakes));
+       }
+    } catch(e) {}
+  };
+  
+  const handleNext = () => {
+    setIsAnswered(true);
     setTimeout(() => {
       if (currentIndex < questions.length - 1) {
-        setCurrentIndex(prev => Math.min(prev + 1, questions.length - 1));
+        setCurrentIndex(prev => prev + 1);
       } else {
-        const finalMistakes = isCorrect ? mistakesList : [...mistakesList, {
-          question: q.question,
-          correct: correctText,
-          selected: selectedText
-        }];
-        onFinish(score + (isCorrect ? 1 : 0), questions.length, finalMistakes);
+        onFinish();
       }
-    }, 1200);
+    }, 1500);
   };
-
+  
+  // Multiple Choice
   const handleSelect = (idx: number) => {
-    if (isAnswered) return;
-    setSelectedAnswer(idx);
-    setIsAnswered(true);
-    
-    const isCorrect = idx === q.correctAnswerIndex;
-    const correctText = q.options?.[q.correctAnswerIndex ?? 0] || '';
-    const selectedText = q.options?.[idx] || '';
-    
-    processNext(isCorrect, correctText, selectedText);
+    if (isAnswered || wrongAnswerIdx !== null) return;
+    if ((q.type === 'multiple_choice' || !q.type) && idx === q.correctAnswerIndex) {
+      setSelectedAnswer(idx);
+      handleNext();
+    } else {
+      setWrongAnswerIdx(idx);
+      setHint(`Вариант "${q.options?.[idx]}" не подходит. Подумайте над правилом и попробуйте еще раз.`);
+      handleMistake();
+      setTimeout(() => {
+        setWrongAnswerIdx(null);
+        setHint(null);
+      }, 3000);
+    }
   };
   
-  const checkDragAndDrop = () => {
-    if (isAnswered) return;
-    setIsAnswered(true);
-    
-    const isCorrect = q.correctSentence && droppedWords.join(' ') === q.correctSentence.join(' ');
-    const correctText = q.correctSentence?.join(' ') || '';
-    const selectedText = droppedWords.join(' ');
-    
-    processNext(!!isCorrect, correctText, selectedText);
-  };
-  
-  const checkFillInBlank = () => {
-    if (isAnswered) return;
-    setIsAnswered(true);
-    
-    const isCorrect = q.correctAnswer && textInput.trim().toLowerCase() === q.correctAnswer.toLowerCase();
-    const correctText = q.correctAnswer || '';
-    const selectedText = textInput;
-    
-    processNext(!!isCorrect, correctText, selectedText);
-  };
-  
+  // Drag and Drop (Sentence building)
   const handleWordClick = (word: string) => {
     if (isAnswered) return;
     if (droppedWords.includes(word)) {
@@ -125,10 +80,33 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
       setDroppedWords([...droppedWords, word]);
     }
   };
+  
+  const checkDragAndDrop = () => {
+    if (isAnswered) return;
+    if (q.correctSentence && droppedWords.join(' ') === q.correctSentence.join(' ')) {
+      handleNext();
+    } else {
+      setHint('Неправильный порядок слов. Попробуйте еще раз.');
+      handleMistake();
+      setTimeout(() => setHint(null), 3000);
+    }
+  };
+  
+  // Fill in Blank
+  const checkFillInBlank = () => {
+    if (isAnswered) return;
+    if (q.correctAnswer && textInput.trim().toLowerCase() === q.correctAnswer.toLowerCase()) {
+      handleNext();
+    } else {
+      setHint('Ответ неверный. Попробуйте еще раз.');
+      handleMistake();
+      setTimeout(() => setHint(null), 3000);
+    }
+  };
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full w-full absolute inset-0 bg-[#000000]">
-      <div className="flex items-center gap-4 mb-8 shrink-0 p-6 z-20">
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }} className="flex flex-col h-full w-full">
+      <div className="flex items-center gap-4 mb-8 shrink-0">
         <button onClick={onBack} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 hover:bg-white/5 hover:text-white transition-colors">
           <ArrowLeft size={20} />
         </button>
@@ -137,30 +115,36 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
         </div>
       </div>
       
-      <div className="flex-1 flex flex-col justify-center pb-24 px-6 z-10 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-silver/5 rounded-[2.5rem] blur-[100px] pointer-events-none" />
+      <div className="flex-1 flex flex-col justify-center pb-24 w-full">
         <AnimatePresence mode="wait">
-          <motion.div
+          <motion.div 
             key={currentIndex}
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full relative"
+            className="w-full"
           >
-            <div className="mb-10 text-center px-4"> 
-              <h3 className="text-white/70/50 uppercase tracking-wide font-light text-xs mb-4">Вопрос {currentIndex + 1} из {questions.length}</h3>
+            <div className="mb-10 text-center px-4 w-full">
               <h2 className="text-3xl text-white font-sans font-semibold tracking-tight leading-snug break-words">{q.question}</h2>
             </div>
+            
+            {hint && (
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-6 p-4 rounded-2xl bg-burgundy/20 border border-burgundy/40 text-white/90 text-sm text-center shadow-[0_0_20px_rgba(144,0,36,0.2)]">
+                {hint}
+              </motion.div>
+            )}
             
             {(!q.type || q.type === 'multiple_choice') && (
               <div className="flex flex-col gap-4 w-full">
                 {q.options?.map((opt, idx) => {
                   const isSelected = selectedAnswer === idx;
-                  
+                  const isCorrect = idx === q.correctAnswerIndex;
                   let btnClass = "w-full p-5 rounded-[2.5rem] border text-left text-lg transition-all duration-300 relative overflow-hidden ";
                   if (isSelected) {
                     btnClass += "bg-white/10 border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)]";
+                  } else if (wrongAnswerIdx === idx) {
+                    btnClass += "bg-burgundy/30 border-burgundy/50 text-white shadow-[0_0_20px_rgba(144,0,36,0.3)]";
                   } else {
                     btnClass += "bg-gothic-card hover:bg-gothic-card-hover border-gothic-border text-white/70";
-                    if (isAnswered) btnClass += " opacity-50";
+                    if (isAnswered || wrongAnswerIdx !== null) btnClass += " opacity-50";
                     else btnClass += " hover:text-white hover:border-gothic-border-hover active:scale-95";
                   }
                   return (
@@ -227,10 +211,43 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
                 </button>
               </div>
             )}
-
+            
           </motion.div>
         </AnimatePresence>
       </div>
+      
+      {theory && theory.length > 0 && (
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30">
+          <button onClick={() => setShowTheory(true)} className="p-4 rounded-full bg-white/5 border border-white/10 text-white/70 hover:text-white hover:bg-white/10 active:scale-95 transition-all shadow-lg backdrop-blur-md">
+             <BookText size={24} />
+          </button>
+        </div>
+      )}
+      
+      <AnimatePresence>
+        {showTheory && theory && (
+          <motion.div
+            initial={{ opacity: 0, y: '100%' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '100%' }}
+            className="absolute inset-0 z-50 bg-gothic-bg flex flex-col"
+          >
+            <div className="flex items-center gap-4 p-6 shrink-0 bg-gothic-card/80 backdrop-blur-xl border-b border-gothic-border">
+              <button onClick={() => setShowTheory(false)} className="p-3 rounded-full bg-white/5 border border-white/5 active:bg-white/5 text-white/70 transition-colors hover:bg-white/5 hover:text-white">
+                <ChevronDown size={20} />
+              </button>
+              <h2 className="text-2xl font-sans font-semibold tracking-tight text-white">Теория</h2>
+            </div>
+            <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-6 pb-24">
+              {theory.map((paragraph, idx) => (
+                <p key={idx} className="text-white/80 leading-relaxed font-light text-lg">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }

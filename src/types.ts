@@ -6,11 +6,16 @@ export interface Word {
   category?: string;
 }
 
+export type QuestionType = 'multiple_choice' | 'drag_and_drop' | 'fill_in_blank';
+
 export interface QuizQuestion {
   id: string;
+  type?: QuestionType;
   question: string;
-  options: string[];
-  correctAnswerIndex: number;
+  options?: string[];
+  correctAnswerIndex?: number;
+  correctSentence?: string[];
+  correctAnswer?: string;
 }
 
 export interface Lesson {
