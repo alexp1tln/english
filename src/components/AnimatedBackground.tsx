@@ -3,10 +3,10 @@ import { motion } from 'motion/react';
 
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-[#030303] pointer-events-none">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-[#0a0a0c] pointer-events-none">
       {/* Subtle grid pattern */}
       <div 
-        className="absolute inset-0 z-0 opacity-[0.04]" 
+        className="absolute inset-0 z-0 opacity-[0.08]" 
         style={{
           backgroundImage: `
             linear-gradient(to right, #ffffff 1px, transparent 1px),
@@ -60,7 +60,7 @@ export default function AnimatedBackground() {
       />
       
       {/* Vignette overlay */}
-      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_#030303_100%)] opacity-80" />
+      <div className="absolute inset-0 z-1 pointer-events-none bg-[radial-gradient(circle_at_center,_transparent_0%,_#0a0a0c_100%)] opacity-80" />
     </div>
   );
 }
