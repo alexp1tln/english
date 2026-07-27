@@ -19,8 +19,9 @@
     </style>
     <script>
       window.addEventListener('error', function(e) {
+        alert('Error: ' + e.message + ' at ' + e.filename + ':' + e.lineno);
         var div = document.createElement('div');
-        div.style.cssText = 'color:red; background:white; padding:20px; position:fixed; top:0; left:0; z-index:9999; font-size:12px; width:100%;';
+        div.style.cssText = 'color:red; background:white; padding:20px; position:fixed; top:0; left:0; z-index:99999; font-size:12px; width:100%;';
         div.innerHTML = 'Inline Error: ' + e.message + '<br>Line: ' + e.lineno + '<br>File: ' + e.filename;
         
         var btn = document.createElement('button');
@@ -39,7 +40,10 @@
         div.appendChild(btn);
         
         if(document.body) document.body.appendChild(div);
-        else window.onload = function() { document.body.appendChild(div); };
+        else window.addEventListener('DOMContentLoaded', function() { document.body.appendChild(div); });
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        alert('Unhandled Rejection: ' + (e.reason ? e.reason.message : 'Unknown'));
       });
     </script>
   </head>

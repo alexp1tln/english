@@ -31,7 +31,6 @@ export default function App() {
       const newCompleted = [...completedLessons, id];
       setCompletedLessons(newCompleted);
       safeStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
-      showNotification('Ты получил темную корону 👑', 'Урок успешно пройден!');
     }
   };
 
@@ -101,7 +100,19 @@ export default function App() {
               <ModuleTest key="module_test" moduleId={currentTestModule} lessons={lessons} onFinish={(score, total, mistakes) => {
                 const id = `test_${currentTestModule}`;
                 if (!completedLessons.includes(id)) {
-                  setCompletedLessons([...completedLessons, id]);
+                  const newCompleted = [...completedLessons, id];
+                  setCompletedLessons(newCompleted);
+                  safeStorage.setItem('darkBunnyCompleted', JSON.stringify(newCompleted));
+                  
+                  const praiseMessages = [
+                    { title: "Потрясающая работа!", message: "Ты покорил этот модуль." },
+                    { title: "Великолепный результат!", message: "Твой английский стал еще лучше." },
+                    { title: "Отлично справился!", message: "Еще один шаг к идеальному английскому." },
+                    { title: "Невероятно!", message: "Твои знания растут с каждым днем." },
+                    { title: "Так держать!", message: "Модуль пройден блестяще." }
+                  ];
+                  const praise = praiseMessages[(currentTestModule - 1) % praiseMessages.length];
+                  showNotification(praise.title, praise.message);
                 }
                 setTestScore({score, total, mistakes: mistakes || []});
                 setView('module_test_result');

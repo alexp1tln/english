@@ -12,7 +12,8 @@ export default defineConfig(() => {
       react(),
       tailwindcss(),
       legacy({
-        targets: ['defaults', 'not IE 11']
+        targets: ['defaults', 'safari >= 13', 'ios >= 13'],
+        modernPolyfills: true,
       }),
       VitePWA({
         registerType: 'autoUpdate',
