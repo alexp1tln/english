@@ -2,200 +2,585 @@ import { Lesson, Word } from './types';
 
 export const vocabulary: Word[] = [
   {
-    "id": "v_1_Tree",
-    "word": "Tree",
-    "transcription": "[triː]",
-    "translation": "Дерево",
-    "category": "Basic"
+    "id": "v_l1_Friend",
+    "word": "Friend",
+    "transcription": "[frend]",
+    "translation": "Друг",
+    "category": "Module 1"
   },
   {
-    "id": "v_1_Love",
-    "word": "Love",
-    "transcription": "[lʌv]",
-    "translation": "Любовь",
-    "category": "Basic"
+    "id": "v_l1_Student",
+    "word": "Student",
+    "transcription": "[ˈstjuːdənt]",
+    "translation": "Студент",
+    "category": "Module 1"
   },
   {
-    "id": "v_2_Eye",
-    "word": "Eye",
-    "transcription": "[aɪ]",
-    "translation": "Глаз",
-    "category": "Basic"
-  },
-  {
-    "id": "v_2_Knowledge",
-    "word": "Knowledge",
-    "transcription": "[ˈnɒlɪʤ]",
-    "translation": "Знание",
-    "category": "Basic"
-  },
-  {
-    "id": "v_3_Case",
-    "word": "Case",
-    "transcription": "[keɪs]",
-    "translation": "Случай",
-    "category": "Basic"
-  },
-  {
-    "id": "v_3_Hand",
-    "word": "Hand",
-    "transcription": "[hænd]",
-    "translation": "Рука",
-    "category": "Basic"
-  },
-  {
-    "id": "v_4_Week",
-    "word": "Week",
-    "transcription": "[wiːk]",
-    "translation": "Неделя",
-    "category": "Basic"
-  },
-  {
-    "id": "v_4_Year",
-    "word": "Year",
-    "transcription": "[jɪə]",
-    "translation": "Год",
-    "category": "Basic"
-  },
-  {
-    "id": "v_5_Day",
-    "word": "Day",
-    "transcription": "[deɪ]",
-    "translation": "День",
-    "category": "Basic"
-  },
-  {
-    "id": "v_6_Animal",
-    "word": "Animal",
-    "transcription": "[ˈænɪməl]",
-    "translation": "Животное",
-    "category": "Basic"
-  },
-  {
-    "id": "v_7_Place",
-    "word": "Place",
-    "transcription": "[pleɪs]",
-    "translation": "Место",
-    "category": "Basic"
-  },
-  {
-    "id": "v_8_Name",
+    "id": "v_l1_Name",
     "word": "Name",
     "transcription": "[neɪm]",
     "translation": "Имя",
-    "category": "Basic"
+    "category": "Module 1"
   },
   {
-    "id": "v_8_Family",
-    "word": "Family",
-    "transcription": "[ˈfæmɪli]",
-    "translation": "Семья",
-    "category": "Basic"
+    "id": "v_l2_Teacher",
+    "word": "Teacher",
+    "transcription": "[ˈtiːtʃə]",
+    "translation": "Учитель",
+    "category": "Module 1"
   },
   {
-    "id": "v_9_House",
-    "word": "House",
-    "transcription": "[haʊs]",
-    "translation": "Дом",
-    "category": "Basic"
+    "id": "v_l3_Hi",
+    "word": "Hi",
+    "transcription": "[haɪ]",
+    "translation": "Привет",
+    "category": "Module 1"
   },
   {
-    "id": "v_9_Problem",
-    "word": "Problem",
-    "transcription": "[ˈprɒbləm]",
-    "translation": "Проблема",
-    "category": "Basic"
+    "id": "v_l5_Shop",
+    "word": "Shop",
+    "transcription": "[ʃɒp]",
+    "translation": "Магазин",
+    "category": "Module 2"
   },
   {
-    "id": "v_10_Fact",
-    "word": "Fact",
-    "transcription": "[fækt]",
-    "translation": "Факт",
-    "category": "Basic"
+    "id": "v_l5_Food",
+    "word": "Food",
+    "transcription": "[fuːd]",
+    "translation": "Еда",
+    "category": "Module 2"
   },
   {
-    "id": "v_10_Morning",
-    "word": "Morning",
-    "transcription": "[ˈmɔːnɪŋ]",
-    "translation": "Утро",
-    "category": "Basic"
+    "id": "v_l5_Coffee",
+    "word": "Coffee",
+    "transcription": "[ˈkɒfi]",
+    "translation": "Кофе",
+    "category": "Module 2"
   },
   {
-    "id": "v_11_Point",
-    "word": "Point",
-    "transcription": "[pɔɪnt]",
-    "translation": "Точка",
-    "category": "Basic"
+    "id": "v_l6_Buy",
+    "word": "Buy",
+    "transcription": "[baɪ]",
+    "translation": "Покупать",
+    "category": "Module 2"
   },
   {
-    "id": "v_11_City",
-    "word": "City",
-    "transcription": "[ˈsɪti]",
-    "translation": "Город",
-    "category": "Basic"
+    "id": "v_l6_Water",
+    "word": "Water",
+    "transcription": "[ˈwɔːtə]",
+    "translation": "Вода",
+    "category": "Module 2"
   },
   {
-    "id": "v_12_Father",
-    "word": "Father",
-    "transcription": "[ˈfɑːðə]",
-    "translation": "Отец",
-    "category": "Basic"
+    "id": "v_l8_Room",
+    "word": "Room",
+    "transcription": "[ruːm]",
+    "translation": "Комната",
+    "category": "Module 3"
   },
   {
-    "id": "v_12_Mother",
-    "word": "Mother",
-    "transcription": "[ˈmʌðə]",
-    "translation": "Мать",
-    "category": "Basic"
+    "id": "v_l8_Wake",
+    "word": "Wake",
+    "transcription": "[weɪk]",
+    "translation": "Просыпаться",
+    "category": "Module 3"
   },
   {
-    "id": "v_13_Power",
-    "word": "Power",
-    "transcription": "[ˈpaʊə]",
-    "translation": "Сила",
-    "category": "Basic"
+    "id": "v_l8_Hotel",
+    "word": "Hotel",
+    "transcription": "[həʊˈtɛl]",
+    "translation": "Отель",
+    "category": "Module 3"
   },
   {
-    "id": "v_13_Money",
+    "id": "v_l9_Bed",
+    "word": "Bed",
+    "transcription": "[bɛd]",
+    "translation": "Кровать",
+    "category": "Module 3"
+  },
+  {
+    "id": "v_l11_Apple",
+    "word": "Apple",
+    "transcription": "[ˈæp(ə)l]",
+    "translation": "Яблоко",
+    "category": "Module 4"
+  },
+  {
+    "id": "v_l11_Much",
+    "word": "Much",
+    "transcription": "[mʌtʃ]",
+    "translation": "Много (неисчисл.)",
+    "category": "Module 4"
+  },
+  {
+    "id": "v_l11_Many",
+    "word": "Many",
+    "transcription": "[ˈmɛni]",
+    "translation": "Много (исчисл.)",
+    "category": "Module 4"
+  },
+  {
+    "id": "v_l12_Money",
     "word": "Money",
     "transcription": "[ˈmʌni]",
     "translation": "Деньги",
-    "category": "Basic"
+    "category": "Module 4"
   },
   {
-    "id": "v_14_Music",
-    "word": "Music",
-    "transcription": "[ˈmjuːzɪk]",
-    "translation": "Музыка",
-    "category": "Basic"
+    "id": "v_l13_Juice",
+    "word": "Juice",
+    "transcription": "[dʒuːs]",
+    "translation": "Сок",
+    "category": "Module 4"
   },
   {
-    "id": "v_15_Friend",
-    "word": "Friend",
-    "transcription": "[frɛnd]",
-    "translation": "Друг",
-    "category": "Basic"
+    "id": "v_l14_Skill",
+    "word": "Skill",
+    "transcription": "[skɪl]",
+    "translation": "Навык",
+    "category": "Module 5"
   },
   {
-    "id": "v_15_Night",
-    "word": "Night",
-    "transcription": "[naɪt]",
-    "translation": "Ночь",
-    "category": "Basic"
+    "id": "v_l14_Must",
+    "word": "Must",
+    "transcription": "[mʌst]",
+    "translation": "Должен",
+    "category": "Module 5"
   },
   {
-    "id": "v_16_Life",
-    "word": "Life",
-    "transcription": "[laɪf]",
-    "translation": "Жизнь",
-    "category": "Basic"
+    "id": "v_l14_Can",
+    "word": "Can",
+    "transcription": "[kæn]",
+    "translation": "Могу",
+    "category": "Module 5"
   },
   {
-    "id": "v_18_Child",
-    "word": "Child",
-    "transcription": "[ʧaɪld]",
-    "translation": "Ребенок",
-    "category": "Basic"
+    "id": "v_l15_Job",
+    "word": "Job",
+    "transcription": "[dʒɒb]",
+    "translation": "Работа",
+    "category": "Module 5"
+  },
+  {
+    "id": "v_l16_Ticket",
+    "word": "Ticket",
+    "transcription": "[ˈtɪkɪt]",
+    "translation": "Билет",
+    "category": "Module 6"
+  },
+  {
+    "id": "v_l16_Yesterday",
+    "word": "Yesterday",
+    "transcription": "[ˈjɛstədeɪ]",
+    "translation": "Вчера",
+    "category": "Module 6"
+  },
+  {
+    "id": "v_l16_Travel",
+    "word": "Travel",
+    "transcription": "[ˈtræv(ə)l]",
+    "translation": "Путешествие",
+    "category": "Module 6"
+  },
+  {
+    "id": "v_l17_Arrive",
+    "word": "Arrive",
+    "transcription": "[əˈraɪv]",
+    "translation": "Прибывать",
+    "category": "Module 6"
+  },
+  {
+    "id": "v_l18_Better",
+    "word": "Better",
+    "transcription": "[ˈbɛtə]",
+    "translation": "Лучше",
+    "category": "Module 7"
+  },
+  {
+    "id": "v_l18_Cheap",
+    "word": "Cheap",
+    "transcription": "[tʃiːp]",
+    "translation": "Дешевый",
+    "category": "Module 7"
+  },
+  {
+    "id": "v_l18_Best",
+    "word": "Best",
+    "transcription": "[bɛst]",
+    "translation": "Лучший",
+    "category": "Module 7"
+  },
+  {
+    "id": "v_l19_Happen",
+    "word": "Happen",
+    "transcription": "[ˈhæpən]",
+    "translation": "Случаться",
+    "category": "Module 8"
+  },
+  {
+    "id": "v_l19_Evening",
+    "word": "Evening",
+    "transcription": "[ˈiːvnɪŋ]",
+    "translation": "Вечер",
+    "category": "Module 8"
+  },
+  {
+    "id": "v_l19_Police",
+    "word": "Police",
+    "transcription": "[pəˈliːs]",
+    "translation": "Полиция",
+    "category": "Module 8"
+  },
+  {
+    "id": "v_l20_Accident",
+    "word": "Accident",
+    "transcription": "[ˈæksɪdənt]",
+    "translation": "Авария/Случай",
+    "category": "Module 8"
+  },
+  {
+    "id": "v_l21_Future",
+    "word": "Future",
+    "transcription": "[ˈfjuːtʃə]",
+    "translation": "Будущее",
+    "category": "Module 9"
+  },
+  {
+    "id": "v_l21_Leave",
+    "word": "Leave",
+    "transcription": "[liːv]",
+    "translation": "Покидать/Уезжать",
+    "category": "Module 9"
+  },
+  {
+    "id": "v_l21_Plane",
+    "word": "Plane",
+    "transcription": "[pleɪn]",
+    "translation": "Самолет",
+    "category": "Module 9"
+  },
+  {
+    "id": "v_l22_Health",
+    "word": "Health",
+    "transcription": "[hɛlθ]",
+    "translation": "Здоровье",
+    "category": "Module 10"
+  },
+  {
+    "id": "v_l22_Doctor",
+    "word": "Doctor",
+    "transcription": "[ˈdɒktə]",
+    "translation": "Врач",
+    "category": "Module 10"
+  },
+  {
+    "id": "v_l22_Should",
+    "word": "Should",
+    "transcription": "[ʃʊd]",
+    "translation": "Следует",
+    "category": "Module 10"
+  },
+  {
+    "id": "v_l23_Rest",
+    "word": "Rest",
+    "transcription": "[rɛst]",
+    "translation": "Отдых",
+    "category": "Module 10"
+  },
+  {
+    "id": "v_l23_Medicine",
+    "word": "Medicine",
+    "transcription": "[ˈmɛdsɪn]",
+    "translation": "Лекарство",
+    "category": "Module 10"
+  },
+  {
+    "id": "v_l24_Lose",
+    "word": "Lose",
+    "transcription": "[luːz]",
+    "translation": "Терять",
+    "category": "Module 11"
+  },
+  {
+    "id": "v_l24_Problem",
+    "word": "Problem",
+    "transcription": "[ˈprɒbləm]",
+    "translation": "Проблема",
+    "category": "Module 11"
+  },
+  {
+    "id": "v_l24_Loan",
+    "word": "Loan",
+    "transcription": "[ləʊn]",
+    "translation": "Кредит",
+    "category": "Module 11"
+  },
+  {
+    "id": "v_l25_Rich",
+    "word": "Rich",
+    "transcription": "[rɪtʃ]",
+    "translation": "Богатый",
+    "category": "Module 11"
+  },
+  {
+    "id": "v_l25_Bank",
+    "word": "Bank",
+    "transcription": "[bæŋk]",
+    "translation": "Банк",
+    "category": "Module 11"
+  },
+  {
+    "id": "v_l26_Say",
+    "word": "Say",
+    "transcription": "[seɪ]",
+    "translation": "Сказать",
+    "category": "Module 12"
+  },
+  {
+    "id": "v_l26_Tell",
+    "word": "Tell",
+    "transcription": "[tɛl]",
+    "translation": "Рассказывать",
+    "category": "Module 12"
+  },
+  {
+    "id": "v_l26_Busy",
+    "word": "Busy",
+    "transcription": "[ˈbɪzi]",
+    "translation": "Занятой",
+    "category": "Module 12"
+  },
+  {
+    "id": "v_l27_Stop",
+    "word": "Stop",
+    "transcription": "[stɒp]",
+    "translation": "Останавливаться",
+    "category": "Module 13"
+  },
+  {
+    "id": "v_l27_Fitness",
+    "word": "Fitness",
+    "transcription": "[ˈfɪtnɪs]",
+    "translation": "Фитнес",
+    "category": "Module 13"
+  },
+  {
+    "id": "v_l27_Enjoy",
+    "word": "Enjoy",
+    "transcription": "[ɪnˈdʒɔɪ]",
+    "translation": "Наслаждаться",
+    "category": "Module 13"
+  },
+  {
+    "id": "v_l28_Museum",
+    "word": "Museum",
+    "transcription": "[mju(ː)ˈzɪəm]",
+    "translation": "Музей",
+    "category": "Module 14"
+  },
+  {
+    "id": "v_l28_Old",
+    "word": "Old",
+    "transcription": "[əʊld]",
+    "translation": "Старый",
+    "category": "Module 14"
+  },
+  {
+    "id": "v_l28_Artist",
+    "word": "Artist",
+    "transcription": "[ˈɑːtɪst]",
+    "translation": "Художник",
+    "category": "Module 14"
+  },
+  {
+    "id": "v_l29_Habit",
+    "word": "Habit",
+    "transcription": "[ˈhæbɪt]",
+    "translation": "Привычка",
+    "category": "Module 15"
+  },
+  {
+    "id": "v_l29_Different",
+    "word": "Different",
+    "transcription": "[ˈdɪfrənt]",
+    "translation": "Разный",
+    "category": "Module 15"
+  },
+  {
+    "id": "v_l29_Meet",
+    "word": "Meet",
+    "transcription": "[miːt]",
+    "translation": "Встречать",
+    "category": "Module 15"
+  },
+  {
+    "id": "v_l30_Contract",
+    "word": "Contract",
+    "transcription": "[ˈkɒntrækt]",
+    "translation": "Контракт",
+    "category": "Module 16"
+  },
+  {
+    "id": "v_l30_Prepare",
+    "word": "Prepare",
+    "transcription": "[prɪˈpeə]",
+    "translation": "Готовить(ся)",
+    "category": "Module 16"
+  },
+  {
+    "id": "v_l30_Failure",
+    "word": "Failure",
+    "transcription": "[ˈfeɪljə]",
+    "translation": "Провал",
+    "category": "Module 16"
+  },
+  {
+    "id": "v_l31_Never",
+    "word": "Never",
+    "transcription": "[ˈnɛvə]",
+    "translation": "Никогда",
+    "category": "Module 16"
+  },
+  {
+    "id": "v_l31_Fine",
+    "word": "Fine",
+    "transcription": "[faɪn]",
+    "translation": "В порядке",
+    "category": "Module 16"
+  },
+  {
+    "id": "v_l32_Mechanic",
+    "word": "Mechanic",
+    "transcription": "[mɪˈkænɪk]",
+    "translation": "Механик",
+    "category": "Module 17"
+  },
+  {
+    "id": "v_l32_Careful",
+    "word": "Careful",
+    "transcription": "[ˈkeəfʊl]",
+    "translation": "Осторожный",
+    "category": "Module 17"
+  },
+  {
+    "id": "v_l32_Repair",
+    "word": "Repair",
+    "transcription": "[rɪˈpeə]",
+    "translation": "Ремонт(ировать)",
+    "category": "Module 17"
+  },
+  {
+    "id": "v_l33_Crucial",
+    "word": "Crucial",
+    "transcription": "[ˈkruːʃəl]",
+    "translation": "Ключевой/Решающий",
+    "category": "Module 17"
+  },
+  {
+    "id": "v_l34_Court",
+    "word": "Court",
+    "transcription": "[kɔːt]",
+    "translation": "Суд",
+    "category": "Module 18"
+  },
+  {
+    "id": "v_l35_Run away",
+    "word": "Run away",
+    "transcription": "[rʌn əˈweɪ]",
+    "translation": "Убегать",
+    "category": "Module 18"
+  },
+  {
+    "id": "v_l35_Steal",
+    "word": "Steal",
+    "transcription": "[stiːl]",
+    "translation": "Красть",
+    "category": "Module 18"
+  },
+  {
+    "id": "v_l36_CEO",
+    "word": "CEO",
+    "transcription": "[ˌsiː iː ˈəʊ]",
+    "translation": "Генеральный директор",
+    "category": "Module 19"
+  },
+  {
+    "id": "v_l36_Office",
+    "word": "Office",
+    "transcription": "[ˈɒfɪs]",
+    "translation": "Офис",
+    "category": "Module 19"
+  },
+  {
+    "id": "v_l36_Rumor",
+    "word": "Rumor",
+    "transcription": "[ˈruːmə]",
+    "translation": "Слух",
+    "category": "Module 19"
+  },
+  {
+    "id": "v_l37_Tired",
+    "word": "Tired",
+    "transcription": "[ˈtaɪəd]",
+    "translation": "Уставший",
+    "category": "Module 19"
+  },
+  {
+    "id": "v_l38_Object",
+    "word": "Object",
+    "transcription": "[əbˈdʒɛkt]",
+    "translation": "Возражать",
+    "category": "Module 20"
+  },
+  {
+    "id": "v_l38_Agree",
+    "word": "Agree",
+    "transcription": "[əˈɡriː]",
+    "translation": "Соглашаться",
+    "category": "Module 20"
+  },
+  {
+    "id": "v_l38_Conference",
+    "word": "Conference",
+    "transcription": "[ˈkɒnfərəns]",
+    "translation": "Конференция",
+    "category": "Module 20"
+  },
+  {
+    "id": "v_l40_Successful",
+    "word": "Successful",
+    "transcription": "[səkˈsɛsfʊl]",
+    "translation": "Успешный",
+    "category": "Module 21"
+  },
+  {
+    "id": "v_l40_Overall",
+    "word": "Overall",
+    "transcription": "[ˌəʊvərˈɔːl]",
+    "translation": "В целом",
+    "category": "Module 21"
+  },
+  {
+    "id": "v_l40_Come up with",
+    "word": "Come up with",
+    "transcription": "[kʌm ʌp wɪð]",
+    "translation": "Придумать",
+    "category": "Module 21"
+  },
+  {
+    "id": "v_l41_Project",
+    "word": "Project",
+    "transcription": "[ˈprɒdʒɛkt]",
+    "translation": "Проект",
+    "category": "Module 21"
+  },
+  {
+    "id": "v_l41_Solution",
+    "word": "Solution",
+    "transcription": "[səˈluːʃ(ə)n]",
+    "translation": "Решение",
+    "category": "Module 21"
   }
 ];
 
@@ -213,18 +598,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_1_Tree",
-        "word": "Tree",
-        "transcription": "[triː]",
-        "translation": "Дерево",
-        "category": "Basic"
+        "id": "v_l1_Friend",
+        "word": "Friend",
+        "transcription": "[frend]",
+        "translation": "Друг",
+        "category": "Module 1"
       },
       {
-        "id": "v_1_Love",
-        "word": "Love",
-        "transcription": "[lʌv]",
-        "translation": "Любовь",
-        "category": "Basic"
+        "id": "v_l1_Student",
+        "word": "Student",
+        "transcription": "[ˈstjuːdənt]",
+        "translation": "Студент",
+        "category": "Module 1"
+      },
+      {
+        "id": "v_l1_Name",
+        "word": "Name",
+        "transcription": "[neɪm]",
+        "translation": "Имя",
+        "category": "Module 1"
       }
     ],
     "quiz": [
@@ -319,18 +711,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_2_Eye",
-        "word": "Eye",
-        "transcription": "[aɪ]",
-        "translation": "Глаз",
-        "category": "Basic"
+        "id": "v_l2_Teacher",
+        "word": "Teacher",
+        "transcription": "[ˈtiːtʃə]",
+        "translation": "Учитель",
+        "category": "Module 1"
       },
       {
-        "id": "v_2_Knowledge",
-        "word": "Knowledge",
-        "transcription": "[ˈnɒlɪʤ]",
-        "translation": "Знание",
-        "category": "Basic"
+        "id": "v_l2_Student",
+        "word": "Student",
+        "transcription": "[ˈstjuːdənt]",
+        "translation": "Студент",
+        "category": "Module 1"
+      },
+      {
+        "id": "v_l2_Name",
+        "word": "Name",
+        "transcription": "[neɪm]",
+        "translation": "Имя",
+        "category": "Module 1"
       }
     ],
     "quiz": [
@@ -440,18 +839,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_3_Case",
-        "word": "Case",
-        "transcription": "[keɪs]",
-        "translation": "Случай",
-        "category": "Basic"
+        "id": "v_l3_Friend",
+        "word": "Friend",
+        "transcription": "[frend]",
+        "translation": "Друг",
+        "category": "Module 1"
       },
       {
-        "id": "v_3_Hand",
-        "word": "Hand",
-        "transcription": "[hænd]",
-        "translation": "Рука",
-        "category": "Basic"
+        "id": "v_l3_Teacher",
+        "word": "Teacher",
+        "transcription": "[ˈtiːtʃə]",
+        "translation": "Учитель",
+        "category": "Module 1"
+      },
+      {
+        "id": "v_l3_Hi",
+        "word": "Hi",
+        "transcription": "[haɪ]",
+        "translation": "Привет",
+        "category": "Module 1"
       }
     ],
     "quiz": [
@@ -570,18 +976,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_4_Week",
-        "word": "Week",
-        "transcription": "[wiːk]",
-        "translation": "Неделя",
-        "category": "Basic"
+        "id": "v_l4_Friend",
+        "word": "Friend",
+        "transcription": "[frend]",
+        "translation": "Друг",
+        "category": "Module 1"
       },
       {
-        "id": "v_4_Year",
-        "word": "Year",
-        "transcription": "[jɪə]",
-        "translation": "Год",
-        "category": "Basic"
+        "id": "v_l4_Student",
+        "word": "Student",
+        "transcription": "[ˈstjuːdənt]",
+        "translation": "Студент",
+        "category": "Module 1"
+      },
+      {
+        "id": "v_l4_Name",
+        "word": "Name",
+        "transcription": "[neɪm]",
+        "translation": "Имя",
+        "category": "Module 1"
       }
     ],
     "quiz": [
@@ -698,18 +1111,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_5_Day",
-        "word": "Day",
-        "transcription": "[deɪ]",
-        "translation": "День",
-        "category": "Basic"
+        "id": "v_l5_Shop",
+        "word": "Shop",
+        "transcription": "[ʃɒp]",
+        "translation": "Магазин",
+        "category": "Module 2"
       },
       {
-        "id": "v_5_Year",
-        "word": "Year",
-        "transcription": "[jɪə]",
-        "translation": "Год",
-        "category": "Basic"
+        "id": "v_l5_Food",
+        "word": "Food",
+        "transcription": "[fuːd]",
+        "translation": "Еда",
+        "category": "Module 2"
+      },
+      {
+        "id": "v_l5_Coffee",
+        "word": "Coffee",
+        "transcription": "[ˈkɒfi]",
+        "translation": "Кофе",
+        "category": "Module 2"
       }
     ],
     "quiz": [
@@ -814,18 +1234,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_6_Animal",
-        "word": "Animal",
-        "transcription": "[ˈænɪməl]",
-        "translation": "Животное",
-        "category": "Basic"
+        "id": "v_l6_Buy",
+        "word": "Buy",
+        "transcription": "[baɪ]",
+        "translation": "Покупать",
+        "category": "Module 2"
       },
       {
-        "id": "v_6_Case",
-        "word": "Case",
-        "transcription": "[keɪs]",
-        "translation": "Случай",
-        "category": "Basic"
+        "id": "v_l6_Water",
+        "word": "Water",
+        "transcription": "[ˈwɔːtə]",
+        "translation": "Вода",
+        "category": "Module 2"
+      },
+      {
+        "id": "v_l6_Food",
+        "word": "Food",
+        "transcription": "[fuːd]",
+        "translation": "Еда",
+        "category": "Module 2"
       }
     ],
     "quiz": [
@@ -934,18 +1361,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_7_Place",
-        "word": "Place",
-        "transcription": "[pleɪs]",
-        "translation": "Место",
-        "category": "Basic"
+        "id": "v_l7_Coffee",
+        "word": "Coffee",
+        "transcription": "[ˈkɒfi]",
+        "translation": "Кофе",
+        "category": "Module 2"
       },
       {
-        "id": "v_7_Year",
-        "word": "Year",
-        "transcription": "[jɪə]",
-        "translation": "Год",
-        "category": "Basic"
+        "id": "v_l7_Water",
+        "word": "Water",
+        "transcription": "[ˈwɔːtə]",
+        "translation": "Вода",
+        "category": "Module 2"
+      },
+      {
+        "id": "v_l7_Buy",
+        "word": "Buy",
+        "transcription": "[baɪ]",
+        "translation": "Покупать",
+        "category": "Module 2"
       }
     ],
     "quiz": [
@@ -1054,18 +1488,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_8_Name",
-        "word": "Name",
-        "transcription": "[neɪm]",
-        "translation": "Имя",
-        "category": "Basic"
+        "id": "v_l8_Room",
+        "word": "Room",
+        "transcription": "[ruːm]",
+        "translation": "Комната",
+        "category": "Module 3"
       },
       {
-        "id": "v_8_Family",
-        "word": "Family",
-        "transcription": "[ˈfæmɪli]",
-        "translation": "Семья",
-        "category": "Basic"
+        "id": "v_l8_Wake",
+        "word": "Wake",
+        "transcription": "[weɪk]",
+        "translation": "Просыпаться",
+        "category": "Module 3"
+      },
+      {
+        "id": "v_l8_Hotel",
+        "word": "Hotel",
+        "transcription": "[həʊˈtɛl]",
+        "translation": "Отель",
+        "category": "Module 3"
       }
     ],
     "quiz": [
@@ -1170,18 +1611,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_9_House",
-        "word": "House",
-        "transcription": "[haʊs]",
-        "translation": "Дом",
-        "category": "Basic"
+        "id": "v_l9_Wake",
+        "word": "Wake",
+        "transcription": "[weɪk]",
+        "translation": "Просыпаться",
+        "category": "Module 3"
       },
       {
-        "id": "v_9_Problem",
-        "word": "Problem",
-        "transcription": "[ˈprɒbləm]",
-        "translation": "Проблема",
-        "category": "Basic"
+        "id": "v_l9_Bed",
+        "word": "Bed",
+        "transcription": "[bɛd]",
+        "translation": "Кровать",
+        "category": "Module 3"
+      },
+      {
+        "id": "v_l9_Room",
+        "word": "Room",
+        "transcription": "[ruːm]",
+        "translation": "Комната",
+        "category": "Module 3"
       }
     ],
     "quiz": [
@@ -1299,18 +1747,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_10_Fact",
-        "word": "Fact",
-        "transcription": "[fækt]",
-        "translation": "Факт",
-        "category": "Basic"
+        "id": "v_l10_Room",
+        "word": "Room",
+        "transcription": "[ruːm]",
+        "translation": "Комната",
+        "category": "Module 3"
       },
       {
-        "id": "v_10_Morning",
-        "word": "Morning",
-        "transcription": "[ˈmɔːnɪŋ]",
-        "translation": "Утро",
-        "category": "Basic"
+        "id": "v_l10_Bed",
+        "word": "Bed",
+        "transcription": "[bɛd]",
+        "translation": "Кровать",
+        "category": "Module 3"
+      },
+      {
+        "id": "v_l10_Wake",
+        "word": "Wake",
+        "transcription": "[weɪk]",
+        "translation": "Просыпаться",
+        "category": "Module 3"
       }
     ],
     "quiz": [
@@ -1422,18 +1877,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_11_Point",
-        "word": "Point",
-        "transcription": "[pɔɪnt]",
-        "translation": "Точка",
-        "category": "Basic"
+        "id": "v_l11_Apple",
+        "word": "Apple",
+        "transcription": "[ˈæp(ə)l]",
+        "translation": "Яблоко",
+        "category": "Module 4"
       },
       {
-        "id": "v_11_City",
-        "word": "City",
-        "transcription": "[ˈsɪti]",
-        "translation": "Город",
-        "category": "Basic"
+        "id": "v_l11_Much",
+        "word": "Much",
+        "transcription": "[mʌtʃ]",
+        "translation": "Много (неисчисл.)",
+        "category": "Module 4"
+      },
+      {
+        "id": "v_l11_Many",
+        "word": "Many",
+        "transcription": "[ˈmɛni]",
+        "translation": "Много (исчисл.)",
+        "category": "Module 4"
       }
     ],
     "quiz": [
@@ -1539,18 +2001,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_12_Father",
-        "word": "Father",
-        "transcription": "[ˈfɑːðə]",
-        "translation": "Отец",
-        "category": "Basic"
+        "id": "v_l12_Much",
+        "word": "Much",
+        "transcription": "[mʌtʃ]",
+        "translation": "Много (неисчисл.)",
+        "category": "Module 4"
       },
       {
-        "id": "v_12_Mother",
-        "word": "Mother",
-        "transcription": "[ˈmʌðə]",
-        "translation": "Мать",
-        "category": "Basic"
+        "id": "v_l12_Apple",
+        "word": "Apple",
+        "transcription": "[ˈæp(ə)l]",
+        "translation": "Яблоко",
+        "category": "Module 4"
+      },
+      {
+        "id": "v_l12_Money",
+        "word": "Money",
+        "transcription": "[ˈmʌni]",
+        "translation": "Деньги",
+        "category": "Module 4"
       }
     ],
     "quiz": [
@@ -1664,18 +2133,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_13_Power",
-        "word": "Power",
-        "transcription": "[ˈpaʊə]",
-        "translation": "Сила",
-        "category": "Basic"
+        "id": "v_l13_Many",
+        "word": "Many",
+        "transcription": "[ˈmɛni]",
+        "translation": "Много (исчисл.)",
+        "category": "Module 4"
       },
       {
-        "id": "v_13_Money",
-        "word": "Money",
-        "transcription": "[ˈmʌni]",
-        "translation": "Деньги",
-        "category": "Basic"
+        "id": "v_l13_Juice",
+        "word": "Juice",
+        "transcription": "[dʒuːs]",
+        "translation": "Сок",
+        "category": "Module 4"
+      },
+      {
+        "id": "v_l13_Much",
+        "word": "Much",
+        "transcription": "[mʌtʃ]",
+        "translation": "Много (неисчисл.)",
+        "category": "Module 4"
       }
     ],
     "quiz": [
@@ -1782,18 +2258,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_14_Father",
-        "word": "Father",
-        "transcription": "[ˈfɑːðə]",
-        "translation": "Отец",
-        "category": "Basic"
+        "id": "v_l14_Skill",
+        "word": "Skill",
+        "transcription": "[skɪl]",
+        "translation": "Навык",
+        "category": "Module 5"
       },
       {
-        "id": "v_14_Music",
-        "word": "Music",
-        "transcription": "[ˈmjuːzɪk]",
-        "translation": "Музыка",
-        "category": "Basic"
+        "id": "v_l14_Must",
+        "word": "Must",
+        "transcription": "[mʌst]",
+        "translation": "Должен",
+        "category": "Module 5"
+      },
+      {
+        "id": "v_l14_Can",
+        "word": "Can",
+        "transcription": "[kæn]",
+        "translation": "Могу",
+        "category": "Module 5"
       }
     ],
     "quiz": [
@@ -1903,18 +2386,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_15_Friend",
-        "word": "Friend",
-        "transcription": "[frɛnd]",
-        "translation": "Друг",
-        "category": "Basic"
+        "id": "v_l15_Can",
+        "word": "Can",
+        "transcription": "[kæn]",
+        "translation": "Могу",
+        "category": "Module 5"
       },
       {
-        "id": "v_15_Night",
-        "word": "Night",
-        "transcription": "[naɪt]",
-        "translation": "Ночь",
-        "category": "Basic"
+        "id": "v_l15_Job",
+        "word": "Job",
+        "transcription": "[dʒɒb]",
+        "translation": "Работа",
+        "category": "Module 5"
+      },
+      {
+        "id": "v_l15_Skill",
+        "word": "Skill",
+        "transcription": "[skɪl]",
+        "translation": "Навык",
+        "category": "Module 5"
       }
     ],
     "quiz": [
@@ -2036,18 +2526,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_16_Father",
-        "word": "Father",
-        "transcription": "[ˈfɑːðə]",
-        "translation": "Отец",
-        "category": "Basic"
+        "id": "v_l16_Ticket",
+        "word": "Ticket",
+        "transcription": "[ˈtɪkɪt]",
+        "translation": "Билет",
+        "category": "Module 6"
       },
       {
-        "id": "v_16_Life",
-        "word": "Life",
-        "transcription": "[laɪf]",
-        "translation": "Жизнь",
-        "category": "Basic"
+        "id": "v_l16_Yesterday",
+        "word": "Yesterday",
+        "transcription": "[ˈjɛstədeɪ]",
+        "translation": "Вчера",
+        "category": "Module 6"
+      },
+      {
+        "id": "v_l16_Travel",
+        "word": "Travel",
+        "transcription": "[ˈtræv(ə)l]",
+        "translation": "Путешествие",
+        "category": "Module 6"
       }
     ],
     "quiz": [
@@ -2167,18 +2664,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_17_Family",
-        "word": "Family",
-        "transcription": "[ˈfæmɪli]",
-        "translation": "Семья",
-        "category": "Basic"
+        "id": "v_l17_Travel",
+        "word": "Travel",
+        "transcription": "[ˈtræv(ə)l]",
+        "translation": "Путешествие",
+        "category": "Module 6"
       },
       {
-        "id": "v_17_Power",
-        "word": "Power",
-        "transcription": "[ˈpaʊə]",
-        "translation": "Сила",
-        "category": "Basic"
+        "id": "v_l17_Yesterday",
+        "word": "Yesterday",
+        "transcription": "[ˈjɛstədeɪ]",
+        "translation": "Вчера",
+        "category": "Module 6"
+      },
+      {
+        "id": "v_l17_Arrive",
+        "word": "Arrive",
+        "transcription": "[əˈraɪv]",
+        "translation": "Прибывать",
+        "category": "Module 6"
       }
     ],
     "quiz": [
@@ -2287,18 +2791,25 @@ export const lessons: Lesson[] = [
     ],
     "words": [
       {
-        "id": "v_18_City",
-        "word": "City",
-        "transcription": "[ˈsɪti]",
-        "translation": "Город",
-        "category": "Basic"
+        "id": "v_l18_Better",
+        "word": "Better",
+        "transcription": "[ˈbɛtə]",
+        "translation": "Лучше",
+        "category": "Module 7"
       },
       {
-        "id": "v_18_Child",
-        "word": "Child",
-        "transcription": "[ʧaɪld]",
-        "translation": "Ребенок",
-        "category": "Basic"
+        "id": "v_l18_Cheap",
+        "word": "Cheap",
+        "transcription": "[tʃiːp]",
+        "translation": "Дешевый",
+        "category": "Module 7"
+      },
+      {
+        "id": "v_l18_Best",
+        "word": "Best",
+        "transcription": "[bɛst]",
+        "translation": "Лучший",
+        "category": "Module 7"
       }
     ],
     "quiz": [
@@ -2396,6 +2907,3207 @@ export const lessons: Lesson[] = [
           "his dog"
         ],
         "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l19",
+    "title": "Урок 19: Past Continuous: Процесс в прошлом",
+    "moduleId": 8,
+    "theory": [
+      "Past Continuous (Прошедшее длительное время) используется для описания процесса, который происходил и длился в определенный момент в прошлом.",
+      "Структура образования: глагол 'to be' в прошедшем времени (was/were) + смысловой глагол с окончанием '-ing'. 'Was' используется для I, he, she, it, а 'were' — для we, you, they.",
+      "Точное указание времени — частый спутник этого времени: 'at 5 o\\'clock yesterday', 'from 6 to 8 pm'. Пример: 'I was reading a book at 5 pm yesterday' (Я находился в процессе чтения).",
+      "Past Continuous часто выступает фоном для более короткого действия, выраженного в Past Simple. Короткое действие прерывает длительное: 'I was taking a shower when the phone rang' (Я принимал душ, когда зазвонил телефон).",
+      "Для отрицания добавляется 'not' (wasn't, weren't). В вопросительной форме 'was/were' выносится перед подлежащим: 'Were you sleeping?'."
+    ],
+    "words": [
+      {
+        "id": "v_l19_Happen",
+        "word": "Happen",
+        "transcription": "[ˈhæpən]",
+        "translation": "Случаться",
+        "category": "Module 8"
+      },
+      {
+        "id": "v_l19_Evening",
+        "word": "Evening",
+        "transcription": "[ˈiːvnɪŋ]",
+        "translation": "Вечер",
+        "category": "Module 8"
+      },
+      {
+        "id": "v_l19_Police",
+        "word": "Police",
+        "transcription": "[pəˈliːs]",
+        "translation": "Полиция",
+        "category": "Module 8"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q19_1",
+        "type": "fill_in_blank",
+        "question": "I ___ reading a book at 6 PM.",
+        "correctAnswer": "was"
+      },
+      {
+        "id": "q19_2",
+        "type": "multiple_choice",
+        "question": "Какая формула у Past Continuous?",
+        "options": [
+          "was/were + Ving",
+          "have/has + V3",
+          "am/is/are + Ving"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q19_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она смотрела ТВ, когда он пришел'.",
+        "options": [
+          "came",
+          "watching",
+          "watches",
+          "he",
+          "TV",
+          "She",
+          "was",
+          "is",
+          "when"
+        ],
+        "correctSentence": [
+          "She",
+          "was",
+          "watching",
+          "TV",
+          "when",
+          "he",
+          "came"
+        ]
+      },
+      {
+        "id": "q19_4",
+        "type": "multiple_choice",
+        "question": "Какое время используется для прерывающего короткого действия?",
+        "options": [
+          "Past Simple",
+          "Past Continuous",
+          "Present Simple"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q19_5",
+        "type": "fill_in_blank",
+        "question": "We ___ playing tennis all morning.",
+        "correctAnswer": "were"
+      },
+      {
+        "id": "q19_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я не спал, когда ты позвонил'.",
+        "options": [
+          "did",
+          "I",
+          "when",
+          "am",
+          "you",
+          "called",
+          "sleep",
+          "not",
+          "sleeping",
+          "was"
+        ],
+        "correctSentence": [
+          "I",
+          "was",
+          "not",
+          "sleeping",
+          "when",
+          "you",
+          "called"
+        ]
+      },
+      {
+        "id": "q19_7",
+        "type": "fill_in_blank",
+        "question": "___ you watching a movie when I called?",
+        "correctAnswer": "Were"
+      },
+      {
+        "id": "q19_rep",
+        "type": "multiple_choice",
+        "question": "Какой артикль поставить перед словом 'elephant' (слон) впервые?",
+        "options": [
+          "an",
+          "a",
+          "the"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l20",
+    "title": "Урок 20: Past Perfect: Предпрошедшее время",
+    "moduleId": 8,
+    "theory": [
+      "Past Perfect (Прошедшее совершенное время) — это «предпрошедшее» время. Оно необходимо, чтобы показать, что одно действие в прошлом произошло ДО другого действия в прошлом.",
+      "Формула образования: вспомогательный глагол 'had' + третья форма глагола (V3 / Past Participle). 'Had' используется для всех лиц и чисел.",
+      "Пример: 'When I arrived at the station, the train had already left'. Здесь два действия: я прибыл (Past Simple) и поезд ушел (Past Perfect). Поезд ушел раньше, чем я прибыл.",
+      "Маркеры времени: 'by 5 o\\'clock yesterday' (к 5 часам вчера), 'by the time' (к тому времени как), 'after' (после того как), 'before' (до того как).",
+      "Отрицательная форма образуется добавлением 'not' к 'had' (hadn't). Вопросительная — вынесением 'had' перед подлежащим: 'Had they finished the work before the boss arrived?'."
+    ],
+    "words": [
+      {
+        "id": "v_l20_Police",
+        "word": "Police",
+        "transcription": "[pəˈliːs]",
+        "translation": "Полиция",
+        "category": "Module 8"
+      },
+      {
+        "id": "v_l20_Accident",
+        "word": "Accident",
+        "transcription": "[ˈæksɪdənt]",
+        "translation": "Авария/Случай",
+        "category": "Module 8"
+      },
+      {
+        "id": "v_l20_Happen",
+        "word": "Happen",
+        "transcription": "[ˈhæpən]",
+        "translation": "Случаться",
+        "category": "Module 8"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q20_1",
+        "type": "fill_in_blank",
+        "question": "When I arrived, the train ___ already left.",
+        "correctAnswer": "had"
+      },
+      {
+        "id": "q20_2",
+        "type": "multiple_choice",
+        "question": "Для чего используется Past Perfect?",
+        "options": [
+          "Действие произошло ДО другого действия в прошлом",
+          "Действие происходит прямо сейчас",
+          "Действие произошло в точное время в прошлом"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q20_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она ушла до того, как я пришел'.",
+        "options": [
+          "She",
+          "had",
+          "I",
+          "arrived",
+          "has",
+          "before",
+          "left",
+          "leaves"
+        ],
+        "correctSentence": [
+          "She",
+          "had",
+          "left",
+          "before",
+          "I",
+          "arrived"
+        ]
+      },
+      {
+        "id": "q20_4",
+        "type": "multiple_choice",
+        "question": "Какая форма глагола используется после 'had'?",
+        "options": [
+          "V3 (Past Participle)",
+          "V2 (Past Simple)",
+          "Ving"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q20_5",
+        "type": "fill_in_blank",
+        "question": "I realized I had ___ (forget) my keys.",
+        "correctAnswer": "forgotten"
+      },
+      {
+        "id": "q20_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мы не закончили проект к пятнице'.",
+        "options": [
+          "Friday",
+          "had",
+          "are",
+          "by",
+          "project",
+          "didn't",
+          "We",
+          "finish",
+          "the",
+          "finished",
+          "not"
+        ],
+        "correctSentence": [
+          "We",
+          "had",
+          "not",
+          "finished",
+          "the",
+          "project",
+          "by",
+          "Friday"
+        ]
+      },
+      {
+        "id": "q20_7",
+        "type": "fill_in_blank",
+        "question": "___ you ever met him before that day?",
+        "correctAnswer": "Had"
+      },
+      {
+        "id": "q20_rep",
+        "type": "multiple_choice",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
+        "options": [
+          "these",
+          "this",
+          "those"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l21",
+    "title": "Урок 21: Future Continuous и Future Perfect",
+    "moduleId": 9,
+    "theory": [
+      "Future Continuous (Будущее длительное) описывает действие, которое БУДЕТ происходить (длиться) в определенный момент в будущем.",
+      "Формула Future Continuous: will be + Ving. Пример: 'At 5 PM tomorrow, I will be flying to Paris' (Завтра в 5 я буду находиться в процессе полета).",
+      "Future Perfect (Будущее совершенное) используется для действия, которое уже ЗАВЕРШИТСЯ к определенному моменту в будущем.",
+      "Формула Future Perfect: will have + V3. Пример: 'By next week, I will have finished this book' (К следующей неделе я уже дочитаю эту книгу — будет результат).",
+      "Важно различать акценты: Continuous делает упор на процесс в конкретную секунду будущего, а Perfect — на достижение результата к дедлайну в будущем."
+    ],
+    "words": [
+      {
+        "id": "v_l21_Future",
+        "word": "Future",
+        "transcription": "[ˈfjuːtʃə]",
+        "translation": "Будущее",
+        "category": "Module 9"
+      },
+      {
+        "id": "v_l21_Leave",
+        "word": "Leave",
+        "transcription": "[liːv]",
+        "translation": "Покидать/Уезжать",
+        "category": "Module 9"
+      },
+      {
+        "id": "v_l21_Plane",
+        "word": "Plane",
+        "transcription": "[pleɪn]",
+        "translation": "Самолет",
+        "category": "Module 9"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q21_1",
+        "type": "fill_in_blank",
+        "question": "At 8 PM tomorrow, I will ___ watching a movie.",
+        "correctAnswer": "be"
+      },
+      {
+        "id": "q21_2",
+        "type": "multiple_choice",
+        "question": "Какая формула у Future Perfect?",
+        "options": [
+          "will have + V3",
+          "will be + Ving",
+          "will + V1"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q21_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Я буду работать завтра в это время'.",
+        "options": [
+          "working",
+          "am",
+          "this",
+          "will",
+          "time",
+          "at",
+          "I",
+          "be",
+          "work",
+          "tomorrow"
+        ],
+        "correctSentence": [
+          "I",
+          "will",
+          "be",
+          "working",
+          "at",
+          "this",
+          "time",
+          "tomorrow"
+        ]
+      },
+      {
+        "id": "q21_4",
+        "type": "multiple_choice",
+        "question": "Какое время выбрать для 'к следующему году я выучу английский'?",
+        "options": [
+          "Future Perfect",
+          "Future Continuous",
+          "Future Simple"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q21_5",
+        "type": "fill_in_blank",
+        "question": "By 2030, they will ___ built a new city.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q21_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Она напишет отчет к 5 часам'.",
+        "options": [
+          "5",
+          "have",
+          "o'clock",
+          "report",
+          "She",
+          "be",
+          "the",
+          "has",
+          "will",
+          "by",
+          "written",
+          "writing"
+        ],
+        "correctSentence": [
+          "She",
+          "will",
+          "have",
+          "written",
+          "the",
+          "report",
+          "by",
+          "5",
+          "o'clock"
+        ]
+      },
+      {
+        "id": "q21_7",
+        "type": "fill_in_blank",
+        "question": "Will you ___ sleeping when I return?",
+        "correctAnswer": "be"
+      },
+      {
+        "id": "q21_rep",
+        "type": "fill_in_blank",
+        "question": "He didn't ___ (went/go) to school.",
+        "correctAnswer": "go"
+      }
+    ]
+  },
+  {
+    "id": "l22",
+    "title": "Урок 22: Модальные глаголы: May, Might, Could",
+    "moduleId": 10,
+    "theory": [
+      "Для выражения вероятности, разрешения или вежливой просьбы в английском языке используется группа модальных глаголов: may, might, could.",
+      "'May' используется для вежливого разрешения или высокой степени вероятности (около 50%). 'May I come in?' (Можно войти?). 'It may rain today' (Возможно, сегодня пойдет дождь).",
+      "'Might' выражает меньшую степень вероятности (около 20-30%) или неуверенность. 'He might be at home' (Он, возможно, дома, но я сильно сомневаюсь).",
+      "'Could' в контексте вероятности переводится как 'мог бы' и часто указывает на теоретическую возможность. 'This could be dangerous' (Это может быть опасно).",
+      "Также 'could' является формой прошедшего времени от 'can' (умел, мог физически). 'When I was 5, I could read' (Когда мне было 5, я умел читать)."
+    ],
+    "words": [
+      {
+        "id": "v_l22_Health",
+        "word": "Health",
+        "transcription": "[hɛlθ]",
+        "translation": "Здоровье",
+        "category": "Module 10"
+      },
+      {
+        "id": "v_l22_Doctor",
+        "word": "Doctor",
+        "transcription": "[ˈdɒktə]",
+        "translation": "Врач",
+        "category": "Module 10"
+      },
+      {
+        "id": "v_l22_Should",
+        "word": "Should",
+        "transcription": "[ʃʊd]",
+        "translation": "Следует",
+        "category": "Module 10"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q22_1",
+        "type": "fill_in_blank",
+        "question": "___ I use your phone, please?",
+        "correctAnswer": "May"
+      },
+      {
+        "id": "q22_2",
+        "type": "multiple_choice",
+        "question": "Какой модальный глагол выражает наименьшую уверенность?",
+        "options": [
+          "might",
+          "must",
+          "will"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q22_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Завтра возможно пойдет снег'.",
+        "options": [
+          "It",
+          "snows",
+          "tomorrow",
+          "might",
+          "snow",
+          "is"
+        ],
+        "correctSentence": [
+          "It",
+          "might",
+          "snow",
+          "tomorrow"
+        ]
+      },
+      {
+        "id": "q22_4",
+        "type": "multiple_choice",
+        "question": "Как сказать 'Я умел плавать в детстве'?",
+        "options": [
+          "I could swim",
+          "I may swim",
+          "I might swim"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q22_5",
+        "type": "fill_in_blank",
+        "question": "He ___ be right, but I'm not sure.",
+        "correctAnswer": "might"
+      },
+      {
+        "id": "q22_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Можно мне открыть окно?'.",
+        "options": [
+          "?",
+          "Do",
+          "I",
+          "opens",
+          "May",
+          "am",
+          "the",
+          "window",
+          "open"
+        ],
+        "correctSentence": [
+          "May",
+          "I",
+          "open",
+          "the",
+          "window",
+          "?"
+        ]
+      },
+      {
+        "id": "q22_7",
+        "type": "fill_in_blank",
+        "question": "This ___ be the best day of my life (вероятность).",
+        "correctAnswer": "could"
+      },
+      {
+        "id": "q22_rep",
+        "type": "fill_in_blank",
+        "question": "Look at ___ (тот) bird in the sky!",
+        "correctAnswer": "that"
+      }
+    ]
+  },
+  {
+    "id": "l23",
+    "title": "Урок 23: Модальные глаголы: Have to vs Must",
+    "moduleId": 10,
+    "theory": [
+      "Глаголы 'must' и 'have to' переводятся как 'должен', но имеют важные смысловые различия. Разница кроется в источнике обязательства.",
+      "'Must' выражает внутреннее обязательство, личное убеждение или строгий приказ говорящего. 'I must study harder' (Я сам решил, что мне это нужно).",
+      "'Have to' выражает внешнее обязательство, обусловленное правилами, законами или обстоятельствами. 'I have to wear a uniform at work' (Таковы правила компании, это не мой выбор).",
+      "В отрицательной форме разница колоссальная! 'Mustn\\'t' означает строгий запрет ('нельзя'). 'You mustn\\'t smoke here'.",
+      "'Don\\'t have to' означает отсутствие необходимости ('не нужно, нет необходимости, но если хочешь — можешь'). 'You don\\'t have to come' (Тебе не обязательно приходить)."
+    ],
+    "words": [
+      {
+        "id": "v_l23_Should",
+        "word": "Should",
+        "transcription": "[ʃʊd]",
+        "translation": "Следует",
+        "category": "Module 10"
+      },
+      {
+        "id": "v_l23_Rest",
+        "word": "Rest",
+        "transcription": "[rɛst]",
+        "translation": "Отдых",
+        "category": "Module 10"
+      },
+      {
+        "id": "v_l23_Medicine",
+        "word": "Medicine",
+        "transcription": "[ˈmɛdsɪn]",
+        "translation": "Лекарство",
+        "category": "Module 10"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q23_1",
+        "type": "fill_in_blank",
+        "question": "I ___ to wake up early tomorrow because of work.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q23_2",
+        "type": "multiple_choice",
+        "question": "Что означает 'You don't have to do it'?",
+        "options": [
+          "Тебе не обязательно это делать",
+          "Тебе строго запрещено это делать",
+          "Ты не умеешь это делать"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q23_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Ты не должен трогать это (запрет)'.",
+        "options": [
+          "don't",
+          "touch",
+          "You",
+          "have",
+          "must",
+          "not",
+          "this"
+        ],
+        "correctSentence": [
+          "You",
+          "must",
+          "not",
+          "touch",
+          "this"
+        ]
+      },
+      {
+        "id": "q23_4",
+        "type": "multiple_choice",
+        "question": "Какое слово выражает личное внутреннее обязательство?",
+        "options": [
+          "must",
+          "have to",
+          "might"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q23_5",
+        "type": "fill_in_blank",
+        "question": "She doesn't ___ to pay for the ticket.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q23_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мне приходится работать по выходным'.",
+        "options": [
+          "must",
+          "I",
+          "am",
+          "to",
+          "works",
+          "work",
+          "have",
+          "on",
+          "weekends"
+        ],
+        "correctSentence": [
+          "I",
+          "have",
+          "to",
+          "work",
+          "on",
+          "weekends"
+        ]
+      },
+      {
+        "id": "q23_7",
+        "type": "fill_in_blank",
+        "question": "You ___ see this movie, it's amazing! (рекомендация/обязательство)",
+        "correctAnswer": "must"
+      },
+      {
+        "id": "q23_rep",
+        "type": "multiple_choice",
+        "question": "Какая формула у Future Perfect?",
+        "options": [
+          "will have + V3",
+          "will be + Ving",
+          "will + V1"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l24",
+    "title": "Урок 24: Conditionals: Условные предложения 2",
+    "moduleId": 11,
+    "theory": [
+      "Second Conditional (Условие второго типа) используется для описания нереальных, воображаемых или маловероятных ситуаций в настоящем или будущем.",
+      "Структура: If + Past Simple, would + глагол в инфинитиве (без 'to').",
+      "Пример: 'If I had a million dollars, I would buy an island' (Если бы у меня был миллион долларов, я бы купил остров). В реальности миллиона у меня сейчас нет.",
+      "Интересная особенность: в Second Conditional глагол 'to be' для всех лиц (даже I, he, she, it) часто принимает форму 'were' (хотя 'was' тоже допустимо в разговорной речи).",
+      "Знаменитая фраза 'If I were you, I would...' переводится как 'На твоем месте я бы...'. Пример: 'If I were you, I would apologize' (На твоем месте я бы извинился)."
+    ],
+    "words": [
+      {
+        "id": "v_l24_Lose",
+        "word": "Lose",
+        "transcription": "[luːz]",
+        "translation": "Терять",
+        "category": "Module 11"
+      },
+      {
+        "id": "v_l24_Problem",
+        "word": "Problem",
+        "transcription": "[ˈprɒbləm]",
+        "translation": "Проблема",
+        "category": "Module 11"
+      },
+      {
+        "id": "v_l24_Loan",
+        "word": "Loan",
+        "transcription": "[ləʊn]",
+        "translation": "Кредит",
+        "category": "Module 11"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q24_1",
+        "type": "fill_in_blank",
+        "question": "If I ___ you, I would study harder.",
+        "correctAnswer": "were"
+      },
+      {
+        "id": "q24_2",
+        "type": "multiple_choice",
+        "question": "Какая формула у Second Conditional?",
+        "options": [
+          "If + Past Simple, would + V1",
+          "If + Present Simple, will + V1",
+          "If + Past Perfect, would have + V3"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q24_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Если бы я знал, я бы сказал тебе'.",
+        "options": [
+          "would",
+          "you",
+          "I",
+          "will",
+          "tell",
+          "If",
+          "know",
+          "knew",
+          "I"
+        ],
+        "correctSentence": [
+          "If",
+          "I",
+          "knew",
+          "I",
+          "would",
+          "tell",
+          "you"
+        ]
+      },
+      {
+        "id": "q24_4",
+        "type": "multiple_choice",
+        "question": "Для чего используется Second Conditional?",
+        "options": [
+          "Нереальные ситуации в настоящем/будущем",
+          "Реальные планы на будущее",
+          "Научные факты"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q24_5",
+        "type": "fill_in_blank",
+        "question": "She ___ travel the world if she had money.",
+        "correctAnswer": "would"
+      },
+      {
+        "id": "q24_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'На твоем месте, я бы не делал этого'.",
+        "options": [
+          "not",
+          "I",
+          "was",
+          "If",
+          "were",
+          "it",
+          "do",
+          "I",
+          "will",
+          "would",
+          "you",
+          "am"
+        ],
+        "correctSentence": [
+          "If",
+          "I",
+          "were",
+          "you",
+          "I",
+          "would",
+          "not",
+          "do",
+          "it"
+        ]
+      },
+      {
+        "id": "q24_7",
+        "type": "fill_in_blank",
+        "question": "If he ___ time, he would help.",
+        "correctAnswer": "had"
+      },
+      {
+        "id": "q24_rep",
+        "type": "fill_in_blank",
+        "question": "I ___ always love you.",
+        "correctAnswer": "will"
+      }
+    ]
+  },
+  {
+    "id": "l25",
+    "title": "Урок 25: Conditionals: Условные предложения 3",
+    "moduleId": 11,
+    "theory": [
+      "Third Conditional (Условие третьего типа) — это время сожалений и критики. Оно описывает нереальные ситуации в ПРОШЛОМ.",
+      "Мы используем его, когда действие уже произошло (или не произошло) в прошлом, и мы фантазируем: 'А вот если бы тогда всё было иначе...'. Но изменить уже ничего нельзя.",
+      "Структура сложная: If + Past Perfect, would have + V3 (Past Participle).",
+      "Пример: 'If I had studied harder, I would have passed the exam' (Если бы я учился усерднее тогда, я бы сдал экзамен тогда). По факту: я не учился и провалил экзамен.",
+      "Еще пример: 'If she hadn\\'t missed the train, she wouldn\\'t have been late' (Если бы она не опоздала на поезд, она бы не опоздала). Все события остались в прошлом."
+    ],
+    "words": [
+      {
+        "id": "v_l25_Rich",
+        "word": "Rich",
+        "transcription": "[rɪtʃ]",
+        "translation": "Богатый",
+        "category": "Module 11"
+      },
+      {
+        "id": "v_l25_Bank",
+        "word": "Bank",
+        "transcription": "[bæŋk]",
+        "translation": "Банк",
+        "category": "Module 11"
+      },
+      {
+        "id": "v_l25_Loan",
+        "word": "Loan",
+        "transcription": "[ləʊn]",
+        "translation": "Кредит",
+        "category": "Module 11"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q25_1",
+        "type": "fill_in_blank",
+        "question": "If I ___ known, I would have come.",
+        "correctAnswer": "had"
+      },
+      {
+        "id": "q25_2",
+        "type": "multiple_choice",
+        "question": "Для чего используется Third Conditional?",
+        "options": [
+          "Нереальные ситуации и сожаления о прошлом",
+          "Нереальные ситуации в будущем",
+          "Запланированные действия"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q25_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Если бы он спросил, я бы помог'.",
+        "options": [
+          "he",
+          "If",
+          "helped",
+          "have",
+          "asks",
+          "asked",
+          "will",
+          "help",
+          "I",
+          "had",
+          "would"
+        ],
+        "correctSentence": [
+          "If",
+          "he",
+          "had",
+          "asked",
+          "I",
+          "would",
+          "have",
+          "helped"
+        ]
+      },
+      {
+        "id": "q25_4",
+        "type": "multiple_choice",
+        "question": "Какая формула у Third Conditional?",
+        "options": [
+          "If + Past Perfect, would have + V3",
+          "If + Past Simple, would + V1",
+          "If + Present Simple, will + V1"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q25_5",
+        "type": "fill_in_blank",
+        "question": "She would have passed if she had ___ (study).",
+        "correctAnswer": "studied"
+      },
+      {
+        "id": "q25_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Они бы выиграли, если бы играли лучше'.",
+        "options": [
+          "they",
+          "played",
+          "won",
+          "play",
+          "if",
+          "win",
+          "had",
+          "They",
+          "better",
+          "have",
+          "will",
+          "would"
+        ],
+        "correctSentence": [
+          "They",
+          "would",
+          "have",
+          "won",
+          "if",
+          "they",
+          "had",
+          "played",
+          "better"
+        ]
+      },
+      {
+        "id": "q25_7",
+        "type": "fill_in_blank",
+        "question": "If it had rained, we would ___ stayed home.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q25_rep",
+        "type": "fill_in_blank",
+        "question": "___ you ready?",
+        "correctAnswer": "Are"
+      }
+    ]
+  },
+  {
+    "id": "l26",
+    "title": "Урок 26: Reported Speech: Косвенная речь",
+    "moduleId": 12,
+    "theory": [
+      "Когда мы передаем чьи-то слова не прямой цитатой, а пересказом, мы используем косвенную речь (Reported Speech).",
+      "Главное правило косвенной речи — 'шаг назад во времени' (Backshift). Если вводный глагол стоит в прошедшем времени (например, 'He said...'), время оригинальной фразы сдвигается на шаг в прошлое.",
+      "Present Simple превращается в Past Simple. Прямая речь: 'I like apples'. Косвенная: He said (that) he liked apples.",
+      "Present Continuous -> Past Continuous. 'I am working' -> He said he was working.",
+      "Past Simple -> Past Perfect. 'I bought a car' -> He said he had bought a car.",
+      "Модальные глаголы также меняются: will -> would, can -> could. Местоимения адаптируются по смыслу: I -> he/she."
+    ],
+    "words": [
+      {
+        "id": "v_l26_Say",
+        "word": "Say",
+        "transcription": "[seɪ]",
+        "translation": "Сказать",
+        "category": "Module 12"
+      },
+      {
+        "id": "v_l26_Tell",
+        "word": "Tell",
+        "transcription": "[tɛl]",
+        "translation": "Рассказывать",
+        "category": "Module 12"
+      },
+      {
+        "id": "v_l26_Busy",
+        "word": "Busy",
+        "transcription": "[ˈbɪzi]",
+        "translation": "Занятой",
+        "category": "Module 12"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q26_1",
+        "type": "fill_in_blank",
+        "question": "He said that he ___ (like) coffee.",
+        "correctAnswer": "liked"
+      },
+      {
+        "id": "q26_2",
+        "type": "multiple_choice",
+        "question": "В какое время переходит Present Simple в косвенной речи?",
+        "options": [
+          "Past Simple",
+          "Past Perfect",
+          "Present Perfect"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q26_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она сказала, что она работает'.",
+        "options": [
+          "she",
+          "is",
+          "was",
+          "work",
+          "working",
+          "said",
+          "that",
+          "She"
+        ],
+        "correctSentence": [
+          "She",
+          "said",
+          "that",
+          "she",
+          "was",
+          "working"
+        ]
+      },
+      {
+        "id": "q26_4",
+        "type": "multiple_choice",
+        "question": "Как изменится слово 'will' в косвенной речи?",
+        "options": [
+          "would",
+          "can",
+          "should"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q26_5",
+        "type": "fill_in_blank",
+        "question": "They told me they ___ bought a house.",
+        "correctAnswer": "had"
+      },
+      {
+        "id": "q26_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Он сказал, что может помочь'.",
+        "options": [
+          "help",
+          "helps",
+          "He",
+          "could",
+          "can",
+          "will",
+          "said",
+          "he"
+        ],
+        "correctSentence": [
+          "He",
+          "said",
+          "he",
+          "could",
+          "help"
+        ]
+      },
+      {
+        "id": "q26_7",
+        "type": "fill_in_blank",
+        "question": "She said she ___ come tomorrow.",
+        "correctAnswer": "would"
+      },
+      {
+        "id": "q26_rep",
+        "type": "fill_in_blank",
+        "question": "I ___ speak three languages (умею).",
+        "correctAnswer": "can"
+      }
+    ]
+  },
+  {
+    "id": "l27",
+    "title": "Урок 27: Gerund и Infinitive",
+    "moduleId": 13,
+    "theory": [
+      "Когда в предложении встречаются два глагола подряд, второй глагол принимает форму либо инфинитива (с частицей 'to'), либо герундия (глагол с окончанием '-ing').",
+      "Выбор формы зависит от первого глагола. Некоторые глаголы требуют после себя только инфинитив: want, decide, hope, promise, plan. 'I want to go'. 'She decided to stay'.",
+      "Другие глаголы требуют после себя только герундий: enjoy, mind, suggest, finish, avoid. 'I enjoy reading'. 'He suggested going to the cinema'.",
+      "После любых предлогов (in, on, at, of, for, about) всегда используется только герундий! 'I am interested in learning English'. 'Thank you for coming'.",
+      "Некоторые глаголы могут принимать обе формы без изменения смысла (like, love, start), а некоторые — со значительным изменением смысла (stop, remember). 'Stop smoking' (бросить курить) vs 'Stop to smoke' (остановиться, чтобы покурить)."
+    ],
+    "words": [
+      {
+        "id": "v_l27_Stop",
+        "word": "Stop",
+        "transcription": "[stɒp]",
+        "translation": "Останавливаться",
+        "category": "Module 13"
+      },
+      {
+        "id": "v_l27_Fitness",
+        "word": "Fitness",
+        "transcription": "[ˈfɪtnɪs]",
+        "translation": "Фитнес",
+        "category": "Module 13"
+      },
+      {
+        "id": "v_l27_Enjoy",
+        "word": "Enjoy",
+        "transcription": "[ɪnˈdʒɔɪ]",
+        "translation": "Наслаждаться",
+        "category": "Module 13"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q27_1",
+        "type": "fill_in_blank",
+        "question": "I enjoy ___ (read) books in the evening.",
+        "correctAnswer": "reading"
+      },
+      {
+        "id": "q27_2",
+        "type": "multiple_choice",
+        "question": "Что ставится после глагола 'decide'?",
+        "options": [
+          "Infinitive (to do)",
+          "Gerund (doing)",
+          "V1 без to"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q27_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она хочет купить новую машину'.",
+        "options": [
+          "to",
+          "car",
+          "buying",
+          "buy",
+          "She",
+          "new",
+          "wants",
+          "a",
+          "buy"
+        ],
+        "correctSentence": [
+          "She",
+          "wants",
+          "to",
+          "buy",
+          "a",
+          "new",
+          "car"
+        ]
+      },
+      {
+        "id": "q27_4",
+        "type": "multiple_choice",
+        "question": "Какая форма используется после предлогов?",
+        "options": [
+          "Gerund (-ing)",
+          "Infinitive (to + V1)",
+          "V3"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q27_5",
+        "type": "fill_in_blank",
+        "question": "Thank you for ___ (help) me.",
+        "correctAnswer": "helping"
+      },
+      {
+        "id": "q27_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Он предложил пойти в парк'.",
+        "options": [
+          "suggested",
+          "park",
+          "He",
+          "the",
+          "going",
+          "go",
+          "to",
+          "goes",
+          "to"
+        ],
+        "correctSentence": [
+          "He",
+          "suggested",
+          "going",
+          "to",
+          "the",
+          "park"
+        ]
+      },
+      {
+        "id": "q27_7",
+        "type": "fill_in_blank",
+        "question": "I promise ___ call you later.",
+        "correctAnswer": "to"
+      },
+      {
+        "id": "q27_rep",
+        "type": "fill_in_blank",
+        "question": "You ___ a great student.",
+        "correctAnswer": "are"
+      }
+    ]
+  },
+  {
+    "id": "l28",
+    "title": "Урок 28: Относительные придаточные (Relative Clauses)",
+    "moduleId": 14,
+    "theory": [
+      "Относительные придаточные предложения дают дополнительную информацию о людях, вещах или местах. Для их присоединения используются относительные местоимения: who, which, that, whose, where.",
+      "WHO используется только для людей. 'The man who lives next door is a doctor' (Мужчина, который живет по соседству — врач).",
+      "WHICH используется только для вещей и животных. 'The book which is on the table is mine' (Книга, которая на столе — моя).",
+      "THAT универсально: может заменять и 'who', и 'which' в определяющих придаточных (особенно в разговорной речи). 'The car that I bought is fast'.",
+      "WHOSE переводится как 'чей/которого' и указывает на принадлежность. 'The girl whose dog is barking is my sister'. WHERE используется для мест: 'The city where I was born'."
+    ],
+    "words": [
+      {
+        "id": "v_l28_Museum",
+        "word": "Museum",
+        "transcription": "[mju(ː)ˈzɪəm]",
+        "translation": "Музей",
+        "category": "Module 14"
+      },
+      {
+        "id": "v_l28_Old",
+        "word": "Old",
+        "transcription": "[əʊld]",
+        "translation": "Старый",
+        "category": "Module 14"
+      },
+      {
+        "id": "v_l28_Artist",
+        "word": "Artist",
+        "transcription": "[ˈɑːtɪst]",
+        "translation": "Художник",
+        "category": "Module 14"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q28_1",
+        "type": "fill_in_blank",
+        "question": "The man ___ called you is my boss (who/which).",
+        "correctAnswer": "who"
+      },
+      {
+        "id": "q28_2",
+        "type": "multiple_choice",
+        "question": "Какое местоимение используется для неодушевленных предметов?",
+        "options": [
+          "which",
+          "who",
+          "where"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q28_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Машина, которую я купил, очень быстрая'.",
+        "options": [
+          "who",
+          "car",
+          "I",
+          "fast",
+          "which",
+          "The",
+          "whom",
+          "bought",
+          "is",
+          "very"
+        ],
+        "correctSentence": [
+          "The",
+          "car",
+          "which",
+          "I",
+          "bought",
+          "is",
+          "very",
+          "fast"
+        ]
+      },
+      {
+        "id": "q28_4",
+        "type": "multiple_choice",
+        "question": "Что означает слово 'whose'?",
+        "options": [
+          "Чей / которого",
+          "Кто",
+          "Где"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q28_5",
+        "type": "fill_in_blank",
+        "question": "This is the house ___ I grew up (where).",
+        "correctAnswer": "where"
+      },
+      {
+        "id": "q28_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Женщина, чья сумка была украдена'.",
+        "options": [
+          "which",
+          "bag",
+          "was",
+          "woman",
+          "whose",
+          "who",
+          "The",
+          "stolen",
+          "is"
+        ],
+        "correctSentence": [
+          "The",
+          "woman",
+          "whose",
+          "bag",
+          "was",
+          "stolen"
+        ]
+      },
+      {
+        "id": "q28_7",
+        "type": "fill_in_blank",
+        "question": "The movie ___ we watched was great (that).",
+        "correctAnswer": "that"
+      },
+      {
+        "id": "q28_rep",
+        "type": "drag_and_drop",
+        "question": "Задайте вопрос: 'Она дома?'.",
+        "options": [
+          "she",
+          "at",
+          "Does",
+          "home",
+          "are",
+          "Is",
+          "?"
+        ],
+        "correctSentence": [
+          "Is",
+          "she",
+          "at",
+          "home",
+          "?"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l29",
+    "title": "Урок 29: Used to vs Be used to",
+    "moduleId": 15,
+    "theory": [
+      "Конструкция 'used to' используется для описания привычек или состояний в прошлом, которые сейчас больше не актуальны. Переводится как 'раньше'.",
+      "Пример: 'I used to smoke, but I stopped' (Раньше я курил, но бросил). 'She used to have long hair' (Раньше у нее были длинные волосы).",
+      "После 'used to' всегда идет начальная форма глагола (инфинитив). Отрицание строится с 'didn\\'t': 'I didn\\'t use to like olives' (Раньше я не любил оливки).",
+      "Внимание, не путайте с 'be used to' (быть привыкшим к чему-то)! Эта конструкция означает, что что-то стало для вас нормальным и не вызывает дискомфорта.",
+      "После 'be used to' идет существительное или герундий (-ing). 'I am used to waking up early' (Я привык просыпаться рано). 'He is used to cold weather' (Он привык к холодной погоде)."
+    ],
+    "words": [
+      {
+        "id": "v_l29_Habit",
+        "word": "Habit",
+        "transcription": "[ˈhæbɪt]",
+        "translation": "Привычка",
+        "category": "Module 15"
+      },
+      {
+        "id": "v_l29_Different",
+        "word": "Different",
+        "transcription": "[ˈdɪfrənt]",
+        "translation": "Разный",
+        "category": "Module 15"
+      },
+      {
+        "id": "v_l29_Meet",
+        "word": "Meet",
+        "transcription": "[miːt]",
+        "translation": "Встречать",
+        "category": "Module 15"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q29_1",
+        "type": "fill_in_blank",
+        "question": "I ___ to live in London.",
+        "correctAnswer": "used"
+      },
+      {
+        "id": "q29_2",
+        "type": "multiple_choice",
+        "question": "Что означает 'I used to play tennis'?",
+        "options": [
+          "Раньше играл, сейчас нет",
+          "Привык играть в теннис",
+          "Играю в теннис каждый день"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q29_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Раньше он не курил'.",
+        "options": [
+          "didn't",
+          "He",
+          "smoke",
+          "smokes",
+          "used",
+          "use",
+          "to"
+        ],
+        "correctSentence": [
+          "He",
+          "didn't",
+          "use",
+          "to",
+          "smoke"
+        ]
+      },
+      {
+        "id": "q29_4",
+        "type": "multiple_choice",
+        "question": "Какая форма глагола ставится после 'be used to'?",
+        "options": [
+          "Gerund (-ing) / существительное",
+          "Infinitive (V1)",
+          "V3"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q29_5",
+        "type": "fill_in_blank",
+        "question": "I am used to ___ (work) late.",
+        "correctAnswer": "working"
+      },
+      {
+        "id": "q29_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Она привыкла к этому городу'.",
+        "options": [
+          "is",
+          "this",
+          "does",
+          "city",
+          "was",
+          "She",
+          "used",
+          "to",
+          "use"
+        ],
+        "correctSentence": [
+          "She",
+          "is",
+          "used",
+          "to",
+          "this",
+          "city"
+        ]
+      },
+      {
+        "id": "q29_7",
+        "type": "fill_in_blank",
+        "question": "Did you ___ (use) to play the piano?",
+        "correctAnswer": "use"
+      },
+      {
+        "id": "q29_rep",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она потеряла свои ключи'.",
+        "options": [
+          "lost",
+          "her",
+          "is",
+          "has",
+          "keys",
+          "She",
+          "have"
+        ],
+        "correctSentence": [
+          "She",
+          "has",
+          "lost",
+          "her",
+          "keys"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l30",
+    "title": "Урок 30: Inversion: Инверсия после отрицательных наречий",
+    "moduleId": 16,
+    "theory": [
+      "Инверсия — это изменение прямого порядка слов для придания речи большей эмоциональности или формальности. На уровне C1-C2 она часто используется в письменной речи и выступлениях.",
+      "При использовании отрицательных или ограничительных наречий в начале предложения (Never, Rarely, Seldom, Hardly, Scarcely, No sooner, Only then), мы меняем местами подлежащее и вспомогательный глагол.",
+      "Например, вместо 'I have never seen such a beautiful sunset', мы говорим: 'Never have I seen such a beautiful sunset'.",
+      "Для Present и Past Simple необходимо добавить вспомогательный глагол (do/does/did). Вместо 'She rarely goes out' -> 'Rarely does she go out'.",
+      "Конструкции 'No sooner... than' и 'Hardly... when' используются для действий, произошедших одно сразу после другого: 'No sooner had I arrived than the phone rang'."
+    ],
+    "words": [
+      {
+        "id": "v_l30_Contract",
+        "word": "Contract",
+        "transcription": "[ˈkɒntrækt]",
+        "translation": "Контракт",
+        "category": "Module 16"
+      },
+      {
+        "id": "v_l30_Prepare",
+        "word": "Prepare",
+        "transcription": "[prɪˈpeə]",
+        "translation": "Готовить(ся)",
+        "category": "Module 16"
+      },
+      {
+        "id": "v_l30_Failure",
+        "word": "Failure",
+        "transcription": "[ˈfeɪljə]",
+        "translation": "Провал",
+        "category": "Module 16"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q30_1",
+        "type": "fill_in_blank",
+        "question": "Never ___ I seen such a mess.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q30_2",
+        "type": "multiple_choice",
+        "question": "Какое слово используется в паре с 'No sooner'?",
+        "options": [
+          "than",
+          "when",
+          "that"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q30_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Редко он говорит о своем прошлом'.",
+        "options": [
+          "Rarely",
+          "do",
+          "speak",
+          "past",
+          "about",
+          "he",
+          "speaks",
+          "does",
+          "is",
+          "his"
+        ],
+        "correctSentence": [
+          "Rarely",
+          "does",
+          "he",
+          "speak",
+          "about",
+          "his",
+          "past"
+        ]
+      },
+      {
+        "id": "q30_4",
+        "type": "multiple_choice",
+        "question": "Какая форма правильная?",
+        "options": [
+          "Hardly had I arrived when...",
+          "Hardly I had arrived when...",
+          "Hardly did I arrived when..."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q30_5",
+        "type": "fill_in_blank",
+        "question": "Only then ___ I realize my mistake.",
+        "correctAnswer": "did"
+      },
+      {
+        "id": "q30_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Никогда раньше она не была так счастлива'.",
+        "options": [
+          "Never",
+          "was",
+          "had",
+          "she",
+          "she's",
+          "before",
+          "has",
+          "been",
+          "happy",
+          "so"
+        ],
+        "correctSentence": [
+          "Never",
+          "before",
+          "had",
+          "she",
+          "been",
+          "so",
+          "happy"
+        ]
+      },
+      {
+        "id": "q30_7",
+        "type": "fill_in_blank",
+        "question": "Scarcely had the match started ___ it began to rain.",
+        "correctAnswer": "when"
+      },
+      {
+        "id": "q30_rep",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Они бы выиграли, если бы играли лучше'.",
+        "options": [
+          "they",
+          "played",
+          "won",
+          "play",
+          "if",
+          "win",
+          "had",
+          "They",
+          "better",
+          "have",
+          "will",
+          "would"
+        ],
+        "correctSentence": [
+          "They",
+          "would",
+          "have",
+          "won",
+          "if",
+          "they",
+          "had",
+          "played",
+          "better"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l31",
+    "title": "Урок 31: Mixed Conditionals: Смешанные условные предложения",
+    "moduleId": 16,
+    "theory": [
+      "В реальной жизни мы не всегда можем использовать классические условные предложения (2 или 3 типа). Иногда условие относится к прошлому, а результат к настоящему, или наоборот.",
+      "Тип 1 (Прошлое -> Настоящее): Если бы что-то произошло в прошлом, то сейчас ситуация была бы иной. Конструкция: If + Past Perfect, would + V1.",
+      "Пример: 'If I had won the lottery (в прошлом), I would be rich now (сейчас)'.",
+      "Тип 2 (Настоящее/Постоянное -> Прошлое): Если бы я был кем-то/имел что-то (вообще), я бы поступил иначе в прошлом. Конструкция: If + Past Simple, would have + V3.",
+      "Пример: 'If I spoke French (вообще умел говорить), I would have translated that document for you yesterday' (перевел бы вчера)."
+    ],
+    "words": [
+      {
+        "id": "v_l31_Never",
+        "word": "Never",
+        "transcription": "[ˈnɛvə]",
+        "translation": "Никогда",
+        "category": "Module 16"
+      },
+      {
+        "id": "v_l31_Prepare",
+        "word": "Prepare",
+        "transcription": "[prɪˈpeə]",
+        "translation": "Готовить(ся)",
+        "category": "Module 16"
+      },
+      {
+        "id": "v_l31_Fine",
+        "word": "Fine",
+        "transcription": "[faɪn]",
+        "translation": "В порядке",
+        "category": "Module 16"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q31_1",
+        "type": "fill_in_blank",
+        "question": "If I had taken the medicine, I would ___ fine now.",
+        "correctAnswer": "be"
+      },
+      {
+        "id": "q31_2",
+        "type": "multiple_choice",
+        "question": "Какая формула описывает: Условие в прошлом -> Результат сейчас?",
+        "options": [
+          "If + Past Perfect, would + V1",
+          "If + Past Simple, would have + V3",
+          "If + Past Simple, would + V1"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q31_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Если бы я был богатым, я бы купил ту машину вчера'.",
+        "options": [
+          "buy",
+          "bought",
+          "would",
+          "yesterday",
+          "rich",
+          "I",
+          "were",
+          "was",
+          "If",
+          "that",
+          "have",
+          "I",
+          "will",
+          "car"
+        ],
+        "correctSentence": [
+          "If",
+          "I",
+          "were",
+          "rich",
+          "I",
+          "would",
+          "have",
+          "bought",
+          "that",
+          "car",
+          "yesterday"
+        ]
+      },
+      {
+        "id": "q31_4",
+        "type": "multiple_choice",
+        "question": "Что значит 'If he had missed the train, he wouldn't be here now'?",
+        "options": [
+          "Он опоздал на поезд и его здесь нет.",
+          "Он успел на поезд и сейчас здесь.",
+          "Он успел на поезд, но его здесь нет."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q31_5",
+        "type": "fill_in_blank",
+        "question": "If I knew her number, I would ___ called her yesterday.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q31_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Если бы он не потерял паспорт, он бы сейчас летел в Париж'.",
+        "options": [
+          "didn't",
+          "now",
+          "he",
+          "Paris",
+          "have",
+          "flying",
+          "If",
+          "passport",
+          "his",
+          "he",
+          "hadn't",
+          "would",
+          "be",
+          "lost",
+          "to",
+          "is"
+        ],
+        "correctSentence": [
+          "If",
+          "he",
+          "hadn't",
+          "lost",
+          "his",
+          "passport",
+          "he",
+          "would",
+          "be",
+          "flying",
+          "to",
+          "Paris",
+          "now"
+        ]
+      },
+      {
+        "id": "q31_7",
+        "type": "fill_in_blank",
+        "question": "If I ___ (be) you, I would have accepted the offer.",
+        "correctAnswer": "were"
+      },
+      {
+        "id": "q31_rep",
+        "type": "fill_in_blank",
+        "question": "You ___ a great student.",
+        "correctAnswer": "are"
+      }
+    ]
+  },
+  {
+    "id": "l32",
+    "title": "Урок 32: Causative Verbs: Have / Get something done",
+    "moduleId": 17,
+    "theory": [
+      "Каузативная форма (Causative) используется, когда мы организуем, чтобы кто-то другой сделал работу для нас, а не делаем её сами.",
+      "Основная структура: have + объект + V3 (Past Participle). Пример: 'I had my car repaired' (Мне починили машину — я не сам её чинил, я нанял механика).",
+      "Вместо 'have' в разговорной речи часто используется 'get'. 'I got my hair cut' (Меня подстригли).",
+      "Для активной формы, если мы хотим указать исполнителя, мы говорим: 'have + кто-то + V1' (I had the mechanic repair my car) ИЛИ 'get + кто-то + to + V1' (I got the mechanic to repair my car).",
+      "Использование 'get' в активном залоге часто подразумевает убеждение ('Я уговорил его это сделать')."
+    ],
+    "words": [
+      {
+        "id": "v_l32_Mechanic",
+        "word": "Mechanic",
+        "transcription": "[mɪˈkænɪk]",
+        "translation": "Механик",
+        "category": "Module 17"
+      },
+      {
+        "id": "v_l32_Careful",
+        "word": "Careful",
+        "transcription": "[ˈkeəfʊl]",
+        "translation": "Осторожный",
+        "category": "Module 17"
+      },
+      {
+        "id": "v_l32_Repair",
+        "word": "Repair",
+        "transcription": "[rɪˈpeə]",
+        "translation": "Ремонт(ировать)",
+        "category": "Module 17"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q32_1",
+        "type": "fill_in_blank",
+        "question": "I need to have my car ___ (wash).",
+        "correctAnswer": "washed"
+      },
+      {
+        "id": "q32_2",
+        "type": "multiple_choice",
+        "question": "Что значит 'She had her house painted'?",
+        "options": [
+          "Кто-то покрасил её дом для неё.",
+          "Она сама покрасила свой дом.",
+          "Она должна покрасить дом."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q32_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Я хочу подстричься (чтобы меня подстригли)'.",
+        "options": [
+          "I",
+          "cut",
+          "to",
+          "to",
+          "my",
+          "hair",
+          "get",
+          "have",
+          "want",
+          "cutted"
+        ],
+        "correctSentence": [
+          "I",
+          "want",
+          "to",
+          "get",
+          "my",
+          "hair",
+          "cut"
+        ]
+      },
+      {
+        "id": "q32_4",
+        "type": "multiple_choice",
+        "question": "Как правильно указать исполнителя с глаголом 'get'?",
+        "options": [
+          "I got him to do it",
+          "I got him do it",
+          "I got him doing it"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q32_5",
+        "type": "fill_in_blank",
+        "question": "The boss had his assistant ___ (type) the report.",
+        "correctAnswer": "type"
+      },
+      {
+        "id": "q32_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мы ремонтируем крышу сейчас (кто-то чинит для нас)'.",
+        "options": [
+          "having",
+          "do",
+          "is",
+          "roof",
+          "We",
+          "repaired",
+          "are",
+          "our",
+          "now",
+          "repairing"
+        ],
+        "correctSentence": [
+          "We",
+          "are",
+          "having",
+          "our",
+          "roof",
+          "repaired",
+          "now"
+        ]
+      },
+      {
+        "id": "q32_7",
+        "type": "fill_in_blank",
+        "question": "I got him ___ (to help/help) me with the bags.",
+        "correctAnswer": "to help"
+      },
+      {
+        "id": "q32_rep",
+        "type": "multiple_choice",
+        "question": "Какая формула у Present Continuous?",
+        "options": [
+          "am/is/are + Ving",
+          "do/does + V",
+          "V + ed"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l33",
+    "title": "Урок 33: Subjunctive Mood: Сослагательное наклонение",
+    "moduleId": 17,
+    "theory": [
+      "Subjunctive Mood используется для выражения важности, требований, предложений или пожеланий в формальном английском.",
+      "Структура: после определенных слов (suggest, demand, insist, recommend, it is crucial, it is vital) в придаточном предложении используется глагол в форме инфинитива без 'to' ДЛЯ ВСЕХ лиц.",
+      "Пример: 'I suggest that he GO (не goes!) to the doctor'. 'It is essential that she BE (не is!) on time'.",
+      "Для отрицания мы используем 'not + глагол' без вспомогательных do/does. 'I insisted that he NOT LEAVE early'.",
+      "В современном британском английском часто используется 'should + инфинитив' вместо чистого subjunctive: 'I suggest that he should go...'. Но в американском чистый subjunctive очень распространен."
+    ],
+    "words": [
+      {
+        "id": "v_l33_Careful",
+        "word": "Careful",
+        "transcription": "[ˈkeəfʊl]",
+        "translation": "Осторожный",
+        "category": "Module 17"
+      },
+      {
+        "id": "v_l33_Mechanic",
+        "word": "Mechanic",
+        "transcription": "[mɪˈkænɪk]",
+        "translation": "Механик",
+        "category": "Module 17"
+      },
+      {
+        "id": "v_l33_Crucial",
+        "word": "Crucial",
+        "transcription": "[ˈkruːʃəl]",
+        "translation": "Ключевой/Решающий",
+        "category": "Module 17"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q33_1",
+        "type": "fill_in_blank",
+        "question": "The doctor recommended that he ___ (stop) smoking.",
+        "correctAnswer": "stop"
+      },
+      {
+        "id": "q33_2",
+        "type": "multiple_choice",
+        "question": "Как правильно сказать в формальном английском?",
+        "options": [
+          "I insist that she arrive on time.",
+          "I insist that she arrives on time.",
+          "I insist that she to arrive on time."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q33_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Важно, чтобы он был здесь'.",
+        "options": [
+          "be",
+          "important",
+          "he",
+          "is",
+          "are",
+          "was",
+          "here",
+          "that",
+          "It",
+          "is"
+        ],
+        "correctSentence": [
+          "It",
+          "is",
+          "important",
+          "that",
+          "he",
+          "be",
+          "here"
+        ]
+      },
+      {
+        "id": "q33_4",
+        "type": "multiple_choice",
+        "question": "Как строится отрицание в Subjunctive?",
+        "options": [
+          "not + V1",
+          "does not + V1",
+          "don't + V1"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q33_5",
+        "type": "fill_in_blank",
+        "question": "I demand that he ___ not enter this room.",
+        "correctAnswer": "not"
+      },
+      {
+        "id": "q33_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я предложил, чтобы она позвонила ему'.",
+        "options": [
+          "I",
+          "him",
+          "that",
+          "suggested",
+          "she",
+          "call",
+          "do",
+          "calls",
+          "called"
+        ],
+        "correctSentence": [
+          "I",
+          "suggested",
+          "that",
+          "she",
+          "call",
+          "him"
+        ]
+      },
+      {
+        "id": "q33_7",
+        "type": "fill_in_blank",
+        "question": "It is crucial that they ___ (be) informed immediately.",
+        "correctAnswer": "be"
+      },
+      {
+        "id": "q33_rep",
+        "type": "multiple_choice",
+        "question": "Какой предлог указывает на исполнителя действия в пассиве?",
+        "options": [
+          "by",
+          "with",
+          "from"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l34",
+    "title": "Урок 34: Participle Clauses: Причастные обороты",
+    "moduleId": 18,
+    "theory": [
+      "Причастные обороты позволяют сделать речь более элегантной и лаконичной, объединяя два предложения в одно.",
+      "Present Participle (V-ing) используется для активного действия, происходящего одновременно. 'Waiting for the train, I read a book' (Ожидая поезд, я читал книгу).",
+      "Past Participle (V3) используется для пассивного значения. 'Built in 1900, the house is very old' (Построенный в 1900, дом очень стар).",
+      "Perfect Participle (Having + V3) показывает, что одно действие завершилось ДО начала другого. 'Having finished my work, I went home' (Завершив работу, я пошел домой).",
+      "Важно: подлежащее в обеих частях предложения должно быть одинаковым! Иначе получится грамматическая ошибка 'dangling participle' (например: 'Looking out the window, the mountains were beautiful' — горы не смотрели в окно!)."
+    ],
+    "words": [
+      {
+        "id": "v_l34_Money",
+        "word": "Money",
+        "transcription": "[ˈmʌni]",
+        "translation": "Деньги",
+        "category": "Module 18"
+      },
+      {
+        "id": "v_l34_Police",
+        "word": "Police",
+        "transcription": "[pəˈliːs]",
+        "translation": "Полиция",
+        "category": "Module 18"
+      },
+      {
+        "id": "v_l34_Court",
+        "word": "Court",
+        "transcription": "[kɔːt]",
+        "translation": "Суд",
+        "category": "Module 18"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q34_1",
+        "type": "fill_in_blank",
+        "question": "___ (walk) down the street, I saw a friend.",
+        "correctAnswer": "Walking"
+      },
+      {
+        "id": "q34_2",
+        "type": "multiple_choice",
+        "question": "Какой оборот показывает завершенность ДО следующего действия?",
+        "options": [
+          "Having done (Perfect Participle)",
+          "Doing (Present Participle)",
+          "Done (Past Participle)"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q34_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Написанная от руки, записка была трудночитаемой'.",
+        "options": [
+          "Writing",
+          "hard",
+          "Written",
+          "writes",
+          "hand",
+          "by",
+          "was",
+          "to",
+          "read",
+          "note",
+          "is",
+          "the"
+        ],
+        "correctSentence": [
+          "Written",
+          "by",
+          "hand",
+          "the",
+          "note",
+          "was",
+          "hard",
+          "to",
+          "read"
+        ]
+      },
+      {
+        "id": "q34_4",
+        "type": "multiple_choice",
+        "question": "Есть ли ошибка в предложении: 'Walking in the park, a dog bit me'?",
+        "options": [
+          "Да, подлежащие не совпадают",
+          "Нет, предложение составлено верно",
+          "Да, нужно использовать Past Participle"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q34_5",
+        "type": "fill_in_blank",
+        "question": "Having ___ (eat) my dinner, I watched TV.",
+        "correctAnswer": "eaten"
+      },
+      {
+        "id": "q34_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Испугавшись паука, она закричала'.",
+        "options": [
+          "by",
+          "screamed",
+          "is",
+          "Frightened",
+          "Frightens",
+          "Frightening",
+          "the",
+          "she",
+          "spider"
+        ],
+        "correctSentence": [
+          "Frightened",
+          "by",
+          "the",
+          "spider",
+          "she",
+          "screamed"
+        ]
+      },
+      {
+        "id": "q34_7",
+        "type": "fill_in_blank",
+        "question": "___ (use) carefully, this computer will last for years.",
+        "correctAnswer": "Used"
+      },
+      {
+        "id": "q34_rep",
+        "type": "fill_in_blank",
+        "question": "We ___ (see) a good movie last night.",
+        "correctAnswer": "saw"
+      }
+    ]
+  },
+  {
+    "id": "l35",
+    "title": "Урок 35: Cleft Sentences: Эмфатические конструкции",
+    "moduleId": 18,
+    "theory": [
+      "Cleft sentences (расщепленные предложения) используются для выделения, акцентирования внимания на определенной части предложения.",
+      "It-cleft: It is/was + выделяемая часть + that/who. Пример: 'John broke the window'. Выделяем Джона: 'It was John who broke the window' (Именно Джон разбил окно). Выделяем окно: 'It was the window that John broke'.",
+      "Wh-cleft: What + придаточное + is/was + акцент. Обычно используется для выделения действия или целой идеи. Пример: 'What I need is a good sleep' (Что мне нужно, так это хороший сон).",
+      "Для выделения человека можно сказать: 'The person who helped me was Jane'. Для места: 'The place where we met was Paris'.",
+      "All-cleft: Начинается со слова All и значит 'единственное, что...'. 'All I want for Christmas is you' (Единственное, что я хочу на Рождество — это ты)."
+    ],
+    "words": [
+      {
+        "id": "v_l35_Run away",
+        "word": "Run away",
+        "transcription": "[rʌn əˈweɪ]",
+        "translation": "Убегать",
+        "category": "Module 18"
+      },
+      {
+        "id": "v_l35_Police",
+        "word": "Police",
+        "transcription": "[pəˈliːs]",
+        "translation": "Полиция",
+        "category": "Module 18"
+      },
+      {
+        "id": "v_l35_Steal",
+        "word": "Steal",
+        "transcription": "[stiːl]",
+        "translation": "Красть",
+        "category": "Module 18"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q35_1",
+        "type": "fill_in_blank",
+        "question": "It ___ Sarah who told me the secret.",
+        "correctAnswer": "was"
+      },
+      {
+        "id": "q35_2",
+        "type": "multiple_choice",
+        "question": "Как выделить слово 'yesterday' в предложении 'I saw him yesterday'?",
+        "options": [
+          "It was yesterday that I saw him.",
+          "What I saw him was yesterday.",
+          "Yesterday it was I saw him."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q35_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Что мне действительно нравится, так это погода'.",
+        "options": [
+          "is",
+          "What",
+          "It",
+          "the",
+          "are",
+          "weather",
+          "was",
+          "I",
+          "like",
+          "really"
+        ],
+        "correctSentence": [
+          "What",
+          "I",
+          "really",
+          "like",
+          "is",
+          "the",
+          "weather"
+        ]
+      },
+      {
+        "id": "q35_4",
+        "type": "multiple_choice",
+        "question": "Какое слово используется в конструкции 'It was the car ___ he bought'?",
+        "options": [
+          "that",
+          "what",
+          "where"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q35_5",
+        "type": "fill_in_blank",
+        "question": "___ I need is more time.",
+        "correctAnswer": "What"
+      },
+      {
+        "id": "q35_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Всё, что я сделал, это позвонил ей'.",
+        "options": [
+          "did",
+          "her",
+          "I",
+          "called",
+          "All",
+          "call",
+          "is",
+          "What",
+          "was"
+        ],
+        "correctSentence": [
+          "All",
+          "I",
+          "did",
+          "was",
+          "call",
+          "her"
+        ]
+      },
+      {
+        "id": "q35_7",
+        "type": "fill_in_blank",
+        "question": "It is the manager ___ makes the final decision.",
+        "correctAnswer": "who"
+      },
+      {
+        "id": "q35_rep",
+        "type": "fill_in_blank",
+        "question": "She ___ (не может) swim.",
+        "correctAnswer": "cannot"
+      }
+    ]
+  },
+  {
+    "id": "l36",
+    "title": "Урок 36: Passive Reporting Verbs: Продвинутый Пассив",
+    "moduleId": 19,
+    "theory": [
+      "При передаче слухов, мнений или новостей часто используются пассивные конструкции с глаголами вроде say, think, believe, report, expect.",
+      "Конструкция 1 (безличная): It is said / believed / expected + that... Пример: 'It is said that he is rich' (Говорят, что он богат).",
+      "Конструкция 2 (с личным подлежащим): Подлежащее + is said / expected + Infinitive (to do). Пример: 'He is said to be rich'.",
+      "Если действие в инфинитиве произошло в ПРОШЛОМ, используется Perfect Infinitive (to have + V3). Пример: 'He is believed to have stolen the money' (Считается, что он украл деньги в прошлом).",
+      "Если действие длительное, используется Continuous Infinitive (to be + V-ing). 'She is reported to be hiding in Spain' (Сообщают, что она прячется в Испании прямо сейчас)."
+    ],
+    "words": [
+      {
+        "id": "v_l36_CEO",
+        "word": "CEO",
+        "transcription": "[ˌsiː iː ˈəʊ]",
+        "translation": "Генеральный директор",
+        "category": "Module 19"
+      },
+      {
+        "id": "v_l36_Office",
+        "word": "Office",
+        "transcription": "[ˈɒfɪs]",
+        "translation": "Офис",
+        "category": "Module 19"
+      },
+      {
+        "id": "v_l36_Rumor",
+        "word": "Rumor",
+        "transcription": "[ˈruːmə]",
+        "translation": "Слух",
+        "category": "Module 19"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q36_1",
+        "type": "fill_in_blank",
+        "question": "It is ___ (say) that the company is bankrupt.",
+        "correctAnswer": "said"
+      },
+      {
+        "id": "q36_2",
+        "type": "multiple_choice",
+        "question": "Какая конструкция означает 'Считается, что он был богат (в прошлом)'?",
+        "options": [
+          "He is believed to have been rich.",
+          "He is believed to be rich.",
+          "It is believed that he is rich."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q36_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Говорят, что она живет здесь'.",
+        "options": [
+          "said",
+          "She",
+          "to",
+          "is",
+          "have",
+          "here",
+          "live",
+          "are",
+          "living"
+        ],
+        "correctSentence": [
+          "She",
+          "is",
+          "said",
+          "to",
+          "live",
+          "here"
+        ]
+      },
+      {
+        "id": "q36_4",
+        "type": "multiple_choice",
+        "question": "Что означает 'The president is expected to arrive soon'?",
+        "options": [
+          "Ожидается, что президент скоро прибудет.",
+          "Президент ожидает прибытия.",
+          "Президент скоро прибыл."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q36_5",
+        "type": "fill_in_blank",
+        "question": "The thieves are reported to ___ left the country.",
+        "correctAnswer": "have"
+      },
+      {
+        "id": "q36_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Считается, что картина была украдена'.",
+        "options": [
+          "have",
+          "has",
+          "be",
+          "painting",
+          "stole",
+          "is",
+          "believed",
+          "The",
+          "stolen",
+          "been",
+          "to"
+        ],
+        "correctSentence": [
+          "The",
+          "painting",
+          "is",
+          "believed",
+          "to",
+          "have",
+          "been",
+          "stolen"
+        ]
+      },
+      {
+        "id": "q36_7",
+        "type": "fill_in_blank",
+        "question": "He is thought ___ (be) one of the best players.",
+        "correctAnswer": "to be"
+      },
+      {
+        "id": "q36_rep",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Мне приходится работать по выходным'.",
+        "options": [
+          "must",
+          "I",
+          "am",
+          "to",
+          "works",
+          "work",
+          "have",
+          "on",
+          "weekends"
+        ],
+        "correctSentence": [
+          "I",
+          "have",
+          "to",
+          "work",
+          "on",
+          "weekends"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "l37",
+    "title": "Урок 37: Modals of Deduction in the Past",
+    "moduleId": 19,
+    "theory": [
+      "Для выражения догадок и предположений о прошлом используются модальные глаголы с перфектным инфинитивом (have + V3).",
+      "Must have + V3 (почти 100% уверенность): 'Должно быть, это было так'. Пример: 'You must have been exhausted after the marathon' (Ты, должно быть, очень устал).",
+      "Can't have / Couldn't have + V3 (100% уверенность, что это НЕ так): 'Не может быть, чтобы...'. Пример: 'He can't have stolen the car, he was with me' (Он не мог украсть машину).",
+      "May/Might/Could have + V3 (неуверенность, 50/50): 'Возможно, это было так'. Пример: 'She might have missed the bus' (Возможно, она опоздала на автобус).",
+      "Should have + V3 (критика или сожаление о прошлом): 'Следовало бы сделать (но не сделал)'. 'You should have called me!' (Тебе следовало мне позвонить!)."
+    ],
+    "words": [
+      {
+        "id": "v_l37_Rumor",
+        "word": "Rumor",
+        "transcription": "[ˈruːmə]",
+        "translation": "Слух",
+        "category": "Module 19"
+      },
+      {
+        "id": "v_l37_CEO",
+        "word": "CEO",
+        "transcription": "[ˌsiː iː ˈəʊ]",
+        "translation": "Генеральный директор",
+        "category": "Module 19"
+      },
+      {
+        "id": "v_l37_Tired",
+        "word": "Tired",
+        "transcription": "[ˈtaɪəd]",
+        "translation": "Уставший",
+        "category": "Module 19"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q37_1",
+        "type": "fill_in_blank",
+        "question": "You worked all night. You ___ have been tired.",
+        "correctAnswer": "must"
+      },
+      {
+        "id": "q37_2",
+        "type": "multiple_choice",
+        "question": "Какая фраза означает сожаление: 'Мне следовало учиться усерднее'?",
+        "options": [
+          "I should have studied harder.",
+          "I must have studied harder.",
+          "I might have studied harder."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q37_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она, должно быть, забыла о встрече'.",
+        "options": [
+          "about",
+          "have",
+          "forget",
+          "should",
+          "has",
+          "forgotten",
+          "the",
+          "must",
+          "She",
+          "meeting"
+        ],
+        "correctSentence": [
+          "She",
+          "must",
+          "have",
+          "forgotten",
+          "about",
+          "the",
+          "meeting"
+        ]
+      },
+      {
+        "id": "q37_4",
+        "type": "multiple_choice",
+        "question": "Что значит 'He can't have done it'?",
+        "options": [
+          "Не может быть, чтобы он это сделал.",
+          "Он не смог этого сделать (физически).",
+          "Он не должен был этого делать."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q37_5",
+        "type": "fill_in_blank",
+        "question": "I can't find my keys. I ___ have left them at home (возможно).",
+        "correctAnswer": "might"
+      },
+      {
+        "id": "q37_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Тебе не следовало говорить ей это'.",
+        "options": [
+          "You",
+          "didn't",
+          "that",
+          "tell",
+          "told",
+          "shouldn't",
+          "have",
+          "mustn't",
+          "her"
+        ],
+        "correctSentence": [
+          "You",
+          "shouldn't",
+          "have",
+          "told",
+          "her",
+          "that"
+        ]
+      },
+      {
+        "id": "q37_7",
+        "type": "fill_in_blank",
+        "question": "The window is broken. The kids ___ have done it.",
+        "correctAnswer": "must"
+      },
+      {
+        "id": "q37_rep",
+        "type": "multiple_choice",
+        "question": "Какое сокращение у 'will not'?",
+        "options": [
+          "won't",
+          "willn't",
+          "want"
+        ],
+        "correctAnswerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "l38",
+    "title": "Урок 38: Advanced Emphatic Structures",
+    "moduleId": 20,
+    "theory": [
+      "Для усиления значения в английском языке используются различные эмфатические структуры, которые делают речь более экспрессивной.",
+      "Эмфатическое Do/Does/Did: Используется в утвердительных предложениях для подчеркивания. 'I do love you!' (Я действительно тебя люблю!). 'He did tell me the truth' (Он и вправду сказал мне правду).",
+      "Fronting (фронтинг): Вынесение важной информации (часто обстоятельства места или времени) в начало предложения. 'Into the room walked the boss' (В комнату вошел босс). Заметьте, что при этом может происходить инверсия.",
+      "Фронтинг с причастиями: 'Sitting at the desk was a young woman' (За столом сидела молодая женщина).",
+      "Фронтинг часто используется в литературном стиле и журналистике для создания драматического эффекта или плавного перехода в тексте."
+    ],
+    "words": [
+      {
+        "id": "v_l38_Object",
+        "word": "Object",
+        "transcription": "[əbˈdʒɛkt]",
+        "translation": "Возражать",
+        "category": "Module 20"
+      },
+      {
+        "id": "v_l38_Agree",
+        "word": "Agree",
+        "transcription": "[əˈɡriː]",
+        "translation": "Соглашаться",
+        "category": "Module 20"
+      },
+      {
+        "id": "v_l38_Conference",
+        "word": "Conference",
+        "transcription": "[ˈkɒnfərəns]",
+        "translation": "Конференция",
+        "category": "Module 20"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q38_1",
+        "type": "fill_in_blank",
+        "question": "I ___ like your new haircut! (Действительно)",
+        "correctAnswer": "do"
+      },
+      {
+        "id": "q38_2",
+        "type": "multiple_choice",
+        "question": "Какой из вариантов использует фронтинг и инверсию верно?",
+        "options": [
+          "On the table lay a beautiful book.",
+          "On the table a beautiful book lay.",
+          "Lay on the table a beautiful book."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q38_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она и вправду позвонила мне вчера'.",
+        "options": [
+          "did",
+          "do",
+          "call",
+          "called",
+          "me",
+          "She",
+          "does",
+          "yesterday"
+        ],
+        "correctSentence": [
+          "She",
+          "did",
+          "call",
+          "me",
+          "yesterday"
+        ]
+      },
+      {
+        "id": "q38_4",
+        "type": "multiple_choice",
+        "question": "Зачем используют 'do' в утверждении 'I do know him'?",
+        "options": [
+          "Для усиления, подтверждения",
+          "Потому что это вопрос",
+          "Это ошибка"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q38_5",
+        "type": "fill_in_blank",
+        "question": "Down the hill ___ (roll) the ball.",
+        "correctAnswer": "rolled"
+      },
+      {
+        "id": "q38_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'В углу стоял старый стул'.",
+        "options": [
+          "standing",
+          "corner",
+          "stands",
+          "an",
+          "In",
+          "was",
+          "chair",
+          "the",
+          "stood",
+          "old"
+        ],
+        "correctSentence": [
+          "In",
+          "the",
+          "corner",
+          "stood",
+          "an",
+          "old",
+          "chair"
+        ]
+      },
+      {
+        "id": "q38_7",
+        "type": "fill_in_blank",
+        "question": "He ___ work hard, I can confirm that.",
+        "correctAnswer": "does"
+      },
+      {
+        "id": "q38_rep",
+        "type": "fill_in_blank",
+        "question": "___ you ready?",
+        "correctAnswer": "Are"
+      }
+    ]
+  },
+  {
+    "id": "l39",
+    "title": "Урок 39: Dependent Prepositions",
+    "moduleId": 20,
+    "theory": [
+      "В английском языке многие глаголы, прилагательные и существительные требуют после себя строго определенных предлогов. Логики здесь часто нет, их нужно запоминать.",
+      "Примеры с глаголами: rely ON (полагаться на), object TO (возражать против), insist ON (настаивать на), apologize FOR (извиняться за), consist OF (состоять из).",
+      "Примеры с прилагательными: afraid OF (бояться), famous FOR (знаменит чем-то), responsible FOR (ответственен за), interested IN (заинтересован в), accustomed TO (привыкший к).",
+      "Важное правило: после предлогов всегда используется существительное, местоимение или глагол с окончанием -ING (герундий). 'I object to going there' (а не 'to go').",
+      "Особое внимание обратите на 'to', которое часто бывает предлогом, а не частью инфинитива. (Looking forward to, object to, used to)."
+    ],
+    "words": [
+      {
+        "id": "v_l39_Conference",
+        "word": "Conference",
+        "transcription": "[ˈkɒnfərəns]",
+        "translation": "Конференция",
+        "category": "Module 20"
+      },
+      {
+        "id": "v_l39_Object",
+        "word": "Object",
+        "transcription": "[əbˈdʒɛkt]",
+        "translation": "Возражать",
+        "category": "Module 20"
+      },
+      {
+        "id": "v_l39_Agree",
+        "word": "Agree",
+        "transcription": "[əˈɡriː]",
+        "translation": "Соглашаться",
+        "category": "Module 20"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q39_1",
+        "type": "fill_in_blank",
+        "question": "She is very interested ___ art.",
+        "correctAnswer": "in"
+      },
+      {
+        "id": "q39_2",
+        "type": "multiple_choice",
+        "question": "Какой предлог нужен: 'I rely ___ you'?",
+        "options": [
+          "on",
+          "in",
+          "for"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q39_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Он извинился за опоздание'.",
+        "options": [
+          "late",
+          "for",
+          "to",
+          "be",
+          "He",
+          "was",
+          "apologized",
+          "being"
+        ],
+        "correctSentence": [
+          "He",
+          "apologized",
+          "for",
+          "being",
+          "late"
+        ]
+      },
+      {
+        "id": "q39_4",
+        "type": "multiple_choice",
+        "question": "Что значит 'I object to doing this'?",
+        "options": [
+          "Я возражаю против того, чтобы делать это.",
+          "Я согласен делать это.",
+          "Мой объект делает это."
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q39_5",
+        "type": "fill_in_blank",
+        "question": "They are famous ___ their pizza.",
+        "correctAnswer": "for"
+      },
+      {
+        "id": "q39_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Она привыкла жить здесь'.",
+        "options": [
+          "for",
+          "with",
+          "to",
+          "is",
+          "She",
+          "live",
+          "living",
+          "accustomed",
+          "here"
+        ],
+        "correctSentence": [
+          "She",
+          "is",
+          "accustomed",
+          "to",
+          "living",
+          "here"
+        ]
+      },
+      {
+        "id": "q39_7",
+        "type": "fill_in_blank",
+        "question": "The team consists ___ five members.",
+        "correctAnswer": "of"
+      },
+      {
+        "id": "q39_rep",
+        "type": "fill_in_blank",
+        "question": "She ___ not my sister.",
+        "correctAnswer": "is"
+      }
+    ]
+  },
+  {
+    "id": "l40",
+    "title": "Урок 40: Advanced Phrasal Verbs",
+    "moduleId": 21,
+    "theory": [
+      "Фразовые глаголы на уровне C1-C2 часто имеют сильно идиоматическое значение, которое невозможно угадать по составным частям.",
+      "Примеры: 'come up with' (придумать идею), 'fall out with' (поссориться), 'put up with' (терпеть/мириться с чем-то), 'turn out' (оказаться).",
+      "Многие продвинутые фразовые глаголы состоят из трех слов (Verb + Adverb + Preposition). В таких глаголах прямое дополнение всегда стоит после всего комплекса: 'I look forward to the meeting'.",
+      "'Bring up' (воспитывать / поднять тему). 'Make up for' (компенсировать). 'Get away with' (избежать наказания за проступок).",
+      "Для свободного владения языком критически важно уметь заменять формальные латинские глаголы (tolerate, compensate) на их фразовые эквиваленты (put up with, make up for)."
+    ],
+    "words": [
+      {
+        "id": "v_l40_Successful",
+        "word": "Successful",
+        "transcription": "[səkˈsɛsfʊl]",
+        "translation": "Успешный",
+        "category": "Module 21"
+      },
+      {
+        "id": "v_l40_Overall",
+        "word": "Overall",
+        "transcription": "[ˌəʊvərˈɔːl]",
+        "translation": "В целом",
+        "category": "Module 21"
+      },
+      {
+        "id": "v_l40_Come up with",
+        "word": "Come up with",
+        "transcription": "[kʌm ʌp wɪð]",
+        "translation": "Придумать",
+        "category": "Module 21"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q40_1",
+        "type": "fill_in_blank",
+        "question": "I can't put ___ with this noise anymore! (терпеть)",
+        "correctAnswer": "up"
+      },
+      {
+        "id": "q40_2",
+        "type": "multiple_choice",
+        "question": "Что означает фраза 'come up with an idea'?",
+        "options": [
+          "Придумать идею",
+          "Забыть идею",
+          "Украсть идею"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q40_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'Она поссорилась со своим братом'.",
+        "options": [
+          "out",
+          "with",
+          "her",
+          "falling",
+          "She",
+          "fell",
+          "brother",
+          "falls",
+          "down"
+        ],
+        "correctSentence": [
+          "She",
+          "fell",
+          "out",
+          "with",
+          "her",
+          "brother"
+        ]
+      },
+      {
+        "id": "q40_4",
+        "type": "multiple_choice",
+        "question": "Какой фразовый глагол заменяет слово 'compensate'?",
+        "options": [
+          "make up for",
+          "make out",
+          "make off"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q40_5",
+        "type": "fill_in_blank",
+        "question": "He got ___ with stealing the car (избежал наказания).",
+        "correctAnswer": "away"
+      },
+      {
+        "id": "q40_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Я с нетерпением жду нашей встречи'.",
+        "options": [
+          "meeting",
+          "for",
+          "looking",
+          "at",
+          "to",
+          "our",
+          "forward",
+          "I",
+          "look"
+        ],
+        "correctSentence": [
+          "I",
+          "look",
+          "forward",
+          "to",
+          "our",
+          "meeting"
+        ]
+      },
+      {
+        "id": "q40_7",
+        "type": "fill_in_blank",
+        "question": "Please don't bring ___ that topic again (поднимать тему).",
+        "correctAnswer": "up"
+      },
+      {
+        "id": "q40_rep",
+        "type": "fill_in_blank",
+        "question": "You ___ a great student.",
+        "correctAnswer": "are"
+      }
+    ]
+  },
+  {
+    "id": "l41",
+    "title": "Урок 41: Discourse Markers (C1-C2)",
+    "moduleId": 21,
+    "theory": [
+      "Discourse markers (маркеры дискурса) организуют, структурируют и направляют нашу речь. Они критически важны для связности (coherence) и беглости.",
+      "Для противопоставления: nevertheless (тем не менее), on the other hand, however, conversely, whereas.",
+      "Для добавления информации: furthermore, moreover, in addition.",
+      "Для подведения итогов: ultimately, overall, by and large, taking everything into consideration.",
+      "В разговорной речи маркеры смягчают высказывания или меняют тему: 'By the way' (кстати), 'As a matter of fact' (на самом деле), 'To be honest', 'Well'. Уверенное использование этих слов отличает носителя языка от ученика."
+    ],
+    "words": [
+      {
+        "id": "v_l41_Project",
+        "word": "Project",
+        "transcription": "[ˈprɒdʒɛkt]",
+        "translation": "Проект",
+        "category": "Module 21"
+      },
+      {
+        "id": "v_l41_Overall",
+        "word": "Overall",
+        "transcription": "[ˌəʊvərˈɔːl]",
+        "translation": "В целом",
+        "category": "Module 21"
+      },
+      {
+        "id": "v_l41_Solution",
+        "word": "Solution",
+        "transcription": "[səˈluːʃ(ə)n]",
+        "translation": "Решение",
+        "category": "Module 21"
+      }
+    ],
+    "quiz": [
+      {
+        "id": "q41_1",
+        "type": "fill_in_blank",
+        "question": "It was raining. ___, we went for a walk (Тем не менее).",
+        "correctAnswer": "Nevertheless"
+      },
+      {
+        "id": "q41_2",
+        "type": "multiple_choice",
+        "question": "Какое слово используется для добавления информации?",
+        "options": [
+          "Furthermore",
+          "However",
+          "Therefore"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q41_3",
+        "type": "drag_and_drop",
+        "question": "Составьте фразу: 'На самом деле, я не согласен'.",
+        "options": [
+          "matter",
+          "fact",
+          "As",
+          "in",
+          "don't",
+          "of",
+          "factly",
+          "I",
+          "disagree",
+          "a"
+        ],
+        "correctSentence": [
+          "As",
+          "a",
+          "matter",
+          "of",
+          "fact",
+          "I",
+          "disagree"
+        ]
+      },
+      {
+        "id": "q41_4",
+        "type": "multiple_choice",
+        "question": "Что означает 'By and large'?",
+        "options": [
+          "В общем и целом",
+          "Большой и широкий",
+          "Внезапно"
+        ],
+        "correctAnswerIndex": 0
+      },
+      {
+        "id": "q41_5",
+        "type": "fill_in_blank",
+        "question": "___, I think we did a great job (В целом - Overall).",
+        "correctAnswer": "Overall"
+      },
+      {
+        "id": "q41_6",
+        "type": "drag_and_drop",
+        "question": "Переведите: 'Кстати, где он?'",
+        "options": [
+          "he",
+          "By",
+          "the",
+          "way",
+          "is",
+          "On",
+          "where",
+          "wayly",
+          "was"
+        ],
+        "correctSentence": [
+          "By",
+          "the",
+          "way",
+          "where",
+          "is",
+          "he"
+        ]
+      },
+      {
+        "id": "q41_7",
+        "type": "fill_in_blank",
+        "question": "He is very smart. ___, he is very lazy (Однако).",
+        "correctAnswer": "However"
+      },
+      {
+        "id": "q41_rep",
+        "type": "drag_and_drop",
+        "question": "Составьте вопрос: 'Ты сейчас работаешь?'",
+        "options": [
+          "now",
+          "?",
+          "working",
+          "you",
+          "Are",
+          "work",
+          "Do"
+        ],
+        "correctSentence": [
+          "Are",
+          "you",
+          "working",
+          "now",
+          "?"
+        ]
       }
     ]
   }

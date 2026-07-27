@@ -18,7 +18,21 @@ const specialPlaces = [
   'Модуль 4: Разговорный',
   'Модуль 5: Уверенность',
   'Модуль 6: Диалоги',
-  'Модуль 7: Продвинутый'
+  'Модуль 7: Продвинутый',
+  'Модуль 8: Времена Past',
+  'Модуль 9: Времена Future',
+  'Модуль 10: Модальность',
+  'Модуль 11: Условия (Conditionals)',
+  'Модуль 12: Косвенная речь',
+  'Модуль 13: Инфинитив и Герундий',
+  'Модуль 14: Придаточные предложения',
+  'Модуль 15: Привычки (Used to)',
+  'Модуль 16: Инверсия и Смешанные условия',
+  'Модуль 17: Каузатив и Сослагательное',
+  'Модуль 18: Обороты и Эмфаза',
+  'Модуль 19: Продвинутый пассив',
+  'Модуль 20: Фронтинг и Предлоги',
+  'Модуль 21: Фразовые глаголы и Маркеры'
 ];
 
 export default function CityMapProgress({ setView, lessons, completedLessons, onSelect, onSelectTest }: CityMapProgressProps) {
@@ -45,7 +59,7 @@ export default function CityMapProgress({ setView, lessons, completedLessons, on
       y: yOffset,
       item,
       isSpecial,
-      placeName: isSpecial ? specialPlaces[item.moduleId % specialPlaces.length] : null
+      placeName: isSpecial ? specialPlaces[(item.moduleId - 1) % specialPlaces.length] : null
     };
   });
 

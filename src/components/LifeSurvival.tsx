@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, Compass } from 'lucide-react';
-import { ViewState } from '../types';
-import { quests, Quest } from '../questsData';
+import { ViewState, Lesson, Quest } from '../types';
+import { quests } from '../questsData';
 
 type WordObj = { id: number; word: string };
 
 const cleanWords = (text: string) => text.replace(/[.,!?]/g, '').split(/\s+/).filter(Boolean);
 const normalizeSentence = (text: string) => text.replace(/[.,!?]/g, '').toLowerCase().trim();
 
-export default function LifeSurvival({ setView }: { key?: string, setView: (v: ViewState) => void }) {
+export default function LifeSurvival({ setView, completedLessons, lessons }: { key?: string, setView: (v: ViewState) => void, completedLessons: string[], lessons: Lesson[] }) {
   const [currentQuest, setCurrentQuest] = useState<Quest | null>(null);
   const [currentScene, setCurrentScene] = useState<string>('start');
   
@@ -18,8 +18,17 @@ export default function LifeSurvival({ setView }: { key?: string, setView: (v: V
   const [errorShake, setErrorShake] = useState(false);
 
   useEffect(() => {
-    // Pick a random quest on mount
-    const randomQuest = quests[Math.floor(Math.random() * quests.length)];
+    const unlockedModuleId = Math.max(1, ...completedLessons.map(id => {
+      if(id.startsWith('test_')) return parseInt(id.split('_')[1]) + 1;
+      const lesson = lessons.find(l => l.id === id);
+      return lesson ? lesson.moduleId : 1;
+    }));
+    
+    // Filter quests up to unlockedModuleId, fallback to all if none found
+    let availableQuests = quests.filter(q => q.moduleId && q.moduleId <= unlockedModuleId);
+    if (availableQuests.length === 0) availableQuests = quests;
+    
+    const randomQuest = availableQuests[Math.floor(Math.random() * availableQuests.length)];
     setCurrentQuest(randomQuest);
   }, []);
 

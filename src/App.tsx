@@ -95,7 +95,7 @@ export default function App() {
               <Dictionary key="dictionary" setView={setView} />
             )}
             {view === 'survival' && (
-              <LifeSurvival key="survival" setView={setView} />
+              <LifeSurvival key="survival" setView={setView} completedLessons={completedLessons} lessons={lessons} />
             )}
             {view === 'module_test' && currentTestModule && (
               <ModuleTest key="module_test" moduleId={currentTestModule} lessons={lessons} onFinish={(score, total, mistakes) => {
