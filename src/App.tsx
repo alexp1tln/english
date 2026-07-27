@@ -40,8 +40,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen w-full flex justify-center items-center overflow-hidden font-sans">
-      <div className="w-full max-w-md h-[100dvh] relative flex flex-col bg-transparent">
+    <div className="min-h-screen w-full flex justify-center items-start overflow-hidden bg-black font-sans">
+      <div className="w-full max-w-md h-viewport pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent">
         
         {/* Notification Toast */}
         <AnimatePresence>
