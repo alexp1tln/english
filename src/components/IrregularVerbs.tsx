@@ -130,7 +130,7 @@ export default function IrregularVerbs({ setView }: { key?: string, setView: (v:
       plausible.delete(correct);
       plausible.delete(verb.base);
 
-      let arr = Array.from(plausible);
+      const arr = Array.from(plausible);
       arr.sort(() => Math.random() - 0.5);
 
       for (const p of arr) {

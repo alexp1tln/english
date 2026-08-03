@@ -33,7 +33,7 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
     let mistakes: string[] = [];
     try {
       mistakes = JSON.parse(safeStorage.getItem('mistakes') || '[]');
-    } catch(e) {}
+    } catch(e) { console.error(e); }
 
     const mistakeQs = allQs.filter(q => mistakes.includes(q.id));
     const regularQs = allQs.filter(q => !mistakes.includes(q.id));
@@ -41,7 +41,7 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
     mistakeQs.sort(() => Math.random() - 0.5);
     regularQs.sort(() => Math.random() - 0.5);
 
-    let finalQs = mistakeQs.concat(regularQs).slice(0, 10);
+    const finalQs = mistakeQs.concat(regularQs).slice(0, 20);
     finalQs.sort(() => Math.random() - 0.5);
 
     setQuestions(finalQs);
@@ -111,8 +111,11 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
     if (isAnswered) return;
     setIsAnswered(true);
     
-    const isCorrect = q.correctAnswer && textInput.trim().toLowerCase() === q.correctAnswer.toLowerCase();
-    const correctText = q.correctAnswer || '';
+    const input = textInput.trim().toLowerCase();
+    const isCorrect = (q.correctAnswer && input === q.correctAnswer.toLowerCase()) || 
+                      (q.correctAnswers && q.correctAnswers.some(ans => input === ans.toLowerCase()));
+    
+    const correctText = q.correctAnswers ? q.correctAnswers.join(' / ') : (q.correctAnswer || '');
     const selectedText = textInput;
     
     processNext(!!isCorrect, correctText, selectedText);

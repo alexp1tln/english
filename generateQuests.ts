@@ -8,12 +8,12 @@ const tickets = ['London', 'Manchester', 'Liverpool', 'Edinburgh', 'Glasgow', 'B
 const times = ['2 PM', '3:30 PM', '10 AM', '11:15 AM', '4 PM', '9 AM', '1 PM', '5:45 PM', '6 PM', '8:30 AM'];
 const names = ['Smith', 'Johnson', 'Brown', 'Taylor', 'Anderson', 'Thomas', 'Jackson', 'White', 'Harris', 'Martin'];
 
-let quests = [];
+const quests = [];
 let qId = 0;
 
 // Scenario 1: Cafe
-for(let d of drinks) {
-    for(let f of foods) {
+for(const d of drinks) {
+    for(const f of foods) {
         if(quests.length >= 25) break;
         quests.push({
             id: `quest_${qId++}`,
@@ -52,8 +52,8 @@ for(let d of drinks) {
 }
 
 // Scenario 2: Directions
-for(let p of places) {
-    for(let p2 of places) {
+for(const p of places) {
+    for(const p2 of places) {
         if (p === p2) continue;
         if (quests.length >= 50) break;
         quests.push({
@@ -93,8 +93,8 @@ for(let p of places) {
 }
 
 // Scenario 3: Store
-for(let i of items) {
-    for(let t of times) {
+for(const i of items) {
+    for(const t of times) {
         if(quests.length >= 75) break;
         quests.push({
             id: `quest_${qId++}`,
@@ -133,8 +133,8 @@ for(let i of items) {
 }
 
 // Scenario 4: Train Tickets
-for(let t of tickets) {
-    for(let time of times) {
+for(const t of tickets) {
+    for(const time of times) {
         if(quests.length >= 100) break;
         quests.push({
             id: `quest_${qId++}`,
@@ -173,8 +173,8 @@ for(let t of tickets) {
 }
 
 // Scenario 5: Hotel Check-in
-for(let n of names) {
-    for(let d of drinks) {
+for(const n of names) {
+    for(const d of drinks) {
         if (quests.length >= 125) break;
         quests.push({
             id: `quest_${qId++}`,

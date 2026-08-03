@@ -7,7 +7,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './', // For GitHub Pages and standalone PWA support
+    
     plugins: [
       react(),
       tailwindcss(),
@@ -36,6 +36,7 @@ export default defineConfig(() => {
           ]
         },
         workbox: {
+          importScripts: ['firebase-messaging-sw.js'],
           globPatterns: ['**/*.{js,css,html,ico,png,svg,ts,tsx}'],
           maximumFileSizeToCacheInBytes: 10000000,
           clientsClaim: true,
@@ -53,7 +54,7 @@ export default defineConfig(() => {
       target: 'es2015',
     },
     server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
+      hmr: false,
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };

@@ -16,6 +16,7 @@ export interface QuizQuestion {
   correctAnswerIndex?: number;
   correctSentence?: string[];
   correctAnswer?: string;
+  correctAnswers?: string[];
 }
 
 export interface Lesson {

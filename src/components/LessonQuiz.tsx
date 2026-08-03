@@ -40,7 +40,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
           mistakes.push(q.id);
           safeStorage.setItem('mistakes', JSON.stringify(mistakes));
        }
-    } catch(e) {}
+    } catch(e) { console.error(e); }
   };
   
   const handleNext = () => {
@@ -98,7 +98,10 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   // Fill in Blank
   const checkFillInBlank = () => {
     if (isAnswered) return;
-    if (q.correctAnswer && textInput.trim().toLowerCase() === q.correctAnswer.toLowerCase()) {
+    const input = textInput.trim().toLowerCase();
+    const isCorrect = (q.correctAnswer && input === q.correctAnswer.toLowerCase()) || 
+                      (q.correctAnswers && q.correctAnswers.some(ans => input === ans.toLowerCase()));
+    if (isCorrect) {
       handleNext();
     } else {
       setHint('Ответ неверный. Попробуйте еще раз.');

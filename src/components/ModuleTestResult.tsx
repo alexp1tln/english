@@ -60,10 +60,10 @@ export default function ModuleTestResult({ score, total, moduleId, mistakes, onB
         </motion.div>
 
         <h3 className="text-3xl font-sans font-semibold tracking-tight text-white mb-2 z-10 text-center">
-            {percentage >= 80 ? 'Отличная работа!' : percentage >= 50 ? 'Хороший результат!' : 'Нужно потренироваться'}
+            {percentage >= 80 ? 'Отличная работа!' : 'Тест не пройден'}
         </h3>
         <p className="text-white/60 font-light text-center mb-12 z-10">
-            Вы завершили контрольную по Модулю {moduleId}.
+            {percentage >= 80 ? `Вы успешно завершили контрольную по Модулю ${moduleId}.` : `Для прохождения модуля нужно набрать минимум 80%. Вы набрали ${percentage}%.`}
         </p>
 
         {mistakes && mistakes.length > 0 && (
