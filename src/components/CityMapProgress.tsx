@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { ArrowLeft, Check, Lock, Star, BookOpen } from 'lucide-react';
+import { ArrowLeft, Check, Lock, MapPin, Sparkles, Star, BookOpen } from 'lucide-react';
 import { Lesson, ViewState } from '../types';
 
 interface CityMapProgressProps { key?: React.Key | string; 
@@ -46,7 +46,7 @@ export default function CityMapProgress({ setView, lessons, completedLessons, on
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Generate points for the map with an organic sine wave and varying spacing
-  const items: JSX.Element[] = [];
+  const items: any[] = [];
   lessons.forEach((l, i) => {
     items.push({ type: 'lesson', data: l });
     if ((i + 1) % 10 === 0) {
@@ -84,7 +84,6 @@ export default function CityMapProgress({ setView, lessons, completedLessons, on
       // Smooth scroll to the active lesson
       containerRef.current.scrollTop = Math.max(0, targetIdx * 110 - window.innerHeight / 2 + 150);
     }
-      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lessons, completedLessons]);
 
   // Generate smooth bezier curve path

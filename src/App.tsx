@@ -1,10 +1,9 @@
 import { safeStorage } from "./utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, Check, X, Search, BookText, Zap, Bell, Flame } from 'lucide-react';
-import { requestForToken, onMessageListener } from './firebase';
+import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, Check, X, Search, BookText, ChevronDown, Compass, Zap , Flame} from 'lucide-react';
 import { lessons, vocabulary } from './courseData';
-import { Lesson, ViewState, Word } from './types';
+import { Lesson, ViewState, Word, QuizQuestion } from './types';
 import CityMapProgress from './components/CityMapProgress';
 import ModuleTest from "./components/ModuleTest";
 import LessonQuiz from './components/LessonQuiz';
@@ -16,68 +15,44 @@ export default function App() {
   const [view, setView] = useState<ViewState>('menu');
   const [currentLesson, setCurrentLesson] = useState<Lesson | null>(null);
   const [currentTestModule, setCurrentTestModule] = useState<number | null>(null);
-  const [testScore, setTestScore] = useState<{score: number, total: number, mistakes: string[]} | null>(null);
+  const [testScore, setTestScore] = useState<{score: number, total: number, mistakes: any[]} | null>(null);
   
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
+  const [streak, setStreak] = useState<number>(0);
   const [notification, setNotification] = useState<{title: string, message: string} | null>(null);
-
-  const [streakCount, setStreakCount] = useState(0);
-
-  const updateActivity = () => {
-    const today = new Date();
-    const savedStreak = safeStorage.getItem('rabbitsStreak');
-    const savedDateStr = safeStorage.getItem('rabbitsLastActivityDate');
-    
-    const currentStreak = parseInt(savedStreak || '0', 10);
-    let newStreak = currentStreak;
-    
-    if (savedDateStr) {
-      const savedDate = new Date(savedDateStr);
-      const utc1 = Date.UTC(savedDate.getFullYear(), savedDate.getMonth(), savedDate.getDate());
-      const utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-      const diffDays = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
-      
-      if (diffDays === 1) {
-        newStreak += 1;
-      } else if (diffDays > 1) {
-        newStreak = 1;
-      }
-    } else {
-      newStreak = 1;
-    }
-    
-    setStreakCount(newStreak);
-    safeStorage.setItem('rabbitsStreak', newStreak.toString());
-    safeStorage.setItem('rabbitsLastActivityDate', today.toISOString());
-  };
-
-  useEffect(() => {
-    const savedStreak = safeStorage.getItem('rabbitsStreak');
-    const savedDateStr = safeStorage.getItem('rabbitsLastActivityDate');
-    
-    if (savedStreak && savedDateStr) {
-      const today = new Date();
-      const savedDate = new Date(savedDateStr);
-      const utc1 = Date.UTC(savedDate.getFullYear(), savedDate.getMonth(), savedDate.getDate());
-      const utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-      const diffDays = Math.floor((utc2 - utc1) / (1000 * 60 * 60 * 24));
-      
-      let currentStreak = parseInt(savedStreak, 10);
-      if (diffDays > 1) {
-        currentStreak = 0; // Lost streak
-        setStreakCount(0);
-      } else {
-        setStreakCount(currentStreak);
-      }
-    }
-  }, []);
-
 
   useEffect(() => {
     const saved = safeStorage.getItem('rabbitsEnglishCompleted') || safeStorage.getItem('darkBunnyCompleted');
     if (saved) {
       setCompletedLessons(JSON.parse(saved));
     }
+
+    const savedStreak = safeStorage.getItem('rabbitsStreak');
+    const savedLastActive = safeStorage.getItem('rabbitsLastActive');
+    
+    const today = new Date().toISOString().split('T')[0];
+    let currentStreak = savedStreak ? parseInt(savedStreak) : 0;
+    
+    if (savedLastActive) {
+      const last = new Date(savedLastActive);
+      const yesterday = new Date();
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yesterdayStr = yesterday.toISOString().split('T')[0];
+      
+      if (savedLastActive === today) {
+        // already active today
+      } else if (savedLastActive === yesterdayStr) {
+        currentStreak += 1;
+      } else {
+        currentStreak = 1;
+      }
+    } else {
+      currentStreak = 1;
+    }
+    
+    setStreak(currentStreak);
+    safeStorage.setItem('rabbitsStreak', currentStreak.toString());
+    safeStorage.setItem('rabbitsLastActive', today);
   }, []);
 
   const markLessonCompleted = (id: string) => {
@@ -86,7 +61,6 @@ export default function App() {
       setCompletedLessons(newCompleted);
       safeStorage.setItem('rabbitsEnglishCompleted', JSON.stringify(newCompleted));
     }
-    updateActivity();
   };
 
   const showNotification = (title: string, message: string) => {
@@ -97,7 +71,7 @@ export default function App() {
   return (
     <div className="min-h-screen w-full flex justify-center items-start overflow-hidden bg-transparent font-sans relative z-0">
       <AnimatedBackground />
-      <div className="w-full max-w-md h-screen pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent z-10">
+      <div className="w-full max-w-md h-viewport pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent z-10">
         
         {/* Notification Toast */}
         <AnimatePresence>
@@ -122,7 +96,7 @@ export default function App() {
         <div className="flex-1 w-full h-full relative overflow-y-auto overflow-x-hidden no-scrollbar pb-6 px-6 pt-6">
           <AnimatePresence mode="wait">
             {view === 'menu' && (
-              <MainMenu key="menu" setView={setView} completedCount={completedLessons.filter(id => id.startsWith('l')).length} totalCount={lessons.length} streakCount={streakCount} />
+              <MainMenu key="menu" setView={setView} completedCount={completedLessons.filter(id => id.startsWith('l')).length} totalCount={lessons.length} streak={streak} />
             )}
             {view === 'roadmap' && (
               <CityMapProgress key="roadmap" setView={setView} lessons={lessons} completedLessons={completedLessons} onSelect={(lesson) => {
@@ -137,11 +111,13 @@ export default function App() {
               <LessonTheory key="theory" lesson={currentLesson} onNext={() => setView('lesson_quiz')} onBack={() => setView('roadmap')} />
             )}
             {view === 'lesson_quiz' && currentLesson && (
-              <LessonQuiz key="quiz" questions={currentLesson.quiz} theory={currentLesson.theory} onFinish={() => { markLessonCompleted(currentLesson.id); setView('roadmap'); }} onBack={() => setView('lesson_theory')} />
+              <LessonQuiz key="quiz" questions={currentLesson.quiz} theory={currentLesson.theory} onFinish={() => {
+                markLessonCompleted(currentLesson.id);
+                setView('roadmap');
+              }} onBack={() => setView('lesson_theory')} />
             )}
-
             {view === 'infinite_training' && (
-              <InfiniteTraining key="infinite" setView={setView} onActivity={updateActivity} />
+              <InfiniteTraining key="infinite" setView={setView} />
             )}
             {view === 'dictionary' && (
               <Dictionary key="dictionary" setView={setView} />
@@ -149,7 +125,6 @@ export default function App() {
             {view === 'module_test' && currentTestModule && (
               <ModuleTest key="module_test" moduleId={currentTestModule} lessons={lessons} onFinish={(score, total, mistakes) => {
                 const id = `test_${currentTestModule}`;
-                updateActivity();
                 if (score >= total * 0.8) {
                   if (!completedLessons.includes(id)) {
                     const newCompleted = [...completedLessons, id];
@@ -177,7 +152,7 @@ export default function App() {
               <ModuleTestResult key="module_test_result" score={testScore.score} total={testScore.total} mistakes={testScore.mistakes} moduleId={currentTestModule!} onBack={() => setView('roadmap')} />
             )}
             {view === 'irregular_verbs' && (
-              <IrregularVerbs key="irregular_verbs" setView={setView} onActivity={updateActivity} />
+              <IrregularVerbs key="irregular_verbs" setView={setView} />
             )}
           </AnimatePresence>
         </div>
@@ -186,82 +161,7 @@ export default function App() {
   );
 }
 
-
-function RemindersButton() {
-  const [enabled, setEnabled] = useState(false);
-
-  useEffect(() => {
-    if ("Notification" in window && Notification.permission === "granted") {
-      setEnabled(true);
-      // Initialize foreground listener
-      onMessageListener().then((payload: unknown) => {
-        console.log("Foreground notification received: ", payload);
-        // We could show a toast here if we wanted
-      }).catch(err => console.log('failed: ', err));
-    }
-  }, []);
-
-const subscribeToTopic = async (token: string) => {
-    try {
-      await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ token })
-      });
-      console.log('Subscribed to reminders topic');
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  const toggleReminders = async () => {
-    if (!("Notification" in window)) {
-      alert("К сожалению, ваш браузер не поддерживает пуш-уведомления.");
-      return;
-    }
-
-    if (Notification.permission === "granted") {
-      // If already granted, let's make sure we have a token
-      const token = await requestForToken();
-      if (token) {
-        console.log("Token exists:", token);
-        setEnabled(true);
-        await subscribeToTopic(token);
-        setEnabled(true);
-        alert("Напоминания от зайца успешно включены!");
-      }
-    } else if (Notification.permission !== "denied") {
-      const permission = await Notification.requestPermission();
-      if (permission === "granted") {
-        const token = await requestForToken();
-        if (token) {
-           console.log("New token:", token);
-           setEnabled(true);
-           await subscribeToTopic(token);
-           setEnabled(true);
-           alert("Отлично! Напоминания от зайца включены.");
-        }
-      } else {
-        alert("Вы отклонили отправку уведомлений.");
-      }
-    } else {
-      alert("Уведомления заблокированы в настройках браузера. Разрешите их в адресной строке.");
-    }
-  };
-
-  return (
-    <button onClick={toggleReminders} className="w-full p-5 rounded-[2.5rem] bg-gothic-card hover:bg-gothic-card-hover border border-gothic-border hover:border-gothic-border-hover flex items-center justify-between active:scale-95 transition-all duration-300 shadow-lg mt-3">
-      <div className="flex items-center gap-4">
-        <Bell size={20} className={enabled ? "text-burgundy-light" : "text-white/40"}/> 
-        <span className="text-white text-sm font-medium tracking-wide">
-          {enabled ? "Напоминания от зайца включены" : "Включить напоминания (Firebase)"}
-        </span>
-      </div>
-      <ChevronRight size={16} className="text-white/70/30 group-hover:text-white/70 transition-colors" />
-    </button>
-  );
-}
-function MainMenu({ setView, completedCount, totalCount, streakCount }: { key?: string, setView: (v: ViewState) => void, completedCount: number, totalCount: number, streakCount: number }) {
+function MainMenu({ setView, completedCount, totalCount, streak }: { key?: string, setView: (v: ViewState) => void, completedCount: number, totalCount: number, streak: number }) {
   return (
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }} 
@@ -269,17 +169,14 @@ function MainMenu({ setView, completedCount, totalCount, streakCount }: { key?: 
       exit={{ opacity: 0, scale: 0.95 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="flex flex-col items-center gap-6 pb-12 pt-8"
     >
-      <div className="text-center space-y-4 mb-4 flex flex-col items-center">
+      <div className="text-center space-y-4 mb-4 flex flex-col items-center relative w-full">
+        <div className="absolute top-0 right-0 flex items-center gap-1.5 bg-gothic-card/80 border border-burgundy/30 px-3 py-1.5 rounded-full shadow-[0_0_15px_rgba(144,0,36,0.3)]">
+          <Flame size={16} className="text-orange-500" fill="currentColor" />
+          <span className="text-white font-semibold text-sm">{streak}</span>
+        </div>
         <img src="https://i.postimg.cc/Sx2NghTc/IMG-7263.png" alt="Rabbit's English" className="w-32 h-32 object-contain mb-2 drop-shadow-[0_0_15px_rgba(96,0,24,0.5)]" referrerPolicy="no-referrer" />
         <h1 className="text-4xl font-bold tracking-tight text-white">RABBIT'S ENGLISH</h1>
         <p className="text-white/70/70 text-xs tracking-[0.3em] uppercase">English Academy</p>
-        
-        {streakCount > 0 && (
-          <div className="flex items-center gap-2 px-4 py-2 mt-2 rounded-full bg-gothic-card border border-white/10 shadow-lg">
-             <Flame size={18} className="text-orange-500" />
-             <span className="text-white font-medium text-sm">{streakCount} {streakCount % 10 === 1 && streakCount % 100 !== 11 ? 'день' : [2,3,4].includes(streakCount % 10) && ![12,13,14].includes(streakCount % 100) ? 'дня' : 'дней'} в ударе</span>
-          </div>
-        )}
       </div>
 
       <button 
@@ -320,7 +217,6 @@ function MainMenu({ setView, completedCount, totalCount, streakCount }: { key?: 
           <div className="flex items-center gap-4"><Zap size={20} className="text-burgundy-light"/> <span className="text-white text-sm font-medium tracking-wide">Неправильные глаголы</span></div>
           <ChevronRight size={16} className="text-white/70/30 group-hover:text-white/70 transition-colors" />
         </button>
-        <RemindersButton />
       </div>
     </motion.div>
   );
@@ -367,7 +263,7 @@ function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson
 
 
 
-function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) => void, }) {
+function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) => void }) {
   const [mode, setMode] = useState<'cards' | 'quiz'>('cards');
   const [sessionWords, setSessionWords] = useState<Word[]>([]);
   const [seenWords, setSeenWords] = useState<Word[]>([]);

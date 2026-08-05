@@ -43,7 +43,7 @@
         else window.addEventListener('DOMContentLoaded', function() { document.body.appendChild(div); });
       });
       window.addEventListener('unhandledrejection', function(e) {
-        console.warn('Unhandled Rejection: ' + (e.reason ? e.reason.message : 'Unknown'));
+        alert('Unhandled Rejection: ' + (e.reason ? e.reason.message : 'Unknown'));
       });
     </script>
   </head>

@@ -350,10 +350,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q1_1",
         "type": "fill_in_blank",
-        "question": "(Я готов изучать английский) ___ am ready to learn English.",
+        "question": "___ am ready to learn English.",
         "correctAnswer": "I",
         "correctAnswers": [
-          "I"
+          "I",
+          "i"
         ]
       },
       {
@@ -389,10 +390,12 @@ export const lessons: Lesson[] = [
       {
         "id": "q1_4",
         "type": "fill_in_blank",
-        "question": "(Мой кот очень ленивый) My cat ___ very lazy.",
+        "question": "My cat ___ very lazy.",
         "correctAnswer": "is",
         "correctAnswers": [
-          "is"
+          "is",
+          "'s",
+          "s"
         ]
       },
       {
@@ -426,78 +429,64 @@ export const lessons: Lesson[] = [
       {
         "id": "q1_7",
         "type": "fill_in_blank",
-        "question": "(Ты отличный студент) You ___ a great student.",
+        "question": "You ___ a great student.",
         "correctAnswer": "are",
         "correctAnswers": [
-          "are"
-        ]
-      },
-      {
-        "id": "q1_fun1",
-        "type": "drag_and_drop",
-        "question": "Переведите фразу из диалога: - Ты инопланетянин? - Нет, я просто программист.",
-        "correctSentence": [
-          "No",
-          "I",
-          "am",
-          "just",
-          "a",
-          "programmer."
-        ],
-        "options": [
-          "No",
-          "I",
-          "am",
-          "just",
-          "a",
-          "programmer.",
-          "is",
           "are",
-          "alien"
+          "'re",
+          "re"
         ]
       },
       {
-        "id": "q1_fun2",
         "type": "fill_in_blank",
-        "question": "(Почему кофе подал заявление в полицию? Потому что его ограбили!) Шутка: 'Why did the coffee file a police report? Because it ___ mugged!'",
-        "correctAnswer": "was",
+        "question": "The weather ___ very nice today.",
+        "correctAnswer": "is",
         "correctAnswers": [
-          "was"
-        ]
-      },
-      {
-        "id": "q_life1_l1",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+          "is",
+          "'s"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql1_extra_0"
       },
       {
-        "id": "q_life2_l1",
+        "type": "fill_in_blank",
+        "question": "My friends ___ waiting for me at the cafe.",
+        "correctAnswer": "are",
+        "correctAnswers": [
+          "are",
+          "'re"
+        ],
+        "id": "ql1_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Put the words in order:",
         "options": [
-          "Can",
-          "I",
-          "have",
+          "Are",
+          "you",
+          "ready",
+          "for",
           "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "trip?"
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
+          "Are",
+          "you",
+          "ready",
+          "for",
           "the",
-          "bill",
-          "please"
-        ]
+          "trip?"
+        ],
+        "id": "ql1_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ really exhausted after work.",
+        "correctAnswer": "am",
+        "correctAnswers": [
+          "am",
+          "'m"
+        ],
+        "id": "ql1_extra_3"
       }
     ]
   },
@@ -532,7 +521,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q2_1",
         "type": "fill_in_blank",
-        "question": "(Я не врач) I am ___ a doctor.",
+        "question": "I am ___ a doctor.",
         "correctAnswer": "not",
         "correctAnswers": [
           "not"
@@ -573,10 +562,13 @@ export const lessons: Lesson[] = [
       {
         "id": "q2_4",
         "type": "fill_in_blank",
-        "question": "(Вы готовы?) ___ you ready?",
+        "question": "___ you ready?",
         "correctAnswer": "Are",
         "correctAnswers": [
-          "Are"
+          "Are",
+          "are",
+          "'re",
+          "re"
         ]
       },
       {
@@ -612,10 +604,12 @@ export const lessons: Lesson[] = [
       {
         "id": "q2_7",
         "type": "fill_in_blank",
-        "question": "(Она не моя сестра) She ___ not my sister.",
+        "question": "She ___ not my sister.",
         "correctAnswer": "is",
         "correctAnswers": [
-          "is"
+          "is",
+          "'s",
+          "s"
         ]
       },
       {
@@ -630,72 +624,35 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q2_fun1",
-        "type": "drag_and_drop",
-        "question": "Собери фразу, которую сказал бы кот-интроверт:",
-        "correctSentence": [
-          "I",
-          "do",
-          "not",
-          "like",
-          "loud",
-          "dogs."
+        "type": "fill_in_blank",
+        "question": "The weather ___ very nice today.",
+        "correctAnswer": "is",
+        "correctAnswers": [
+          "is",
+          "'s"
         ],
+        "id": "ql2_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "My friends ___ waiting for me at the cafe.",
+        "correctAnswer": "are",
+        "correctAnswers": [
+          "are",
+          "'re"
+        ],
+        "id": "ql2_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Choose the correct form: I ___ not sure about this.",
         "options": [
-          "I",
-          "do",
-          "not",
-          "like",
-          "loud",
-          "dogs.",
-          "does",
+          "am",
+          "is",
           "are"
-        ]
-      },
-      {
-        "id": "q2_fun2",
-        "type": "multiple_choice",
-        "question": "В какой ситуации уместно сказать 'I am not an elephant'?",
-        "options": [
-          "Когда вас просят поднять бревно хоботом",
-          "При заказе кофе",
-          "На собеседовании"
         ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life1_l2",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l2",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
-        "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
-        ],
-        "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql2_extra_2"
       }
     ]
   },
@@ -730,7 +687,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q3_1",
         "type": "multiple_choice",
-        "question": "Какое слово означает 'эти'?",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
         "options": [
           "these",
           "this",
@@ -741,7 +698,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q3_2",
         "type": "fill_in_blank",
-        "question": "(мой) This is ___ new phone.",
+        "question": "This is ___ (мой) new phone.",
         "correctAnswer": "my",
         "correctAnswers": [
           "my"
@@ -780,7 +737,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q3_5",
         "type": "fill_in_blank",
-        "question": "(ту/эту) Look at ___ bird in the sky!",
+        "question": "Look at ___ (тот) bird in the sky!",
         "correctAnswer": "that",
         "correctAnswers": [
           "that"
@@ -808,7 +765,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q3_7",
         "type": "multiple_choice",
-        "question": "Что выбрать для слова 'дерево'?",
+        "question": "Что выбрать для слова 'дерево' (неодушевленное)?",
         "options": [
           "its leaves",
           "his leaves",
@@ -834,66 +791,55 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life_1_l3",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать другу: 'Это мой кофе'. Как это будет по-английски?",
-        "options": [
-          "This is my coffee.",
-          "This is mine coffee.",
-          "This is me coffee."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql3_extra_0"
       },
       {
-        "id": "q_life_2_l3",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql3_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "На работе вы хотите показать коллеге: 'Эти документы — мои'. Соберите фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "These",
-          "are",
-          "my",
-          "documents",
-          "this",
+          "English",
           "is",
-          "mine",
-          "them"
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "These",
-          "are",
-          "my",
-          "documents"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql3_extra_2"
       },
       {
-        "id": "q_life1_l3",
         "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l3",
-        "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
-        "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
-        ],
-        "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql3_extra_3"
       }
     ]
   },
@@ -928,7 +874,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q4_1",
         "type": "multiple_choice",
-        "question": "Какой артикль поставить перед словом 'elephant' впервые?",
+        "question": "Какой артикль поставить перед словом 'elephant' (слон) впервые?",
         "options": [
           "an",
           "a",
@@ -939,7 +885,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q4_2",
         "type": "fill_in_blank",
-        "question": "(У меня есть кот. Кот черный.) I have ___ cat. The cat is black.",
+        "question": "I have ___ cat. The cat is black.",
         "correctAnswer": "a",
         "correctAnswers": [
           "a"
@@ -978,7 +924,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q4_5",
         "type": "fill_in_blank",
-        "question": "(Пожалуйста, закрой дверь.) Please close ___ door.",
+        "question": "Please close ___ door (конкретную).",
         "correctAnswer": "the",
         "correctAnswers": [
           "the"
@@ -1030,72 +976,64 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life_1_l4",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и ищете свой рейс. Вы спрашиваете ассистента: 'Где выходы на посадку?' Как это сказать?",
-        "options": [
-          "Where are the gates?",
-          "Where is the gates?",
-          "Where are a gates?"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life_2_l4",
         "type": "drag_and_drop",
-        "question": "Вы делаете заказ в ресторане и хотите сказать: 'Я бы хотел салат и картошку фри'. Соберите фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "I'd",
-          "like",
-          "a",
-          "salad",
+          "Life",
+          "is",
+          "beautiful",
           "and",
-          "some",
-          "fries",
-          "an",
-          "the"
+          "amazing."
         ],
         "correctSentence": [
-          "I'd",
-          "like",
-          "a",
-          "salad",
+          "Life",
+          "is",
+          "beautiful",
           "and",
-          "some",
-          "fries"
-        ]
-      },
-      {
-        "id": "q_life1_l4",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+          "amazing."
         ],
-        "correctAnswerIndex": 0
+        "id": "ql4_extra_0"
       },
       {
-        "id": "q_life2_l4",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql4_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I",
-          "need",
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql4_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
           "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "I",
-          "need",
+          "English",
+          "is",
           "a",
-          "new",
-          "towel"
-        ]
+          "global",
+          "language."
+        ],
+        "id": "ql4_extra_3"
       }
     ]
   },
@@ -1130,7 +1068,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q5_1",
         "type": "fill_in_blank",
-        "question": "(У вас есть вопросы?) Do you have ___ questions?",
+        "question": "Do you have ___ questions?",
         "correctAnswer": "any",
         "correctAnswers": [
           "any"
@@ -1181,7 +1119,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q5_5",
         "type": "fill_in_blank",
-        "question": "(Хотите ли вы кофе?) Would you like ___ coffee?",
+        "question": "Would you like ___ (немного) coffee?",
         "correctAnswer": "some",
         "correctAnswers": [
           "some"
@@ -1199,70 +1137,96 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life_1_l5",
-        "type": "multiple_choice",
-        "question": "Вы в супермаркете и ищете миндальное молоко. Вы спрашиваете сотрудника: 'У вас есть миндальное молоко?' Как это сказать?",
-        "options": [
-          "Do you have any almond milk?",
-          "Do you have some almond milk?",
-          "Do you have no almond milk?"
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql5_extra_0"
       },
       {
-        "id": "q_life_2_l5",
         "type": "drag_and_drop",
-        "question": "В конце рабочего дня вы спрашиваете коллегу: 'Мне еще что-нибудь нужно сделать?' Соберите фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Is",
-          "there",
-          "anything",
-          "else",
-          "I",
-          "need",
-          "to",
-          "do",
-          "something",
-          "no"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Is",
-          "there",
-          "anything",
-          "else",
-          "I",
-          "need",
-          "to",
-          "do"
-        ]
-      },
-      {
-        "id": "q_life1_l5",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
-        "correctAnswerIndex": 0
+        "id": "ql5_extra_1"
       },
       {
-        "id": "q_life2_l5",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql5_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql5_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql5_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql5_extra_5"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql5_extra_6"
       }
     ]
   },
@@ -1297,7 +1261,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q6_1",
         "type": "fill_in_blank",
-        "question": "(Он поранился, играя в футбол) He hurt ___ while playing football.",
+        "question": "He hurt ___ while playing football.",
         "correctAnswer": "himself",
         "correctAnswers": [
           "himself"
@@ -1347,7 +1311,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q6_5",
         "type": "fill_in_blank",
-        "question": "(Мы хорошо провели время на вечеринке) We enjoyed ___ at the party.",
+        "question": "We enjoyed ___ at the party.",
         "correctAnswer": "ourselves",
         "correctAnswers": [
           "ourselves"
@@ -1373,70 +1337,96 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life_1_l6",
-        "type": "multiple_choice",
-        "question": "Вы говорите другу о ужине. Вы говорите: 'Я приготовил ужин для себя'. Как это будет по-английски?",
-        "options": [
-          "I cooked dinner for myself.",
-          "I cooked dinner for me.",
-          "I cooked dinner for my own."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql6_extra_0"
       },
       {
-        "id": "q_life_2_l6",
-        "type": "drag_and_drop",
-        "question": "Вы на вечеринке и замечаете, что люди хорошо проводят время. Вы думаете: 'Они наслаждаются (сами)'. Соберите фразу:",
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql6_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "They",
-          "are",
-          "enjoying",
-          "themselves",
-          "them",
-          "their",
-          "our",
-          "ourselves"
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql6_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql6_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql6_extra_4"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "They",
-          "are",
-          "enjoying",
-          "themselves"
-        ]
-      },
-      {
-        "id": "q_life1_l6",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
-        "correctAnswerIndex": 0
+        "id": "ql6_extra_5"
       },
       {
-        "id": "q_life2_l6",
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql6_extra_6"
       }
     ]
   },
@@ -1471,7 +1461,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q7_1",
         "type": "fill_in_blank",
-        "question": "(Он работает в банке) He ___ (work) in a bank.",
+        "question": "He ___ (work) in a bank.",
         "correctAnswer": "works",
         "correctAnswers": [
           "works"
@@ -1510,7 +1500,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q7_4",
         "type": "fill_in_blank",
-        "question": "(Мы играем в теннис каждое воскресенье) We ___ (play) tennis every Sunday.",
+        "question": "We ___ (play) tennis every Sunday.",
         "correctAnswer": "play",
         "correctAnswers": [
           "play"
@@ -1551,7 +1541,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q7_7",
         "type": "fill_in_blank",
-        "question": "(Они обычно едят пиццу по пятницам) They usually ___ (eat) pizza on Fridays.",
+        "question": "They usually ___ (eat) pizza on Fridays.",
         "correctAnswer": "eat",
         "correctAnswers": [
           "eat"
@@ -1560,78 +1550,87 @@ export const lessons: Lesson[] = [
       {
         "id": "q7_rep",
         "type": "fill_in_blank",
-        "question": "(Она не моя сестра) She ___ not my sister.",
+        "question": "She ___ not my sister.",
         "correctAnswer": "is",
         "correctAnswers": [
-          "is"
-        ]
-      },
-      {
-        "id": "q_life_1_l7",
-        "type": "multiple_choice",
-        "question": "На работе вы обсуждаете свой ежедневный распорядок. Вы говорите: 'Я начинаю работу в 9 утра каждый день'. Как это сказать?",
-        "options": [
-          "I start work at 9 AM every day.",
-          "I am starting work at 9 AM every day.",
-          "I starts work at 9 AM every day."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life_2_l7",
-        "type": "drag_and_drop",
-        "question": "Вы рассказываете другу о привычках вашей сестры: 'Она пьет кофе каждое утро'. Соберите фразу:",
-        "options": [
-          "She",
-          "drinks",
-          "coffee",
-          "every",
-          "morning",
-          "drink",
           "is",
-          "drinking"
-        ],
-        "correctSentence": [
-          "She",
-          "drinks",
-          "coffee",
-          "every",
-          "morning"
+          "'s",
+          "s"
         ]
       },
       {
-        "id": "q_life1_l7",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l7",
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Order the sentence:",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
+        ],
+        "id": "ql7_extra_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How often ___ you check your email?",
+        "options": [
+          "do",
+          "does",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql7_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "She usually ___ (wake) up early on weekdays.",
+        "correctAnswer": "wakes",
+        "correctAnswers": [
+          "wakes",
+          "wakes up"
+        ],
+        "id": "ql7_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ (not/like) spicy food.",
+        "correctAnswer": "don't like",
+        "correctAnswers": [
+          "don't like",
+          "do not like"
+        ],
+        "id": "ql7_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql7_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql7_gen_1"
       }
     ]
   },
@@ -1666,7 +1665,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q8_1",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / действительно) I ___ not want to go.",
+        "question": "I ___ not want to go.",
         "correctAnswer": "do",
         "correctAnswers": [
           "do"
@@ -1707,10 +1706,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q8_4",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) ___ she live in London?",
+        "question": "___ she live in London?",
         "correctAnswer": "Does",
         "correctAnswers": [
-          "Does"
+          "Does",
+          "does"
         ]
       },
       {
@@ -1750,85 +1750,96 @@ export const lessons: Lesson[] = [
       {
         "id": "q8_7",
         "type": "fill_in_blank",
-        "question": "(Мы___ (не смотрим/не смотрим) телевизор.) We ___ (don't/doesn't) watch TV.",
+        "question": "We ___ (don't/doesn't) watch TV.",
         "correctAnswer": "don't",
         "correctAnswers": [
-          "don't",
-          "do not",
-          "Do not",
-          "don’t"
+          "don't"
         ]
       },
       {
         "id": "q8_rep",
         "type": "fill_in_blank",
-        "question": "(форма to be) My cat ___ very lazy.",
+        "question": "My cat ___ very lazy.",
         "correctAnswer": "is",
         "correctAnswers": [
-          "is"
+          "is",
+          "'s",
+          "s"
         ]
       },
       {
-        "id": "q_life_1_l8",
-        "type": "multiple_choice",
-        "question": "В электронном письме коллеге вы хотите спросить: 'Вы работаете по выходным?' Как это сформулировать?",
-        "options": [
-          "Do you work on weekends?",
-          "Are you working on weekends?",
-          "You work on weekends?"
+        "type": "fill_in_blank",
+        "question": "I ___ (not/like) spicy food.",
+        "correctAnswer": "don't like",
+        "correctAnswers": [
+          "don't like",
+          "do not like"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql8_extra_0"
       },
       {
-        "id": "q_life_2_l8",
         "type": "drag_and_drop",
-        "question": "Вы в кафе и хотите сказать официанту: 'Я не ем мясо'. Соберите фразу:",
+        "question": "Order the sentence:",
         "options": [
-          "I",
-          "don't",
-          "eat",
-          "meat",
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
+        ],
+        "correctSentence": [
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
+        ],
+        "id": "ql8_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How often ___ you check your email?",
+        "options": [
           "do",
-          "not",
-          "am",
-          "eating"
+          "does",
+          "are"
         ],
-        "correctSentence": [
-          "I",
-          "don't",
-          "eat",
-          "meat"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql8_extra_2"
       },
       {
-        "id": "q_life1_l8",
+        "type": "fill_in_blank",
+        "question": "She usually ___ (wake) up early on weekdays.",
+        "correctAnswer": "wakes",
+        "correctAnswers": [
+          "wakes",
+          "wakes up"
+        ],
+        "id": "ql8_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql8_gen_0"
+      },
+      {
         "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l8",
-        "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
-        "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
-        ],
-        "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql8_gen_1"
       }
     ]
   },
@@ -1874,7 +1885,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q9_2",
         "type": "fill_in_blank",
-        "question": "(Она сейчас спит) She is ___ (sleep) right now.",
+        "question": "She is ___ (sleep) right now.",
         "correctAnswer": "sleeping",
         "correctAnswers": [
           "sleeping"
@@ -1915,10 +1926,12 @@ export const lessons: Lesson[] = [
       {
         "id": "q9_5",
         "type": "fill_in_blank",
-        "question": "(Они играют в футбол) They ___ playing football.",
+        "question": "They ___ playing football (вставьте 'are').",
         "correctAnswer": "are",
         "correctAnswers": [
-          "are"
+          "are",
+          "'re",
+          "re"
         ]
       },
       {
@@ -1947,7 +1960,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q9_7",
         "type": "fill_in_blank",
-        "question": "(Смотри! Идет дождь) Look! It ___ (rain).",
+        "question": "Look! It ___ (rain).",
         "correctAnswer": "is raining",
         "correctAnswers": [
           "is raining"
@@ -1975,73 +1988,26 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life_1_l9",
-        "type": "multiple_choice",
-        "question": "Вы разговариваете по телефону с другом. Вы хотите сказать: 'Я смотрю фильм прямо сейчас'. Как это будет по-английски?",
-        "options": [
-          "I'm watching a movie right now.",
-          "I watch a movie right now.",
-          "I watches a movie right now."
+        "type": "fill_in_blank",
+        "question": "I can't talk right now, I ___ (drive).",
+        "correctAnswer": "am driving",
+        "correctAnswers": [
+          "am driving",
+          "'m driving",
+          "im driving"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql9_extra_0"
       },
       {
-        "id": "q_life_2_l9",
-        "type": "drag_and_drop",
-        "question": "Вы в офисе и видите своих коллег. Вы говорите посетителю: 'Они работают над новым проектом'. Соберите фразу:",
+        "type": "multiple_choice",
+        "question": "Look! The bus ___ coming.",
         "options": [
-          "They",
-          "are",
-          "working",
-          "on",
-          "a",
-          "new",
-          "project",
-          "work",
           "is",
-          "were"
-        ],
-        "correctSentence": [
-          "They",
           "are",
-          "working",
-          "on",
-          "a",
-          "new",
-          "project"
-        ]
-      },
-      {
-        "id": "q_life1_l9",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+          "does"
         ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l9",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
-        "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
-        ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql9_extra_1"
       }
     ]
   },
@@ -2077,7 +2043,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q10_1",
         "type": "fill_in_blank",
-        "question": "(Я встречу тебя в понедельник) I will meet you ___ Monday.",
+        "question": "I will meet you ___ Monday.",
         "correctAnswer": "on",
         "correctAnswers": [
           "on"
@@ -2086,7 +2052,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q10_2",
         "type": "multiple_choice",
-        "question": "Какой предлог нужен для '5 o'clock'?",
+        "question": "Какой предлог нужен для '5 o'clock' (5 часов)?",
         "options": [
           "at",
           "in",
@@ -2129,7 +2095,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q10_5",
         "type": "fill_in_blank",
-        "question": "(Мой день рождения в октябре) My birthday is ___ October.",
+        "question": "My birthday is ___ October.",
         "correctAnswer": "in",
         "correctAnswers": [
           "in"
@@ -2159,70 +2125,55 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life_1_l10",
-        "type": "multiple_choice",
-        "question": "Вы планируете встретиться с другом. Вы предлагаете: 'Давайте встретимся в 7 вечера в пятницу'. Как это сказать?",
-        "options": [
-          "Let's meet at 7 PM on Friday.",
-          "Let's meet in 7 PM on Friday.",
-          "Let's meet on 7 PM at Friday."
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql10_extra_0"
       },
       {
-        "id": "q_life_2_l10",
-        "type": "drag_and_drop",
-        "question": "Вы даете другу указания: 'Кафе находится на Бейкер-стрит, в Лондоне'. Соберите фразу:",
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "The",
-          "cafe",
-          "is",
-          "on",
-          "Baker",
-          "Street",
-          "in",
           "London",
-          "at",
-          "into"
+          "Paris",
+          "New York"
         ],
-        "correctSentence": [
-          "The",
-          "cafe",
-          "is",
-          "on",
-          "Baker",
-          "Street",
-          "in",
-          "London"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql10_extra_1"
       },
       {
-        "id": "q_life1_l10",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l10",
         "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "question": "Make a sentence:",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql10_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql10_extra_3"
       }
     ]
   },
@@ -2257,7 +2208,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q11_1",
         "type": "fill_in_blank",
-        "question": "(Он ___ (высокий), чем его брат.) He is ___ (tall) than his brother.",
+        "question": "He is ___ (tall) than his brother.",
         "correctAnswer": "taller",
         "correctAnswers": [
           "taller"
@@ -2300,7 +2251,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q11_4",
         "type": "multiple_choice",
-        "question": "Какое слово используется для сравнения?",
+        "question": "Какое слово используется для сравнения (чем)?",
         "options": [
           "than",
           "then",
@@ -2311,7 +2262,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q11_5",
         "type": "fill_in_blank",
-        "question": "(Моя машина___ (быстрее), чем твоя.) My car is ___ (fast) than yours.",
+        "question": "My car is ___ (fast) than yours.",
         "correctAnswer": "faster",
         "correctAnswers": [
           "faster"
@@ -2341,7 +2292,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q11_7",
         "type": "fill_in_blank",
-        "question": "(Это испытание___ (сложнее), чем предыдущее.) This test is ___ (difficult) than the last one.",
+        "question": "This test is ___ (difficult) than the last one (вставьте 'more').",
         "correctAnswer": "more",
         "correctAnswers": [
           "more"
@@ -2359,78 +2310,44 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life_1_l11",
-        "type": "multiple_choice",
-        "question": "Вы в ресторане, сравниваете два блюда. Вы говорите другу: 'Эта паста лучше пиццы'. Как это сказать?",
-        "options": [
-          "This pasta is better than the pizza.",
-          "This pasta is gooder than the pizza.",
-          "This pasta is more good than the pizza."
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql11_extra_0"
       },
       {
-        "id": "q_life_2_l11",
         "type": "drag_and_drop",
-        "question": "Вы рассказываете другу о своей любимой кофейне: 'Это лучшая кофейня в городе'. Соберите фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "This",
+          "English",
           "is",
-          "the",
-          "best",
-          "coffee",
-          "shop",
-          "in",
-          "the",
-          "city",
-          "better",
-          "most"
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "This",
+          "English",
           "is",
-          "the",
-          "best",
-          "coffee",
-          "shop",
-          "in",
-          "the",
-          "city"
-        ]
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql11_extra_1"
       },
       {
-        "id": "q_life1_l11",
         "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l11",
-        "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
-        "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
-        ],
-        "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql11_extra_2"
       }
     ]
   },
@@ -2470,7 +2387,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q12_1",
         "type": "fill_in_blank",
-        "question": "A beautiful big red car.. Напишите 'red'.",
+        "question": "A beautiful big red car. (Мнение - размер - цвет). Напишите 'red'.",
         "correctAnswer": "red",
         "correctAnswers": [
           "red"
@@ -2520,7 +2437,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q12_5",
         "type": "fill_in_blank",
-        "question": "An ugly old brown coat. Напишите 'old'.",
+        "question": "An ugly old brown coat. Напишите 'old' (возраст).",
         "correctAnswer": "old",
         "correctAnswers": [
           "old"
@@ -2529,7 +2446,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q12_rep",
         "type": "multiple_choice",
-        "question": "Какое слово означает 'эти'?",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
         "options": [
           "these",
           "this",
@@ -2538,72 +2455,66 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life_1_l12",
-        "type": "multiple_choice",
-        "question": "Вы описываете новую машину вашего друга. Вы говорите: 'Это красивая, большая, красная машина'. Как это сказать?",
-        "options": [
-          "It's a beautiful, big, red car.",
-          "It's a big, red, beautiful car.",
-          "It's a red, beautiful, big car."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life_2_l12",
         "type": "drag_and_drop",
-        "question": "Вы купили новое платье и хотите описать его как 'прекрасное старое французское шелковое платье'. Соберите фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "a",
-          "lovely",
-          "old",
-          "French",
-          "silk",
-          "dress",
-          "new",
-          "beautiful"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "a",
-          "lovely",
-          "old",
-          "French",
-          "silk",
-          "dress"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql12_extra_0"
       },
       {
-        "id": "q_life1_l12",
         "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql12_extra_1"
       },
       {
-        "id": "q_life2_l12",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
-        "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+        "id": "ql12_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql12_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql12_extra_4"
       }
     ]
   },
@@ -2638,7 +2549,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q13_1",
         "type": "fill_in_blank",
-        "question": "(Я очень устал вчера) I ___ very tired yesterday.",
+        "question": "I ___ very tired yesterday.",
         "correctAnswer": "was",
         "correctAnswers": [
           "was"
@@ -2679,10 +2590,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q13_4",
         "type": "fill_in_blank",
-        "question": "(Была ли она вчера на работе) ___ she at work yesterday?",
+        "question": "___ she at work yesterday?",
         "correctAnswer": "Was",
         "correctAnswers": [
-          "Was"
+          "Was",
+          "was"
         ]
       },
       {
@@ -2718,7 +2630,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q13_7",
         "type": "fill_in_blank",
-        "question": "(Фильм___ (был/был) скучным.) The movie ___ (was/were) boring.",
+        "question": "The movie ___ (was/were) boring.",
         "correctAnswer": "was",
         "correctAnswers": [
           "was"
@@ -2727,41 +2639,63 @@ export const lessons: Lesson[] = [
       {
         "id": "q13_rep",
         "type": "fill_in_blank",
-        "question": "(Он ___ (высокий), чем его брат.) He is ___ (tall) than his brother.",
+        "question": "He is ___ (tall) than his brother.",
         "correctAnswer": "taller",
         "correctAnswers": [
           "taller"
         ]
       },
       {
-        "id": "q_life1_l13",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+        "type": "fill_in_blank",
+        "question": "I ___ really exhausted after work.",
+        "correctAnswer": "am",
+        "correctAnswers": [
+          "am",
+          "'m"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql13_extra_0"
       },
       {
-        "id": "q_life2_l13",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Put the words in order:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Are",
+          "you",
+          "ready",
+          "for",
+          "the",
+          "trip?"
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Are",
+          "you",
+          "ready",
+          "for",
+          "the",
+          "trip?"
+        ],
+        "id": "ql13_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Choose the correct form: I ___ not sure about this.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql13_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "My friends ___ waiting for me at the cafe.",
+        "correctAnswer": "are",
+        "correctAnswers": [
+          "are",
+          "'re"
+        ],
+        "id": "ql13_extra_3"
       }
     ]
   },
@@ -2796,7 +2730,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q14_1",
         "type": "fill_in_blank",
-        "question": "(Я___ (играл) в теннис вчера.) I ___ (play) tennis yesterday.",
+        "question": "I ___ (play) tennis yesterday.",
         "correctAnswer": "played",
         "correctAnswers": [
           "played"
@@ -2833,7 +2767,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q14_4",
         "type": "fill_in_blank",
-        "question": "(Мы___ (смотрим) вчера вечером хороший фильм.) We ___ (see) a good movie last night.",
+        "question": "We ___ (see) a good movie last night.",
         "correctAnswer": "saw",
         "correctAnswers": [
           "saw"
@@ -2874,7 +2808,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q14_7",
         "type": "fill_in_blank",
-        "question": "(Он___ (остановить) машину.) He ___ (stop) the car.",
+        "question": "He ___ (stop) the car.",
         "correctAnswer": "stopped",
         "correctAnswers": [
           "stopped"
@@ -2883,7 +2817,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q14_rep",
         "type": "multiple_choice",
-        "question": "Что выбрать для слова 'дерево'?",
+        "question": "Что выбрать для слова 'дерево' (неодушевленное)?",
         "options": [
           "its leaves",
           "his leaves",
@@ -2892,36 +2826,55 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l14",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l14",
         "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "question": "Order the words:",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "Where",
+          "did",
+          "you",
+          "buy",
+          "that",
+          "jacket?"
         ],
         "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+          "Where",
+          "did",
+          "you",
+          "buy",
+          "that",
+          "jacket?"
+        ],
+        "id": "ql14_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "We ___ (go) to a great restaurant last night.",
+        "correctAnswer": "went",
+        "correctAnswers": [
+          "went"
+        ],
+        "id": "ql14_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ you finish the report on time?",
+        "options": [
+          "Did",
+          "Do",
+          "Were"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql14_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "She ___ (not/see) the message.",
+        "correctAnswer": "didn't see",
+        "correctAnswers": [
+          "didn't see",
+          "did not see"
+        ],
+        "id": "ql14_extra_3"
       }
     ]
   },
@@ -2956,7 +2909,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q15_1",
         "type": "fill_in_blank",
-        "question": "(Я не знал об этом) I ___ not know about it.",
+        "question": "I ___ not know about it.",
         "correctAnswer": "did",
         "correctAnswers": [
           "did"
@@ -2999,7 +2952,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q15_4",
         "type": "fill_in_blank",
-        "question": "(Он не ходил в школу) He didn't ___ (went/go) to school.",
+        "question": "He didn't ___ (went/go) to school.",
         "correctAnswer": "go",
         "correctAnswers": [
           "go"
@@ -3038,48 +2991,86 @@ export const lessons: Lesson[] = [
       {
         "id": "q15_7",
         "type": "fill_in_blank",
-        "question": "(Ты понял правило?) ___ you understand the rule?",
+        "question": "___ you understand the rule?",
         "correctAnswer": "Did",
         "correctAnswers": [
-          "Did"
+          "Did",
+          "did"
         ]
       },
       {
         "id": "q15_rep",
         "type": "fill_in_blank",
-        "question": "(Ты готов?) ___ you ready?",
+        "question": "___ you ready?",
         "correctAnswer": "Are",
         "correctAnswers": [
-          "Are"
+          "Are",
+          "are",
+          "'re",
+          "re"
         ]
       },
       {
-        "id": "q_life1_l15",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "We ___ (go) to a great restaurant last night.",
+        "correctAnswer": "went",
+        "correctAnswers": [
+          "went"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql15_extra_0"
       },
       {
-        "id": "q_life2_l15",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "___ you finish the report on time?",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Did",
+          "Do",
+          "Were"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql15_extra_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Order the words:",
+        "options": [
+          "Where",
+          "did",
+          "you",
+          "buy",
+          "that",
+          "jacket?"
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Where",
+          "did",
+          "you",
+          "buy",
+          "that",
+          "jacket?"
+        ],
+        "id": "ql15_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "She ___ (not/see) the message.",
+        "correctAnswer": "didn't see",
+        "correctAnswers": [
+          "didn't see",
+          "did not see"
+        ],
+        "id": "ql15_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql15_gen_0"
       }
     ]
   },
@@ -3114,7 +3105,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q16_1",
         "type": "fill_in_blank",
-        "question": "(Я раньше жил в Лондоне) I ___ to live in London.",
+        "question": "I ___ to live in London.",
         "correctAnswer": "used",
         "correctAnswers": [
           "used"
@@ -3166,7 +3157,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q16_5",
         "type": "fill_in_blank",
-        "question": "(Я привык работать допоздна) I am used to ___ (work) late.",
+        "question": "I am used to ___ (work) late.",
         "correctAnswer": "working",
         "correctAnswers": [
           "working"
@@ -3199,7 +3190,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q16_7",
         "type": "fill_in_blank",
-        "question": "(Ты раньше играл на пианино?) Did you ___ (use) to play the piano?",
+        "question": "Did you ___ (use) to play the piano?",
         "correctAnswer": "use",
         "correctAnswers": [
           "use"
@@ -3217,38 +3208,58 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l16",
         "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql16_extra_0"
       },
       {
-        "id": "q_life2_l16",
-        "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
-        "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+        "id": "ql16_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql16_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql16_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql16_extra_4"
       }
     ]
   },
@@ -3283,7 +3294,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q17_1",
         "type": "fill_in_blank",
-        "question": "(Я читал книгу в 6 вечера) I ___ reading a book at 6 PM.",
+        "question": "I ___ reading a book at 6 PM.",
         "correctAnswer": "was",
         "correctAnswers": [
           "was"
@@ -3339,7 +3350,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q17_5",
         "type": "fill_in_blank",
-        "question": "(Мы играли в теннис все утро) We ___ playing tennis all morning.",
+        "question": "We ___ playing tennis all morning.",
         "correctAnswer": "were",
         "correctAnswers": [
           "were"
@@ -3374,10 +3385,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q17_7",
         "type": "fill_in_blank",
-        "question": "(Ты смотрел фильм, когда я позвонил?) ___ you watching a movie when I called?",
+        "question": "___ you watching a movie when I called?",
         "correctAnswer": "Were",
         "correctAnswers": [
-          "Were"
+          "Were",
+          "were"
         ]
       },
       {
@@ -3392,38 +3404,85 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l17",
         "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
+        "question": "Which one is a fruit?",
         "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+          "Apple",
+          "Carrot",
+          "Potato"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql17_extra_0"
       },
       {
-        "id": "q_life2_l17",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql17_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql17_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql17_extra_3"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Make a sentence:",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql17_extra_4"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql17_extra_5"
       }
     ]
   },
@@ -3458,7 +3517,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q18_1",
         "type": "fill_in_blank",
-        "question": "(Я___ (смотрю) телевизор, когда зазвонил телефон.) I ___ (watch) TV when the phone rang.",
+        "question": "I ___ (watch) TV when the phone rang.",
         "correctAnswer": "was watching",
         "correctAnswers": [
           "was watching"
@@ -3519,7 +3578,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q18_5",
         "type": "fill_in_blank",
-        "question": "(Пока она читала, он___ (готовил) ужин.) While she was reading, he ___ (cook) dinner.",
+        "question": "While she was reading, he ___ (cook) dinner.",
         "correctAnswer": "was cooking",
         "correctAnswers": [
           "was cooking"
@@ -3537,34 +3596,107 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l18",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l18",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql18_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql18_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql18_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql18_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql18_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql18_extra_5"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql18_extra_6"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql18_gen_0"
       }
     ]
   },
@@ -3599,7 +3731,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q19_1",
         "type": "fill_in_blank",
-        "question": "(Я всегда буду любить тебя) I ___ always love you.",
+        "question": "I ___ always love you.",
         "correctAnswer": "will",
         "correctAnswers": [
           "will"
@@ -3638,10 +3770,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q19_4",
         "type": "fill_in_blank",
-        "question": "(Ты поможешь мне с домашним заданием?) ___ you help me with my homework?",
+        "question": "___ you help me with my homework?",
         "correctAnswer": "Will",
         "correctAnswers": [
-          "Will"
+          "Will",
+          "will"
         ]
       },
       {
@@ -3675,7 +3808,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q19_7",
         "type": "fill_in_blank",
-        "question": "(Я обещаю, что___ (буду) там.) I promise I ___ (will) be there.",
+        "question": "I promise I ___ (will) be there.",
         "correctAnswer": "will",
         "correctAnswers": [
           "will"
@@ -3684,43 +3817,33 @@ export const lessons: Lesson[] = [
       {
         "id": "q19_rep",
         "type": "fill_in_blank",
-        "question": "(Ты смотрел фильм, когда я звонил?) ___ you watching a movie when I called?",
+        "question": "___ you watching a movie when I called?",
         "correctAnswer": "Were",
         "correctAnswers": [
-          "Were"
+          "Were",
+          "were"
         ]
       },
       {
-        "id": "q_life1_l19",
         "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
+        "question": "Look at those clouds. It ___ rain.",
         "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+          "is going to",
+          "will",
+          "is raining"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql19_extra_0"
       },
       {
-        "id": "q_life2_l19",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
-        "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+        "type": "fill_in_blank",
+        "question": "We ___ (not/go) to the party tonight.",
+        "correctAnswer": "won't go",
+        "correctAnswers": [
+          "won't go",
+          "will not go"
         ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "id": "ql19_extra_1"
       }
     ]
   },
@@ -3755,7 +3878,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q20_1",
         "type": "fill_in_blank",
-        "question": "(Я собираюсь прочитать эту книгу) I am ___ to read this book.",
+        "question": "I am ___ to read this book.",
         "correctAnswer": "going",
         "correctAnswers": [
           "going"
@@ -3798,10 +3921,12 @@ export const lessons: Lesson[] = [
       {
         "id": "q20_4",
         "type": "fill_in_blank",
-        "question": "(Они___ (есть/есть) собираются победить.) They ___ (are/is) going to win.",
+        "question": "They ___ (are/is) going to win.",
         "correctAnswer": "are",
         "correctAnswers": [
-          "are"
+          "are",
+          "'re",
+          "re"
         ]
       },
       {
@@ -3818,7 +3943,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q20_6",
         "type": "drag_and_drop",
-        "question": "Переведите: 'Пойдет дождь'.",
+        "question": "Переведите: 'Пойдет дождь (очевидно)'.",
         "options": [
           "going",
           "It",
@@ -3839,7 +3964,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q20_7",
         "type": "fill_in_blank",
-        "question": "(Что ты собираешься___ (делать)?) What are you going ___ (do)?",
+        "question": "What are you going ___ (do)?",
         "correctAnswer": "to do",
         "correctAnswers": [
           "to do"
@@ -3865,32 +3990,25 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l20",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "They ___ (not/listen) to the teacher.",
+        "correctAnswer": "aren't listening",
+        "correctAnswers": [
+          "aren't listening",
+          "are not listening"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql20_extra_0"
       },
       {
-        "id": "q_life2_l20",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "Look! The bus ___ coming.",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "is",
+          "are",
+          "does"
         ],
-        "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql20_extra_1"
       }
     ]
   },
@@ -3936,7 +4054,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q21_2",
         "type": "fill_in_blank",
-        "question": "(Я могу говорить на трех языках) I ___ speak three languages.",
+        "question": "I ___ speak three languages (умею).",
         "correctAnswer": "can",
         "correctAnswers": [
           "can"
@@ -3966,7 +4084,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q21_4",
         "type": "multiple_choice",
-        "question": "Какое слово выражает мягкий совет?",
+        "question": "Какое слово выражает мягкий совет (следует)?",
         "options": [
           "should",
           "must",
@@ -3977,7 +4095,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q21_5",
         "type": "fill_in_blank",
-        "question": "(Вы должны остановиться на красный свет) You ___ stop at the red light.",
+        "question": "You ___ stop at the red light (обязан).",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -4007,14 +4125,13 @@ export const lessons: Lesson[] = [
       {
         "id": "q21_7",
         "type": "fill_in_blank",
-        "question": "(Она не умеет плавать) She ___ swim.",
+        "question": "She ___ (не может) swim.",
         "correctAnswer": "cannot",
         "correctAnswers": [
           "cannot",
           "can't",
-          "can’t",
-          "Can't",
-          "Can’t"
+          "cant",
+          "can not"
         ]
       },
       {
@@ -4039,38 +4156,44 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l21",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql21_extra_0"
       },
       {
-        "id": "q_life2_l21",
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql21_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql21_extra_2"
       }
     ]
   },
@@ -4105,10 +4228,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q22_1",
         "type": "fill_in_blank",
-        "question": "(Можно мне использовать ваш телефон, пожалуйста?) ___ I use your phone, please?",
+        "question": "___ I use your phone, please?",
         "correctAnswer": "May",
         "correctAnswers": [
-          "May"
+          "May",
+          "may"
         ]
       },
       {
@@ -4155,7 +4279,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q22_5",
         "type": "fill_in_blank",
-        "question": "(Он может быть прав, но я не уверен) He ___ be right, but I'm not sure.",
+        "question": "He ___ be right, but I'm not sure.",
         "correctAnswer": "might",
         "correctAnswers": [
           "might"
@@ -4188,7 +4312,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q22_7",
         "type": "fill_in_blank",
-        "question": "(Это мог бы быть лучший день моей жизни) This ___ be the best day of my life.",
+        "question": "This ___ be the best day of my life (вероятность).",
         "correctAnswer": "could",
         "correctAnswers": [
           "could"
@@ -4197,45 +4321,51 @@ export const lessons: Lesson[] = [
       {
         "id": "q22_rep",
         "type": "fill_in_blank",
-        "question": "An ugly old brown coat. Напишите 'old'.",
+        "question": "An ugly old brown coat. Напишите 'old' (возраст).",
         "correctAnswer": "old",
         "correctAnswers": [
           "old"
         ]
       },
       {
-        "id": "q_life1_l22",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql22_extra_0"
       },
       {
-        "id": "q_life2_l22",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql22_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Make a sentence:",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql22_extra_2"
       }
     ]
   },
@@ -4270,7 +4400,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q23_1",
         "type": "fill_in_blank",
-        "question": "(У меня есть немного времени, мы можем поговорить) I have ___ time, we can talk.",
+        "question": "I have ___ (немного) time, we can talk.",
         "correctAnswer": "a little",
         "correctAnswers": [
           "a little"
@@ -4279,7 +4409,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q23_2",
         "type": "multiple_choice",
-        "question": "Какое слово нужно для 'apples'?",
+        "question": "Какое слово нужно для 'apples' (яблоки)?",
         "options": [
           "many / few",
           "much / little",
@@ -4321,7 +4451,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q23_5",
         "type": "fill_in_blank",
-        "question": "(В бутылке не так много воды) There isn't ___ water in the bottle.",
+        "question": "There isn't ___ (много) water in the bottle.",
         "correctAnswer": "much",
         "correctAnswers": [
           "much"
@@ -4330,7 +4460,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q23_rep",
         "type": "multiple_choice",
-        "question": "Какое слово означает 'эти'?",
+        "question": "Какое слово означает 'эти' (много предметов рядом)?",
         "options": [
           "these",
           "this",
@@ -4339,34 +4469,85 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l23",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l23",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql23_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql23_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql23_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql23_extra_3"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql23_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql23_extra_5"
       }
     ]
   },
@@ -4401,7 +4582,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q24_1",
         "type": "fill_in_blank",
-        "question": "(Эта коробка слишком тяжелая) This box is ___ heavy.",
+        "question": "This box is ___ (слишком) heavy.",
         "correctAnswer": "too",
         "correctAnswers": [
           "too"
@@ -4454,7 +4635,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q24_5",
         "type": "fill_in_blank",
-        "question": "(Она достаточно умна, чтобы решить эту проблему) She is smart ___ to solve this problem.",
+        "question": "She is smart ___ to solve this problem.",
         "correctAnswer": "enough",
         "correctAnswers": [
           "enough"
@@ -4482,36 +4663,85 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l24",
         "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
+        "question": "Which one is a fruit?",
         "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+          "Apple",
+          "Carrot",
+          "Potato"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql24_extra_0"
       },
       {
-        "id": "q_life2_l24",
         "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "question": "Make a sentence:",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "I",
-          "need",
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql24_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql24_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
           "a",
-          "new",
-          "towel"
-        ]
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql24_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql24_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql24_extra_5"
       }
     ]
   },
@@ -4547,13 +4777,10 @@ export const lessons: Lesson[] = [
       {
         "id": "q25_1",
         "type": "fill_in_blank",
-        "question": "(Ты говоришь по-английски, не так ли?) You speak English, ___ you?",
+        "question": "You speak English, ___ you?",
         "correctAnswer": "don't",
         "correctAnswers": [
-          "don't",
-          "do not",
-          "Do not",
-          "don’t"
+          "don't"
         ]
       },
       {
@@ -4603,51 +4830,112 @@ export const lessons: Lesson[] = [
       {
         "id": "q25_5",
         "type": "fill_in_blank",
-        "question": "(Они закончили, не так ли?) They have finished, ___ they?",
+        "question": "They have finished, ___ they?",
         "correctAnswer": "haven't",
         "correctAnswers": [
-          "haven't",
-          "have not",
-          "Have not",
-          "haven’t"
+          "haven't"
         ]
       },
       {
         "id": "q25_rep",
         "type": "fill_in_blank",
-        "question": "(В бутылке не так много воды.) There isn't ___ water in the bottle.",
+        "question": "There isn't ___ (много) water in the bottle.",
         "correctAnswer": "much",
         "correctAnswers": [
           "much"
         ]
       },
       {
-        "id": "q_life1_l25",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql25_extra_0"
       },
       {
-        "id": "q_life2_l25",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql25_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql25_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql25_extra_3"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql25_extra_4"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql25_extra_5"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql25_extra_6"
       }
     ]
   },
@@ -4683,10 +4971,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q26_1",
         "type": "fill_in_blank",
-        "question": "(А: Я люблю пиццу. Б: Я тоже.) A: I love pizza. B: ___ do I.",
+        "question": "A: I love pizza. B: ___ do I.",
         "correctAnswer": "So",
         "correctAnswers": [
-          "So"
+          "So",
+          "so"
         ]
       },
       {
@@ -4703,7 +4992,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q26_3",
         "type": "drag_and_drop",
-        "question": "Составьте фразу: 'Она не была там, и я тоже'.",
+        "question": "Составьте фразу: 'Она не была там, и я тоже (нет)'.",
         "options": [
           "and",
           "She",
@@ -4740,10 +5029,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q26_5",
         "type": "fill_in_blank",
-        "question": "(А: Я никогда не был на Марсе. Б: И я тоже.) A: I have never been to Mars. B: ___ have I.",
+        "question": "A: I have never been to Mars. B: ___ have I.",
         "correctAnswer": "Neither",
         "correctAnswers": [
-          "Neither"
+          "Neither",
+          "neither"
         ]
       },
       {
@@ -4758,38 +5048,97 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l26",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "I ___ (not/like) spicy food.",
+        "correctAnswer": "don't like",
+        "correctAnswers": [
+          "don't like",
+          "do not like"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql26_extra_0"
       },
       {
-        "id": "q_life2_l26",
+        "type": "fill_in_blank",
+        "question": "She usually ___ (wake) up early on weekdays.",
+        "correctAnswer": "wakes",
+        "correctAnswers": [
+          "wakes",
+          "wakes up"
+        ],
+        "id": "ql26_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Order the sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
+        ],
+        "id": "ql26_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How often ___ you check your email?",
+        "options": [
+          "do",
+          "does",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql26_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql26_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql26_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql26_gen_2"
       }
     ]
   },
@@ -4835,7 +5184,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q27_2",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) I ___ finished my work.",
+        "question": "I ___ finished my work.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -4876,7 +5225,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q27_5",
         "type": "fill_in_blank",
-        "question": "(У нас есть___ (см.) этот фильм.) We have ___ (see) this movie.",
+        "question": "We have ___ (see) this movie.",
         "correctAnswer": "seen",
         "correctAnswers": [
           "seen"
@@ -4904,54 +5253,93 @@ export const lessons: Lesson[] = [
       {
         "id": "q27_7",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) ___ you finished?",
+        "question": "___ you finished?",
         "correctAnswer": "Have",
         "correctAnswers": [
-          "Have"
+          "Have",
+          "have"
         ]
       },
       {
         "id": "q27_rep",
         "type": "fill_in_blank",
-        "question": "(Что ты собираешься___ (делать)?) What are you going ___ (do)?",
+        "question": "What are you going ___ (do)?",
         "correctAnswer": "to do",
         "correctAnswers": [
           "to do"
         ]
       },
       {
-        "id": "q_life1_l27",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql27_extra_0"
       },
       {
-        "id": "q_life2_l27",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "has",
+          "have",
+          "had"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql27_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ (never/be) to Japan.",
+        "correctAnswer": "have never been",
+        "correctAnswers": [
+          "have never been",
+          "'ve never been"
+        ],
+        "id": "ql27_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql27_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql27_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql27_gen_2"
       }
     ]
   },
@@ -4986,7 +5374,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q28_1",
         "type": "fill_in_blank",
-        "question": "(Я уже видел этот фильм) I have ___ seen this movie.",
+        "question": "I have ___ (уже) seen this movie.",
         "correctAnswer": "already",
         "correctAnswers": [
           "already"
@@ -5031,7 +5419,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q28_4",
         "type": "fill_in_blank",
-        "question": "(Он еще не приехал) He hasn't arrived ___.",
+        "question": "He hasn't arrived ___. (еще)",
         "correctAnswer": "yet",
         "correctAnswers": [
           "yet"
@@ -5070,7 +5458,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q28_7",
         "type": "fill_in_blank",
-        "question": "(Ты когда-нибудь ел суши?) Have you ___ eaten sushi?",
+        "question": "Have you ___ eaten sushi? (когда-либо)",
         "correctAnswer": "ever",
         "correctAnswers": [
           "ever"
@@ -5096,34 +5484,76 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l28",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql28_extra_0"
       },
       {
-        "id": "q_life2_l28",
-        "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "type": "fill_in_blank",
+        "question": "I ___ (never/be) to Japan.",
+        "correctAnswer": "have never been",
+        "correctAnswers": [
+          "have never been",
+          "'ve never been"
+        ],
+        "id": "ql28_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "has",
+          "have",
+          "had"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql28_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql28_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql28_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql28_gen_2"
       }
     ]
   },
@@ -5158,7 +5588,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q29_1",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / иметь в прош. вр.) When I arrived, the train ___ already left.",
+        "question": "When I arrived, the train ___ already left.",
         "correctAnswer": "had",
         "correctAnswers": [
           "had"
@@ -5212,7 +5642,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q29_5",
         "type": "fill_in_blank",
-        "question": "(Я понял, что у меня___ (забудь) мои ключи.) I realized I had ___ (forget) my keys.",
+        "question": "I realized I had ___ (forget) my keys.",
         "correctAnswer": "forgotten",
         "correctAnswers": [
           "forgotten"
@@ -5249,10 +5679,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q29_7",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) ___ you ever met him before that day?",
+        "question": "___ you ever met him before that day?",
         "correctAnswer": "Had",
         "correctAnswers": [
-          "Had"
+          "Had",
+          "had"
         ]
       },
       {
@@ -5275,36 +5706,25 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l29",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql29_extra_0"
       },
       {
-        "id": "q_life2_l29",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "has",
+          "have",
+          "had"
         ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql29_extra_1"
       }
     ]
   },
@@ -5339,7 +5759,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q30_1",
         "type": "fill_in_blank",
-        "question": "(Мне придется вставать рано завтра из-за работы) I ___ to wake up early tomorrow because of work.",
+        "question": "I ___ to wake up early tomorrow because of work.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -5359,7 +5779,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q30_3",
         "type": "drag_and_drop",
-        "question": "Составьте фразу: 'Ты не должен трогать это'.",
+        "question": "Составьте фразу: 'Ты не должен трогать это (запрет)'.",
         "options": [
           "have",
           "touch",
@@ -5391,7 +5811,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q30_5",
         "type": "fill_in_blank",
-        "question": "(Ей не обязательно платить за билет) She doesn't ___ to pay for the ticket.",
+        "question": "She doesn't ___ to pay for the ticket.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -5424,7 +5844,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q30_7",
         "type": "fill_in_blank",
-        "question": "(Ты должен увидеть этот фильм, он потрясающий!) You ___ see this movie, it's amazing!",
+        "question": "You ___ see this movie, it's amazing! (рекомендация/обязательство)",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -5433,39 +5853,32 @@ export const lessons: Lesson[] = [
       {
         "id": "q30_rep",
         "type": "fill_in_blank",
-        "question": "(У вас есть вопросы?) Do you have ___ questions?",
+        "question": "Do you have ___ questions?",
         "correctAnswer": "any",
         "correctAnswers": [
           "any"
         ]
       },
       {
-        "id": "q_life1_l30",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql30_extra_0"
       },
       {
-        "id": "q_life2_l30",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "has",
+          "have",
+          "had"
         ],
-        "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql30_extra_1"
       }
     ]
   },
@@ -5500,7 +5913,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q31_1",
         "type": "fill_in_blank",
-        "question": "(К тому времени, как мы приехали, фильм___ (начало).) By the time we arrived, the movie ___ (start).",
+        "question": "By the time we arrived, the movie ___ (start).",
         "correctAnswer": "had started",
         "correctAnswers": [
           "had started"
@@ -5559,7 +5972,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q31_5",
         "type": "fill_in_blank",
-        "question": "(Он ___ (никогда не был) в Париже до прошлого года.) He ___ (never/be) to Paris before last year.",
+        "question": "He ___ (never/be) to Paris before last year.",
         "correctAnswer": "had never been",
         "correctAnswers": [
           "had never been"
@@ -5587,38 +6000,46 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l31",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "I ___ (never/be) to Japan.",
+        "correctAnswer": "have never been",
+        "correctAnswers": [
+          "have never been",
+          "'ve never been"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql31_extra_0"
       },
       {
-        "id": "q_life2_l31",
-        "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "Can",
-          "I",
+          "has",
           "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "had"
         ],
-        "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql31_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
+        ],
+        "id": "ql31_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql31_gen_0"
       }
     ]
   },
@@ -5664,7 +6085,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q32_2",
         "type": "fill_in_blank",
-        "question": "(Если у меня___ (есть) время, я тебе помогу.) If I ___ (have) time, I will help you.",
+        "question": "If I ___ (have) time, I will help you.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -5707,7 +6128,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q32_5",
         "type": "fill_in_blank",
-        "question": "(Если она придет, мы___ (пойдем) в кино.) If she comes, we ___ (will) go to the cinema.",
+        "question": "If she comes, we ___ (will) go to the cinema.",
         "correctAnswer": "will",
         "correctAnswers": [
           "will"
@@ -5743,7 +6164,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q32_7",
         "type": "fill_in_blank",
-        "question": "(Если нагреть лед, он___ (растает).) If you heat ice, it ___ (melt).",
+        "question": "If you heat ice, it ___ (melt).",
         "correctAnswer": "melts",
         "correctAnswers": [
           "melts"
@@ -5761,38 +6182,52 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l32",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l32",
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Make a sentence:",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql32_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql32_extra_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "correctSentence": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql32_extra_2"
       }
     ]
   },
@@ -5827,7 +6262,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q33_1",
         "type": "fill_in_blank",
-        "question": "(форма to be) If I ___ you, I would study harder.",
+        "question": "If I ___ you, I would study harder.",
         "correctAnswer": "were",
         "correctAnswers": [
           "were"
@@ -5883,7 +6318,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q33_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол 'бы') She ___ travel the world if she had money.",
+        "question": "She ___ travel the world if she had money.",
         "correctAnswer": "would",
         "correctAnswers": [
           "would"
@@ -5922,7 +6357,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q33_7",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / иметь в прош. вр.) If he ___ time, he would help.",
+        "question": "If he ___ time, he would help.",
         "correctAnswer": "had",
         "correctAnswers": [
           "had"
@@ -5953,34 +6388,44 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l33",
         "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
+        "question": "Which one is a fruit?",
         "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+          "Apple",
+          "Carrot",
+          "Potato"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql33_extra_0"
       },
       {
-        "id": "q_life2_l33",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql33_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql33_extra_2"
       }
     ]
   },
@@ -6015,7 +6460,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q34_1",
         "type": "fill_in_blank",
-        "question": "(форма to be) At 8 PM tomorrow, I will ___ watching a movie.",
+        "question": "At 8 PM tomorrow, I will ___ watching a movie.",
         "correctAnswer": "be",
         "correctAnswers": [
           "be"
@@ -6073,7 +6518,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q34_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) By 2030, they will ___ built a new city.",
+        "question": "By 2030, they will ___ built a new city.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -6112,7 +6557,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q34_7",
         "type": "fill_in_blank",
-        "question": "(форма to be) Will you ___ sleeping when I return?",
+        "question": "Will you ___ sleeping when I return?",
         "correctAnswer": "be",
         "correctAnswers": [
           "be"
@@ -6121,43 +6566,53 @@ export const lessons: Lesson[] = [
       {
         "id": "q34_rep",
         "type": "fill_in_blank",
-        "question": "(Я___ (смотрю) телевизор, когда зазвонил телефон.) I ___ (watch) TV when the phone rang.",
+        "question": "I ___ (watch) TV when the phone rang.",
         "correctAnswer": "was watching",
         "correctAnswers": [
           "was watching"
         ]
       },
       {
-        "id": "q_life1_l34",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+        "type": "fill_in_blank",
+        "question": "I promise I ___ (call) you later.",
+        "correctAnswer": "will call",
+        "correctAnswers": [
+          "will call",
+          "'ll call"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql34_extra_0"
       },
       {
-        "id": "q_life2_l34",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "type": "multiple_choice",
+        "question": "Look at those clouds. It ___ rain.",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "is going to",
+          "will",
+          "is raining"
         ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql34_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "We ___ (not/go) to the party tonight.",
+        "correctAnswer": "won't go",
+        "correctAnswers": [
+          "won't go",
+          "will not go"
+        ],
+        "id": "ql34_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql34_gen_0"
       }
     ]
   },
@@ -6192,7 +6647,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q35_1",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / иметь в прош. вр.) If I ___ known, I would have come.",
+        "question": "If I ___ known, I would have come.",
         "correctAnswer": "had",
         "correctAnswers": [
           "had"
@@ -6251,7 +6706,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q35_5",
         "type": "fill_in_blank",
-        "question": "(Она бы прошла, если бы у нее___ (учеба).) She would have passed if she had ___ (study).",
+        "question": "She would have passed if she had ___ (study).",
         "correctAnswer": "studied",
         "correctAnswers": [
           "studied"
@@ -6290,7 +6745,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q35_7",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) If it had rained, we would ___ stayed home.",
+        "question": "If it had rained, we would ___ stayed home.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -6299,39 +6754,62 @@ export const lessons: Lesson[] = [
       {
         "id": "q35_rep",
         "type": "fill_in_blank",
-        "question": "(Я___ (играл) в теннис вчера.) I ___ (play) tennis yesterday.",
+        "question": "I ___ (play) tennis yesterday.",
         "correctAnswer": "played",
         "correctAnswers": [
           "played"
         ]
       },
       {
-        "id": "q_life1_l35",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql35_extra_0"
       },
       {
-        "id": "q_life2_l35",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql35_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql35_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql35_extra_3"
       }
     ]
   },
@@ -6366,7 +6844,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q36_1",
         "type": "fill_in_blank",
-        "question": "(Завтра в 8 часов вечера я___ (посмотрю) фильм.) At 8 PM tomorrow, I ___ (watch) a movie.",
+        "question": "At 8 PM tomorrow, I ___ (watch) a movie.",
         "correctAnswer": "will be watching",
         "correctAnswers": [
           "will be watching"
@@ -6427,7 +6905,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q36_5",
         "type": "fill_in_blank",
-        "question": "(Не звони мне в 6, я буду___ (работать).) Don't call me at 6, I will be ___ (work).",
+        "question": "Don't call me at 6, I will be ___ (work).",
         "correctAnswer": "working",
         "correctAnswers": [
           "working"
@@ -6445,38 +6923,76 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l36",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "I promise I ___ (call) you later.",
+        "correctAnswer": "will call",
+        "correctAnswers": [
+          "will call",
+          "'ll call"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql36_extra_0"
       },
       {
-        "id": "q_life2_l36",
-        "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "type": "multiple_choice",
+        "question": "Look at those clouds. It ___ rain.",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "is going to",
+          "will",
+          "is raining"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql36_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "We ___ (not/go) to the party tonight.",
+        "correctAnswer": "won't go",
+        "correctAnswers": [
+          "won't go",
+          "will not go"
+        ],
+        "id": "ql36_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql36_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql36_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql36_gen_2"
       }
     ]
   },
@@ -6511,7 +7027,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q37_1",
         "type": "fill_in_blank",
-        "question": "(Завтра я___ (закончу) книгу.) By tomorrow, I ___ (finish) the book.",
+        "question": "By tomorrow, I ___ (finish) the book.",
         "correctAnswer": "will have finished",
         "correctAnswers": [
           "will have finished"
@@ -6572,7 +7088,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q37_5",
         "type": "fill_in_blank",
-        "question": "(К 2030 году мы___ (откроем) новые планеты.) By 2030, we will ___ (discover) new planets.",
+        "question": "By 2030, we will ___ (discover) new planets.",
         "correctAnswer": "have discovered",
         "correctAnswers": [
           "have discovered"
@@ -6581,45 +7097,83 @@ export const lessons: Lesson[] = [
       {
         "id": "q37_rep",
         "type": "fill_in_blank",
-        "question": "(У нас есть___ (см.) этот фильм.) We have ___ (see) this movie.",
+        "question": "We have ___ (see) this movie.",
         "correctAnswer": "seen",
         "correctAnswers": [
           "seen"
         ]
       },
       {
-        "id": "q_life1_l37",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+        "type": "fill_in_blank",
+        "question": "I promise I ___ (call) you later.",
+        "correctAnswer": "will call",
+        "correctAnswers": [
+          "will call",
+          "'ll call"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql37_extra_0"
       },
       {
-        "id": "q_life2_l37",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "type": "multiple_choice",
+        "question": "Look at those clouds. It ___ rain.",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "is going to",
+          "will",
+          "is raining"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql37_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "We ___ (not/go) to the party tonight.",
+        "correctAnswer": "won't go",
+        "correctAnswers": [
+          "won't go",
+          "will not go"
+        ],
+        "id": "ql37_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql37_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql37_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql37_gen_2"
       }
     ]
   },
@@ -6654,7 +7208,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q38_1",
         "type": "fill_in_blank",
-        "question": "(Мне нравится___ (читать) книги вечером.) I enjoy ___ (read) books in the evening.",
+        "question": "I enjoy ___ (read) books in the evening.",
         "correctAnswer": "reading",
         "correctAnswers": [
           "reading"
@@ -6710,7 +7264,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q38_5",
         "type": "fill_in_blank",
-        "question": "(Спасибо за___ (помощь) мне.) Thank you for ___ (help) me.",
+        "question": "Thank you for ___ (help) me.",
         "correctAnswer": "helping",
         "correctAnswers": [
           "helping"
@@ -6743,7 +7297,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q38_7",
         "type": "fill_in_blank",
-        "question": "(частица инфинитива) I promise ___ call you later.",
+        "question": "I promise ___ call you later.",
         "correctAnswer": "to",
         "correctAnswers": [
           "to"
@@ -6761,34 +7315,75 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l38",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l38",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql38_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql38_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql38_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql38_extra_3"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql38_extra_4"
       }
     ]
   },
@@ -6823,7 +7418,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q39_1",
         "type": "fill_in_blank",
-        "question": "(Им пришлось___ (ждать) 2 часа, когда он пришел.) They had ___ (wait) for 2 hours when he came.",
+        "question": "They had ___ (wait) for 2 hours when he came.",
         "correctAnswer": "been waiting",
         "correctAnswers": [
           "been waiting"
@@ -6886,7 +7481,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q39_5",
         "type": "fill_in_blank",
-        "question": "(Она была___ (плачет) до того, как я вошел.) She had been ___ (cry) before I entered.",
+        "question": "She had been ___ (cry) before I entered.",
         "correctAnswer": "crying",
         "correctAnswers": [
           "crying"
@@ -6895,43 +7490,93 @@ export const lessons: Lesson[] = [
       {
         "id": "q39_rep",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / действительно) I ___ not want to go.",
+        "question": "I ___ not want to go.",
         "correctAnswer": "do",
         "correctAnswers": [
           "do"
         ]
       },
       {
-        "id": "q_life1_l39",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql39_extra_0"
       },
       {
-        "id": "q_life2_l39",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "I",
-          "need",
+          "has",
+          "have",
+          "had"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql39_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ (never/be) to Japan.",
+        "correctAnswer": "have never been",
+        "correctAnswers": [
+          "have never been",
+          "'ve never been"
+        ],
+        "id": "ql39_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql39_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql39_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
           "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "I",
-          "need",
+          "English",
+          "is",
           "a",
-          "new",
-          "towel"
-        ]
+          "global",
+          "language."
+        ],
+        "id": "ql39_gen_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql39_gen_3"
       }
     ]
   },
@@ -6977,7 +7622,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q40_2",
         "type": "fill_in_blank",
-        "question": "(форма to be в прош. вр.) This book ___ written in 2020.",
+        "question": "This book ___ written in 2020.",
         "correctAnswer": "was",
         "correctAnswers": [
           "was"
@@ -7018,10 +7663,12 @@ export const lessons: Lesson[] = [
       {
         "id": "q40_5",
         "type": "fill_in_blank",
-        "question": "(На английском___ (на нем) говорят во всем мире.) English ___ (is) spoken all over the world.",
+        "question": "English ___ (is) spoken all over the world.",
         "correctAnswer": "is",
         "correctAnswers": [
-          "is"
+          "is",
+          "'s",
+          "s"
         ]
       },
       {
@@ -7050,7 +7697,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q40_7",
         "type": "fill_in_blank",
-        "question": "(Америка была___ (откройте) Колумбом.) America was ___ (discover) by Columbus.",
+        "question": "America was ___ (discover) by Columbus.",
         "correctAnswer": "discovered",
         "correctAnswers": [
           "discovered"
@@ -7068,32 +7715,77 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l40",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql40_extra_0"
       },
       {
-        "id": "q_life2_l40",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql40_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql40_extra_2"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "question": "Make a sentence:",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql40_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql40_extra_4"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql40_extra_5"
       }
     ]
   },
@@ -7128,7 +7820,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q41_1",
         "type": "fill_in_blank",
-        "question": "(Мужчина___ звонивший вам - мой начальник (кто/который).) The man ___ called you is my boss (who/which).",
+        "question": "The man ___ called you is my boss (who/which).",
         "correctAnswer": "who",
         "correctAnswers": [
           "who"
@@ -7186,7 +7878,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q41_5",
         "type": "fill_in_blank",
-        "question": "(Это дом___ Я вырос (где).) This is the house ___ I grew up (where).",
+        "question": "This is the house ___ I grew up (where).",
         "correctAnswer": "where",
         "correctAnswers": [
           "where"
@@ -7219,7 +7911,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q41_7",
         "type": "fill_in_blank",
-        "question": "(Фильм___ который мы смотрели, был великолепен.) The movie ___ we watched was great (that).",
+        "question": "The movie ___ we watched was great (that).",
         "correctAnswer": "that",
         "correctAnswers": [
           "that"
@@ -7245,38 +7937,85 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l41",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l41",
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql41_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql41_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql41_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql41_extra_3"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql41_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql41_extra_5"
       }
     ]
   },
@@ -7311,10 +8050,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q42_1",
         "type": "fill_in_blank",
-        "question": "(___ (иду) по улице я увидел друга.) ___ (walk) down the street, I saw a friend.",
+        "question": "___ (walk) down the street, I saw a friend.",
         "correctAnswer": "Walking",
         "correctAnswers": [
-          "Walking"
+          "Walking",
+          "walking"
         ]
       },
       {
@@ -7372,7 +8112,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q42_5",
         "type": "fill_in_blank",
-        "question": "(Поужинав, я посмотрел телевизор.) Having ___ (eat) my dinner, I watched TV.",
+        "question": "Having ___ (eat) my dinner, I watched TV.",
         "correctAnswer": "eaten",
         "correctAnswers": [
           "eaten"
@@ -7405,10 +8145,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q42_7",
         "type": "fill_in_blank",
-        "question": "(___ (используйте) осторожно, этот компьютер прослужит долгие годы.) ___ (use) carefully, this computer will last for years.",
+        "question": "___ (use) carefully, this computer will last for years.",
         "correctAnswer": "Used",
         "correctAnswers": [
-          "Used"
+          "Used",
+          "used"
         ]
       },
       {
@@ -7440,38 +8181,34 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l42",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l42",
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Make a sentence:",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql42_extra_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql42_extra_1"
       }
     ]
   },
@@ -7507,7 +8244,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q43_1",
         "type": "fill_in_blank",
-        "question": "(Я хочу, чтобы он___ (помог) мне.) I want him ___ (help) me.",
+        "question": "I want him ___ (help) me.",
         "correctAnswer": "to help",
         "correctAnswers": [
           "to help"
@@ -7562,7 +8299,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q43_5",
         "type": "fill_in_blank",
-        "question": "(Позвольте мне___ (заплатить) за ужин.) Let me ___ (pay) for the dinner.",
+        "question": "Let me ___ (pay) for the dinner.",
         "correctAnswer": "pay",
         "correctAnswers": [
           "pay"
@@ -7588,34 +8325,63 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l43",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l43",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql43_extra_0"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "correctSentence": [
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql43_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql43_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql43_extra_3"
       }
     ]
   },
@@ -7651,7 +8417,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q44_1",
         "type": "fill_in_blank",
-        "question": "(Он сказал, что ему___ (любит) кофе.) He said that he ___ (like) coffee.",
+        "question": "He said that he ___ (like) coffee.",
         "correctAnswer": "liked",
         "correctAnswers": [
           "liked"
@@ -7705,7 +8471,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q44_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / иметь в прош. вр.) They told me they ___ bought a house.",
+        "question": "They told me they ___ bought a house.",
         "correctAnswer": "had",
         "correctAnswers": [
           "had"
@@ -7736,7 +8502,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q44_7",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол 'бы') She said she ___ come tomorrow.",
+        "question": "She said she ___ come tomorrow.",
         "correctAnswer": "would",
         "correctAnswers": [
           "would"
@@ -7764,36 +8530,36 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l44",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql44_extra_0"
       },
       {
-        "id": "q_life2_l44",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
-        "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "id": "ql44_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql44_extra_2"
       }
     ]
   },
@@ -7828,7 +8594,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q45_1",
         "type": "fill_in_blank",
-        "question": "(Это___ (скажем), что компания является банкротом.) It is ___ (say) that the company is bankrupt.",
+        "question": "It is ___ (say) that the company is bankrupt.",
         "correctAnswer": "said",
         "correctAnswers": [
           "said"
@@ -7837,7 +8603,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q45_2",
         "type": "multiple_choice",
-        "question": "Какая конструкция означает 'Считается, что он был богат'?",
+        "question": "Какая конструкция означает 'Считается, что он был богат (в прошлом)'?",
         "options": [
           "He is believed to have been rich.",
           "He is believed to be rich.",
@@ -7883,7 +8649,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q45_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) The thieves are reported to ___ left the country.",
+        "question": "The thieves are reported to ___ left the country.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -7920,7 +8686,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q45_7",
         "type": "fill_in_blank",
-        "question": "(Его считают___ (будут) одним из лучших игроков.) He is thought ___ (be) one of the best players.",
+        "question": "He is thought ___ (be) one of the best players.",
         "correctAnswer": "to be",
         "correctAnswers": [
           "to be"
@@ -7938,32 +8704,36 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l45",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "I can't talk right now, I ___ (drive).",
+        "correctAnswer": "am driving",
+        "correctAnswers": [
+          "am driving",
+          "'m driving",
+          "im driving"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql45_extra_0"
       },
       {
-        "id": "q_life2_l45",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "Look! The bus ___ coming.",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "is",
+          "are",
+          "does"
         ],
-        "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql45_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "They ___ (not/listen) to the teacher.",
+        "correctAnswer": "aren't listening",
+        "correctAnswers": [
+          "aren't listening",
+          "are not listening"
+        ],
+        "id": "ql45_extra_2"
       }
     ]
   },
@@ -7998,7 +8768,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q46_1",
         "type": "fill_in_blank",
-        "question": "(должно быть) You worked all night. You ___ have been tired.",
+        "question": "You worked all night. You ___ have been tired.",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -8055,7 +8825,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q46_5",
         "type": "fill_in_blank",
-        "question": "(возможно) I can't find my keys. I ___ have left them at home.",
+        "question": "I can't find my keys. I ___ have left them at home (возможно).",
         "correctAnswer": "might",
         "correctAnswers": [
           "might"
@@ -8088,7 +8858,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q46_7",
         "type": "fill_in_blank",
-        "question": "(должно быть) The window is broken. The kids ___ have done it.",
+        "question": "The window is broken. The kids ___ have done it.",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -8097,45 +8867,62 @@ export const lessons: Lesson[] = [
       {
         "id": "q46_rep",
         "type": "fill_in_blank",
-        "question": "(Смотреть! Это___ (дождь).) Look! It ___ (rain).",
+        "question": "Look! It ___ (rain).",
         "correctAnswer": "is raining",
         "correctAnswers": [
           "is raining"
         ]
       },
       {
-        "id": "q_life1_l46",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql46_extra_0"
       },
       {
-        "id": "q_life2_l46",
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql46_extra_1"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql46_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql46_extra_3"
       }
     ]
   },
@@ -8170,7 +8957,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q47_1",
         "type": "fill_in_blank",
-        "question": "(должно быть) She looks happy. She ___ have passed the exam.",
+        "question": "She looks happy. She ___ have passed the exam.",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -8229,7 +9016,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q47_5",
         "type": "fill_in_blank",
-        "question": "(должно быть) You've been travelling all day. You ___ be tired.",
+        "question": "You've been travelling all day. You ___ be tired. (Настоящее время)",
         "correctAnswer": "must",
         "correctAnswers": [
           "must"
@@ -8238,45 +9025,83 @@ export const lessons: Lesson[] = [
       {
         "id": "q47_rep",
         "type": "fill_in_blank",
-        "question": "(Он___ (работает) в банке.) He ___ (work) in a bank.",
+        "question": "He ___ (work) in a bank.",
         "correctAnswer": "works",
         "correctAnswers": [
           "works"
         ]
       },
       {
-        "id": "q_life1_l47",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+        "type": "fill_in_blank",
+        "question": "They ___ (not/arrive) yet.",
+        "correctAnswer": "haven't arrived",
+        "correctAnswers": [
+          "haven't arrived",
+          "have not arrived"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql47_extra_0"
       },
       {
-        "id": "q_life2_l47",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "type": "multiple_choice",
+        "question": "She ___ already finished her homework.",
         "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "has",
+          "have",
+          "had"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql47_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ (never/be) to Japan.",
+        "correctAnswer": "have never been",
+        "correctAnswers": [
+          "have never been",
+          "'ve never been"
+        ],
+        "id": "ql47_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql47_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql47_gen_1"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql47_gen_2"
       }
     ]
   },
@@ -8311,7 +9136,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q48_1",
         "type": "fill_in_blank",
-        "question": "(форма to be) If I had taken the medicine, I would ___ fine now.",
+        "question": "If I had taken the medicine, I would ___ fine now.",
         "correctAnswer": "be",
         "correctAnswers": [
           "be"
@@ -8376,7 +9201,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q48_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) If I knew her number, I would ___ called her yesterday.",
+        "question": "If I knew her number, I would ___ called her yesterday.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -8423,7 +9248,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q48_7",
         "type": "fill_in_blank",
-        "question": "(Если бы я___ (был) тобой, я бы принял предложение.) If I ___ (be) you, I would have accepted the offer.",
+        "question": "If I ___ (be) you, I would have accepted the offer.",
         "correctAnswer": "were",
         "correctAnswers": [
           "were"
@@ -8441,34 +9266,74 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l48",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l48",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql48_extra_0"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql48_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql48_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql48_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql48_extra_4"
       }
     ]
   },
@@ -8503,7 +9368,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q49_1",
         "type": "fill_in_blank",
-        "question": "(Мне бы хотелось___ (иметь) больше свободного времени сейчас.) I wish I ___ (have) more free time now.",
+        "question": "I wish I ___ (have) more free time now.",
         "correctAnswer": "had",
         "correctAnswers": [
           "had"
@@ -8512,7 +9377,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q49_2",
         "type": "multiple_choice",
-        "question": "Как сказать 'Жаль, что я не купил тот телефон'?",
+        "question": "Как сказать 'Жаль, что я не купил тот телефон' (о прошлом)?",
         "options": [
           "I wish I had bought that phone",
           "I wish I bought that phone",
@@ -8523,7 +9388,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q49_3",
         "type": "drag_and_drop",
-        "question": "Составьте фразу: 'Хоть бы пошел дождь'.",
+        "question": "Составьте фразу: 'Хоть бы пошел дождь' (я хочу, чтобы ситуация изменилась).",
         "options": [
           "would",
           "will",
@@ -8556,7 +9421,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q49_5",
         "type": "fill_in_blank",
-        "question": "(Если бы она___ (знала) правду вчера.) If only she ___ (know) the truth yesterday.",
+        "question": "If only she ___ (know) the truth yesterday.",
         "correctAnswer": "had known",
         "correctAnswers": [
           "had known"
@@ -8588,36 +9453,88 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l49",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l49",
         "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "question": "Put the words in order:",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "Are",
+          "you",
+          "ready",
+          "for",
+          "the",
+          "trip?"
         ],
         "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+          "Are",
+          "you",
+          "ready",
+          "for",
+          "the",
+          "trip?"
+        ],
+        "id": "ql49_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "The weather ___ very nice today.",
+        "correctAnswer": "is",
+        "correctAnswers": [
+          "is",
+          "'s"
+        ],
+        "id": "ql49_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ really exhausted after work.",
+        "correctAnswer": "am",
+        "correctAnswers": [
+          "am",
+          "'m"
+        ],
+        "id": "ql49_extra_2"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "My friends ___ waiting for me at the cafe.",
+        "correctAnswer": "are",
+        "correctAnswers": [
+          "are",
+          "'re"
+        ],
+        "id": "ql49_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Choose the correct form: I ___ not sure about this.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql49_extra_4"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql49_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql49_gen_1"
       }
     ]
   },
@@ -8652,7 +9569,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q50_1",
         "type": "fill_in_blank",
-        "question": "(Мне нужно, чтобы моя машина___ (помыла).) I need to have my car ___ (wash).",
+        "question": "I need to have my car ___ (wash).",
         "correctAnswer": "washed",
         "correctAnswers": [
           "washed"
@@ -8672,7 +9589,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q50_3",
         "type": "drag_and_drop",
-        "question": "Составьте фразу: 'Я хочу подстричься'.",
+        "question": "Составьте фразу: 'Я хочу подстричься (чтобы меня подстригли)'.",
         "options": [
           "to",
           "my",
@@ -8709,7 +9626,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q50_5",
         "type": "fill_in_blank",
-        "question": "(У начальника был свой помощник___ (напечатать) отчет.) The boss had his assistant ___ (type) the report.",
+        "question": "The boss had his assistant ___ (type) the report.",
         "correctAnswer": "type",
         "correctAnswers": [
           "type"
@@ -8718,7 +9635,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q50_6",
         "type": "drag_and_drop",
-        "question": "Переведите: 'Мы ремонтируем крышу сейчас'.",
+        "question": "Переведите: 'Мы ремонтируем крышу сейчас (кто-то чинит для нас)'.",
         "options": [
           "are",
           "our",
@@ -8744,7 +9661,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q50_7",
         "type": "fill_in_blank",
-        "question": "(Я заставил его___ (чтобы помочь/помочь) мне с сумками.) I got him ___ (to help/help) me with the bags.",
+        "question": "I got him ___ (to help/help) me with the bags.",
         "correctAnswer": "to help",
         "correctAnswers": [
           "to help"
@@ -8772,32 +9689,78 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l50",
-        "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
-        "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+        "type": "fill_in_blank",
+        "question": "I ___ (not/like) spicy food.",
+        "correctAnswer": "don't like",
+        "correctAnswers": [
+          "don't like",
+          "do not like"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql50_extra_0"
       },
       {
-        "id": "q_life2_l50",
-        "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "type": "multiple_choice",
+        "question": "How often ___ you check your email?",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "do",
+          "does",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql50_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "She usually ___ (wake) up early on weekdays.",
+        "correctAnswer": "wakes",
+        "correctAnswers": [
+          "wakes",
+          "wakes up"
+        ],
+        "id": "ql50_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Order the sentence:",
+        "options": [
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "He",
+          "doesn't",
+          "drink",
+          "coffee",
+          "at",
+          "night."
+        ],
+        "id": "ql50_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql50_gen_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql50_gen_1"
       }
     ]
   },
@@ -8832,7 +9795,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q51_1",
         "type": "fill_in_blank",
-        "question": "(Врач рекомендовал ему___ (бросить) курить.) The doctor recommended that he ___ (stop) smoking.",
+        "question": "The doctor recommended that he ___ (stop) smoking.",
         "correctAnswer": "stop",
         "correctAnswers": [
           "stop"
@@ -8889,7 +9852,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q51_5",
         "type": "fill_in_blank",
-        "question": "(отрицательная частица) I demand that he ___ not enter this room.",
+        "question": "I demand that he ___ not enter this room.",
         "correctAnswer": "not",
         "correctAnswers": [
           "not"
@@ -8922,7 +9885,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q51_7",
         "type": "fill_in_blank",
-        "question": "(Крайне важно, чтобы они___ были проинформированы немедленно.) It is crucial that they ___ (be) informed immediately.",
+        "question": "It is crucial that they ___ (be) informed immediately.",
         "correctAnswer": "be",
         "correctAnswers": [
           "be"
@@ -8931,45 +9894,92 @@ export const lessons: Lesson[] = [
       {
         "id": "q51_rep",
         "type": "fill_in_blank",
-        "question": "(Им пришлось___ (ждать) 2 часа, когда он пришел.) They had ___ (wait) for 2 hours when he came.",
+        "question": "They had ___ (wait) for 2 hours when he came.",
         "correctAnswer": "been waiting",
         "correctAnswers": [
           "been waiting"
         ]
       },
       {
-        "id": "q_life1_l51",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l51",
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql51_extra_0"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql51_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql51_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql51_extra_3"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql51_extra_4"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql51_extra_5"
       }
     ]
   },
@@ -9004,7 +10014,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q52_1",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) Never ___ I seen such a mess.",
+        "question": "Never ___ I seen such a mess.",
         "correctAnswer": "have",
         "correctAnswers": [
           "have"
@@ -9061,7 +10071,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q52_5",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол) Only then ___ I realize my mistake.",
+        "question": "Only then ___ I realize my mistake.",
         "correctAnswer": "did",
         "correctAnswers": [
           "did"
@@ -9096,7 +10106,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q52_7",
         "type": "fill_in_blank",
-        "question": "(когда) Scarcely had the match started ___ it began to rain.",
+        "question": "Scarcely had the match started ___ it began to rain.",
         "correctAnswer": "when",
         "correctAnswers": [
           "when"
@@ -9114,38 +10124,25 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l52",
         "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
+        "question": "Which one is a fruit?",
         "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+          "Apple",
+          "Carrot",
+          "Potato"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql52_extra_0"
       },
       {
-        "id": "q_life2_l52",
-        "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
-        "options": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctSentence": [
-          "Take",
-          "me",
-          "to",
-          "the",
-          "airport",
-          "please"
-        ]
+        "id": "ql52_extra_1"
       }
     ]
   },
@@ -9180,7 +10177,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q53_1",
         "type": "fill_in_blank",
-        "question": "(форма to be в прош. вр.) It ___ Sarah who told me the secret.",
+        "question": "It ___ Sarah who told me the secret.",
         "correctAnswer": "was",
         "correctAnswers": [
           "was"
@@ -9237,10 +10234,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q53_5",
         "type": "fill_in_blank",
-        "question": "(То, что / Что) ___ I need is more time.",
+        "question": "___ I need is more time.",
         "correctAnswer": "What",
         "correctAnswers": [
-          "What"
+          "What",
+          "what"
         ]
       },
       {
@@ -9270,7 +10268,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q53_7",
         "type": "fill_in_blank",
-        "question": "(который / кто) It is the manager ___ makes the final decision.",
+        "question": "It is the manager ___ makes the final decision.",
         "correctAnswer": "who",
         "correctAnswers": [
           "who"
@@ -9288,34 +10286,34 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l53",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql53_extra_0"
       },
       {
-        "id": "q_life2_l53",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql53_extra_1"
       }
     ]
   },
@@ -9350,7 +10348,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q54_1",
         "type": "fill_in_blank",
-        "question": "(вспомогательный глагол / действительно) I ___ like your new haircut!",
+        "question": "I ___ like your new haircut! (Действительно)",
         "correctAnswer": "do",
         "correctAnswers": [
           "do"
@@ -9403,7 +10401,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q54_5",
         "type": "fill_in_blank",
-        "question": "(Вниз по склону___ (катить) мяч.) Down the hill ___ (roll) the ball.",
+        "question": "Down the hill ___ (roll) the ball.",
         "correctAnswer": "rolled",
         "correctAnswers": [
           "rolled"
@@ -9438,7 +10436,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q54_7",
         "type": "fill_in_blank",
-        "question": "(действительно / вспомогательный глагол) He ___ work hard, I can confirm that.",
+        "question": "He ___ work hard, I can confirm that.",
         "correctAnswer": "does",
         "correctAnswers": [
           "does"
@@ -9447,43 +10445,32 @@ export const lessons: Lesson[] = [
       {
         "id": "q54_rep",
         "type": "fill_in_blank",
-        "question": "(себя / сам) He hurt ___ while playing football.",
+        "question": "He hurt ___ while playing football.",
         "correctAnswer": "himself",
         "correctAnswers": [
           "himself"
         ]
       },
       {
-        "id": "q_life1_l54",
-        "type": "multiple_choice",
-        "question": "На ресепшене вы говорите: 'У меня забронирован номер'.",
-        "options": [
-          "I have a reservation.",
-          "I has a reservation.",
-          "I am a reservation."
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql54_extra_0"
       },
       {
-        "id": "q_life2_l54",
-        "type": "drag_and_drop",
-        "question": "Вы просите администратора: 'Мне нужно новое полотенце'.",
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel",
-          "needs",
-          "an"
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctSentence": [
-          "I",
-          "need",
-          "a",
-          "new",
-          "towel"
-        ]
+        "correctAnswerIndex": 0,
+        "id": "ql54_extra_1"
       }
     ]
   },
@@ -9518,7 +10505,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q55_1",
         "type": "fill_in_blank",
-        "question": "(предлог) She is very interested ___ art.",
+        "question": "She is very interested ___ art.",
         "correctAnswer": "in",
         "correctAnswers": [
           "in"
@@ -9571,7 +10558,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q55_5",
         "type": "fill_in_blank",
-        "question": "(предлог) They are famous ___ their pizza.",
+        "question": "They are famous ___ their pizza.",
         "correctAnswer": "for",
         "correctAnswers": [
           "for"
@@ -9604,7 +10591,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q55_7",
         "type": "fill_in_blank",
-        "question": "(предлог) The team consists ___ five members.",
+        "question": "The team consists ___ five members.",
         "correctAnswer": "of",
         "correctAnswers": [
           "of"
@@ -9613,39 +10600,51 @@ export const lessons: Lesson[] = [
       {
         "id": "q55_rep",
         "type": "fill_in_blank",
-        "question": "(Завтра я___ (закончу) книгу.) By tomorrow, I ___ (finish) the book.",
+        "question": "By tomorrow, I ___ (finish) the book.",
         "correctAnswer": "will have finished",
         "correctAnswers": [
           "will have finished"
         ]
       },
       {
-        "id": "q_life1_l55",
         "type": "multiple_choice",
-        "question": "Вы пишете другу: 'Я сейчас очень занят'.",
+        "question": "What is the capital of Great Britain?",
         "options": [
-          "I am very busy right now.",
-          "I is very busy right now.",
-          "I very busy now."
+          "London",
+          "Paris",
+          "New York"
         ],
-        "correctAnswerIndex": 0
+        "correctAnswerIndex": 0,
+        "id": "ql55_extra_0"
       },
       {
-        "id": "q_life2_l55",
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql55_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Соберите сообщение: 'Давай встретимся завтра'.",
+        "question": "Make a sentence:",
         "options": [
-          "Let's",
-          "meet",
-          "tomorrow",
-          "meeting",
-          "we"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Let's",
-          "meet",
-          "tomorrow"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql55_extra_2"
       }
     ]
   },
@@ -9680,7 +10679,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q56_1",
         "type": "fill_in_blank",
-        "question": "(смириться - put up with) I can't put ___ with this noise anymore!",
+        "question": "I can't put ___ with this noise anymore! (терпеть)",
         "correctAnswer": "up",
         "correctAnswers": [
           "up"
@@ -9735,7 +10734,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q56_5",
         "type": "fill_in_blank",
-        "question": "(избежать наказания - get away with) He got ___ with stealing the car.",
+        "question": "He got ___ with stealing the car (избежал наказания).",
         "correctAnswer": "away",
         "correctAnswers": [
           "away"
@@ -9768,7 +10767,7 @@ export const lessons: Lesson[] = [
       {
         "id": "q56_7",
         "type": "fill_in_blank",
-        "question": "(поднимать тему - bring up) Please don't bring ___ that topic again.",
+        "question": "Please don't bring ___ that topic again (поднимать тему).",
         "correctAnswer": "up",
         "correctAnswers": [
           "up"
@@ -9805,38 +10804,55 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l56",
-        "type": "multiple_choice",
-        "question": "Вы в кафе и хотите сказать официанту 'Я готов сделать заказ'. Как это будет по-английски?",
-        "options": [
-          "I am ready to order.",
-          "I is ready to order.",
-          "I are ready to order."
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql56_extra_0"
       },
       {
-        "id": "q_life2_l56",
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql56_extra_1"
+      },
+      {
         "type": "drag_and_drop",
-        "question": "Вам нужно попросить счет в ресторане. Составьте фразу:",
+        "question": "Make a sentence:",
         "options": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please",
-          "do",
-          "has"
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
         ],
         "correctSentence": [
-          "Can",
-          "I",
-          "have",
-          "the",
-          "bill",
-          "please"
-        ]
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql56_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql56_extra_3"
       }
     ]
   },
@@ -9871,10 +10887,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q57_1",
         "type": "fill_in_blank",
-        "question": "(Тем не менее) It was raining. ___, we went for a walk.",
+        "question": "It was raining. ___, we went for a walk (Тем не менее).",
         "correctAnswer": "Nevertheless",
         "correctAnswers": [
-          "Nevertheless"
+          "Nevertheless",
+          "nevertheless"
         ]
       },
       {
@@ -9928,10 +10945,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q57_5",
         "type": "fill_in_blank",
-        "question": "(В целом) ___, I think we did a great job.",
+        "question": "___, I think we did a great job (В целом - Overall).",
         "correctAnswer": "Overall",
         "correctAnswers": [
-          "Overall"
+          "Overall",
+          "overall"
         ]
       },
       {
@@ -9961,10 +10979,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q57_7",
         "type": "fill_in_blank",
-        "question": "(Однако) He is very smart. ___, he is very lazy.",
+        "question": "He is very smart. ___, he is very lazy (Однако).",
         "correctAnswer": "However",
         "correctAnswers": [
-          "However"
+          "However",
+          "however"
         ]
       },
       {
@@ -9990,38 +11009,66 @@ export const lessons: Lesson[] = [
         ]
       },
       {
-        "id": "q_life1_l57",
-        "type": "multiple_choice",
-        "question": "Вы в аэропорту и хотите спросить: 'Где мой выход на посадку?'",
-        "options": [
-          "Where is my gate?",
-          "Where my gate is?",
-          "Where are my gate?"
+        "type": "fill_in_blank",
+        "question": "The weather ___ very nice today.",
+        "correctAnswer": "is",
+        "correctAnswers": [
+          "is",
+          "'s"
         ],
-        "correctAnswerIndex": 0
+        "id": "ql57_extra_0"
       },
       {
-        "id": "q_life2_l57",
         "type": "drag_and_drop",
-        "question": "Соберите фразу, чтобы сказать таксисту: 'Отвезите меня в аэропорт, пожалуйста'.",
+        "question": "Put the words in order:",
         "options": [
-          "Take",
-          "me",
-          "to",
+          "Are",
+          "you",
+          "ready",
+          "for",
           "the",
-          "airport",
-          "please",
-          "take",
-          "does"
+          "trip?"
         ],
         "correctSentence": [
-          "Take",
-          "me",
-          "to",
+          "Are",
+          "you",
+          "ready",
+          "for",
           "the",
-          "airport",
-          "please"
-        ]
+          "trip?"
+        ],
+        "id": "ql57_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "My friends ___ waiting for me at the cafe.",
+        "correctAnswer": "are",
+        "correctAnswers": [
+          "are",
+          "'re"
+        ],
+        "id": "ql57_extra_2"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Choose the correct form: I ___ not sure about this.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql57_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I ___ really exhausted after work.",
+        "correctAnswer": "am",
+        "correctAnswers": [
+          "am",
+          "'m"
+        ],
+        "id": "ql57_extra_4"
       }
     ]
   },
@@ -10056,16 +11103,17 @@ export const lessons: Lesson[] = [
       {
         "id": "q58_1",
         "type": "fill_in_blank",
-        "question": "(___ (прочитав) книгу, я пошел спать.) ___ (read) the book, I went to sleep.",
+        "question": "___ (read) the book, I went to sleep. (Прочитав)",
         "correctAnswer": "Reading",
         "correctAnswers": [
-          "Reading"
+          "Reading",
+          "reading"
         ]
       },
       {
         "id": "q58_2",
         "type": "multiple_choice",
-        "question": "Какое причастие выбрать для пассивного значения?",
+        "question": "Какое причастие выбрать для пассивного значения ('Основанный в...)?",
         "options": [
           "Founded",
           "Founding",
@@ -10108,10 +11156,11 @@ export const lessons: Lesson[] = [
       {
         "id": "q58_5",
         "type": "fill_in_blank",
-        "question": "(___ (построить) из дерева, дом был очень тёплый.) ___ (build) of wood, the house was very warm.",
+        "question": "___ (build) of wood, the house was very warm. (Построенный)",
         "correctAnswer": "Built",
         "correctAnswers": [
-          "Built"
+          "Built",
+          "built"
         ]
       },
       {
@@ -10126,34 +11175,96 @@ export const lessons: Lesson[] = [
         "correctAnswerIndex": 0
       },
       {
-        "id": "q_life1_l58",
-        "type": "multiple_choice",
-        "question": "На совещании вы хотите сказать: 'Я согласен с тобой'.",
-        "options": [
-          "I agree with you.",
-          "I am agree with you.",
-          "I agrees with you."
-        ],
-        "correctAnswerIndex": 0
-      },
-      {
-        "id": "q_life2_l58",
         "type": "drag_and_drop",
-        "question": "Напишите письмо коллеге: 'Пожалуйста, проверьте этот документ'.",
+        "question": "Make a sentence:",
         "options": [
-          "Please",
-          "check",
-          "this",
-          "document",
-          "checking",
-          "these"
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
         ],
         "correctSentence": [
-          "Please",
-          "check",
-          "this",
-          "document"
-        ]
+          "Life",
+          "is",
+          "beautiful",
+          "and",
+          "amazing."
+        ],
+        "id": "ql58_extra_0"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Which one is a fruit?",
+        "options": [
+          "Apple",
+          "Carrot",
+          "Potato"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql58_extra_1"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "I always ___ my teeth before bed.",
+        "correctAnswer": "brush",
+        "correctAnswers": [
+          "brush",
+          "clean"
+        ],
+        "id": "ql58_extra_2"
+      },
+      {
+        "type": "drag_and_drop",
+        "question": "Make a sentence:",
+        "options": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "correctSentence": [
+          "English",
+          "is",
+          "a",
+          "global",
+          "language."
+        ],
+        "id": "ql58_extra_3"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "He works as a software ___.",
+        "correctAnswer": "developer",
+        "correctAnswers": [
+          "developer",
+          "engineer",
+          "programmer"
+        ],
+        "id": "ql58_extra_4"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "What is the capital of Great Britain?",
+        "options": [
+          "London",
+          "Paris",
+          "New York"
+        ],
+        "correctAnswerIndex": 0,
+        "id": "ql58_extra_5"
+      },
+      {
+        "type": "fill_in_blank",
+        "question": "Can you pass me the ___, please?",
+        "correctAnswer": "salt",
+        "correctAnswers": [
+          "salt",
+          "water",
+          "book"
+        ],
+        "id": "ql58_extra_6"
       }
     ]
   }

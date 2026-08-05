@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, BookText, ChevronDown } from 'lucide-react';
 import { QuizQuestion } from '../types';
+import { ClickableText } from './ClickableText';
 
 export default function LessonQuiz({ questions, theory, onFinish, onBack }: { key?: string, questions: QuizQuestion[], theory?: string[], onFinish: () => void, onBack: () => void }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,7 +41,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
           mistakes.push(q.id);
           safeStorage.setItem('mistakes', JSON.stringify(mistakes));
        }
-    } catch(e) { console.error(e); }
+    } catch(e) {}
   };
   
   const handleNext = () => {
@@ -72,7 +73,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   };
   
   // Drag and Drop (Sentence building)
-  const handleWordClick = (wordOrIndex: number | string) => {
+  const handleWordClick = (wordOrIndex: number | any) => {
     const index = typeof wordOrIndex === 'number' ? wordOrIndex : -1;
     if (index === -1) return;
     if (isAnswered) return;
@@ -98,9 +99,16 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   // Fill in Blank
   const checkFillInBlank = () => {
     if (isAnswered) return;
-    const input = textInput.trim().toLowerCase();
-    const isCorrect = (q.correctAnswer && input === q.correctAnswer.toLowerCase()) || 
-                      (q.correctAnswers && q.correctAnswers.some(ans => input === ans.toLowerCase()));
+    
+    const userInput = textInput.trim().toLowerCase();
+    let isCorrect = false;
+
+    if (q.correctAnswers && q.correctAnswers.length > 0) {
+        isCorrect = q.correctAnswers.some(ans => userInput === ans.toLowerCase());
+    } else if (q.correctAnswer) {
+        isCorrect = userInput === q.correctAnswer.toLowerCase();
+    }
+
     if (isCorrect) {
       handleNext();
     } else {
@@ -129,7 +137,9 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
             className="w-full"
           >
             <div className="mb-10 text-center px-4 w-full">
-              <h2 className="text-3xl text-white font-sans font-semibold tracking-tight leading-snug break-words">{q.question}</h2>
+              <h2 className="text-3xl text-white font-sans font-semibold tracking-tight leading-snug break-words">
+                <ClickableText text={q.question} />
+              </h2>
             </div>
             
             {hint && (
@@ -142,6 +152,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
               <div className="flex flex-col gap-4 w-full">
                 {q.options?.map((opt, idx) => {
                   const isSelected = selectedAnswer === idx;
+                  const isCorrect = idx === q.correctAnswerIndex;
                   let btnClass = "w-full p-5 rounded-[2.5rem] border text-left text-lg transition-all duration-300 relative overflow-hidden ";
                   if (isSelected) {
                     btnClass += "bg-white/10 border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)]";
@@ -154,7 +165,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
                   }
                   return (
                     <button key={idx} onClick={() => handleSelect(idx)} className={btnClass} disabled={isAnswered}>
-                      <span className="font-light">{opt}</span>
+                      <span className="font-light"><ClickableText text={opt} /></span>
                     </button>
                   );
                 })}
