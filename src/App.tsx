@@ -97,7 +97,7 @@ export default function App() {
   return (
     <div className="min-h-screen w-full flex justify-center items-start overflow-hidden bg-transparent font-sans relative z-0">
       <AnimatedBackground />
-      <div className="w-full max-w-md h-viewport pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent z-10">
+      <div className="w-full max-w-md h-screen pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] relative flex flex-col bg-transparent z-10">
         
         {/* Notification Toast */}
         <AnimatePresence>

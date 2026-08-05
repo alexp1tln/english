@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getMessaging, getToken, onMessage } from "firebase/messaging";
+import { getMessaging, getToken, onMessage, isSupported } from "firebase/messaging";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBj4r88IVMggxoA5Lgeun236ECk9ou2rgw",
@@ -13,7 +13,14 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const messaging = typeof window !== "undefined" && "serviceWorker" in navigator ? getMessaging(app) : null;
+export let messaging = null;
+if (typeof window !== "undefined" && "serviceWorker" in navigator) {
+  isSupported().then((supported) => {
+    if (supported) {
+      messaging = getMessaging(app);
+    }
+  }).catch(() => {});
+}
 
 export const requestForToken = async () => {
   if (!messaging) return null;

@@ -10,7 +10,7 @@
   --color-silver: #c0c0c0;
 }
 
-@utility h-viewport {
+@utility h-screen {
   height: 100vh;
   height: 100dvh;
 }
