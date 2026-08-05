@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, Sparkles, ChevronRight, Check, X, InfinityIcon } from 'lucide-react';
+import { ArrowLeft, Sparkles, ChevronRight, Check, X} from 'lucide-react';
 import { ViewState } from '../types';
 import { irregularVerbs, IrregularVerb } from '../irregularVerbsData';
 

@@ -72,7 +72,7 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
   };
   
   // Drag and Drop (Sentence building)
-  const handleWordClick = (wordOrIndex: number | any) => {
+  const handleWordClick = (wordOrIndex: number | string) => {
     const index = typeof wordOrIndex === 'number' ? wordOrIndex : -1;
     if (index === -1) return;
     if (isAnswered) return;
@@ -142,7 +142,6 @@ export default function LessonQuiz({ questions, theory, onFinish, onBack }: { ke
               <div className="flex flex-col gap-4 w-full">
                 {q.options?.map((opt, idx) => {
                   const isSelected = selectedAnswer === idx;
-                  const isCorrect = idx === q.correctAnswerIndex;
                   let btnClass = "w-full p-5 rounded-[2.5rem] border text-left text-lg transition-all duration-300 relative overflow-hidden ";
                   if (isSelected) {
                     btnClass += "bg-white/10 border-white/10 text-white shadow-[0_0_20px_rgba(255,255,255,0.05)]";

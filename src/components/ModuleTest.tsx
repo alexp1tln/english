@@ -1,7 +1,7 @@
 import { safeStorage } from "../utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowLeft, Check, X } from 'lucide-react';
+import { ArrowLeft, } from 'lucide-react';
 import { Lesson, QuizQuestion } from '../types';
 
 interface ModuleTestProps { key?: React.Key | string;
@@ -121,7 +121,7 @@ export default function ModuleTest({ moduleId, lessons, onFinish, onBack }: Modu
     processNext(!!isCorrect, correctText, selectedText);
   };
   
-  const handleWordClick = (wordOrIndex: number | any) => {
+  const handleWordClick = (wordOrIndex: number | string) => {
     const index = typeof wordOrIndex === 'number' ? wordOrIndex : -1;
     if (index === -1) return;
     if (isAnswered) return;

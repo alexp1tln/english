@@ -1,10 +1,10 @@
 import { safeStorage } from "./utils/storage";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, Check, X, Search, BookText, ChevronDown, Compass, Zap, Bell, Flame } from 'lucide-react';
+import { ChevronRight, ArrowLeft, BookOpen, Infinity as InfinityIcon, Sparkles, Check, X, Search, BookText, Zap, Bell, Flame } from 'lucide-react';
 import { requestForToken, onMessageListener } from './firebase';
 import { lessons, vocabulary } from './courseData';
-import { Lesson, ViewState, Word, QuizQuestion } from './types';
+import { Lesson, ViewState, Word } from './types';
 import CityMapProgress from './components/CityMapProgress';
 import ModuleTest from "./components/ModuleTest";
 import LessonQuiz from './components/LessonQuiz';
@@ -14,10 +14,9 @@ import AnimatedBackground from "./components/AnimatedBackground";
 
 export default function App() {
   const [view, setView] = useState<ViewState>('menu');
-  const [aiQuestions, setAiQuestions] = useState<QuizQuestion[]>([]);
   const [currentLesson, setCurrentLesson] = useState<Lesson | null>(null);
   const [currentTestModule, setCurrentTestModule] = useState<number | null>(null);
-  const [testScore, setTestScore] = useState<{score: number, total: number, mistakes: any[]} | null>(null);
+  const [testScore, setTestScore] = useState<{score: number, total: number, mistakes: string[]} | null>(null);
   
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
   const [notification, setNotification] = useState<{title: string, message: string} | null>(null);
@@ -195,7 +194,7 @@ function RemindersButton() {
     if ("Notification" in window && Notification.permission === "granted") {
       setEnabled(true);
       // Initialize foreground listener
-      onMessageListener().then((payload: any) => {
+      onMessageListener().then((payload: unknown) => {
         console.log("Foreground notification received: ", payload);
         // We could show a toast here if we wanted
       }).catch(err => console.log('failed: ', err));
@@ -368,7 +367,7 @@ function LessonTheory({ lesson, onNext, onBack }: { key?: string, lesson: Lesson
 
 
 
-function InfiniteTraining({ setView, onActivity }: { key?: string, setView: (v: ViewState) => void, onActivity?: () => void }) {
+function InfiniteTraining({ setView }: { key?: string, setView: (v: ViewState) => void, }) {
   const [mode, setMode] = useState<'cards' | 'quiz'>('cards');
   const [sessionWords, setSessionWords] = useState<Word[]>([]);
   const [seenWords, setSeenWords] = useState<Word[]>([]);
